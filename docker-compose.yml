@@ -1,0 +1,28 @@
+version: "3"
+services:
+  unchained-website:
+    build:
+      context: ./
+    image: unchainedshop/unchained-website
+    environment:
+      - SHOP_GRAPHQL_ENDPOINT
+      - MAIL_URL
+      - MAIL_SENDER
+      - MAIL_RECIPIENT
+      - TRACKING_CODE
+    ports:
+      - 3000:3000
+    links:
+      - unchained-website-cms:cms
+
+  unchained-website-cms:
+    build:
+      context: ./cms
+    image: unchainedshop/unchained-website-cms
+    volumes:
+      - cms-data:/var/www/html/storage
+    ports:
+      - 3010:80
+
+volumes:
+  cms-data:

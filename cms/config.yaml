@@ -1,0 +1,11 @@
+languages: [de]
+app.name: "Unchained CMS"
+groups:
+  author:
+    $vars:
+      finder.path: "storage/uploads"
+    cockpit:
+      backend: true
+      finder: true
+    collections:
+      manage: true

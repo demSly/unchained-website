@@ -1,0 +1,11 @@
+node_modules
+.next
+.env
+schema.graphql
+cms/storage/cache
+cms/storage/data
+cms/storage/thumbs
+cms/storage/tmp
+cms/storage/uploads
+cms/storage/api.keys.php
+docker-compose.override.yml

@@ -1,0 +1,115 @@
+.product-portfolio {
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-portfolio__item {
+  width: 100%;
+  border-bottom: 10px solid #fff;
+}
+
+@media (min-width: 768px) {
+  .product-portfolio__item {
+    width: 50%;
+    border: 5px solid #fff;
+  }
+
+  .product-portfolio__item:nth-child(-n+2) {
+    border-top-width: 10px;
+  }
+  .product-portfolio__item:nth-child(even) {
+    border-right-width: 10px;
+  }
+  .product-portfolio__item:nth-last-child(-n+2) {
+    border-bottom-width: 10px;
+  }
+  .product-portfolio__item:nth-child(odd) {
+    border-left-width: 10px;
+  }
+}
+
+.product--one-black {
+  background-color: #6066F2;
+}
+
+.product--one-white {
+  background-color: #FAFAFA;
+}
+
+.product--oeco {
+  background-color: #FAFAFA;
+}
+
+.product-4 {
+  background-color: #68E280;
+}
+
+.unit {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.unit__copy {
+  flex-grow: 0;
+  z-index: 2;
+  width: 88%;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.unit__header {
+  margin-top: 1.5em;
+  margin-bottom: 0;
+  flex-shrink: 1;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+.unit__subheader {
+  margin-top: .25em;
+  flex-shrink: 1;
+  font-size: 21px;
+}
+
+.unit__image-wrap {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  flex-grow: 1;
+}
+
+.unit__image {
+  position: absolute;
+  top: calc(50% - 200px);
+  margin: 0;
+  width: 516px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 50%;
+  height: 320px;
+  left: calc(50% - 258px);
+}
+
+.product--one-black .unit__image {
+  background-image: url('../../static/img/monitor-window.svg');
+}
+
+.product--one-white .unit__image {
+  background-image: url('../../static/img/monitor-cash-credit-card.svg');
+}
+
+.product--oeco .unit__image {
+  background-image: url('../../static/img/postman-receive-letter.svg');
+}
+
+.product-4 .unit__image {
+  background-image: url('../../static/img/success-goal-businessman.svg');
+}

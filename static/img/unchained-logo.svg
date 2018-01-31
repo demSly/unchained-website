@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="620px" height="680px" viewBox="0 0 620 680" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>diamond-snake-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="diamond-snake-logo" fill-rule="nonzero">
+            <path d="M177.1,248.2 C167.677774,230.54514 167.677774,209.35486 177.1,191.7 L130,220 L177.1,248.2 Z" id="Shape" fill="#6065F3"></path>
+            <path d="M14.7,174.8 C8.49123845,204.613515 8.49123845,235.386485 14.7,265.2 L90,220 L14.7,174.8 Z" id="Shape" fill="#6065F3"></path>
+            <polygon id="Shape" fill="#68E280" points="230 360 230 500 70 400"></polygon>
+            <path d="M130,280 L18.3,280 C31.110773,325.098728 57.9812724,364.931528 95,393.7 L130,385 L130,280 Z" id="Shape" fill="#6065F3"></path>
+            <polygon id="Shape" fill="#6065F3" points="390 320 390 460 230 360"></polygon>
+            <polygon id="Shape" fill="#6065F3" points="230 280 321.4 337.1 390 320 390 280"></polygon>
+            <polygon id="Shape" fill="#6065F3" points="230 500 230 640 70 540"></polygon>
+            <polygon id="Shape" fill="#6065F3" points="390 460 390 600 230 500"></polygon>
+            <polygon id="Shape" fill="#6065F3" points="390 600 390 680 230 640"></polygon>
+            <polygon id="Shape" fill="#6065F3" points="230 640 230 680 70 680"></polygon>
+            <path d="M0,470 C0,508.659932 31.3400675,540 70,540 L70,400 C31.3400675,400 0,431.340068 0,470 Z" id="Shape" fill="#6065F3"></path>
+            <path d="M0,610 C0,648.659932 31.3400675,680 70,680 L70,540 C31.3400675,540 0,571.340068 0,610 Z" id="Shape" fill="#6065F3"></path>
+            <path d="M550.000001,280 L390,320 L550.000001,420 C588.659933,419.999999 620,388.659932 620,350 C620,311.340068 588.659933,280.000001 550.000001,280 Z" id="Shape" fill="#6065F3"></path>
+            <path d="M550,420 L390,460 L550,560 C588.659932,560 620,528.659932 620,490 C620,451.340068 588.659932,420 550,420 Z" id="Shape" fill="#6065F3"></path>
+            <g id="Group" transform="translate(18.000000, 0.000000)" fill="#68E280">
+                <path d="M532,560 L372,600 L532,680 C565.137085,680 592,653.137085 592,620 C592,586.862915 565.137085,560 532,560 Z" id="Shape"></path>
+                <path d="M432,100 L372,160 L0.3,160 C26.4,67.7 111.3,0 212,0 C334.9,0 432,100 432,100 Z M262,40 C245.431458,40 232,53.4314575 232,70 C232,86.5685425 245.431458,100 262,100 C278.568542,100 292,86.5685425 292,70 C292,53.4314575 278.568542,40 262,40 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

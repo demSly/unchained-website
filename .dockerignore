@@ -1,0 +1,5 @@
+node_modules
+cms
+.git
+.next
+.circleci

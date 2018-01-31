@@ -1,0 +1,23 @@
+.loader-wrap {
+  position: relative;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  Set the color of the icon
+*/
+.loader svg path,
+.loader svg rect{
+  fill: #68E280;
+}
