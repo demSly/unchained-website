@@ -3,3 +3,6 @@ cms
 .git
 .next
 .circleci
+.env
+.env.production
+docker-compose.override.yml

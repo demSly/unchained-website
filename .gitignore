@@ -1,6 +1,7 @@
 node_modules
 .next
 .env
+.env.production
 schema.graphql
 cms/storage/cache
 cms/storage/data

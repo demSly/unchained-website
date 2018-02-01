@@ -1,0 +1,11 @@
+{
+  "name": "unchained-website",
+  "alias": [
+    "unchained.shop",
+    "www.unchained.shop"
+  ],
+  "dotenv": ".env",
+  "type": "docker",
+  "forwardNpm": false,
+  "public": true
+}

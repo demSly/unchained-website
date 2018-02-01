@@ -31,13 +31,13 @@ class CockpitConnector {
     return `${this.baseUrl()}/regions/data/${regionName}?token=${this.token}`;
   }
 
-  static async fetchCachedJSON(url) {
+  async fetchCachedJSON(url) {
     const cachedResponse = cockpitCache.get(url);
     if (cachedResponse) {
-      console.log(`Cockpit -> fetchCachedJSON(${url})) -> SERVE FROM CACHE`); // eslint-disable-line
+      console.log(`Cockpit -> fetchCachedJSON(${url.replace(this.token,'****')})) -> SERVE FROM CACHE`); // eslint-disable-line
       return cachedResponse;
     }
-    console.log(`Cockpit -> fetchCachedJSON(${url})) -> SERVE FROM COCKPIT`); // eslint-disable-line
+    console.log(`Cockpit -> fetchCachedJSON(${url.replace(this.token,'****')})) -> SERVE FROM COCKPIT`); // eslint-disable-line
     const response = await fetch(url);
     const json = await response.json();
     cockpitCache.set(url, json);
@@ -50,22 +50,21 @@ class CockpitConnector {
     const sorters = Object.keys(sortParams).map(key =>
       `sort[${key}]=${sortParams[key]}`);
     const requestUrl = `${this.baseUrlForCollection(collectionName)}&limit=${limit}&skip=${skip}&${filters.concat(sorters).join('&')}`;
-    const json = await CockpitConnector.fetchCachedJSON(requestUrl);
+    const json = await this.fetchCachedJSON(requestUrl);
     console.log(`find(${collectionName}, ${this.language}, ${skip}:${limit}): ${json.entries && json.entries.length} entries`); // eslint-disable-line
     return json.entries || [];
   }
 
   async findOne(collectionName, value, key = '_id') {
     const requestUrl = `${this.baseUrlForCollection(collectionName)}&limit=1&filter[${key}]=${value}`;
-    const json = await CockpitConnector.fetchCachedJSON(requestUrl);
+    const json = await this.fetchCachedJSON(requestUrl);
     console.log(`findOne(${collectionName}, ${this.language}, ${key}=${value}): ${json.entries && json.entries.length} entries`); // eslint-disable-line
     return json.entries && json.entries.length > 0 && json.entries[0];
   }
 
   async getRegionData(regionName) {
     const requestUrl = `${this.baseUrlForRegion(regionName)}`;
-    console.log(`request: ${requestUrl}`); // eslint-disable-line
-    const regionObject = await CockpitConnector.fetchCachedJSON(requestUrl);
+    const regionObject = await this.fetchCachedJSON(requestUrl);
     console.log(`getRegionData(${regionName}): ${regionObject && Object.keys(regionObject).length} entries`); // eslint-disable-line
     const newObject = {};
     const defaultObject = {};
@@ -99,7 +98,7 @@ class CockpitConnector {
     if (width) queryParams.push(`w=${width}`);
     if (height) queryParams.push(`h=${height}`);
     const requestUrl = `${path}&${queryParams.join('&')}`;
-    console.log(`request: ${requestUrl}`); // eslint-disable-line
+    console.log(`request: ${requestUrl.replace(this.token,'****')}`); // eslint-disable-line
     const response = await fetch(requestUrl);
     const thumbnailUrl = await response.text();
     try {
