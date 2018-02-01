@@ -16,7 +16,7 @@ const Footer = ({ intl }) => (
         <div className="newsletter-form-wrap">
           <small>{intl.formatMessage({ id: 'subscribe_to_newsletter' })}</small>
           <div id="mc_embed_signup" className="form">
-            <form action="  " method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" noValidate>
+            <form action="https://shop.us17.list-manage.com/subscribe/post?u=1c6b1723591711e408db610fb&amp;id=5eaceef803" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" noValidate>
               <div id="mc_embed_signup_scroll" className="newsletter-form">
                 <div>
                   <div className="mc-field-group field__input-wrapper">
@@ -35,7 +35,7 @@ const Footer = ({ intl }) => (
                     <div className="response" id="mce-success-response" style={{ display: 'none' }} />
                   </div>
                   <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                    <input type="text" name="b_243484ecd7a5f042b8c05aca7_aa97c8464b" tabIndex="-1" value="" />
+                    <input type="text" name="b_1c6b1723591711e408db610fb_5eaceef803" tabIndex="-1" value="" />
                   </div>
                 </div>
                 <div className="clear">
