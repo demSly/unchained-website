@@ -1,47 +1,88 @@
-# unchained.shop Website
+# Official Website: unchained.shop
 
-## Intro
+This is the official unchained.shop website built with [Zeit's awesome Next.js](https://github.com/zeit/next.js) and [Apollo GraphQL](https://github.com/apollographql/react-apollo). This is a combined landing page, the only API to our business you will ever need and our shop storefront.
 
-## Technologies involved
 
-**Stack**
-- Zeit Next.js + Micro (React 16)
-- Apollo GraphQL
+## Architectural Overview
 
-**Backends needed**
-- CockpitCMS https://getcockpit.com
-- Unchained Engine https://unchained.shop
+    +------------+ +---------------+                        +--------------+
+    |            | |               |                        |              |
+    |            | |               | GraphQL        JSON    |              |
+    | MongoDB    +-> Unchained     +--------+       +-------+ CockpitCMS   |
+    | Database   | | Headless Shop |        |       |       | Headless CMS |
+    |            | |               |        |       |       |              |
+    |            | |               |        |       |       |              |
+    +------------+ +-------+-------+        |       |       +--------------+
+                           |           ⭐️----v-------v--⭐️
+                     +-----v------+    |                |
+                     |            |    | Apollo Server  |
+                     | Admin      |    | GraphQL API    |
+                     | Engine UI  |    |                |
+                     |            |    +----------------+
+                     +------------+    |                |
+                                       | unchained.shop |
+                                       | Website UI     |
+                                       |                |
+                                       ⭐️-------+-------⭐️
+                                               |
+                                               |
+                                               |
+                                               v
 
-## Development / Fork
+                                      You visiting our beauty
+                                          👳🏼‍♀️🧕🏻💂🏾‍♀️👨🏿‍🔬👲🏻
 
-### Prerequisits:
-- https://github.com/creationix/nvm
+The following components of the architectural map are part of this repository:
 
-### Bootstrap .env file
+**Apollo Server: Our Public API BUS**
+
+Origin in code: /api
+
+This is what the GraphQL API of the unchained engine is composed of at the moment:
+
+* Local GraphQL API that exposes the proprietary CockpitCMS RESTFul JSON API
+* Remote GraphQL API of the (not yet open source) unchained.engine
+
+**unchained.shop: React.js Responsive Web App**
+
+Origin in code: /
+
+Project based on Next.js. recompose and react-apollo is used intensively for local and remote state management.
+
+**CockpitCMS: Headless CMS**
+
+Origin in code: /cms
+
+Just a small Dockerfile wrapper folder to fire up a new CockpitCMS instance pre-configured with the needed collection and region configuration.
+
+
+## Development
+
+**Prerequisits**
+
+- Node.js 8+
+- Running CockpitCMS
+- Running Unchained Engine
+
+**Bootstrap .env file**
 
 You can take a look at the defaults by opening the Dockerfile
 
-'''
-CMS_TOKEN=CHANGEME
-SHOP_GRAPHQL_ENDPOINT=http://unchained-engine/graphql
-CMS_ENDPOINT=http://cockpit
-ASSET_URL_PREFIX=http://cockpit
-GRAPHQL_ENDPOINT=http://website/graphql
+    CMS_TOKEN=SET_TO_COCKPITCMS_API_KEY
+    SHOP_GRAPHQL_ENDPOINT=http://unchained-engine/graphql
+    CMS_ENDPOINT=http://cockpit
+    ASSET_URL_PREFIX=http://cockpit
+    GRAPHQL_ENDPOINT=http://website/graphql
 
-MAIL_URL=smtp://user:password@smpt.local
-MAIL_SENDER=io@website
-MAIL_RECIPIENT=io@website
+    MAIL_URL=smtp://user:password@smpt.local
+    MAIL_SENDER=io@website
+    MAIL_RECIPIENT=io@website
 
-TRACKING_CODE=UA-xxx-x
-'''
+    TRACKING_CODE=UA-xxx-x
 
-### Install
+**Install**
 
 Install dependencies and start unchained.shop in development:
 
-nvm install
-nvm use
 npm install
 npm run dev
-
-Of course, you can use yarn if you like

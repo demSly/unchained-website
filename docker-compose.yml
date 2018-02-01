@@ -14,6 +14,7 @@ services:
       - 3000:3000
     links:
       - unchained-website-cms:cms
+      # - unchained-engine:engine
 
   unchained-website-cms:
     build:
@@ -23,6 +24,11 @@ services:
       - cms-data:/var/www/html/storage
     ports:
       - 3010:80
+
+  # unchained-engine:
+  #   image: unchainedshop/unchained-engine
+  #   environment:
+  #     - PORT=80
 
 volumes:
   cms-data:
