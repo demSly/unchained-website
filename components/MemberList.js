@@ -15,6 +15,14 @@ const MemberList = ({ members }) =>
             {...member}
           />
         ))}
+      <style jsx>{`
+        .member-list {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      `}
+      </style>
     </div>
   );
 
