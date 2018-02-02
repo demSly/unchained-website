@@ -14,7 +14,7 @@ module.exports = `
     path: String!
     url: String!
     title: String
-    thumbnail(width: Int!, height: Int!): String!
+    thumbnail(width: Int!, height: Int!, anchor: String, mode: String): String!
   }
   type Member {
     _id: ID!

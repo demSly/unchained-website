@@ -1,13 +1,14 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { getLocale } from '../lib/locale';
+import env from '../lib/env';
 
 const {
   NODE_ENV,
   TRACKING_CODE,
   GRAPHQL_ENDPOINT,
   DEBUG,
-} = process.env;
+} = env;
 
 const injectScript = `
   try {

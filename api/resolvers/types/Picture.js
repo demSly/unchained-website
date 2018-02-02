@@ -10,8 +10,10 @@ const hash = text => crypto
   .digest('hex');
 
 module.exports = {
-  async thumbnail(picture, { width, height }, { api }) {
-    const thumbnailUrl = await api.thumbnail(picture.path, width, height);
+  async thumbnail(picture, {
+    width, height, mode, anchor,
+  }, { api }) {
+    const thumbnailUrl = await api.thumbnail(picture.path, width, height, anchor, mode);
     return `${ASSET_URL_PREFIX}${thumbnailUrl}`;
   },
   _id(picture) {

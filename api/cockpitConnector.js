@@ -90,13 +90,15 @@ class CockpitConnector {
     };
   }
 
-  async thumbnail(picturePath, width, height) {
+  async thumbnail(picturePath, width, height, anchor, mode) {
     const path = `${this.endpoint}/api/cockpit/image?token=${this.token}`;
     const queryParams = [
       `src=/${picturePath}`,
     ];
     if (width) queryParams.push(`w=${width}`);
     if (height) queryParams.push(`h=${height}`);
+    if (anchor) queryParams.push(`fp=${anchor}`);
+    if (mode) queryParams.push(`mode=${mode}`);
     const requestUrl = `${path}&${queryParams.join('&')}`;
     console.log(`request: ${requestUrl.replace(this.token,'****')}`); // eslint-disable-line
     const response = await fetch(requestUrl);
