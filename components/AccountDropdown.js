@@ -27,7 +27,7 @@ const AccountDropdown = ({
         font-size: 18px;
       }
       .logged-in-link:hover {
-        background-color: #FFB603;
+        background-color: #68E280;
         color: white;
       }
       .dropdown {

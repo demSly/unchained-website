@@ -9,7 +9,7 @@ import MemberList from '../components/MemberList';
 const Support = ({ team }) => (
   <PageLayout title={team.meta_title} metaDescription={team.meta_description}>
 
-    <div className="wrap wrap--narrow mt3">
+    <div className="wrap mt3">
       <section id="team" className="section">
         <h2>{team.title}</h2>
         <MemberList />

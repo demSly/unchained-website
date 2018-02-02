@@ -9,3 +9,10 @@
 7. Make your code changes, but be aware that changes to `/api` are not file-watched
 8. Run `npm run build` and `npm run start` to build and start the app in production mode
 9. Create a Pull Request to merge your changes into our master branch
+
+
+# Updating GraphQL schema
+
+1. add new field to CMS
+1. update api/schema.js
+2. npm run update-schema in a new tab, while dev environment running

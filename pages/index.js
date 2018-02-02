@@ -121,9 +121,6 @@ const Home = ({ home }) => (
           <div className="milestone">Unchained token pre-sale</div>
           <div className="phase"><h2>Phase 3</h2></div>
           <div className="milestone">Integrate cryptocurrencies into unchained checkout</div>
-          <div className="phase"><h2>Phase 4</h2></div>
-          <div className="milestone">Preparation for token sale</div>
-          <div className="milestone">Unchained token sale</div>
         </div>
       </div>
     </div>

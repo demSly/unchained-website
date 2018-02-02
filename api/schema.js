@@ -20,6 +20,7 @@ module.exports = `
     _id: ID!
     name: String
     position: String
+    description: String
     url: String
     avatar: Picture
   }
