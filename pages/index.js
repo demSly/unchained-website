@@ -74,36 +74,65 @@ const Home = ({ home }) => (
 
       <div className="advantage">
         <img alt="digital-cash-payment" className="advantage-img" src="../static/img/11- digital-cash-payment.svg" />
-        <p><b>Omnichannel readiness:</b> The content created in a headless CMS is “pure” and can be repurposed across multiple channels, including website, mobile app, digital assistant, virtual reality, smart watches, etc. anywhere and at any time through the customer journey.</p>
+        <p><b>Omnichannel readiness:</b> The content created in a headless CMS is “pure” and can
+        be repurposed across multiple channels, including website,
+        mobile app, digital assistant, virtual reality,
+        smart watches, etc. anywhere and at any time through the customer journey.
+        </p>
       </div>
       <div className="advantage">
         <img alt="currency-money-hand" className="advantage-img" src="../static/img/01- currency-money-hand-1.svg" />
-        <p><b>Low operating costs:</b> Headless CMSs are usually cheaper to install and run than their monolith counterparts, especially as they are typically built on a cloud model where multi-tenant options keep the running costs low.</p>
+        <p><b>Low operating costs:</b> Headless CMSs are usually cheaper to install
+        and run than their monolith counterparts,
+        especially as they are typically built on a cloud model where
+        multi-tenant options keep the running costs low.
+        </p>
       </div>
 
       <div className="advantage">
         <img alt="business-balance-time-income" className="advantage-img" src="../static/img/28- business-balance-time-income-2.svg" />
-        <p><b>Reduces time to market:</b> A headless CMS promotes an agile way of working because content creators and developers can work simultaneously, and projects can be finished faster.</p>
+        <p><b>Reduces time to market:</b> A headless CMS promotes an agile way of working
+         because content creators and developers can work simultaneously,
+         and projects can be finished faster.
+        </p>
       </div>
 
       <div className="advantage">
         <img alt="easy-to-use-cake" className="advantage-img" src="../static/img/38- easy-to-use-cake.svg" />
-        <p><b>Easy to use:</b> Traditional CMS systems tend to be cumbersome and complex* as vendors attempt to offer every available feature in one box. Headless systems focus on content management; keeping things simple for those who use it on a daily basis. The entire user experience can usually be managed from within one back end.</p>
+        <p><b>Easy to use:</b> Traditional CMS systems tend to be cumbersome and
+        complex* as vendors attempt to offer every available feature in one box.
+        Headless systems focus on content management; keeping things simple for those
+        who use it on a daily basis. The entire user experience can usually
+        be managed from within one back end.
+        </p>
       </div>
 
       <div className="advantage">
         <img alt="program-setting" className="advantage-img" src="../static/img/45- program-setting-1.svg" />
-        <p><b>Flexibility:</b> Content editors can work in whichever headless CMS they like and developers can build any kind of front end they want in their preferred language (e.g. Ruby, PHP, Java, or Swift) and then simply integrate the two via APIs (like JSON or XML) over RESTful communication. This allows for polyglot programming where multiple programming paradigms can be used to deliver content to multiple channels, and enables a company to benefit from the latest developments in language frameworks, promoting a microservices architecture.</p>
+        <p><b>Flexibility:</b> Content editors can work in whichever headless CMS
+        they like and developers can build any kind of front end they want in their
+        preferred language (e.g. Ruby, PHP, Java, or Swift) and then simply integrate
+        the two via APIs (like JSON or XML) over RESTful communication. This allows
+        for polyglot programming where multiple programming paradigms can be used to
+        deliver content to multiple channels, and enables a company to benefit from
+        the latest developments in language frameworks, promoting a microservices architecture.
+        </p>
       </div>
 
       <div className="advantage">
         <img alt="cloud-server-network" className="advantage-img" src="../static/img/03- cloud-server-network.svg" />
-        <p><b>Cloud Scalability:</b> The content purity and stateless APIs of headless CMSs enable high scalability, especially as the architecture fully leverages the elasticity of a cloud platform.</p>
+        <p><b>Cloud Scalability:</b> The content purity and stateless APIs of headless
+         CMSs enable high scalability, especially as the architecture fully leverages
+          the elasticity of a cloud platform.
+        </p>
       </div>
 
       <div className="advantage">
         <img alt="security-system-shield-lock" className="advantage-img" src="../static/img/22- security-system-shield-lock.svg" />
-        <p><b>System Security:</b> Since the content is typically provided through a high-performance Content Delivery Network (rather than directly from the database), the risk of distributed denial-of-service attacks (DDOS) is reduced.</p>
+        <p><b>System Security:</b> Since the content is typically provided through
+         a high-performance Content Delivery Network (rather than directly from the database),
+         the risk of distributed denial-of-service attacks (DDOS) is reduced.
+        </p>
       </div>
     </div>
 
