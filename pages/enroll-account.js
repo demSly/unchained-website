@@ -7,12 +7,12 @@ import PageLayout from '../components/PageLayout';
 import Redirect from '../components/Redirect';
 import SetPasswordForm from '../components/forms/SetPasswordForm';
 
-const SetPassword = ({ setnewpassword, url }) => (
-  <PageLayout title={setnewpassword.title} className="pinguin-bg">
+const EnrollAccount = ({ enrollaccount, url }) => (
+  <PageLayout title={enrollaccount.title} className="pinguin-bg">
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">
-        <h1>{setnewpassword.title}</h1>
+        <h1>{enrollaccount.title}</h1>
         <SetPasswordForm token={url.query.token} />
       </div>
     </div>
@@ -22,5 +22,5 @@ const SetPassword = ({ setnewpassword, url }) => (
 
 export default connectApollo(compose(
   connectI18n,
-  withRegion('setnewpassword'),
-)(SetPassword));
+  withRegion('enrollaccount'),
+)(EnrollAccount));
