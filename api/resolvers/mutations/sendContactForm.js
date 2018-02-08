@@ -20,10 +20,8 @@ module.exports = async (root, { request }) => {
   const {
     firstName,
     lastName,
-    orderDate,
-    studio,
     mobileNumber,
-    fnNumber,
+    email,
     comment,
   } = request;
   const result = await send({
@@ -31,10 +29,8 @@ module.exports = async (root, { request }) => {
     to: MAIL_RECIPIENT, // list of receivers
     subject: `Call-Back-Request from ${firstName} ${lastName}`, // Subject line
     text: `
-      Order date: ${orderDate}\n
-      Studio: ${studio}\n
+      Email: ${email}\n
       Phone number: ${mobileNumber}\n
-      FN number: ${fnNumber}\n
       ${comment}
     `, // plain text body
   });

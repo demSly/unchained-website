@@ -9,7 +9,7 @@ const Footer = ({ intl }) => (
       <div className="footer__top">
         <div className="footer__contact">
           <div>
-            <a className="hello" href="mailto:hi@unchained.shop">hi@unchained.shop</a>
+            <a className="hello" href="mailto:hello@unchained.shop">hello@unchained.shop</a>
           </div>
         </div>
 
@@ -65,6 +65,7 @@ const Footer = ({ intl }) => (
           <Link href="/return-policy">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'return_policy' })}</small></a>
           </Link>
+          <a href="https://twitter.com/fivelinesCH" target="_blank" rel="noopener noreferrer" className="footer__link"><small>Announcements</small></a>
         </div>
       </div>
 

@@ -13,7 +13,7 @@ const Imprint = ({ imprint }) => (
         __html: imprint.address,
         }}
       />
-      <p><a className="link underline" href="mailto:hi@unchained.shop">hi@unchained.shop</a></p>
+      <p><a className="link underline" href="mailto:hello@unchained.shop">hello@unchained.shop</a></p>
       <br />
       <p>Web Design & Shop Development by <a className="link underline" href="http://www.fliptation.ch">Fliptation GmbH</a> & <a className="link underline" href="http://www.reactive.one">Reactive Code GmbH</a></p>
     </div>

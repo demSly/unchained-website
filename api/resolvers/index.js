@@ -3,7 +3,7 @@ const region = require('./queries/region');
 const members = require('./queries/members');
 const Picture = require('./types/Picture');
 const Member = require('./types/Member');
-const sendCallBackRequest = require('./mutations/sendCallBackRequest');
+const sendContactForm = require('./mutations/sendContactForm');
 
 module.exports = {
   Query: {
@@ -11,7 +11,7 @@ module.exports = {
     members,
   },
   Mutation: {
-    sendCallBackRequest,
+    sendContactForm,
   },
   JSON: GraphQLJSON,
   Picture,

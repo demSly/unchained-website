@@ -4,7 +4,7 @@ import connectApollo from '../lib/hoc/connectApollo';
 import withRegion from '../lib/hoc/withRegion';
 import connectI18n from '../lib/hoc/connectI18n';
 import PageLayout from '../components/PageLayout';
-import CallBackForm from '../components/forms/CallBackForm';
+import ContactForm from '../components/forms/ContactForm';
 
 const Kontakt = ({ contact, markDone }) => (
   <PageLayout title={contact.title} metaDescription={contact.text}>
@@ -20,14 +20,10 @@ const Kontakt = ({ contact, markDone }) => (
         </a>
       </div>
 
-      <p className="mt3">Contact us</p>
-      <CallBackForm onSubmitSuccess={markDone} />
+      <ContactForm onSubmitSuccess={markDone} />
     </div>
 
     <style jsx>{`
-      .call-back-contact {
-        margin-top: 2em;
-      }
       .pipe {
         font-size: 40px
         padding: .5em;

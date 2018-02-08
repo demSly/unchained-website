@@ -3,7 +3,7 @@ import { injectIntl } from 'react-intl';
 import { compose, withHandlers, withState } from 'recompose';
 import createModalButton from '../lib/hoc/createModalButton';
 import Modal from './Modal';
-import CallBackForm from './forms/CallBackForm';
+import ContactForm from './forms/ContactForm';
 
 const ToggleButton = ({
   onClick,
@@ -26,7 +26,7 @@ const ChangeCountry = ({
         {intl.formatMessage({ id: 'call_back_success' })}
       </div>
     ) : (
-      <CallBackForm onSubmitSuccess={markDone} />
+      <ContactForm onSubmitSuccess={markDone} />
     )}
   </Modal>
 );

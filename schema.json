@@ -1280,6 +1280,26 @@
                     }
                   },
                   "defaultValue": null
+                },
+                {
+                  "name": "anchor",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "mode",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
                 }
               ],
               "type": {
@@ -2589,25 +2609,25 @@
           "enumValues": [
             {
               "name": "OPEN",
-              "description": "Open Order / Cart",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "PENDING",
-              "description": "Order has been sent but confirmation awaiting",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "CONFIRMED",
-              "description": "Order has been confirmed",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "FULLFILLED",
-              "description": " Order has been fullfilled completely (all positions in delivery)",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2832,13 +2852,13 @@
           "enumValues": [
             {
               "name": "PICKUP",
-              "description": "Pick-Up",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "SHIPPING",
-              "description": "Shipping",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2906,25 +2926,25 @@
           "enumValues": [
             {
               "name": "ADAPTER_NOT_FOUND",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "NOT_IMPLEMENTED",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INCOMPLETE_CONFIGURATION",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "WRONG_CREDENTIALS",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -2941,19 +2961,19 @@
           "enumValues": [
             {
               "name": "OPEN",
-              "description": "Order is not delivered",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "DELIVERED",
-              "description": "Delivery complete",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "RETURNED",
-              "description": "Delivery returned",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -3181,31 +3201,31 @@
           "enumValues": [
             {
               "name": "CARD",
-              "description": "Card",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INVOICE",
-              "description": "Invoice",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "POSTFINANCE",
-              "description": "PostFinance",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "PAYPAL",
-              "description": "Paypal",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "CRYPTO",
-              "description": "Crypto",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -3273,25 +3293,25 @@
           "enumValues": [
             {
               "name": "ADAPTER_NOT_FOUND",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "NOT_IMPLEMENTED",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INCOMPLETE_CONFIGURATION",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "WRONG_CREDENTIALS",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -3308,19 +3328,19 @@
           "enumValues": [
             {
               "name": "OPEN",
-              "description": "Unpaid Order",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "PAID",
-              "description": "Order has been paied",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "REFUNDED",
-              "description": "Order has been refunded",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -3585,19 +3605,19 @@
           "enumValues": [
             {
               "name": "DRAFT",
-              "description": "Unpublished (hidden from catalog)",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "ACTIVE",
-              "description": "Published",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "DELETED",
-              "description": " Deleted",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -3614,19 +3634,19 @@
           "enumValues": [
             {
               "name": "DISCOUNT",
-              "description": " Discount",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "TAX",
-              "description": " Tax",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "ITEM",
-              "description": " Items",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -3919,13 +3939,13 @@
           "enumValues": [
             {
               "name": "SYSTEM",
-              "description": " System triggered",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "USER",
-              "description": "User triggered",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -4017,31 +4037,31 @@
           "enumValues": [
             {
               "name": "ITEMS",
-              "description": " Product Price Total",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "PAYMENT",
-              "description": " Payment Fees",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "DELIVERY",
-              "description": " Delivery Fees",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "TAXES",
-              "description": " Tax",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "DISCOUNTS",
-              "description": " Discount",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -4058,31 +4078,31 @@
           "enumValues": [
             {
               "name": "ORDER_CONFIRMATION",
-              "description": "Order Confirmation",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "DELIVERY_NOTE",
-              "description": " Delivery Note",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INVOICE",
-              "description": "Invoice",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "RECEIPT",
-              "description": "Receipt",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "OTHER",
-              "description": "Other",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -4530,7 +4550,7 @@
           "enumValues": [
             {
               "name": "PHYSICAL",
-              "description": "Physical",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -4685,25 +4705,25 @@
           "enumValues": [
             {
               "name": "ADAPTER_NOT_FOUND",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "NOT_IMPLEMENTED",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "INCOMPLETE_CONFIGURATION",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "WRONG_CREDENTIALS",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -4779,7 +4799,7 @@
           "description": null,
           "fields": [
             {
-              "name": "sendCallBackRequest",
+              "name": "sendContactForm",
               "description": "Send a Call-me-back request to the Company, returns messageId if successfully sent mail",
               "args": [
                 {
@@ -4790,7 +4810,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "CallBackRequestInput",
+                      "name": "ContactFormInput",
                       "ofType": null
                     }
                   },
@@ -7714,7 +7734,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "CallBackRequestInput",
+          "name": "ContactFormInput",
           "description": "",
           "fields": null,
           "inputFields": [
@@ -9462,13 +9482,13 @@
           "enumValues": [
             {
               "name": "COLOR",
-              "description": " Color Picker",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "TEXT",
-              "description": " Text Answers",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -11591,19 +11611,19 @@
           "enumValues": [
             {
               "name": "KILOGRAM",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "GRAM",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "POUNDS",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -11620,19 +11640,19 @@
           "enumValues": [
             {
               "name": "METERS",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "FEET",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "MILLIMETERS",
-              "description": "",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -12411,13 +12431,13 @@
           "enumValues": [
             {
               "name": "ASC",
-              "description": "Ascending order",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "DESC",
-              "description": "Descending order",
+              "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             }

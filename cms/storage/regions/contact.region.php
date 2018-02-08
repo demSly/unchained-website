@@ -66,7 +66,7 @@
     'meta_title' => 'Kontakt',
     'meta_description' => 'contact us',
     'address' => '<address>fivelines<br /> Impact Hub Zürich<br /> Sihlquai 131</address><address>Switzerland</address>
-<p><a href="mailto:hi@unchained.shop">hi@unchained.shop</a></p>',
+<p><a href="mailto:hello@unchained.shop">hello@unchained.shop</a></p>',
   ),
   '_created' => 1508249570,
   '_modified' => 1510229056,

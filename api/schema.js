@@ -1,11 +1,9 @@
 module.exports = `
   scalar JSON
-  input CallBackRequestInput {
+  input ContactFormInput {
     firstName: String!
     lastName: String!
-    orderDate: String
-    studio: String
-    fnNumber: String
+    email: String
     mobileNumber: String!
     comment: String
   }
@@ -30,6 +28,6 @@ module.exports = `
   }
   type Mutation {
     # Send a Call-me-back request to the Company, returns messageId if successfully sent mail
-    sendCallBackRequest(request: CallBackRequestInput!): String
+    sendContactForm(request: ContactFormInput!): String
   }
 `;

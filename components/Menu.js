@@ -8,12 +8,17 @@ import ActiveLink from './ActiveLink';
 const Menu = ({ intl, hidden, ...props }) => (
   <div className={`menu ${hidden ? 'hidden' : ''}`} {...props}>
     <div className="menu__items">
+      <ActiveLink activeClassName="active" href="/mission">
+        <a className="menu__link">{intl.formatMessage({ id: 'mission' })}</a>
+      </ActiveLink>
       <ActiveLink activeClassName="active" href="/faq">
         <a className="menu__link">{intl.formatMessage({ id: 'faq' })}</a>
       </ActiveLink>
-      <a href="https://twitter.com/fivelinesCH" target="_blank" rel="noopener noreferrer" className="menu__link">News</a>
-      <ActiveLink activeClassName="active" href="/shop">
+      {/* <ActiveLink activeClassName="active" href="/shop">
         <a className="menu__link">{intl.formatMessage({ id: 'shop' })}</a>
+      </ActiveLink> */}
+      <ActiveLink activeClassName="active" href="/fundraiser">
+        <a className="menu__link">{intl.formatMessage({ id: 'fundraiser' })}</a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/team">
         <a className="menu__link">{intl.formatMessage({ id: 'team' })}</a>
