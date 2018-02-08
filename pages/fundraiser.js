@@ -5,7 +5,7 @@ import withRegion from '../lib/hoc/withRegion';
 import connectI18n from '../lib/hoc/connectI18n';
 import PageLayout from '../components/PageLayout';
 
-const Support = ({ fundraiser }) => (
+const Fundraiser = ({ fundraiser }) => (
   <PageLayout title={fundraiser.meta_title} metaDescription={fundraiser.meta_description}>
 
     <div className="wrap wrap--narrow mt3">
@@ -25,4 +25,4 @@ export default connectApollo(compose(
   connectI18n,
   withRegion('fundraiser'),
   pure,
-)(Support));
+)(Fundraiser));
