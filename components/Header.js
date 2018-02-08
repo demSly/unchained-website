@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { compose, getContext } from 'recompose';
 import MenuSwitch from './MenuSwitch';
 import Menu from './Menu';
-import CartSwitch from './CartSwitch';
+// import CartSwitch from './CartSwitch';
 import AccountSwitch from './AccountSwitch';
 
 const Header = ({ isMenuToggled }) => (
@@ -25,7 +25,7 @@ const Header = ({ isMenuToggled }) => (
               <Menu hidden={!isMenuToggled} />
               <MenuSwitch />
               <AccountSwitch />
-              <CartSwitch />
+              {/* <CartSwitch /> */}
             </div>
           </div>
         </header>

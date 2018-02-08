@@ -12,7 +12,10 @@ const Support = ({ fundraiser }) => (
       <section id="fundraiser" className="section">
         <h2>{fundraiser.title}</h2>
       </section>
-
+      <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
+        __html: fundraiser.content,
+      }}
+      />
     </div>
   </PageLayout>
 );
