@@ -1,6 +1,6 @@
 import React from 'react';
 import { compose, pure } from 'recompose';
-import { Pie } from 'react-chartjs';
+import { Pie } from 'react-chartjs-2';
 import variables from '../styles/variables';
 import connectApollo from '../lib/hoc/connectApollo';
 import withRegion from '../lib/hoc/withRegion';
@@ -23,6 +23,9 @@ const pieOptions = {
   animateRotate: true,
   // Boolean - Whether we animate scaling the Doughnut from the centre
   animateScale: false,
+  legend: {
+    display: false,
+  },
 };
 
 const Fundraiser = ({ fundraiser }) => (
@@ -31,69 +34,68 @@ const Fundraiser = ({ fundraiser }) => (
     <div className="wrap wrap--narrow mt3">
       <section id="fundraiser" className="section">
         <h2>{fundraiser.title}</h2>
+
+        <p>Whitelisting has started, please read below details carefully first</p>
+
+        <button className="button">
+          Get whitelisted for the pre-sale event
+        </button>
+
+        <div className="charts">
+          <div className="chart">
+            <h3>Distribution</h3>
+            <Pie
+              data={{
+                labels: [
+                    'Open Source Bounties',
+                    'Company Reserve',
+                    'Team & Advisors',
+                    'Sale',
+                ],
+                datasets: [{
+                  data: [15, 10, 15, 60],
+                  backgroundColor: [
+                    variables.grayColor,
+                    variables.darkGrayColor,
+                    variables.darkColor,
+                    variables.primaryColor,
+                  ],
+                }],
+              }}
+              options={pieOptions}
+            />
+            Tokens account for a total of 55% of stock equity
+          </div>
+          <div className="chart">
+            <h3>Allocation</h3>
+            <Pie
+              data={{
+                  labels: [
+                      'Social Media & PR',
+                      'Engineering',
+                      'Business Administration',
+                      'Sales & Events',
+                  ],
+                  datasets: [{
+                    data: [20, 50, 10, 20],
+                    backgroundColor: [
+                      variables.darkGrayColor,
+                      variables.secondaryColor,
+                      variables.darkColor,
+                      variables.grayColor,
+                    ],
+                  }],
+                }}
+              options={pieOptions}
+            />
+            Invested money will burn over 4 years
+          </div>
+        </div>
+        <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
+          __html: fundraiser.content,
+        }}
+        />
       </section>
-      <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
-        __html: fundraiser.content,
-      }}
-      />
-    </div>
-    <div className="charts">
-      <div className="chart">
-        <h1>Distribution</h1>
-        <Pie
-          data={[
-            {
-              value: 15,
-              color: variables.grayColor,
-              label: 'Open Source Bounties',
-            },
-            {
-              value: 10,
-              color: variables.darkGrayColor,
-              label: 'Company Reserve',
-            },
-            {
-              value: 15,
-              color: variables.darkColor,
-              label: 'Team & Advisors',
-            },
-            {
-              value: 60,
-              color: variables.primaryColor,
-              label: 'Sale',
-            },
-          ]}
-          options={pieOptions}
-        />
-      </div>
-      <div className="chart">
-        <h1>Allocation</h1>
-        <Pie
-          data={[
-            {
-              value: 20,
-              color: '#9296F2',
-              label: 'Social Media & PR',
-            },
-            {
-              value: 50,
-              color: variables.primaryColor,
-              label: 'Engineering',
-            },
-            {
-              value: 10,
-              color: '#A0E2AD',
-              label: 'Business Administration',
-            },
-            {
-              value: 20,
-              color: variables.secondaryColor,
-              label: 'Sales & Events',
-            },
-          ]}
-          options={pieOptions}
-        />
-      </div>
     </div>
     <style jsx>{`
       .charts {
@@ -102,6 +104,8 @@ const Fundraiser = ({ fundraiser }) => (
       }
       .chart {
         text-align: center;
+        min-height: 40vh;
+        width: 100%;
       }
     `}
     </style>
