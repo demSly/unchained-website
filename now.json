@@ -7,5 +7,5 @@
   "dotenv": ".env",
   "type": "docker",
   "forwardNpm": false,
-  "public": true
+  "public": false
 }
