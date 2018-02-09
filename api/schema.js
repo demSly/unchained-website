@@ -22,8 +22,14 @@ module.exports = `
     url: String
     avatar: Picture
   }
+  type Question {
+    _id: ID!
+    question: String!
+    answer: String
+  }
   type Query {
     members: [Member]!
+    questions: [Question]!
     region(regionId: String!): JSON
   }
   type Mutation {
