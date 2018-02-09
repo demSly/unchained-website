@@ -1,5 +1,5 @@
 import React from 'react';
-import { compose } from 'recompose';
+import { compose, mapProps } from 'recompose';
 import withOrders from '../lib/hoc/withOrders';
 import withLoadingComponent from '../lib/hoc/withLoadingComponent';
 import OrderListItem from './OrderListItem';
@@ -8,7 +8,6 @@ const OrderList = ({ orders }) =>
   (
     <div className="order-list">
       {orders && orders
-        .filter(({ status }) => (status !== 'OPEN')) // Warenkorb ignorieren
         .map(({ _id, ...order }) => (
           <OrderListItem
             key={_id}
@@ -16,10 +15,16 @@ const OrderList = ({ orders }) =>
             {...order}
           />
         ))}
+      {(!orders || orders.length === 0) && (
+        <p>No orders submitted yet</p>
+      )}
     </div>
   );
 
 export default compose(
   withOrders,
   withLoadingComponent,
+  mapProps(({ orders }) => {
+    (orders || []).filter(({ status }) => (status !== 'OPEN')); // ignore cart
+  }),
 )(OrderList);

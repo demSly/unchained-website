@@ -7,9 +7,9 @@ import PageLayout from '../components/PageLayout';
 import Redirect from '../components/Redirect';
 import RegisterForm from '../components/forms/RegisterForm';
 
-const Signup = ({ intl }) => (
+const Signup = ({ intl, url }) => (
   <PageLayout title={intl.formatMessage({ id: 'register' })} className="pinguin-bg">
-    <Redirect to="/" ifLoggedIn />
+    <Redirect to={(url.query && url.query.redirect) || '/'} ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">
         <h1>{intl.formatMessage({ id: 'register' })}</h1>

@@ -1,9 +1,11 @@
 import React from 'react';
 import { compose, pure } from 'recompose';
+import Link from 'next/link';
 import { Pie } from 'react-chartjs-2';
 import variables from '../styles/variables';
 import connectApollo from '../lib/hoc/connectApollo';
 import withRegion from '../lib/hoc/withRegion';
+import withCurrentUser from '../lib/hoc/withCurrentUser';
 import connectI18n from '../lib/hoc/connectI18n';
 import PageLayout from '../components/PageLayout';
 
@@ -28,18 +30,27 @@ const pieOptions = {
   },
 };
 
-const Fundraiser = ({ fundraiser }) => (
+const Fundraiser = ({ fundraiser, currentUser }) => (
   <PageLayout title={fundraiser.meta_title} metaDescription={fundraiser.meta_description}>
 
     <div className="wrap wrap--narrow mt3">
       <section id="fundraiser" className="section">
         <h2>{fundraiser.title}</h2>
 
-        <p>Whitelisting has started, please read below details carefully first</p>
-
-        <button className="button">
-          Get whitelisted for the pre-sale event
-        </button>
+        <p>The pre-sale has started</p>
+        {currentUser._id ? (
+          <Link href="/profile">
+            <a className="button">
+              Check your whitelisting status
+            </a>
+          </Link>
+        ) : (
+          <Link href="/signup?redirect=/fundraiser">
+            <a className="button">
+            Join the pre-sale (whitelisting)
+            </a>
+          </Link>
+        )}
 
         <div className="charts">
           <div className="chart">
@@ -47,10 +58,10 @@ const Fundraiser = ({ fundraiser }) => (
             <Pie
               data={{
                 labels: [
-                    'Open Source Bounties',
-                    'Company Reserve',
-                    'Team & Advisors',
-                    'Sale',
+                  'Open Source Bounties',
+                  'Company Reserve',
+                  'Team & Advisors',
+                  'Sale',
                 ],
                 datasets: [{
                   data: [15, 10, 15, 60],
@@ -71,10 +82,10 @@ const Fundraiser = ({ fundraiser }) => (
             <Pie
               data={{
                   labels: [
-                      'Social Media & PR',
-                      'Engineering',
-                      'Business Administration',
-                      'Sales & Events',
+                    'Social Media & PR',
+                    'Engineering',
+                    'Business Administration',
+                    'Sales & Events',
                   ],
                   datasets: [{
                     data: [20, 50, 10, 20],
@@ -115,6 +126,7 @@ const Fundraiser = ({ fundraiser }) => (
 
 export default connectApollo(compose(
   connectI18n,
+  withCurrentUser,
   withRegion('fundraiser'),
   pure,
 )(Fundraiser));
