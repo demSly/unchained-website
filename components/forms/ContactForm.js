@@ -20,7 +20,7 @@ const CallBackForm = ({
   <h3>Thanks! We will reach out to you</h3>
 ) : (
   <React.Fragment>
-    <p className="mt3">Contact us</p>
+    <h2>Contact us</h2>
     <AutoForm
       disabled={inProgress}
       schema={schema}

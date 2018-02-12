@@ -1,3 +1,13 @@
+.social-links {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.social-link + .social-link {
+  margin-left: 1em;
+}
+
 .dangerously h2 {
   margin-bottom: -.25em;
   font-size: 1.125em;
