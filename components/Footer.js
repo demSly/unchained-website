@@ -47,7 +47,7 @@ const Footer = ({ intl }) => (
         </div>
 
         <div className="social-links">
-          <a className="social-link" href="https://github.com/xecutors/unchained">
+          <a className="social-link" href="https://github.com/unchainedshop/">
             <svg width="18px" height="18px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg">
               <title>GitHub-Mark</title>
               <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
