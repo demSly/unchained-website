@@ -11,7 +11,7 @@ import PageLayout from '../components/PageLayout';
 const Support = ({ faq, questions }) => (
   <PageLayout title={faq.meta_title} metaDescription={faq.meta_description}>
 
-    <div className="wrap wrap--narrow mt3">
+    <div className="wrap wrap--narrow mt7">
       <section id="faq" className="section">
         <h2>{faq.faq_title}</h2>
         <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
@@ -34,11 +34,13 @@ const Support = ({ faq, questions }) => (
 
     <style jsx>{`
       .question {
-        font-weight: 400;
+        padding-top: 1em;
+        font-weight: 500;
       }
       .answer {
-        padding-bottom: 1em;
-        border-bottom: 1px solid ${variables.lineGrayColor};
+        padding-top: .5em;
+        padding-bottom: 2em;
+        border-bottom: 2px dashed ${variables.lineGrayColor};
       }
     `}
     </style>

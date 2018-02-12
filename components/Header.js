@@ -16,8 +16,9 @@ const Header = ({ isMenuToggled }) => (
           <div className="header-inner">
             <Link href="/">
               <a>
-                <div>
-                  <img className="unchained-logo" src="../static/img/unchained-logo.png" alt="Unchained logo" />
+                <div className="unchained-brand">
+                  <img className="unchained-logo" src="../static/img/android-chrome-384x384.png" alt="Unchained logo" />
+                  <span>unchained</span>
                 </div>
               </a>
             </Link>
@@ -44,9 +45,14 @@ const Header = ({ isMenuToggled }) => (
     </style>
 
     <style jsx>{`
-
+      .unchained-brand {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+      }
       .unchained-logo {
-        max-width: 192px;
+        max-width: 50px;
+        margin-right: 4px;
       }
       .header {
         position: fixed;

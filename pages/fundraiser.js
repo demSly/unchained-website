@@ -33,11 +33,11 @@ const pieOptions = {
 const Fundraiser = ({ fundraiser, currentUser }) => (
   <PageLayout title={fundraiser.meta_title} metaDescription={fundraiser.meta_description}>
 
-    <div className="wrap wrap--narrow mt3">
-      <section id="fundraiser" className="section">
+    <div className="wrap wrap--narrow mt7">
+      <section id="fundraiser" className="section text-center">
         <h2>{fundraiser.title}</h2>
 
-        <p>The pre-sale has started</p>
+        <p>The pre-sale has started!</p>
         {currentUser._id ? (
           <Link href="/profile">
             <a className="button">
@@ -46,7 +46,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
           </Link>
         ) : (
           <Link href="/signup?redirect=/fundraiser">
-            <a className="button">
+            <a className="button hero-button">
             Join the pre-sale (whitelisting)
             </a>
           </Link>
@@ -75,7 +75,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
               }}
               options={pieOptions}
             />
-            Tokens account for a total of 55% of stock equity
+            <p>Unchained participation tokens account for a total of 55% of stock equity</p>
           </div>
           <div className="chart">
             <h3>Allocation</h3>
@@ -99,24 +99,24 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
                 }}
               options={pieOptions}
             />
-            Invested money will burn over 4 years
           </div>
         </div>
-        <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
-          __html: fundraiser.content,
-        }}
-        />
       </section>
+      <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
+        __html: fundraiser.content,
+      }}
+      />
     </div>
     <style jsx>{`
       .charts {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-wrap: wrap;
       }
       .chart {
+        margin-top: 1.5em;
         text-align: center;
-        min-height: 40vh;
-        width: 100%;
+        min-width: 30vw;
       }
     `}
     </style>

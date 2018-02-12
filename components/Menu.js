@@ -88,7 +88,7 @@ const Menu = ({ intl, hidden, ...props }) => (
           display: none !important;
         }
         .menu__items {
-          font-size: 24px;
+          font-size: 20px;
         }
         .menu__link + .menu__link {
           margin-left: 1.5em;

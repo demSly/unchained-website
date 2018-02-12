@@ -41,6 +41,8 @@
 .button--primary {
   display: block;
   min-width: 120px;
+  max-width: 320px;
+  margin: 0 auto;
   border-radius: 5px;
   background-color: #68E280;
   color: #232323;
@@ -53,7 +55,6 @@
 
 @media (min-width: 768px) {
   .hero-button {
-    font-size: 1.25rem;
     padding-top: 1em;
     padding-bottom: 1em;
     min-width: 125px;

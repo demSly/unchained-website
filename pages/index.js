@@ -139,22 +139,40 @@ const Home = ({ home }) => (
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <h1 className="mt0 c-white">Our Roadmap</h1>
-        </div>
-        <div className="roadmap c-white mt3">
-          <div className="phase"><h2>Phase 1 (done)</h2></div>
-          <div className="milestone">Development of unchained v.1.0</div>
-          <div className="milestone">First customer launched on unchained</div>
-          <div className="phase"><h2>Phase 2</h2></div>
-          <div className="milestone">Preparation for token pre-sale</div>
-          <div className="milestone">Unchained token pre-sale</div>
-          <div className="phase"><h2>Phase 3</h2></div>
-          <div className="milestone">Integrate cryptocurrencies into unchained checkout</div>
+          <h1 className="mt0 c-white">I'm a</h1>
+
+          <Link href="/contact">
+            <a className="button">
+                Developer / Agency
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a className="button">
+                Merchant
+            </a>
+          </Link>
+          <Link href="/fundraiser">
+            <a className="button">
+                Investor
+            </a>
+          </Link>
+
         </div>
       </div>
     </div>
 
     <style jsx>{`
+
+      .button {
+        margin-right: 1.5em;
+        margin-bottom: 1em;
+      }
+
+      @media (min-width: 1024px) {
+        .button + .button {
+          margin-left: 1.5em;
+        }
+      }
 
       .milestone {
         margin-top: 1.5em;

@@ -7,8 +7,7 @@ import PageLayout from '../components/PageLayout';
 
 const Mission = ({ mission }) => (
   <PageLayout title={mission.meta_title} metaDescription={mission.meta_description}>
-
-    <div className="wrap wrap--narrow mt3">
+    <div className="wrap wrap--narrow mt7">
       <section id="mission" className="section">
         <h2>{mission.title}</h2>
       </section>

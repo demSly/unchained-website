@@ -20,6 +20,7 @@ const Layout = ({
       <meta charSet="utf-8" />
       <meta content="telephone=no" name="format-detection" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" />
       <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" />
@@ -40,7 +41,10 @@ const Layout = ({
       background-color: ${variables.primaryColor} !important;
     }
 
-    .c-black,
+    .c-black {
+      color: ${variables.darkColor} !important;
+    }
+
     .c-font {
       color: ${variables.fontColor} !important;
     }
@@ -78,8 +82,8 @@ const Layout = ({
     body {
       line-height: ${variables.bodyLineHeight};
       color: ${variables.fontColor};
-      font-size: 125%;
-      font-weight: 300;
+      font-size: 100%;
+      font-weight: 400;
     }
 
     @media ${variables.mq.big} {
@@ -99,16 +103,15 @@ const Layout = ({
           bottom: 0;
       }
       body {
-        font-size: 135%;
+        font-size: 115%;
         border-left: 10px solid ${variables.primaryColor};
         border-right: 10px solid ${variables.primaryColor};
       }
     }
 
-
     h1, h2, h3, h4, h5, h6 {
-      font-weight: 300;
-      line-height: 1.1;
+      font-weight: 500;
+      line-height: 1.3;
     }
 
     img {
@@ -129,7 +132,7 @@ const Layout = ({
     }
 
     p {
-      line-height: 1.5;
+      line-height: 1.65;
     }
 
     address {
