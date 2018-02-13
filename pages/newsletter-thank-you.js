@@ -6,7 +6,7 @@ import connectI18n from '../lib/hoc/connectI18n';
 import PageLayout from '../components/PageLayout';
 
 const NewsletterThankyou = ({ newsletterthankyou }) => (
-  <PageLayout title={newsletterthankyou.title} className="pinguin-bg" metaDescription={newsletterthankyou.text}>
+  <PageLayout title={newsletterthankyou.title} className="bg-image" metaDescription={newsletterthankyou.text}>
     <div className="wrap wrap--vertical-padding" id="top">
       <div className="thank-you-text">
         <h2>{newsletterthankyou.title}</h2>

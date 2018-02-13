@@ -154,7 +154,7 @@ const Footer = ({ intl }) => (
       }
       @media (min-width: 640px) {
         .hello {
-          font-size: 36px;
+          font-size: 32px;
         }
       }
 

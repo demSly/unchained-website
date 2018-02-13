@@ -17,7 +17,7 @@ const Header = ({ isMenuToggled }) => (
             <Link href="/">
               <a>
                 <div className="unchained-brand">
-                  <img className="unchained-logo" src="../static/img/android-chrome-384x384.png" alt="Unchained logo" />
+                  <img className="unchained-logo" src="../static/img/unchained-logo-black.png" alt="Unchained logo" />
                   <span>unchained</span>
                 </div>
               </a>
@@ -51,8 +51,8 @@ const Header = ({ isMenuToggled }) => (
         font-size: 20px;
       }
       .unchained-logo {
-        max-width: 50px;
-        margin-right: 4px;
+        max-width: 40px;
+        margin-right: 8px;
       }
       .header {
         position: fixed;
@@ -81,11 +81,6 @@ const Header = ({ isMenuToggled }) => (
 
       .unchained-logo {
         z-index: 10;
-      }
-      @media (max-width: 374px) {
-        .unchained-logo {
-          vertical-align: text-bottom;
-        }
       }
 
       .header__right {

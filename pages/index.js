@@ -83,7 +83,7 @@ const Home = ({ home }) => (
       <div className="feature-set">
         <h3>Discounts</h3>
         <ul>
-          <li><a href="#">Special deals by ID / tokens :)</a></li>
+          <li><a href="#">Special deals by ID, code, tokens</a></li>
           <li><a href="#">Percentage deals by date</a></li>
         </ul>
       </div>
