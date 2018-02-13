@@ -37,6 +37,19 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
       <section id="fundraiser" className="section text-center">
         <h2>{fundraiser.title}</h2>
 
+        <div className="c-bg-primary">
+          <div className="wrap wrap--narrow wrap--vertical-padding">
+            <div className="text-center">
+              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
+                  Read our Business Plan
+              </a>
+              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/whitepaper.md">
+                  or download the Whitepaper
+              </a>
+            </div>
+          </div>
+        </div>
+
         <p>The pre-sale has started!</p>
         {currentUser._id ? (
           <Link href="/profile">

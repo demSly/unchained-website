@@ -10,8 +10,24 @@ const Home = ({ home }) => (
   <PageLayout title={home.meta_title} metaDescription={home.meta_description}>
 
     <div className="wrap hero">
-      <h2 className="hero-text text-center">The only hackable e-commerce solution that gets out of your way</h2>
+      <h2 className="hero-text text-center">Weather-dependent barbeque sausage pricing</h2>
+      <p className="text-center">Unchained lets you create the coolest e-commerce experiences on earth. Now.</p>
       <img className="hero-img" src="../static/img/robot-hand.svg" alt="robot hand" />
+    </div>
+
+    <p />
+    <div className="c-bg-primary">
+      <div className="wrap wrap--narrow wrap--vertical-padding">
+        <div className="text-center">
+          <h1 className="mt0 c-black">Token Generation Event</h1>
+          <Link href="/fundraiser">
+            <a className="button hero-button">
+              Invest now
+            </a>
+          </Link>
+          <p className="mt0 c-black">Pre-sale has started</p>
+        </div>
+      </div>
     </div>
 
 
@@ -21,7 +37,7 @@ const Home = ({ home }) => (
           <a className="unit">
             <div className="unit__copy c-white">
               <h2 className="unit__header">Headless Architecture</h2>
-              <h3 className="unit__subheader">Choose your decoupled CMS of choice and experience true customization</h3>
+              <h3 className="unit__subheader">Choose your decoupled CMS, connect the unchained API with your site, experience true customization</h3>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -34,7 +50,7 @@ const Home = ({ home }) => (
           <a className="unit">
             <div className="unit__copy">
               <h2 className="unit__header">Easy Payment Integration</h2>
-              <h3 className="unit__subheader">Credit Cards, PayPal, Bitcoin and more</h3>
+              <h3 className="unit__subheader">One file, one payment provider. Credit Cards, PayPal, Bitcoins and more</h3>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -47,7 +63,7 @@ const Home = ({ home }) => (
           <a className="unit">
             <div className="unit__copy">
               <h2 className="unit__header">Choose your CRM, ERP etc.</h2>
-              <h3 className="unit__subheader">Integrate your tools via our API</h3>
+              <h3 className="unit__subheader">Integrate all your tools via our next-generation GraphQL API</h3>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -69,165 +85,116 @@ const Home = ({ home }) => (
     </div>
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
+      <h2>Next-generation e-commerce platform</h2>
+      <p>Unchained is different. The system is built in a way that it's really easy for a developer to
+        change the behavior but impossible to do it without programming knowledge (unless explicitly engineered for a use case).
+        This enables developing partners to enable any kind of business logic and true flexibility in their e-commerce projects:
+      </p>
+
+      <p><strong>No limits for business logic requirements</strong></p>
+      <p><strong>Complete freedom in how your user interface should look like</strong></p>
+      <p><strong>Connect the data of any legacy and enterprise software the way you want it</strong></p>
+
+
       <h2>Our incomplete features & plugin list</h2>
-
       <div className="feature-set">
-        <h3>Delivery</h3>
+        <h3>No-limit Delivery</h3>
         <ul>
-          <li><a href="#">eMail delegation</a></li>
-          <li><a href="#">Post</a></li>
-          <li>UPS, DHL (in development)</li>
+          <li>Downloadable Products</li>
+          <li>E-Mail the order to a third-party logistics provider's central inbox</li>
+          <li>Upload orders as CSV to a FTP host*</li>
+          <li>Transfer orders electronically to any other system</li>
+          <li>Post (Yellowcube), UPS, DHL Comissioning*</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>Discounts</h3>
+        <h3>No-limit Documents</h3>
         <ul>
-          <li><a href="#">Special deals by ID, code, tokens</a></li>
-          <li><a href="#">Percentage deals by date</a></li>
+          <li>Generate PDF's locally through a local bookkeeping system (SAP R/3, Abacus, ...)</li>
+          <li>Generate PDF's through SaaS services (Smallinvoice)</li>
+          <li>Generate a new XML file for external processing</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>Documents</h3>
+        <h3>No-limit Messaging</h3>
         <ul>
-          <li><a href="#">PDF</a></li>
-          <li><a href="#">SmallInvoice plugin</a></li>
+          <li>Send Order Confirmations and Invoices by E-Mail, SMS or Whatsapp</li>
+          <li>Send User Registration Notifications via Slack</li>
+          <li>Twitter new orders anonymized*</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>Messaging</h3>
+        <h3>No-limit Payments</h3>
         <ul>
-          <li><a href="#">by eMail</a></li>
-          <li><a href="#">by SMS</a></li>
+          <li>Bitcoin, Ether & more cryptocurrencies</li>
+          <li>Invoice</li>
+          <li>Stripe</li>
+          <li>PostFinance</li>
+          <li>PayPal</li>
+          <li>Bonity-checked invoices (Deltavista)</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>Payments</h3>
+        <h3>No-limit Pricing</h3>
         <ul>
-          <li><a href="#">Bitcoin, Ether & more cryptocurrencies</a></li>
-          <li><a href="#">Invoice</a></li>
-          <li><a href="#">Stripe</a></li>
-          <li><a href="#">PostFinance</a></li>
-          <li><a href="#">PayPal</a></li>
-          <li><a href="#">Deltavista</a></li>
+          <li>B2B Users special price</li>
+          <li>Date range dependent special prices</li>
+          <li>Dynamic tax rate retrieval</li>
+          <li>Product, Payment, Order or Delivery prices confiurable</li>
+          <li>Weather-dependent barbeque sausage price*</li>
+          <li>Order total weight dependent charges, dynamically calculated by UPS*</li>
+          <li>Prices that depend on Languages, countries, users, order quantities, ...*</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>Pricing</h3>
+        <h3>No-limit Discounts</h3>
         <ul>
-          <li><a href="#">catalog</a></li>
-          <li><a href="#">product</a></li>
-          <li><a href="#">discount</a></li>
-          <li><a href="#">tax</a></li>
-          <li><a href="#">cart</a></li>
-          <li><a href="#">cart discount</a></li>
-          <li><a href="#">delivery</a></li>
-          <li><a href="#">payment</a></li>
+          <li>Christmas & Black Friday Discounts</li>
+          <li>Percentage reducing discount codes</li>
+          <li>Absolute amount reducing discount codes</li>
+          <li>Swear word dependent daily discounts based on Donald Trump Twitter feed*</li>
+          <li>Lottery or random prices: Every 1000th buyer gets the stuff free of charge*</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>Warehousing</h3>
+        <h3>No-limit Warehousing</h3>
         <ul>
-          <li><a href="#">manual stock</a></li>
-          <li>reactive stock (in development)</li>
+          <li>ERP as Inventory Management*</li>
+          <li>Google Docs Inventory*</li>
+          <li>Fire Just-in-time Production of any goods*</li>
+          <li>Real-time quantities (see an event get sold out live)*</li>
         </ul>
       </div>
 
       <div className="feature-set">
-        <h3>so much more</h3>
+        <h3>And so much more</h3>
         <ul>
-          <li><a href="#">Countries</a></li>
-          <li><a href="#">Currencies</a></li>
-          <li><a href="#">Languages</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Users</a></li>
+          <li>One shop for one world (Multi-country support)</li>
+          <li>Price your products in any currency or crypto-currency you like. $XLM maybe?</li>
+          <li>Multi-language support</li>
+          <li>Dynamic catalogs</li>
         </ul>
       </div>
 
+      <p>* Examples of crazy plugins possible, built during the e-commerce project. Every plugin is implementable by a Junior Javascript developer in less than a day</p>
     </div>
 
     <div className="c-bg-dark c-white pa1">
-      <h2 className="text-center">open-source, available on <a className="link" href="#">Github</a></h2>
-    </div>
-
-    <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h2 className="text-center">Advantages of Headless CMS software </h2>
-
-      <div className="advantage">
-        <img alt="digital-cash-payment" className="advantage-img" src="../static/img/11- digital-cash-payment.svg" />
-        <p><b>Omnichannel readiness:</b> The content created in a headless CMS is “pure” and can
-        be repurposed across multiple channels, including website,
-        mobile app, digital assistant, virtual reality,
-        smart watches, etc. anywhere and at any time through the customer journey.
-        </p>
-      </div>
-      <div className="advantage">
-        <img alt="currency-money-hand" className="advantage-img" src="../static/img/01- currency-money-hand-1.svg" />
-        <p><b>Low operating costs:</b> Headless CMSs are usually cheaper to install
-        and run than their monolith counterparts,
-        especially as they are typically built on a cloud model where
-        multi-tenant options keep the running costs low.
-        </p>
-      </div>
-
-      <div className="advantage">
-        <img alt="business-balance-time-income" className="advantage-img" src="../static/img/28- business-balance-time-income-2.svg" />
-        <p><b>Reduces time to market:</b> A headless CMS promotes an agile way of working
-         because content creators and developers can work simultaneously,
-         and projects can be finished faster.
-        </p>
-      </div>
-
-      <div className="advantage">
-        <img alt="easy-to-use-cake" className="advantage-img" src="../static/img/38- easy-to-use-cake.svg" />
-        <p><b>Easy to use:</b> Traditional CMS systems tend to be cumbersome and
-        complex* as vendors attempt to offer every available feature in one box.
-        Headless systems focus on content management; keeping things simple for those
-        who use it on a daily basis. The entire user experience can usually
-        be managed from within one back end.
-        </p>
-      </div>
-
-      <div className="advantage">
-        <img alt="program-setting" className="advantage-img" src="../static/img/45- program-setting-1.svg" />
-        <p><b>Flexibility:</b> Content editors can work in whichever headless CMS
-        they like and developers can build any kind of front end they want in their
-        preferred language (e.g. Ruby, PHP, Java, or Swift) and then simply integrate
-        the two via APIs (like JSON or XML) over RESTful communication. This allows
-        for polyglot programming where multiple programming paradigms can be used to
-        deliver content to multiple channels, and enables a company to benefit from
-        the latest developments in language frameworks, promoting a microservices architecture.
-        </p>
-      </div>
-
-      <div className="advantage">
-        <img alt="cloud-server-network" className="advantage-img" src="../static/img/03- cloud-server-network.svg" />
-        <p><b>Cloud Scalability:</b> The content purity and stateless APIs of headless
-         CMSs enable high scalability, especially as the architecture fully leverages
-          the elasticity of a cloud platform.
-        </p>
-      </div>
-
-      <div className="advantage">
-        <img alt="security-system-shield-lock" className="advantage-img" src="../static/img/22- security-system-shield-lock.svg" />
-        <p><b>System Security:</b> Since the content is typically provided through
-         a high-performance Content Delivery Network (rather than directly from the database),
-         the risk of distributed denial-of-service attacks (DDOS) is reduced.
-        </p>
-      </div>
+      <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
+      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://gitprint.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
     </div>
 
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <h1 className="mt0 c-white">I'm a</h1>
-
-          <Link href="/contact">
+          <h1 className="mt0 c-black">I'm a</h1>
+          <Link href="/agencies">
             <a className="button">
                 Developer / Agency
             </a>
@@ -242,7 +209,7 @@ const Home = ({ home }) => (
                 Investor
             </a>
           </Link>
-
+          <p className="mt0 c-black">Choose your role to get more information</p>
         </div>
       </div>
     </div>
@@ -309,52 +276,6 @@ const Home = ({ home }) => (
           margin-left: auto;
           margin-right: auto;
           max-width: 50%;
-        }
-      }
-
-      .advantages {
-        padding-bottom: 2em;
-      }
-      @media (min-width: 768px) {
-        .advantages {
-          display: flex;
-        }
-      }
-
-      .advantage {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-      .advantage {
-        margin-top: 2.5em;
-      }
-
-      .advantage h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .advantage p {
-        margin-top: .25em;
-        margin-bottom: 0;
-      }
-
-      .advantage-img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        height: 200px;
-      }
-
-      @media (min-width: 768px) {
-        .advantage p {
-          max-width: 80%;
-        }
-        .advantage-img {
-          width: 120px;
-          height: 120px;
         }
       }
 
