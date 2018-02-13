@@ -4901,8 +4901,113 @@
               "deprecationReason": null
             },
             {
+              "name": "loginWithFacebook",
+              "description": "Login the user with a facebook access token",
+              "args": [
+                {
+                  "name": "accessToken",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "LoginMethodResponse",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "loginWithGoogle",
+              "description": "Login the user with a facebook access token",
+              "args": [
+                {
+                  "name": "accessToken",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "tokenId",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "LoginMethodResponse",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "loginWithLinkedIn",
+              "description": "Login the user with a facebook access token",
+              "args": [
+                {
+                  "name": "code",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "redirectUri",
+                  "description": "",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "SCALAR",
+                      "name": "String",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "LoginMethodResponse",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "loginWithPassword",
-              "description": "Log the user in with a password.",
+              "description": " Log the user in with a password.\n ACL: Everybody",
               "args": [
                 {
                   "name": "username",
@@ -4955,7 +5060,7 @@
             },
             {
               "name": "createUser",
-              "description": "Create a new user.",
+              "description": " Create a new user.\n ACL: Everybody",
               "args": [
                 {
                   "name": "username",
@@ -5018,7 +5123,7 @@
             },
             {
               "name": "changePassword",
-              "description": "Change the current user's password. Must be logged in.",
+              "description": " Change the current user's password. Must be logged in.\n ACL: Everybody",
               "args": [
                 {
                   "name": "oldPassword",
@@ -5059,7 +5164,7 @@
             },
             {
               "name": "forgotPassword",
-              "description": "Request a forgot password email.",
+              "description": " Request a forgot password email.\n ACL: Everybody",
               "args": [
                 {
                   "name": "email",
@@ -5086,7 +5191,7 @@
             },
             {
               "name": "resetPassword",
-              "description": "Reset the password for a user using a token received in email. Logs the user in afterwards.",
+              "description": " Reset the password for a user using a token received in email. Logs the user in afterwards.\n ACL: Everybody",
               "args": [
                 {
                   "name": "newPassword",
@@ -7881,48 +7986,9 @@
           "possibleTypes": null
         },
         {
-          "kind": "INPUT_OBJECT",
-          "name": "HashedPassword",
-          "description": "",
-          "fields": null,
-          "inputFields": [
-            {
-              "name": "digest",
-              "description": "The hashed password",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "algorithm",
-              "description": "Algorithm used to hash the password",
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "String",
-                  "ofType": null
-                }
-              },
-              "defaultValue": null
-            }
-          ],
-          "interfaces": null,
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
           "name": "LoginMethodResponse",
-          "description": "",
+          "description": "Type returned when the user logs in",
           "fields": [
             {
               "name": "id",
@@ -7996,6 +8062,45 @@
           "description": "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point). ",
           "fields": null,
           "inputFields": null,
+          "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "HashedPassword",
+          "description": "A hashsed password",
+          "fields": null,
+          "inputFields": [
+            {
+              "name": "digest",
+              "description": "The hashed password",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "algorithm",
+              "description": "Algorithm used to hash the password",
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                }
+              },
+              "defaultValue": null
+            }
+          ],
           "interfaces": null,
           "enumValues": null,
           "possibleTypes": null
@@ -12474,29 +12579,6 @@
             }
           ],
           "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "ENUM",
-          "name": "SortType",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": [
-            {
-              "name": "ASC",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "DESC",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
           "possibleTypes": null
         }
       ],

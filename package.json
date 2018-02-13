@@ -48,7 +48,7 @@
     "node-cache": "^4.1.1",
     "node-fetch": "^2.0.0",
     "nodemailer": "^4.4.2",
-    "now": "^9.3.0",
+    "now": "^9.3.1",
     "paypal-checkout": "^4.0.173",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",

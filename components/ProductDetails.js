@@ -1,6 +1,6 @@
 import React from 'react';
 import { compose, withHandlers, getContext, withState, withProps } from 'recompose';
-import { graphql, withApollo } from 'react-apollo';
+import { graphql } from 'react-apollo';
 import { injectIntl } from 'react-intl';
 import { withRouter } from 'next/router';
 import Link from 'next/link';
@@ -9,7 +9,6 @@ import gql from 'graphql-tag';
 import Slider from 'react-slick';
 import Markdown from 'react-remarkable';
 import variables from '../styles/variables';
-import loginAsGuest from '../lib/loginAsGuest';
 import withProduct from '../lib/hoc/withProduct';
 import withCurrentUser from '../lib/hoc/withCurrentUser';
 import withLoadingComponent from '../lib/hoc/withLoadingComponent';
@@ -157,7 +156,6 @@ const ProductDetails = ({
 
 export default compose(
   injectIntl,
-  withApollo,
   withRouter,
   withCurrentUser,
   withProduct,
@@ -196,13 +194,10 @@ export default compose(
   withHandlers({
     addToCart: ({
       isCartToggled, toggleCart, mutate, router,
-      client, product, currentUser, updateIsAddInProgress,
+      product, updateIsAddInProgress,
     }) => async () => {
       router.prefetch('/checkout');
       updateIsAddInProgress(true);
-      if (!currentUser._id) {
-        await loginAsGuest(client);
-      }
       await mutate({ variables: { productId: product._id } });
       if (!isCartToggled) {
         toggleCart();

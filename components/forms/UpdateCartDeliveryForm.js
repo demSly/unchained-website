@@ -262,15 +262,6 @@ export default compose(
     countryName: { type: String, optional: true },
   })),
   graphql(gql`
-    mutation updateEmail($email: String!) {
-      updateEmail(email: $email) {
-        _id
-      }
-    }
-  `, {
-    name: 'updateEmail',
-  }),
-  graphql(gql`
     mutation updateOrderContact($orderId: ID!, $contact: ContactInput!) {
       updateOrderContact(orderId: $orderId, contact: $contact) {
         _id
@@ -339,15 +330,10 @@ export default compose(
         }
       },
       onSubmit: ({
-        updateOrderContact, updateOrderAddress, updateEmail,
+        updateOrderContact, updateOrderAddress,
         updateOrderDeliveryShipping, cart, intl,
       }) => async ({ emailAddress, delivery, billing }) => {
         try {
-          await updateEmail({
-            variables: {
-              email: emailAddress,
-            },
-          });
           await updateOrderContact({
             variables: {
               orderId: cart._id,
