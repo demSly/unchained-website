@@ -68,6 +68,92 @@ const Home = ({ home }) => (
       </div>
     </div>
 
+    <div className="wrap wrap--narrow wrap--vertical-padding">
+      <h2>Our incomplete features & plugin list</h2>
+
+      <div className="feature-set">
+        <h3>Delivery</h3>
+        <ul>
+          <li><a href="#">eMail delegation</a></li>
+          <li><a href="#">Post</a></li>
+          <li>UPS, DHL (in development)</li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>Discounts</h3>
+        <ul>
+          <li><a href="#">Special deals by ID / tokens :)</a></li>
+          <li><a href="#">Percentage deals by date</a></li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>Documents</h3>
+        <ul>
+          <li><a href="#">PDF</a></li>
+          <li><a href="#">SmallInvoice plugin</a></li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>Messaging</h3>
+        <ul>
+          <li><a href="#">by eMail</a></li>
+          <li><a href="#">by SMS</a></li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>Payments</h3>
+        <ul>
+          <li><a href="#">Bitcoin, Ether & more cryptocurrencies</a></li>
+          <li><a href="#">Invoice</a></li>
+          <li><a href="#">Stripe</a></li>
+          <li><a href="#">PostFinance</a></li>
+          <li><a href="#">PayPal</a></li>
+          <li><a href="#">Deltavista</a></li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>Pricing</h3>
+        <ul>
+          <li><a href="#">catalog</a></li>
+          <li><a href="#">product</a></li>
+          <li><a href="#">discount</a></li>
+          <li><a href="#">tax</a></li>
+          <li><a href="#">cart</a></li>
+          <li><a href="#">cart discount</a></li>
+          <li><a href="#">delivery</a></li>
+          <li><a href="#">payment</a></li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>Warehousing</h3>
+        <ul>
+          <li><a href="#">manual stock</a></li>
+          <li>reactive stock (in development)</li>
+        </ul>
+      </div>
+
+      <div className="feature-set">
+        <h3>so much more</h3>
+        <ul>
+          <li><a href="#">Countries</a></li>
+          <li><a href="#">Currencies</a></li>
+          <li><a href="#">Languages</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Users</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div className="c-bg-dark c-white pa1">
+      <h2 className="text-center">open-source, available on <a className="link" href="#">Github</a></h2>
+    </div>
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <h2 className="text-center">Advantages of Headless CMS software </h2>
@@ -162,6 +248,26 @@ const Home = ({ home }) => (
     </div>
 
     <style jsx>{`
+
+      .feature-set ul li a,
+      .link {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      .c-bg-dark .link {
+        color: white;
+      }
+
+      @media (min-width: 740px) {
+        .feature-set {
+          display: flex;
+          justify-content: flex-start;
+        }
+        .feature-set h3 {
+          min-width: 200px;
+        }
+      }
 
       .button {
         margin-right: 1.5em;
