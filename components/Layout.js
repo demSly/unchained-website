@@ -37,18 +37,6 @@ const Layout = ({
       color: ${variables.primaryColor} !important;
     }
 
-    .c-bg-primary {
-      background-color: ${variables.primaryColor} !important;
-    }
-
-    .c-black {
-      color: ${variables.darkColor} !important;
-    }
-
-    .c-font {
-      color: ${variables.fontColor} !important;
-    }
-
     .c-bg-dark {
       background-color: ${variables.darkColor} !important;
     }
@@ -137,11 +125,6 @@ const Layout = ({
 
     address {
       font-style: normal;
-    }
-
-    .link {
-      cursor: pointer;
-      color: ${variables.secondaryColor};
     }
 
     .underline {

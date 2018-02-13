@@ -11,7 +11,7 @@ const Login = ({ login, intl }) => (
   <PageLayout
     title={login.meta_title}
     metaDescription={login.meta_description}
-    className="pinguin-bg"
+    className="bg-image"
   >
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">

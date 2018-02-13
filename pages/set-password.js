@@ -8,7 +8,7 @@ import Redirect from '../components/Redirect';
 import SetPasswordForm from '../components/forms/SetPasswordForm';
 
 const SetPassword = ({ setnewpassword, url }) => (
-  <PageLayout title={setnewpassword.title} className="pinguin-bg">
+  <PageLayout title={setnewpassword.title} className="bg-image">
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">

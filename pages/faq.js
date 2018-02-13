@@ -18,7 +18,6 @@ const Support = ({ faq, questions }) => (
           __html: faq.faq_content,
         }}
         />
-        <h3>Answers</h3>
         {questions.map(({ question, answer }) => (
           <React.Fragment>
             <div className="question">{question}</div>

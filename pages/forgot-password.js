@@ -8,7 +8,7 @@ import Redirect from '../components/Redirect';
 import ForgotPasswordForm from '../components/forms/ForgotPasswordForm';
 
 const ForgotPassword = ({ forgotpassword }) => (
-  <PageLayout title={forgotpassword.title} className="pinguin-bg" metaDescription={forgotpassword.text}>
+  <PageLayout title={forgotpassword.title} className="bg-image" metaDescription={forgotpassword.text}>
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">

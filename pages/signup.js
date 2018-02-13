@@ -8,7 +8,7 @@ import Redirect from '../components/Redirect';
 import RegisterForm from '../components/forms/RegisterForm';
 
 const Signup = ({ intl, url }) => (
-  <PageLayout title={intl.formatMessage({ id: 'register' })} className="pinguin-bg">
+  <PageLayout title={intl.formatMessage({ id: 'register' })} className="bg-image">
     <Redirect to={(url.query && url.query.redirect) || '/'} ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">

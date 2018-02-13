@@ -58,43 +58,15 @@
     visibility: hidden;
 }
 
-@media (max-width: 767px) {
-  .slider__text {
-    padding: 1em;
-    font-size: 1.5em;
-  }
-}
-
 .hero {
   padding-top: 76px;
-}
-
-.animated.hero-long {
-  animation-duration: .5s;
-  animation-delay: 1.5s;
 }
 
 @media (min-width: 768px) {
   .hero {
     padding-top: 138px;
   }
-  .slider__img {
-    display: block;
-    margin: 0 auto;
-    max-width: 50%;
-    max-height: 600px;
-  }
-
-  .slider__text {
-    font-size: 2em;
-    width: 50%;
-    max-width: 640px;
-    margin: 0 auto;
-    padding-right: 1em;
-  }
 }
-
-
 
 .box {
   max-width: 440px;
@@ -157,8 +129,6 @@
   z-index: 1;
 }
 
-
-
 .dropdown.hidden {
   opacity: 0;
   visibility: hidden;
@@ -184,14 +154,14 @@
 
 
 @media (max-width:767px) {
-  .pinguin-bg {
+  .bg-image {
     background: url('../../static/img/programmer-male.svg') no-repeat bottom center;
     background-size: contain;
   }
 }
 
 @media (min-width:768px) {
-  .pinguin-bg {
+  .bg-image {
     background: url('../../static/img/programmer-male.svg') no-repeat center center fixed;
     background-size: contain;
   }
@@ -204,27 +174,3 @@
 .c-bg-dark .footer * {
   color: inherit;
 }
-
-
-/*.slick-dots button {
-  -webkit-appearance: none;
-  appearance: none;
-  padding: 0;
-  background-color: #232323;
-  border: 0;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-.slick-dots {
-  list-style: none;
-  text-align: center;
-}
-.slick-dots li {
-  display: inline-block;
-}
-
-.slick-dots li + .slick-dots li {
-  margin-left: 1em;
-  display: inline-block;
-}*/
