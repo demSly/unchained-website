@@ -94,10 +94,22 @@ const Footer = ({ intl }) => (
           <Link href="/terms">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'terms' })}</small></a>
           </Link>
-          <Link href="/return-policy">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'return_policy' })}</small></a>
+          {/* <Link href="/return-policy">
+            <a className="footer__link">
+              <small>{intl.formatMessage({ id: 'return_policy' })}</small>
+            </a>
+          </Link> */}
+          <Link href="/agencies">
+            <a className="footer__link">
+              <small>Partner Program</small>
+            </a>
           </Link>
-          <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link"><small>Announcements</small></a>
+          <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link">
+            <small>Announcements</small>
+          </a>
+          <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
+            <small>API (GraphiQL)</small>
+          </a>
         </div>
       </div>
 

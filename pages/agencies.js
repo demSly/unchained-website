@@ -99,6 +99,9 @@ const Home = ({ agencies }) => (
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
+          <p>Just drop us a line if you want to become an
+            official partner of Unchained or you are in need of developer support
+          </p>
           <Link href="/contact">
             <a className="button">
                 Get in Contact now

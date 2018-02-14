@@ -45,7 +45,12 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
           and we don{'`'}t like Reddit and Discours. We don{'`'}t translate our white paper to Korean
           and we don{'`'}t hire support teams and community managers to hype the token.
         </p>
-        <p><strong>Instead, this is just a crowdfunding for our B2B business and we are very serious about it</strong></p>
+        <p>
+          <strong>
+            Instead, this is just a crowdfunding for our B2B business and
+            we are very serious about it
+          </strong>
+        </p>
         <div className="c-bg-primary">
           <div className="wrap wrap--narrow wrap--vertical-padding">
             <div className="text-center">
