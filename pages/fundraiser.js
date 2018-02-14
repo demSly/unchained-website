@@ -40,10 +40,10 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
         <div className="c-bg-primary">
           <div className="wrap wrap--narrow wrap--vertical-padding">
             <div className="text-center">
-              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
+              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md?download">
                   Read our Business Plan
               </a>
-              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/whitepaper.md">
+              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/whitepaper.md?download">
                   or download the Whitepaper
               </a>
             </div>

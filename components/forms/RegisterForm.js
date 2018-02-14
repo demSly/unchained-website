@@ -1,11 +1,11 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, withHandlers, mapProps, pure } from 'recompose';
-import { createUser } from 'meteor-apollo-accounts';
 import { withApollo } from 'react-apollo';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import BoolField from 'uniforms-unstyled/BoolField';
 import AutoForm from 'uniforms-unstyled/AutoForm';
+import { createUser } from '../../lib/accounts';
 import withFormErrorHandlers from '../../lib/hoc/withFormErrorHandlers';
 import withFormSchema from '../../lib/hoc/withFormSchema';
 import PasswordField from './PasswordField';

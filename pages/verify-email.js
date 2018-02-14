@@ -1,8 +1,8 @@
 import React from 'react';
 import { createSink } from 'recompose';
 import { withApollo } from 'react-apollo';
-import { verifyEmail } from 'meteor-apollo-accounts';
 import { withRouter } from 'next/router';
+import { verifyEmail } from '../lib/accounts';
 import connectApollo from '../lib/hoc/connectApollo';
 import connectI18n from '../lib/hoc/connectI18n';
 import PageLayout from '../components/PageLayout';

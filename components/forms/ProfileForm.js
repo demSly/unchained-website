@@ -1,11 +1,11 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, withHandlers, mapProps, pure } from 'recompose';
-import { changePassword } from 'meteor-apollo-accounts';
 import { graphql, withApollo } from 'react-apollo';
 import gql from 'graphql-tag';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import AutoForm from 'uniforms-unstyled/AutoForm';
+import { changePassword } from '../../lib/accounts';
 import withFormErrorHandlers from '../../lib/hoc/withFormErrorHandlers';
 import withFormInProgressHandlers from '../../lib/hoc/withFormInProgressHandlers';
 import withLoadingComponent from '../../lib/hoc/withLoadingComponent';

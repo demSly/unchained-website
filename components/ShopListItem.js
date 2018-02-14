@@ -61,7 +61,9 @@ const ShopListItem = ({
 export default mapProps(({
   simulatedPrice, catalogPrice, texts, media, ...rest
 }) => {
-  const priceConfiguration = (simulatedPrice && simulatedPrice.price.amount > 0) ? simulatedPrice : catalogPrice;
+  const priceConfiguration = (simulatedPrice && simulatedPrice.price.amount > 0)
+    ? simulatedPrice
+    : catalogPrice;
   return {
     title: texts && texts.title,
     ...priceConfiguration,

@@ -86,14 +86,21 @@ const Home = ({ home }) => (
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <h2>Next-generation e-commerce platform</h2>
-      <p>Unchained is different. The system is built in a way that it's really easy for a developer to
-        change the behavior but impossible to do it without programming knowledge (unless explicitly engineered for a use case).
-        This enables developing partners to enable any kind of business logic and true flexibility in their e-commerce projects:
+      <p>Unchained is different. The system is built in a way that it&apos;s
+        really easy for a developer to
+        change the behavior but impossible to do it without programming knowledge
+         (unless explicitly engineered for a use case).
+        This enables developing partners to enable any kind of business logic and
+         true flexibility in their e-commerce projects:
       </p>
 
       <p><strong>No limits for business logic requirements</strong></p>
       <p><strong>Complete freedom in how your user interface should look like</strong></p>
-      <p><strong>Connect the data of any legacy and enterprise software the way you want it</strong></p>
+      <p>
+        <strong>Connect the data of any legacy and
+        enterprise software the way you want it
+        </strong>
+      </p>
 
 
       <h2>Our incomplete features & plugin list</h2>
@@ -101,7 +108,7 @@ const Home = ({ home }) => (
         <h3>No-limit Delivery</h3>
         <ul>
           <li>Downloadable Products</li>
-          <li>E-Mail the order to a third-party logistics provider's central inbox</li>
+          <li>E-Mail the order to a third-party logistics provider&apos;s central inbox</li>
           <li>Upload orders as CSV to a FTP host*</li>
           <li>Transfer orders electronically to any other system</li>
           <li>Post (Yellowcube), UPS, DHL Comissioning*</li>
@@ -111,8 +118,10 @@ const Home = ({ home }) => (
       <div className="feature-set">
         <h3>No-limit Documents</h3>
         <ul>
-          <li>Generate PDF's locally through a local bookkeeping system (SAP R/3, Abacus, ...)</li>
-          <li>Generate PDF's through SaaS services (Smallinvoice)</li>
+          <li>Generate PDF&apos;s locally through a local bookkeeping system
+            (SAP R/3, Abacus, ...)
+          </li>
+          <li>Generate PDF&apos;s through SaaS services (Smallinvoice)</li>
           <li>Generate a new XML file for external processing</li>
         </ul>
       </div>
@@ -182,18 +191,20 @@ const Home = ({ home }) => (
         </ul>
       </div>
 
-      <p>* Examples of crazy plugins possible, built during the e-commerce project. Every plugin is implementable by a Junior Javascript developer in less than a day</p>
+      <p>* Examples of crazy plugins possible, built during the e-commerce project.
+        Every plugin is implementable by a Junior Javascript developer in less than a day
+      </p>
     </div>
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
-      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://gitprint.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
+      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
     </div>
 
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <h1 className="mt0 c-black">I'm a</h1>
+          <h1 className="mt0 c-black">I&apos;m a</h1>
           <Link href="/agencies">
             <a className="button">
                 Developer / Agency

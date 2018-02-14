@@ -37,7 +37,6 @@
     "intl": "^1.2.5",
     "isomorphic-unfetch": "^2.0.0",
     "locale": "^0.1.0",
-    "meteor-apollo-accounts": "^2.0.3",
     "micro": "^9.1.0",
     "micro-compress": "^1.0.0",
     "microrouter": "^3.0.0",
@@ -48,7 +47,7 @@
     "node-cache": "^4.1.1",
     "node-fetch": "^2.0.0",
     "nodemailer": "^4.4.2",
-    "now": "^9.3.1",
+    "now": "^9.3.2",
     "paypal-checkout": "^4.0.173",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -77,7 +76,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
-    "graphql-cli": "^2.14.0",
+    "graphql-cli": "^2.14.1",
     "micro-dev": "^2.2.0"
   },
   "scripts": {

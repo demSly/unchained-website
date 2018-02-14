@@ -17,7 +17,7 @@ const Home = ({ agencies }) => (
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
-      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://gitprint.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
+      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
     </div>
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
@@ -39,7 +39,7 @@ const Home = ({ agencies }) => (
         especially as they are typically built on a cloud model where
         multi-tenant options keep the running costs low.
         All parts of the system come with docker images per default.
-        And if you don't want to host the shop engine yourself, we do it for you in our
+        And if you don&apos;t want to host the shop engine yourself, we do it for you in our
         containerized cloud platform.
         </p>
       </div>
@@ -58,7 +58,7 @@ const Home = ({ agencies }) => (
         <img alt="easy-to-use-cake" className="advantage-img" src="../static/img/38- easy-to-use-cake.svg" />
         <p><b>Easy to use:</b> Traditional e-commerce systems tend to be cumbersome and
         complex* as vendors attempt to offer every available feature in one box and force you to
-        read "how to theme X?" documentation.
+        read &quot;how to theme X?&quot; documentation.
         Headless systems focus on content management; keeping things simple for those
         who use it on a daily basis. The entire user experience can usually
         be managed from within one backend.

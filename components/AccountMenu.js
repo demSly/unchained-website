@@ -2,8 +2,8 @@ import React from 'react';
 import { injectIntl } from 'react-intl';
 import Link from 'next/link';
 import { compose, withHandlers, mapProps, pure } from 'recompose';
-import { logout } from 'meteor-apollo-accounts';
 import { withApollo } from 'react-apollo';
+import { logout } from '../lib/accounts';
 import variables from '../styles/variables';
 
 const AccountMenu = ({ intl, user, logoutUser }) => (
