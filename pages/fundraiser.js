@@ -36,7 +36,16 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
     <div className="wrap wrap--narrow mt7">
       <section id="fundraiser" className="section text-center">
         <h2>{fundraiser.title}</h2>
-
+        <h3>We don{"'"}t play the Crypto Game</h3>
+        <p>
+          Read the whitepaper to find out why we don{'`'}t tell you that we are powered
+          by an alien force of 20 blockchain engineers and 10
+          industry leading advisors that can{"'"}t spell {"'"}byzantine{"'"}. We don{'"'}t build a {'"'}
+          decentralized-industry-revolutionizing-artificial-intelligence-smart-contract{'"'} either
+          and we don{'`'}t like Reddit and Discours. We don{'`'}t translate our white paper to Korean
+          and we don{'`'}t hire support teams and community managers to hype the token.
+        </p>
+        <p><strong>Instead, this is just a crowdfunding for our B2B business and we are very serious about it</strong></p>
         <div className="c-bg-primary">
           <div className="wrap wrap--narrow wrap--vertical-padding">
             <div className="text-center">
