@@ -11,10 +11,10 @@ import PageLayout from '../components/PageLayout';
 const Support = ({ faq, questions }) => (
   <PageLayout title={faq.meta_title} metaDescription={faq.meta_description}>
 
-    <div className="wrap wrap--narrow mt7">
+    <div className="wrap wrap--narrow mv7">
       <section id="faq" className="section">
         <h2>{faq.faq_title}</h2>
-        <div className="dangerously" dangerouslySetInnerHTML={{ // eslint-disable-line
+        <div className="dangerously mb4" dangerouslySetInnerHTML={{ // eslint-disable-line
           __html: faq.faq_content,
         }}
         />
@@ -38,7 +38,7 @@ const Support = ({ faq, questions }) => (
       }
       .answer {
         padding-top: .5em;
-        padding-bottom: 2em;
+        padding-bottom: 1.5em;
         border-bottom: 2px dashed ${variables.lineGrayColor};
       }
     `}

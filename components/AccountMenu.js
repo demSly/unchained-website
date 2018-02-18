@@ -46,14 +46,14 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
         padding-bottom: .75em;
         padding-right: 1em;
         border-bottom: 1px solid ${variables.lineGrayColor};
-        font-size: 18px;
+        font-size: 14px;
       }
       .logged-in-link {
         display: block;
         margin-left: -1.125em;
         margin-right: -1.125em;
         padding: .5em 1.125em;
-        font-size: 18px;
+        font-size: 16px;
       }
       .logged-in-link.no-button {
         width: calc(100% + 2.25em);

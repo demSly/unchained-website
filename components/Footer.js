@@ -87,7 +87,7 @@ const Footer = ({ intl }) => (
       </div>
 
       <div className="footer__bottom flex-between">
-        <div className="mr1">
+        <div>
           <Link href="/imprint">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'imprint' })}</small></a>
           </Link>
@@ -162,11 +162,11 @@ const Footer = ({ intl }) => (
       }
       .hello {
         display: block;
-        font-size: 28px;
+        font-size: 21px;
       }
       @media (min-width: 640px) {
         .hello {
-          font-size: 32px;
+          font-size: 28px;
         }
       }
 
@@ -180,8 +180,8 @@ const Footer = ({ intl }) => (
       }
 
       .footer__bottom {
-        margin-top: 1.5em;
-        margin-bottom: 24px;
+        margin-top: 1.75em;
+        margin-bottom: 1em;
       }
 
       .footer__top {
@@ -189,6 +189,9 @@ const Footer = ({ intl }) => (
       }
 
       @media (min-width: 900px) {
+        .footer__content {
+          padding: 4em 1em 2em;
+        }
         .newsletter-form-wrap {
           margin-top: -20px;
         }
@@ -220,7 +223,7 @@ const Footer = ({ intl }) => (
         height: 32px;
         margin-right: .25em;
         filter: grayscale(100%);
-        opacity: .3;
+        opacity: .2;
         transition: all ease-in-out .2s;
         vertical-align: top;
       }

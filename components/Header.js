@@ -51,8 +51,9 @@ const Header = ({ isMenuToggled }) => (
         font-size: 20px;
       }
       .unchained-logo {
-        max-width: 40px;
+        max-width: 24px;
         margin-right: 8px;
+        z-index: 10;
       }
       .header {
         position: fixed;
@@ -77,10 +78,6 @@ const Header = ({ isMenuToggled }) => (
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-
-      .unchained-logo {
-        z-index: 10;
       }
 
       .header__right {

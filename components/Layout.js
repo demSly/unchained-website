@@ -37,6 +37,10 @@ const Layout = ({
       color: ${variables.primaryColor} !important;
     }
 
+    .c-bg-primary {
+      background-color: ${variables.primaryColor} !important;
+    }
+
     .c-bg-dark {
       background-color: ${variables.darkColor} !important;
     }
@@ -120,7 +124,7 @@ const Layout = ({
     }
 
     p {
-      line-height: 1.65;
+      line-height: 1.7125;
     }
 
     address {

@@ -5,8 +5,8 @@
 }
 
 .wrap--vertical-padding {
-  padding-top: 3.5em;
-  padding-bottom: 3.5em;
+  padding-top: 7em;
+  padding-bottom: 7em;
 }
 
 .wrap--vertical-padding > h1:first-of-type {
@@ -15,8 +15,8 @@
 
 @media (min-width: 1220px) {
   .wrap--vertical-padding {
-    padding-top: 6.4em;
-    padding-bottom: 6.4em;
+    padding-top: 10em;
+    padding-bottom: 10em;
   }
 }
 

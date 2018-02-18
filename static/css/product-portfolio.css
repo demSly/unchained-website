@@ -72,11 +72,14 @@
   flex-shrink: 1;
   font-weight: 400;
   letter-spacing: .5px;
+  margin: 2em 0 1.5em;
+  font-size: 1.5em;
 }
 .unit__subheader {
   margin-top: .25em;
   flex-shrink: 1;
-  font-size: 21px;
+  font-size: 1.25em;
+  line-height: 1.5;
 }
 
 .unit__image-wrap {

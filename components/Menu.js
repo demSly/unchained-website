@@ -69,7 +69,7 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
         .menu__items {
           padding: 1em;
-          font-size: 36px;
+          font-size: 28px;
         }
         .menu__link {
           display: block;
