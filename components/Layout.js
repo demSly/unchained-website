@@ -131,6 +131,15 @@ const Layout = ({
       font-style: normal;
     }
 
+    .site-content {
+      min-height: 540px;
+    }
+    @media ${variables.mq.big} {
+      .site-content {
+        min-height: 840px;
+      }
+    }
+
     .underline {
       text-decoration: underline;
     }
