@@ -32,6 +32,7 @@ const Header = ({ isMenuToggled }) => (
         </header>
       )}
     </Sticky>
+
     <style jsx global>{`
       @media (max-width: 1219px) {
         .language-switch-in-head {

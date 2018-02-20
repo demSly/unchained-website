@@ -9,9 +9,9 @@ import PageLayout from '../components/PageLayout';
 const Home = ({ agencies }) => (
   <PageLayout title={agencies.meta_title} metaDescription={agencies.meta_description}>
 
-    <div className="wrap mt7 hero">
-      <h2 className="hero-text text-center">E-Commerce projects === fun</h2>
-      <p className="text-center">Yes, exactly, no PHP, no jQuery, no bullshit</p>
+    <div className="wrap mt7 text-center">
+      <h2>E-Commerce projects === fun</h2>
+      <p>Yes, exactly, no PHP, no jQuery, no bullshit</p>
       <img className="hero-img" src="../static/img/110- online-website-shopping-male-african-american.svg" alt="robot hand" />
     </div>
 

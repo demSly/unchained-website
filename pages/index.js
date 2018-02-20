@@ -11,7 +11,7 @@ const Home = ({ home }) => (
 
     <div className="wrap hero">
       <h1 className="hero-text text-center">Weather-dependent barbeque sausage pricing</h1>
-      <p className="text-center">Unchained lets you create e-commerce experiences you always wanted. Now.</p>
+      <p className="text-center">Unchained lets you create the e-commerce experience you always wanted. Now.</p>
       <img className="hero-img" src="../static/img/robot-hand.svg" alt="robot hand" />
     </div>
 
@@ -90,8 +90,8 @@ const Home = ({ home }) => (
         really easy for a developer to
         change the behavior but impossible to do it without programming knowledge
          (unless explicitly engineered for a use case).
-        This enables developing partners to enable any kind of business logic and
-         true flexibility in their e-commerce projects:
+        This enables developing partners to implement any kind of business logic
+         with true flexibility in their e-commerce projects:
       </p>
 
       <div className="mv4">
@@ -176,7 +176,7 @@ const Home = ({ home }) => (
         <h3>No-limit Warehousing</h3>
         <ul>
           <li>ERP as Inventory Management*</li>
-          <li>Google Docs Inventory*</li>
+          <li>Manage Inventory in Google Docs</li>
           <li>Fire Just-in-time Production of any goods*</li>
           <li>Real-time quantities (see an event get sold out live)*</li>
         </ul>
