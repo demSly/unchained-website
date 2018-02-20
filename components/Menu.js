@@ -50,10 +50,10 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
       }
 
-      @media (max-width: 1219px) {
+      @media (max-width: 767px) {
         .menu.hidden {
           opacity: 0;
-          transform: translateY(-900px);
+          transform: translateY(-600px);
         }
         .menu {
           position: fixed;
@@ -83,7 +83,7 @@ const Menu = ({ intl, hidden, ...props }) => (
         text-transform: lowercase;
       }
 
-      @media (min-width: 1220px) {
+      @media (min-width: 768px) {
         .menu-switch {
           display: none !important;
         }
@@ -111,7 +111,7 @@ const Menu = ({ intl, hidden, ...props }) => (
           left: 50%;
           right: 50%;
           bottom: 0;
-          background: #68E280;
+          background: #00F5BC;
           height: 2px;
           -webkit-transition-property: left, right;
           transition-property: left, right;

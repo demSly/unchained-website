@@ -8,12 +8,14 @@ import variables from '../styles/variables';
 
 const AccountMenu = ({ intl, user, logoutUser }) => (
   <div>
-    <div className="greeting"><span className="emoji" role="img" aria-label="hello">👋</span> {intl.formatMessage({ id: 'hello' })} {user.name}</div>
+    <div className="greeting">
+      <span className="emoji" role="img" aria-label="hello">👋</span> <span>{intl.formatMessage({ id: 'hello' })} {user.name}</span>
+    </div>
     <Link href="/profile">
       <a className="logged-in-link">
         <img
           className="v-mid mr05"
-          src="/static/img/icon/account-hexagon.svg"
+          src="/static/img/icon/account-protect.svg"
           alt="Account Settings"
         />
         {intl.formatMessage({ id: 'your_account' })}
@@ -32,7 +34,7 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
     <button onClick={logoutUser} className="no-button logged-in-link">
       <img
         className="v-mid mr05"
-        src="/static/img/icon/logout-1.svg"
+        src="/static/img/icon/door-exit.svg"
         alt="Logout"
       />
       {intl.formatMessage({ id: 'logout' })}
@@ -40,13 +42,15 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
     <style jsx>{`
       .greeting {
         margin-left: -1em;
-        margin-bottom: .5em;
+        margin-bottom: 1em;
         margin-right: -1em;
         padding-left: 1em;
-        padding-bottom: .75em;
+        padding-bottom: 1em;
         padding-right: 1em;
         border-bottom: 1px solid ${variables.lineGrayColor};
         font-size: 14px;
+        display: flex;
+        align-items: center;
       }
       .logged-in-link {
         display: block;
@@ -60,7 +64,7 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
         text-align: left;
       }
       .logged-in-link:hover {
-        background-color: #68E280;
+        background-color: #00F5BC;
         color: white;
       }
     `}

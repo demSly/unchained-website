@@ -25,14 +25,20 @@ const AccountDropdown = ({
         margin-right: -1.125em;
         padding: .5em 1.125em;
         font-size: 18px;
+        color: #343434;
       }
       .logged-in-link:hover {
-        background-color: #68E280;
+        background-color: #00F5BC;
         color: white;
       }
       .dropdown {
         padding: 1em;
-        right: -44px;
+        right: -4px;
+      }
+      @media (min-width: 1224px) {
+        .dropdown {
+          right: -10px;
+        }
       }
     `}
     </style>

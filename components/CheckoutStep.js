@@ -33,7 +33,7 @@ const CheckoutStep = ({
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        border: 1px solid #68E280;
+        border: 1px solid #00F5BC;
         float: left;
         margin-right: .5em;
       }

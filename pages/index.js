@@ -11,7 +11,7 @@ const Home = ({ home }) => (
 
     <div className="wrap hero">
       <h1 className="hero-text text-center">Weather-dependent barbeque sausage pricing</h1>
-      <p className="text-center">Unchained lets you create the coolest e-commerce experiences on earth. Now.</p>
+      <p className="text-center">Unchained lets you create e-commerce experiences you always wanted. Now.</p>
       <img className="hero-img" src="../static/img/robot-hand.svg" alt="robot hand" />
     </div>
 

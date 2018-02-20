@@ -106,7 +106,7 @@ const Header = ({ isMenuToggled }) => (
         }
         .header__right {
           width: 100%;
-          margin-left: 11.5em;
+          margin-left: 20%;
           justify-content: space-between;
         }
       }
