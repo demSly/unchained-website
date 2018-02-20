@@ -16,6 +16,10 @@ const MemberListItem = ({
         .position {
           font-weight: bold;
         }
+        .name {
+          font-size: 1.25em;
+          margin-top: .5em;
+        }
         .description {
           margin-top: 1em;
         }

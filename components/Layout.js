@@ -41,6 +41,10 @@ const Layout = ({
       background-color: ${variables.primaryColor} !important;
     }
 
+    .c-bg-secondary {
+      background-color: ${variables.secondaryColor} !important;
+    }
+
     .c-bg-dark {
       background-color: ${variables.darkColor} !important;
     }
@@ -85,7 +89,7 @@ const Layout = ({
           background: ${variables.secondaryColor};
           left: 0;
           right: 0;
-          height: 10px;
+          height: 12px;
           z-index: 100;
       }
       body:before {
@@ -96,8 +100,8 @@ const Layout = ({
       }
       body {
         font-size: 115%;
-        border-left: 10px solid ${variables.primaryColor};
-        border-right: 10px solid ${variables.primaryColor};
+        border-left: 12px solid ${variables.secondaryColor};
+        border-right: 12px solid ${variables.secondaryColor};
       }
     }
 
@@ -132,7 +136,7 @@ const Layout = ({
     }
 
     .site-content {
-      min-height: 540px;
+      min-height: 680px;
     }
     @media ${variables.mq.big} {
       .site-content {

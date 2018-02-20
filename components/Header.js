@@ -51,7 +51,7 @@ const Header = ({ isMenuToggled }) => (
         font-size: 20px;
       }
       .unchained-logo {
-        max-width: 24px;
+        max-width: 20px;
         margin-right: 8px;
         z-index: 10;
       }
@@ -94,15 +94,15 @@ const Header = ({ isMenuToggled }) => (
       @media (min-width: 1220px) {
         .header {
           padding-top: 36px;
-          top: 10px;
-          left: 10px;
-          right: 10px;
+          top: 12px;
+          left: 12px;
+          right: 12px;
         }
         .header--sticky {
           padding-top: 20px;
-          top: 10px;
-          left: 10px;
-          right: 10px;
+          top: 12px;
+          left: 12px;
+          right: 12px;
         }
         .header__right {
           width: 100%;

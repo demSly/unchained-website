@@ -160,6 +160,10 @@
     background: url('../../static/img/programmer-male.svg') no-repeat bottom center;
     background-size: contain;
   }
+  .wrap.mt7,
+  .wrap.mv7 {
+    margin-top: 3.5em;
+  }
 }
 
 @media (min-width:768px) {

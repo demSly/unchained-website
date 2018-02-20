@@ -217,7 +217,11 @@ const Footer = ({ intl }) => (
           text-align: initial;
           margin-top: 10px;
         }
+        .footer__link + .footer__link {
+          margin-left: 2em;
+        }
       }
+
       .cc {
         width: 51px;
         height: 32px;

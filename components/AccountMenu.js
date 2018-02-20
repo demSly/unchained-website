@@ -64,8 +64,7 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
         text-align: left;
       }
       .logged-in-link:hover {
-        background-color: #00F5BC;
-        color: white;
+        background-color: ${variables.secondaryColor};
       }
     `}
     </style>

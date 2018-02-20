@@ -16,7 +16,7 @@ const Home = ({ home }) => (
     </div>
 
     <p />
-    <div className="c-bg-primary">
+    <div className="c-bg-secondary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
           <h1 className="mt0 c-black">Token Generation Event</h1>
@@ -25,7 +25,7 @@ const Home = ({ home }) => (
               Invest now
             </a>
           </Link>
-          <p className="c-white">Pre-sale has started</p>
+          <p>Pre-sale has started</p>
         </div>
       </div>
     </div>
