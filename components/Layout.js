@@ -20,6 +20,7 @@ const Layout = ({
       <meta charSet="utf-8" />
       <meta content="telephone=no" name="format-detection" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta name="google-site-verification" content="Z9rrptXszSZyyIclbbA3_0ED9bte4dn3dz5QsivMUEU" />
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" />
       <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" />
