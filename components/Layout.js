@@ -38,6 +38,14 @@ const Layout = ({
       color: ${variables.primaryColor} !important;
     }
 
+    .c-bg-primary {
+      background-color: ${variables.primaryColor} !important;
+    }
+
+    .c-bg-secondary {
+      background-color: ${variables.secondaryColor} !important;
+    }
+
     .c-bg-dark {
       background-color: ${variables.darkColor} !important;
     }
@@ -82,7 +90,7 @@ const Layout = ({
           background: ${variables.secondaryColor};
           left: 0;
           right: 0;
-          height: 10px;
+          height: 12px;
           z-index: 100;
       }
       body:before {
@@ -93,8 +101,8 @@ const Layout = ({
       }
       body {
         font-size: 115%;
-        border-left: 10px solid ${variables.primaryColor};
-        border-right: 10px solid ${variables.primaryColor};
+        border-left: 12px solid ${variables.secondaryColor};
+        border-right: 12px solid ${variables.secondaryColor};
       }
     }
 
@@ -121,11 +129,20 @@ const Layout = ({
     }
 
     p {
-      line-height: 1.65;
+      line-height: 1.7125;
     }
 
     address {
       font-style: normal;
+    }
+
+    .site-content {
+      min-height: 680px;
+    }
+    @media ${variables.mq.big} {
+      .site-content {
+        min-height: 840px;
+      }
     }
 
     .underline {

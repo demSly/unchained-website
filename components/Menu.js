@@ -29,12 +29,16 @@ const Menu = ({ intl, hidden, ...props }) => (
     </div>
     <style jsx global>{`
 
+      .menu__link {
+        text-transform: lowercase;
+      }
+
       @media (min-width: 1220px) {
         .menu-switch {
           display: none !important;
         }
         .menu__items {
-          font-size: 24px;
+          font-size: 21px;
         }
         .menu__link {
           display: inline-block;
@@ -50,10 +54,10 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
       }
 
-      @media (max-width: 1219px) {
+      @media (max-width: 767px) {
         .menu.hidden {
           opacity: 0;
-          transform: translateY(-900px);
+          transform: translateY(-600px);
         }
         .menu {
           position: fixed;
@@ -68,8 +72,8 @@ const Menu = ({ intl, hidden, ...props }) => (
           transition: .3s ease-in-out all;
         }
         .menu__items {
-          padding: 1em;
-          font-size: 36px;
+          padding: .75em 1em 1em;
+          font-size: 21px;
         }
         .menu__link {
           display: block;
@@ -79,16 +83,13 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
       }
 
-      .menu__link {
-        text-transform: lowercase;
-      }
 
-      @media (min-width: 1220px) {
+      @media (min-width: 768px) {
         .menu-switch {
           display: none !important;
         }
         .menu__items {
-          font-size: 20px;
+          font-size: 18px;
         }
         .menu__link + .menu__link {
           margin-left: 1.5em;
@@ -111,7 +112,7 @@ const Menu = ({ intl, hidden, ...props }) => (
           left: 50%;
           right: 50%;
           bottom: 0;
-          background: #68E280;
+          background: #00F5BC;
           height: 2px;
           -webkit-transition-property: left, right;
           transition-property: left, right;

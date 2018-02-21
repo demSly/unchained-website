@@ -1,16 +1,1 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
-	height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g id="Black">
-	<g>
-		<polygon fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="22.5,13.5 
-			1.5,13.5 4.5,22.5 19.5,22.5 		"/>
-		<polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="8.5,10.5
-			0.5,10.5 0.5,13.5 23.5,13.5 23.5,10.5 15.5,10.5 		"/>
-		<polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="12,9
-			10.5,10.5 12,12 13.5,10.5 5.604,2.604 		"/>
-	</g>
-</g>
-<g id="Frames-24px">
-	<rect fill="none" width="24" height="24"/>
-</g>
-</svg>
+<svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="m22.5 13.5h-21l3 9h15z"/><path d="m8.5 10.5h-8v3h23v-3h-8"/><path d="m12 9-1.5 1.5 1.5 1.5 1.5-1.5-7.896-7.896"/><path d="m0 0h24v24h-24z"/></g></svg>

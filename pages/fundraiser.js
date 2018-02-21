@@ -34,7 +34,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
   <PageLayout title={fundraiser.meta_title} metaDescription={fundraiser.meta_description}>
 
     <div className="wrap wrap--narrow mt7">
-      <section id="fundraiser" className="section text-center">
+      <section id="fundraiser" className="section">
         <h2>{fundraiser.title}</h2>
         <h3>We don{"'"}t play the Crypto Game</h3>
         <p>
@@ -51,33 +51,39 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
             we are very serious about it
           </strong>
         </p>
-        <div className="c-bg-primary">
-          <div className="wrap wrap--narrow wrap--vertical-padding">
-            <div className="text-center">
-              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md?download">
-                  Read our Business Plan
-              </a>
-              <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/whitepaper.md?download">
-                  or download the Whitepaper
-              </a>
-            </div>
-          </div>
+      </section>
+    </div>
+    <div className="c-bg-primary mv1">
+      <div className="wrap wrap--narrow">
+        <div className="button-group">
+          <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md?download">
+                Read our Business Plan
+          </a>
+          <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/whitepaper.md?download">
+                Download the Whitepaper
+          </a>
         </div>
+      </div>
+    </div>
 
-        <p>The pre-sale has started!</p>
-        {currentUser._id ? (
-          <Link href="/profile">
-            <a className="button">
-              Check your whitelisting status
-            </a>
-          </Link>
-        ) : (
-          <Link href="/signup?redirect=/fundraiser">
-            <a className="button hero-button">
-            Join the pre-sale (whitelisting)
-            </a>
-          </Link>
-        )}
+    <div className="wrap wrap--narrow mb7">
+      <section className="section">
+        <div className="text-center mv4">
+          <p>The pre-sale has started!</p>
+          {currentUser._id ? (
+            <Link href="/profile">
+              <a className="button">
+                Check your whitelisting status
+              </a>
+            </Link>
+          ) : (
+            <Link href="/signup?redirect=/fundraiser">
+              <a className="button hero-button">
+              Join the pre-sale (whitelisting)
+              </a>
+            </Link>
+          )}
+        </div>
 
         <div className="charts">
           <div className="chart">

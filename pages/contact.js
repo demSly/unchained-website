@@ -8,7 +8,7 @@ import ContactForm from '../components/forms/ContactForm';
 
 const Kontakt = ({ contact, markDone }) => (
   <PageLayout title={contact.title} metaDescription={contact.text}>
-    <div className="wrap wrap--narrow c-bg-gray mt7 mb7">
+    <div className="wrap wrap--narrow mt7">
       <ContactForm onSubmitSuccess={markDone} />
     </div>
   </PageLayout>

@@ -60,11 +60,13 @@
 
 .hero {
   padding-top: 76px;
+  min-height: 560px;
 }
 
 @media (min-width: 768px) {
   .hero {
     padding-top: 138px;
+    min-height: 780px;
   }
 }
 
@@ -157,6 +159,10 @@
   .bg-image {
     background: url('../../static/img/programmer-male.svg') no-repeat bottom center;
     background-size: contain;
+  }
+  .wrap.mt7,
+  .wrap.mv7 {
+    margin-top: 3.5em;
   }
 }
 

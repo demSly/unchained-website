@@ -32,6 +32,7 @@ const Header = ({ isMenuToggled }) => (
         </header>
       )}
     </Sticky>
+
     <style jsx global>{`
       @media (max-width: 1219px) {
         .language-switch-in-head {
@@ -51,8 +52,9 @@ const Header = ({ isMenuToggled }) => (
         font-size: 20px;
       }
       .unchained-logo {
-        max-width: 40px;
+        max-width: 20px;
         margin-right: 8px;
+        z-index: 10;
       }
       .header {
         position: fixed;
@@ -79,10 +81,6 @@ const Header = ({ isMenuToggled }) => (
         align-items: center;
       }
 
-      .unchained-logo {
-        z-index: 10;
-      }
-
       .header__right {
         z-index: 10;
         padding-right: 1em;
@@ -97,19 +95,19 @@ const Header = ({ isMenuToggled }) => (
       @media (min-width: 1220px) {
         .header {
           padding-top: 36px;
-          top: 10px;
-          left: 10px;
-          right: 10px;
+          top: 12px;
+          left: 12px;
+          right: 12px;
         }
         .header--sticky {
           padding-top: 20px;
-          top: 10px;
-          left: 10px;
-          right: 10px;
+          top: 12px;
+          left: 12px;
+          right: 12px;
         }
         .header__right {
           width: 100%;
-          margin-left: 11.5em;
+          margin-left: 20%;
           justify-content: space-between;
         }
       }

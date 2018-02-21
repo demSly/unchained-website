@@ -18,7 +18,7 @@ const MenuSwitch = ({ isMenuToggled, toggleMenu }) => (
     <style jsx>{`
       .menu-switch {
         width: 20px;
-        height: 16px;
+        height: 14px;
         position: relative;
         margin-left: 22px;
         -webkit-transform: rotate(0deg);
@@ -40,7 +40,7 @@ const MenuSwitch = ({ isMenuToggled, toggleMenu }) => (
         position: absolute;
         height: 1px;
         width: 100%;
-        background: #232323;
+        background: #1178FF;
         opacity: 1;
         left: 0;
         -webkit-transform: rotate(0deg);
@@ -58,15 +58,15 @@ const MenuSwitch = ({ isMenuToggled, toggleMenu }) => (
       }
 
       span:nth-child(2),span:nth-child(3) {
-        top: 9px;
+        top: 7px;
       }
 
       span:nth-child(4) {
-        top: 18px;
+        top: 14px;
       }
 
       .open span:nth-child(1) {
-        top: 9px;
+        top: 7px;
         width: 0%;
         left: 50%;
       }
