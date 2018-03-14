@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MemberListItem = ({
-  name, position, avatar, description,
+  name, position, avatar, description, links,
 }) =>
   (
     <a className="member">
@@ -11,6 +11,11 @@ const MemberListItem = ({
       <div className="name">{name}</div>
       <div className="position">{position}</div>
       <div className="description">{description}</div>
+      {links.map(({ _id: linkId, name: linkName, url: linkUrl }) => (
+        <div key={linkId}>
+          <a href={linkUrl}>{linkName}</a>
+        </div>
+        ))}
       <style jsx>{`
         .name,
         .position {

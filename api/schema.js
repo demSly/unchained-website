@@ -19,8 +19,13 @@ module.exports = `
     name: String
     position: String
     description: String
-    url: String
+    links: [MemberLink]!
     avatar: Picture
+  }
+  type MemberLink {
+    _id: ID!
+    name: String
+    url: String
   }
   type Question {
     _id: ID!

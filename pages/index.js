@@ -22,10 +22,10 @@ const Home = ({ home }) => (
           <h1 className="mt0 c-black">Token Generation Event</h1>
           <Link href="/fundraiser">
             <a className="button hero-button">
-              Invest now
+              Read about our Fundraiser
             </a>
           </Link>
-          <p>Pre-sale has started</p>
+          <p>Pre-sale starts 2nd of April</p>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ const members = require('./queries/members');
 const questions = require('./queries/questions');
 const Picture = require('./types/Picture');
 const Member = require('./types/Member');
+const MemberLink = require('./types/MemberLink');
 const sendContactForm = require('./mutations/sendContactForm');
 
 module.exports = {
@@ -18,4 +19,5 @@ module.exports = {
   JSON: GraphQLJSON,
   Picture,
   Member,
+  MemberLink,
 };

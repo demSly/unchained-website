@@ -2,6 +2,7 @@ import React from 'react';
 import { compose, pure } from 'recompose';
 import Link from 'next/link';
 import { Pie } from 'react-chartjs-2';
+import Markdown from 'react-remarkable';
 import variables from '../styles/variables';
 import connectApollo from '../lib/hoc/connectApollo';
 import withRegion from '../lib/hoc/withRegion';
@@ -36,21 +37,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
     <div className="wrap wrap--narrow mt7">
       <section id="fundraiser" className="section">
         <h2>{fundraiser.title}</h2>
-        <h3>We don{"'"}t play the Crypto Game</h3>
-        <p>
-          Read the whitepaper to find out why we don{'`'}t tell you that we are powered
-          by an alien force of 20 blockchain engineers and 10
-          industry leading advisors that can{"'"}t spell {"'"}byzantine{"'"}. We don{'"'}t build a {'"'}
-          decentralized-industry-revolutionizing-artificial-intelligence-smart-contract{'"'} either
-          and we don{'`'}t like Reddit and Discours. We don{'`'}t translate our white paper to Korean
-          and we don{'`'}t hire support teams and community managers to hype the token.
-        </p>
-        <p>
-          <strong>
-            Instead, this is just a crowdfunding for our B2B business and
-            we are very serious about it
-          </strong>
-        </p>
+        <Markdown source={fundraiser.intro} />
       </section>
     </div>
     <div className="c-bg-primary mv1">
@@ -69,7 +56,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
     <div className="wrap wrap--narrow mb7">
       <section className="section">
         <div className="text-center mv4">
-          <p>The pre-sale has started!</p>
+          <p>The pre-sale starts 2nd of April</p>
           {currentUser._id ? (
             <Link href="/profile">
               <a className="button">
@@ -79,7 +66,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
           ) : (
             <Link href="/signup?redirect=/fundraiser">
               <a className="button hero-button">
-              Join the pre-sale (whitelisting)
+              Join the queue
               </a>
             </Link>
           )}

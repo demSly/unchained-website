@@ -83,7 +83,7 @@
             },
             {
               "name": "me",
-              "description": "Currently logged in user",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -95,7 +95,7 @@
             },
             {
               "name": "users",
-              "description": " Get list of users",
+              "description": "",
               "args": [
                 {
                   "name": "limit",
@@ -146,7 +146,7 @@
             },
             {
               "name": "user",
-              "description": " Specific user data if userId provided, else returns currently logged in",
+              "description": "",
               "args": [
                 {
                   "name": "userId",
@@ -169,7 +169,7 @@
             },
             {
               "name": "products",
-              "description": " Simple list of published products filtered by tags",
+              "description": "",
               "args": [
                 {
                   "name": "tags",
@@ -234,7 +234,7 @@
             },
             {
               "name": "product",
-              "description": "Get a specific product by id or slug",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -267,7 +267,7 @@
             },
             {
               "name": "productCatalogPrices",
-              "description": "List prices",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -302,7 +302,7 @@
             },
             {
               "name": "translatedProductTexts",
-              "description": " Localization: Meta data for product",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -337,7 +337,7 @@
             },
             {
               "name": "translatedProductMediaTexts",
-              "description": " Localization: Media title/subtitle of a media that is attached to a product",
+              "description": "",
               "args": [
                 {
                   "name": "productMediaId",
@@ -372,7 +372,7 @@
             },
             {
               "name": "translatedProductVariationTexts",
-              "description": " Localization: Label of a variation option",
+              "description": "",
               "args": [
                 {
                   "name": "productVariationId",
@@ -417,7 +417,7 @@
             },
             {
               "name": "languages",
-              "description": " Get all languages",
+              "description": "",
               "args": [
                 {
                   "name": "limit",
@@ -468,7 +468,7 @@
             },
             {
               "name": "language",
-              "description": "Get a specific language",
+              "description": "",
               "args": [
                 {
                   "name": "languageId",
@@ -499,7 +499,7 @@
             },
             {
               "name": "countries",
-              "description": " Get all countries",
+              "description": "",
               "args": [
                 {
                   "name": "limit",
@@ -550,7 +550,7 @@
             },
             {
               "name": "country",
-              "description": " Get a specific country by ID",
+              "description": "",
               "args": [
                 {
                   "name": "countryId",
@@ -581,7 +581,7 @@
             },
             {
               "name": "currencies",
-              "description": " Get all currencies",
+              "description": "",
               "args": [
                 {
                   "name": "limit",
@@ -632,7 +632,7 @@
             },
             {
               "name": "currency",
-              "description": " Get a specific currency by ID",
+              "description": "",
               "args": [
                 {
                   "name": "currencyId",
@@ -663,7 +663,7 @@
             },
             {
               "name": "deliveryProviders",
-              "description": "Get all delivery providers, optionally filtered by type",
+              "description": "",
               "args": [
                 {
                   "name": "type",
@@ -694,7 +694,7 @@
             },
             {
               "name": "deliveryProvider",
-              "description": " Get a specific delivery provider by ID",
+              "description": "",
               "args": [
                 {
                   "name": "deliveryProviderId",
@@ -725,7 +725,7 @@
             },
             {
               "name": "deliveryInterfaces",
-              "description": "Get all delivery interfaces filtered by type",
+              "description": "",
               "args": [
                 {
                   "name": "type",
@@ -760,7 +760,7 @@
             },
             {
               "name": "warehousingProviders",
-              "description": "Get all delivery providers, optionally filtered by type",
+              "description": "",
               "args": [
                 {
                   "name": "type",
@@ -791,7 +791,7 @@
             },
             {
               "name": "warehousingProvider",
-              "description": " Get a specific warehousing provider by ID",
+              "description": "",
               "args": [
                 {
                   "name": "warehousingProviderId",
@@ -822,7 +822,7 @@
             },
             {
               "name": "warehousingInterfaces",
-              "description": "Get all warehousing interfaces filtered by type",
+              "description": "",
               "args": [
                 {
                   "name": "type",
@@ -857,7 +857,7 @@
             },
             {
               "name": "paymentProviders",
-              "description": "Get all payment providers, optionally filtered by type",
+              "description": "",
               "args": [
                 {
                   "name": "type",
@@ -888,7 +888,7 @@
             },
             {
               "name": "paymentProvider",
-              "description": " Get a specific payment provider by ID",
+              "description": "",
               "args": [
                 {
                   "name": "paymentProviderId",
@@ -919,7 +919,7 @@
             },
             {
               "name": "paymentInterfaces",
-              "description": "Get all payment interfaces filtered by type",
+              "description": "",
               "args": [
                 {
                   "name": "type",
@@ -954,7 +954,7 @@
             },
             {
               "name": "orders",
-              "description": "Get all orders",
+              "description": "",
               "args": [
                 {
                   "name": "limit",
@@ -995,7 +995,7 @@
             },
             {
               "name": "order",
-              "description": "Get a specific single order, use the otp to get access to the information\nwithout beeing logged in as the user that created the order",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -1036,7 +1036,7 @@
             },
             {
               "name": "logs",
-              "description": " Get all logs, sorted by most recent creation date first",
+              "description": "",
               "args": [
                 {
                   "name": "limit",
@@ -1077,7 +1077,7 @@
             },
             {
               "name": "shopInfo",
-              "description": " Get shop-global data and the resolved country/language pair",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -1155,13 +1155,21 @@
               "deprecationReason": null
             },
             {
-              "name": "url",
+              "name": "links",
               "description": "",
               "args": [],
               "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "kind": "OBJECT",
+                    "name": "MemberLink",
+                    "ofType": null
+                  }
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -1201,6 +1209,57 @@
           "fields": null,
           "inputFields": null,
           "interfaces": null,
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MemberLink",
+          "description": "",
+          "fields": [
+            {
+              "name": "_id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "name",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "url",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1903,7 +1962,7 @@
             },
             {
               "name": "isoCode",
-              "description": "ISO 639-1 alpha-2 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -1989,7 +2048,7 @@
             },
             {
               "name": "isoCode",
-              "description": "ISO 3166-1 alpha-2 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2099,7 +2158,7 @@
             },
             {
               "name": "isoCode",
-              "description": "ISO",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2315,7 +2374,7 @@
         {
           "kind": "OBJECT",
           "name": "Order",
-          "description": " Order type, all we need for Checkout, Order List & Mailing",
+          "description": "Just an order",
           "fields": [
             {
               "name": "_id",
@@ -3541,6 +3600,22 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "dispatches",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Dispatch",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
@@ -3551,7 +3626,7 @@
         {
           "kind": "INTERFACE",
           "name": "Product",
-          "description": "Product",
+          "description": "Abstract Product",
           "fields": [
             {
               "name": "_id",
@@ -4103,6 +4178,271 @@
           "possibleTypes": null
         },
         {
+          "kind": "OBJECT",
+          "name": "Dispatch",
+          "description": "",
+          "fields": [
+            {
+              "name": "_id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "deliveryProvider",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "DeliveryProvider",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "warehousingProvider",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "WarehousingProvider",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "shipping",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "earliestDelivery",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Date",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "WarehousingProvider",
+          "description": "",
+          "fields": [
+            {
+              "name": "_id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "type",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "ENUM",
+                "name": "WarehousingProviderType",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "interface",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "WarehousingInterface",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "configuration",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "JSON",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "configurationError",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "ENUM",
+                "name": "WarehousingProviderError",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "isActive",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "ENUM",
+          "name": "WarehousingProviderType",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": [
+            {
+              "name": "PHYSICAL",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "WarehousingInterface",
+          "description": "",
+          "fields": [
+            {
+              "name": "_id",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "label",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "version",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "ENUM",
+          "name": "WarehousingProviderError",
+          "description": "",
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": [
+            {
+              "name": "ADAPTER_NOT_FOUND",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "NOT_IMPLEMENTED",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "INCOMPLETE_CONFIGURATION",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "WRONG_CREDENTIALS",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "possibleTypes": null
+        },
+        {
           "kind": "ENUM",
           "name": "OrderPriceCategory",
           "description": "",
@@ -4187,7 +4527,7 @@
         {
           "kind": "OBJECT",
           "name": "Log",
-          "description": " Log entry",
+          "description": "Server side log entry, that is contextually augmented with user & order",
           "fields": [
             {
               "name": "_id",
@@ -4616,196 +4956,6 @@
           "possibleTypes": null
         },
         {
-          "kind": "ENUM",
-          "name": "WarehousingProviderType",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": [
-            {
-              "name": "PHYSICAL",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "WarehousingProvider",
-          "description": "",
-          "fields": [
-            {
-              "name": "_id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "type",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "ENUM",
-                "name": "WarehousingProviderType",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "interface",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "WarehousingInterface",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "configuration",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "JSON",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "configurationError",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "ENUM",
-                "name": "WarehousingProviderError",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "isActive",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "OBJECT",
-          "name": "WarehousingInterface",
-          "description": "",
-          "fields": [
-            {
-              "name": "_id",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "label",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "version",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "inputFields": null,
-          "interfaces": [],
-          "enumValues": null,
-          "possibleTypes": null
-        },
-        {
-          "kind": "ENUM",
-          "name": "WarehousingProviderError",
-          "description": "",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": [
-            {
-              "name": "ADAPTER_NOT_FOUND",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "NOT_IMPLEMENTED",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "INCOMPLETE_CONFIGURATION",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "WRONG_CREDENTIALS",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
           "name": "Shop",
           "description": "",
@@ -4902,7 +5052,7 @@
             },
             {
               "name": "loginWithFacebook",
-              "description": "Login the user with a facebook access token",
+              "description": "",
               "args": [
                 {
                   "name": "accessToken",
@@ -4929,7 +5079,7 @@
             },
             {
               "name": "loginWithGoogle",
-              "description": "Login the user with a facebook access token",
+              "description": "",
               "args": [
                 {
                   "name": "accessToken",
@@ -4966,7 +5116,7 @@
             },
             {
               "name": "loginWithLinkedIn",
-              "description": "Login the user with a facebook access token",
+              "description": "",
               "args": [
                 {
                   "name": "code",
@@ -5007,7 +5157,7 @@
             },
             {
               "name": "loginWithPassword",
-              "description": " Log the user in with a password.\n ACL: Everybody",
+              "description": "",
               "args": [
                 {
                   "name": "username",
@@ -5060,7 +5210,7 @@
             },
             {
               "name": "createUser",
-              "description": " Create a new user.\n ACL: Everybody",
+              "description": "",
               "args": [
                 {
                   "name": "username",
@@ -5123,7 +5273,7 @@
             },
             {
               "name": "changePassword",
-              "description": " Change the current user's password. Must be logged in.\n ACL: Everybody",
+              "description": "",
               "args": [
                 {
                   "name": "oldPassword",
@@ -5164,7 +5314,7 @@
             },
             {
               "name": "forgotPassword",
-              "description": " Request a forgot password email.\n ACL: Everybody",
+              "description": "",
               "args": [
                 {
                   "name": "email",
@@ -5191,7 +5341,7 @@
             },
             {
               "name": "resetPassword",
-              "description": " Reset the password for a user using a token received in email. Logs the user in afterwards.\n ACL: Everybody",
+              "description": "",
               "args": [
                 {
                   "name": "newPassword",
@@ -5232,7 +5382,7 @@
             },
             {
               "name": "logout",
-              "description": "Log the user out.",
+              "description": "",
               "args": [
                 {
                   "name": "token",
@@ -5259,7 +5409,7 @@
             },
             {
               "name": "verifyEmail",
-              "description": "Marks the user's email address as verified. Logs the user in afterwards.",
+              "description": "",
               "args": [
                 {
                   "name": "token",
@@ -5286,7 +5436,7 @@
             },
             {
               "name": "resendVerificationEmail",
-              "description": "Send an email with a link the user can use verify their email address.",
+              "description": "",
               "args": [
                 {
                   "name": "email",
@@ -5309,7 +5459,7 @@
             },
             {
               "name": "loginAsGuest",
-              "description": " Login as Guest User (creates an anonymous user and returns logged in token)\n ACL: Everybody",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -5321,7 +5471,7 @@
             },
             {
               "name": "addCartProduct",
-              "description": " Add a new item to the cart.\n Order gets generated with status = open (= order before checkout / cart) if necessary.\n ACL: Logged in users (including guests)",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -5362,7 +5512,7 @@
             },
             {
               "name": "updateCartItemQuantity",
-              "description": " Change the quantity of an item in the cart\n ACL: Logged in users (including guests)",
+              "description": "",
               "args": [
                 {
                   "name": "itemId",
@@ -5403,7 +5553,7 @@
             },
             {
               "name": "removeCartItem",
-              "description": " Remove an item from the cart\n ACL: Logged in users (including guests)",
+              "description": "",
               "args": [
                 {
                   "name": "itemId",
@@ -5434,7 +5584,7 @@
             },
             {
               "name": "addCartDiscount",
-              "description": " Add a new discount to the cart,\n a new order gets generated with status = open (= order before checkout / cart) if necessary\n ACL: Logged in users (including guests)",
+              "description": "",
               "args": [
                 {
                   "name": "code",
@@ -5465,7 +5615,7 @@
             },
             {
               "name": "removeCartDiscount",
-              "description": " Remove a discount from the cart\n ACL: Logged in users (including guests)",
+              "description": "",
               "args": [
                 {
                   "name": "discountId",
@@ -5496,7 +5646,7 @@
             },
             {
               "name": "removeOrder",
-              "description": "Remove an order while it's still a cart",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -5527,7 +5677,7 @@
             },
             {
               "name": "updateOrderAddress",
-              "description": "Change billing address of an open order",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -5572,7 +5722,7 @@
             },
             {
               "name": "updateOrderContact",
-              "description": " Change contact of an open order",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -5617,7 +5767,7 @@
             },
             {
               "name": "setOrderDeliveryProvider",
-              "description": "Change the delivery method/provider",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -5662,7 +5812,7 @@
             },
             {
               "name": "setOrderPaymentProvider",
-              "description": " Change the payment method/provider",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -5707,7 +5857,7 @@
             },
             {
               "name": "updateOrderDeliveryShipping",
-              "description": "Update a Shipping Delivery Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderDeliveryId",
@@ -5748,7 +5898,7 @@
             },
             {
               "name": "updateOrderDeliveryPickUp",
-              "description": "Update a Pick Up Delivery Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderDeliveryId",
@@ -5789,7 +5939,7 @@
             },
             {
               "name": "updateOrderPaymentCard",
-              "description": "Update a Card Payment Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -5820,7 +5970,7 @@
             },
             {
               "name": "updateOrderPaymentPostfinance",
-              "description": "Update a PostFinance Payment Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -5851,7 +6001,7 @@
             },
             {
               "name": "updateOrderPaymentInvoice",
-              "description": "Update am Invoice Payment Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -5882,7 +6032,7 @@
             },
             {
               "name": "updateOrderPaymentPaypal",
-              "description": "Update a PayPal Payment Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -5913,7 +6063,7 @@
             },
             {
               "name": "updateOrderPaymentCrypto",
-              "description": "Update a Crypo Provider's specific configuration",
+              "description": "",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -5944,7 +6094,7 @@
             },
             {
               "name": "checkout",
-              "description": " Process the checkout (automatically charge & deliver if possible), the cart will get\n transformed to an ordinary order if everything goes well.",
+              "description": "",
               "args": [
                 {
                   "name": "paymentContext",
@@ -5981,7 +6131,7 @@
             },
             {
               "name": "captureOrder",
-              "description": "This method takes a cart by id and\ntransfers it to the currently logged in user\nif the current user already has an open order (cart), remove that one\nthis method is needed to transition from a guest user to a logged in user\nwhere the cart has to persist items",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -6008,7 +6158,7 @@
             },
             {
               "name": "updateUserAvatar",
-              "description": " Update Avatar of any user or logged in user if userId is not provided",
+              "description": "",
               "args": [
                 {
                   "name": "avatar",
@@ -6045,7 +6195,7 @@
             },
             {
               "name": "updateEmail",
-              "description": " Update E-Mail address of any user or logged in user if userId is not provided",
+              "description": "",
               "args": [
                 {
                   "name": "email",
@@ -6082,7 +6232,7 @@
             },
             {
               "name": "updateUserProfile",
-              "description": " Update Profile of any user or logged in user if userId is not provided",
+              "description": "",
               "args": [
                 {
                   "name": "profile",
@@ -6119,7 +6269,7 @@
             },
             {
               "name": "enrollUser",
-              "description": "Enroll a new user, setting enroll to true will let the user choose his password (e-mail gets sent)",
+              "description": "",
               "args": [
                 {
                   "name": "profile",
@@ -6170,7 +6320,7 @@
             },
             {
               "name": "setPassword",
-              "description": " Set a new password for a specific user",
+              "description": "",
               "args": [
                 {
                   "name": "newPassword",
@@ -6211,7 +6361,7 @@
             },
             {
               "name": "setRoles",
-              "description": " Set roles of a user",
+              "description": "",
               "args": [
                 {
                   "name": "roles",
@@ -6256,7 +6406,7 @@
             },
             {
               "name": "confirmOrder",
-              "description": " Manually confirm an order which is in progress",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -6287,7 +6437,7 @@
             },
             {
               "name": "payOrder",
-              "description": " Manually mark an unpaid/partially paid order as fully paid",
+              "description": "",
               "args": [
                 {
                   "name": "orderId",
@@ -6318,7 +6468,7 @@
             },
             {
               "name": "createProduct",
-              "description": " Create a new product",
+              "description": "",
               "args": [
                 {
                   "name": "product",
@@ -6349,7 +6499,7 @@
             },
             {
               "name": "publishProduct",
-              "description": "Make the product visible on any shop listings (product queries)",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6380,7 +6530,7 @@
             },
             {
               "name": "unpublishProduct",
-              "description": "Hide the product visible from any shop listings (product queries)",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6411,7 +6561,7 @@
             },
             {
               "name": "removeProduct",
-              "description": " Remove the product completely!",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6442,7 +6592,7 @@
             },
             {
               "name": "updateProduct",
-              "description": "Modify generic infos of a product (tags for ex.)",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6483,7 +6633,7 @@
             },
             {
               "name": "updateProductCommerce",
-              "description": "Modify commerce part of a product",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6523,8 +6673,8 @@
               "deprecationReason": null
             },
             {
-              "name": "updateProductDelivery",
-              "description": "Modify delivery part of a product",
+              "name": "updateProductSupply",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6541,14 +6691,14 @@
                   "defaultValue": null
                 },
                 {
-                  "name": "delivery",
+                  "name": "supply",
                   "description": "",
                   "type": {
                     "kind": "NON_NULL",
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "UpdateProductDeliveryInput",
+                      "name": "UpdateProductSupplyInput",
                       "ofType": null
                     }
                   },
@@ -6565,7 +6715,7 @@
             },
             {
               "name": "updateProductWarehousing",
-              "description": "Modify warehousing part of a product",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6606,7 +6756,7 @@
             },
             {
               "name": "updateProductTexts",
-              "description": "Modify localized texts part of a product",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6667,7 +6817,7 @@
             },
             {
               "name": "addProductMedia",
-              "description": "Add a new media to a product's visualization",
+              "description": "",
               "args": [
                 {
                   "name": "productId",
@@ -6712,7 +6862,7 @@
             },
             {
               "name": "removeProductMedia",
-              "description": "Remove a media asset from a product's visualization",
+              "description": "",
               "args": [
                 {
                   "name": "productMediaId",
@@ -6743,7 +6893,7 @@
             },
             {
               "name": "reorderProductMedia",
-              "description": "Reorder a media asset (first is primary)",
+              "description": "",
               "args": [
                 {
                   "name": "sortKeys",
@@ -6790,7 +6940,7 @@
             },
             {
               "name": "updateProductMediaTexts",
-              "description": "Modify localized texts part of a product's media asset",
+              "description": "",
               "args": [
                 {
                   "name": "productMediaId",
@@ -7992,7 +8142,7 @@
           "fields": [
             {
               "name": "id",
-              "description": "Id of the user logged in user",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8008,7 +8158,7 @@
             },
             {
               "name": "token",
-              "description": "Token of the connection",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8024,7 +8174,7 @@
             },
             {
               "name": "tokenExpires",
-              "description": "Expiration date for the token",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8040,7 +8190,7 @@
             },
             {
               "name": "user",
-              "description": "The logged in user",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -8069,12 +8219,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "HashedPassword",
-          "description": "A hashsed password",
+          "description": "",
           "fields": null,
           "inputFields": [
             {
               "name": "digest",
-              "description": "The hashed password",
+              "description": "",
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -8088,7 +8238,7 @@
             },
             {
               "name": "algorithm",
-              "description": "Algorithm used to hash the password",
+              "description": "",
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -8133,7 +8283,7 @@
           "fields": [
             {
               "name": "success",
-              "description": "True if it succeeded",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -8781,7 +8931,7 @@
             },
             {
               "name": "clientToken",
-              "description": "Get the clientToken for Paypal Payments with the Braintree SDK",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8878,7 +9028,7 @@
             },
             {
               "name": "walletAddress",
-              "description": " A crypto currency payment works via pre-payment like credit cards,\n so every order payment get's it's own public key",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -9171,7 +9321,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "UpdateProductDeliveryInput",
+          "name": "UpdateProductSupplyInput",
           "description": "",
           "fields": null,
           "inputFields": [
@@ -9237,17 +9387,7 @@
               "defaultValue": null
             },
             {
-              "name": "stockQuantity",
-              "description": "",
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "comissioningTimeInWorkdays",
+              "name": "maxAllowedQuantityPerOrder",
               "description": "",
               "type": {
                 "kind": "SCALAR",
@@ -11069,7 +11209,7 @@
         {
           "kind": "OBJECT",
           "name": "ConfigurableProduct",
-          "description": "Matrix-Variations-Produkt",
+          "description": "Matrix Product",
           "fields": [
             {
               "name": "_id",
@@ -11173,7 +11313,7 @@
             },
             {
               "name": "media",
-              "description": "Visualization",
+              "description": "",
               "args": [
                 {
                   "name": "vectors",
@@ -11204,7 +11344,7 @@
             },
             {
               "name": "texts",
-              "description": "Translation",
+              "description": "",
               "args": [
                 {
                   "name": "forceLocale",
@@ -11227,7 +11367,7 @@
             },
             {
               "name": "variations",
-              "description": " Proxy",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "LIST",
@@ -11322,7 +11462,7 @@
         {
           "kind": "INTERFACE",
           "name": "ProductTranslation",
-          "description": " Texts",
+          "description": "Texts",
           "fields": [
             {
               "name": "texts",
@@ -11367,7 +11507,7 @@
         {
           "kind": "INTERFACE",
           "name": "ProductVisualization",
-          "description": " Media",
+          "description": "Visualization",
           "fields": [
             {
               "name": "media",
@@ -11405,7 +11545,7 @@
         {
           "kind": "INTERFACE",
           "name": "ProductProxy",
-          "description": " Variations",
+          "description": "Variations (Proxy)",
           "fields": [
             {
               "name": "variations",
@@ -11489,7 +11629,7 @@
         {
           "kind": "OBJECT",
           "name": "ProductVariationAssignment",
-          "description": " KV Combination to Product Assignment (Matrix)",
+          "description": "Key Value Combination to Product Assignment",
           "fields": [
             {
               "name": "_id",
@@ -11509,7 +11649,7 @@
             },
             {
               "name": "vectors",
-              "description": "Query string key=val&key=val ...",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "LIST",
@@ -11525,7 +11665,7 @@
             },
             {
               "name": "product",
-              "description": " Assigned Product",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "INTERFACE",
@@ -11544,7 +11684,7 @@
         {
           "kind": "OBJECT",
           "name": "ProductVariationAssignmentVector",
-          "description": " KV Combination",
+          "description": "Key Value Combination",
           "fields": [
             {
               "name": "_id",
@@ -12065,7 +12205,7 @@
         {
           "kind": "INTERFACE",
           "name": "ProductCommerce",
-          "description": " Commerce",
+          "description": "Commerce",
           "fields": [
             {
               "name": "catalogPrice",
@@ -12187,8 +12327,8 @@
         },
         {
           "kind": "INTERFACE",
-          "name": "ProductDelivery",
-          "description": "Delivery",
+          "name": "ProductSupply",
+          "description": "Supply",
           "fields": [
             {
               "name": "dimensions",
@@ -12198,6 +12338,33 @@
                 "kind": "OBJECT",
                 "name": "Dimensions",
                 "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "simulatedDispatches",
+              "description": "",
+              "args": [
+                {
+                  "name": "deliveryProviderType",
+                  "description": "",
+                  "type": {
+                    "kind": "ENUM",
+                    "name": "DeliveryProviderType",
+                    "ofType": null
+                  },
+                  "defaultValue": "SHIPPING"
+                }
+              ],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Dispatch",
+                  "ofType": null
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -12217,7 +12384,7 @@
         {
           "kind": "INTERFACE",
           "name": "ProductWarehousing",
-          "description": " Warehousing",
+          "description": "Warehousing",
           "fields": [
             {
               "name": "sku",
@@ -12232,19 +12399,7 @@
               "deprecationReason": null
             },
             {
-              "name": "stockQuantity",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "comissioningTimeInWorkdays",
+              "name": "maxAllowedQuantityPerOrder",
               "description": "",
               "args": [],
               "type": {
@@ -12282,7 +12437,7 @@
         {
           "kind": "OBJECT",
           "name": "SimpleProduct",
-          "description": "Einfaches Produkt",
+          "description": "Simple Product",
           "fields": [
             {
               "name": "_id",
@@ -12386,7 +12541,7 @@
             },
             {
               "name": "media",
-              "description": "Visualization",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "LIST",
@@ -12402,7 +12557,7 @@
             },
             {
               "name": "texts",
-              "description": "Translation",
+              "description": "",
               "args": [
                 {
                   "name": "forceLocale",
@@ -12425,7 +12580,7 @@
             },
             {
               "name": "catalogPrice",
-              "description": "Commerce",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -12471,7 +12626,18 @@
             {
               "name": "simulatedDiscounts",
               "description": "",
-              "args": [],
+              "args": [
+                {
+                  "name": "quantity",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": "1"
+                }
+              ],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -12485,8 +12651,57 @@
               "deprecationReason": null
             },
             {
+              "name": "simulatedDispatches",
+              "description": "",
+              "args": [
+                {
+                  "name": "deliveryProviderType",
+                  "description": "",
+                  "type": {
+                    "kind": "ENUM",
+                    "name": "DeliveryProviderType",
+                    "ofType": null
+                  },
+                  "defaultValue": "SHIPPING"
+                },
+                {
+                  "name": "quantity",
+                  "description": "",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": "1"
+                }
+              ],
+              "type": {
+                "kind": "LIST",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "Dispatch",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "dimensions",
+              "description": "",
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "Dimensions",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "sku",
-              "description": "Warehousing",
+              "description": "",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -12497,19 +12712,7 @@
               "deprecationReason": null
             },
             {
-              "name": "stockQuantity",
-              "description": "",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "comissioningTimeInWorkdays",
+              "name": "maxAllowedQuantityPerOrder",
               "description": "",
               "args": [],
               "type": {
@@ -12527,18 +12730,6 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "dimensions",
-              "description": "Delivery",
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "Dimensions",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -12569,7 +12760,7 @@
             },
             {
               "kind": "INTERFACE",
-              "name": "ProductDelivery",
+              "name": "ProductSupply",
               "ofType": null
             },
             {
