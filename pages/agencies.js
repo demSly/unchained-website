@@ -11,7 +11,7 @@ const Home = ({ agencies }) => (
 
     <div className="wrap mt7 text-center">
       <h2>E-Commerce projects === fun</h2>
-      <p>Yes, exactly, no PHP, no jQuery, no bullshit</p>
+      <p>Use your running tech stack of choice and connect to the unchained engine.</p>
       <img className="hero-img" src="../static/img/110- online-website-shopping-male-african-american.svg" alt="robot hand" />
     </div>
 

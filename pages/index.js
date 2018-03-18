@@ -10,26 +10,15 @@ const Home = ({ home }) => (
   <PageLayout title={home.meta_title} metaDescription={home.meta_description}>
 
     <div className="wrap hero">
-      <h1 className="hero-text text-center">Weather-dependent barbeque sausage pricing</h1>
-      <p className="text-center">Unchained lets you create the e-commerce experience you always wanted. Now.</p>
+      <h1>Unchained Commerce</h1>
+      <h1 className="hero-text">
+        <span>No limits for business logic requirements.</span>
+        <span>Complete freedom in how your user interface should look like.</span>
+        <span>Connect the data of any legacy and enterprise software the way you want.</span>
+        <span>Use your running tech stack of choice and connect to the unchained engine.</span>
+      </h1>
       <img className="hero-img" src="../static/img/robot-hand.svg" alt="robot hand" />
     </div>
-
-    <p />
-    <div className="c-bg-secondary">
-      <div className="wrap wrap--narrow wrap--vertical-padding">
-        <div className="text-center">
-          <h1 className="mt0 c-black">Token Generation Event</h1>
-          <Link href="/fundraiser">
-            <a className="button hero-button">
-              Read about our Fundraiser
-            </a>
-          </Link>
-          <p>Pre-sale starts 2nd of April</p>
-        </div>
-      </div>
-    </div>
-
 
     <div className="product-portfolio">
       <div className="product-portfolio__item product--one-black">
@@ -75,7 +64,7 @@ const Home = ({ home }) => (
         <div className="unit">
           <div className="unit__copy">
             <h3 className="unit__header">Fast DEV & always 100% FLEX</h3>
-            <p className="unit__subheader">Made to improve, enhance, scale your business</p>
+            <p className="unit__subheader">Made to improve, enhance, scale your e-commerce business</p>
           </div>
           <div className="unit__image-wrap">
             <figure className="unit__image" />
@@ -93,16 +82,6 @@ const Home = ({ home }) => (
         This enables developing partners to implement any kind of business logic
          with true flexibility in their e-commerce projects:
       </p>
-
-      <div className="mv4">
-        <p><strong>No limits for business logic requirements</strong></p>
-        <p><strong>Complete freedom in how your user interface should look like</strong></p>
-        <p>
-          <strong>Connect the data of any legacy and
-          enterprise software the way you want it
-          </strong>
-        </p>
-      </div>
 
       <h2>Our incomplete features & plugin list</h2>
       <div className="feature-set">
@@ -212,7 +191,7 @@ const Home = ({ home }) => (
                   Developer / Agency
               </a>
             </Link>
-            <Link href="/contact">
+            <Link href="/agencies">
               <a className="button">
                   Merchant
               </a>
@@ -223,6 +202,20 @@ const Home = ({ home }) => (
               </a>
             </Link>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="c-bg-secondary">
+      <div className="wrap wrap--narrow wrap--vertical-padding">
+        <div className="text-center">
+          <h1 className="mt0 c-black">Token Generation Event</h1>
+          <Link href="/fundraiser">
+            <a className="button hero-button">
+              Read about our Fundraiser
+            </a>
+          </Link>
+          <p>Pre-sale starts 2nd of April</p>
         </div>
       </div>
     </div>
@@ -260,25 +253,32 @@ const Home = ({ home }) => (
 
       .hero-img {
         margin-top: 1em;
-        max-width: 500px;
+        max-width: 400px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
+        z-index: -1;
+        position: relative;
       }
 
       .hero-text {
-        line-height: 1.3;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #A3A3A3;
+      }
+      .hero-text span:nth-child(2n) {
+        color: #666;
       }
       @media (max-width: 767px) {
         .hero-text {
-          font-size: 1.25em;
+          font-size: 1.125em;
         }
       }
       @media (min-width: 1025px) {
         .hero-text {
-          margin-left: auto;
+          margin-left: 0;
           margin-right: auto;
-          max-width: 50%;
+          max-width: 80%;
         }
       }
 
