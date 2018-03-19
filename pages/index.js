@@ -10,14 +10,33 @@ const Home = ({ home }) => (
   <PageLayout title={home.meta_title} metaDescription={home.meta_description}>
 
     <div className="wrap hero">
-      <h1>Unchained Commerce</h1>
-      <h1 className="hero-text">
-        <span>No limits for business logic requirements.</span>
-        <span>Complete freedom in how your user interface should look like.</span>
-        <span>Connect the data of any legacy and enterprise software the way you want.</span>
-        <span>Use your running tech stack of choice and connect to the unchained engine.</span>
-      </h1>
+      <div className="hero__one">
+        <h1>Unchained Commerce</h1>
+        <h1 className="hero-text">
+          <span>No limits for business logic requirements.</span>
+          <span> Connect the data of any legacy and enterprise software the way you want.</span>
+          <span> Complete freedom in how your user interface should look like.</span>
+        </h1>
+      </div>
       <img className="hero-img" src="../static/img/robot-hand.svg" alt="robot hand" />
+    </div>
+
+    <div className="icons">
+      <img className="icon" src="../static/img/08- java-script-developer.svg" alt="" />
+      <img className="icon" src="../static/img/06- desktop-imac-pen-tablet-notebook.svg" alt="" />
+      <img className="icon" src="../static/img/15- web-programming-design-construction-3.svg" alt="" />
+      <img className="icon" src="../static/img/07- advertisement-banner.svg" alt="" />
+      <img className="icon" src="../static/img/11- digital-cash-payment.svg" alt="" />
+      <img className="icon" src="../static/img/39- bitcoin-cloud-computing.svg" alt="" />
+      <img className="icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+      <img className="icon" src="../static/img/07- container-package-logistic-truck.svg" alt="" />
+      <img className="icon" src="../static/img/01- convenience-store.svg" alt="convenience store" />
+      <img className="icon" src="../static/img/09- package-logistic-airplane.svg" alt="" />
+      <img className="icon" src="../static/img/09- supermarket-1.svg" alt="" />
+      <img className="icon" src="../static/img/01- house-for-sale.svg" alt="house for sale" />
+      <img className="icon" src="../static/img/08- shopping-cart-full.svg" alt="" />
+      <img className="icon" src="../static/img/27- html-achievement.svg" alt="" />
+      <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
     </div>
 
     <div className="product-portfolio">
@@ -74,18 +93,9 @@ const Home = ({ home }) => (
     </div>
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h2>How is Unchained Commerce different?</h2>
-      <p>The system is built in a way that it&apos;s
-        really easy for a developer to
-        change the behavior but impossible to do it without programming knowledge
-         (unless explicitly engineered for a use case).
-        This enables developing partners to implement any kind of business logic
-         with true flexibility in their e-commerce projects:
-      </p>
-
       <h2>Our incomplete features & plugin list</h2>
       <div className="feature-set">
-        <h3>No-limit Delivery</h3>
+        <h3>Delivery</h3>
         <ul>
           <li>Downloadable Products</li>
           <li>E-Mail the order to a third-party logistics provider&apos;s central inbox</li>
@@ -96,7 +106,7 @@ const Home = ({ home }) => (
       </div>
 
       <div className="feature-set">
-        <h3>No-limit Documents</h3>
+        <h3>Documents</h3>
         <ul>
           <li>Generate PDF&apos;s locally through a local bookkeeping system
             (SAP R/3, Abacus, ...)
@@ -107,7 +117,7 @@ const Home = ({ home }) => (
       </div>
 
       <div className="feature-set">
-        <h3>No-limit Messaging</h3>
+        <h3>Messaging</h3>
         <ul>
           <li>Send Order Confirmations and Invoices by E-Mail, SMS or Whatsapp</li>
           <li>Send User Registration Notifications via Slack</li>
@@ -116,7 +126,7 @@ const Home = ({ home }) => (
       </div>
 
       <div className="feature-set">
-        <h3>No-limit Payments</h3>
+        <h3>Payments</h3>
         <ul>
           <li>Bitcoin, Ether & more cryptocurrencies</li>
           <li>Invoice</li>
@@ -128,7 +138,7 @@ const Home = ({ home }) => (
       </div>
 
       <div className="feature-set">
-        <h3>No-limit Pricing</h3>
+        <h3>Pricing</h3>
         <ul>
           <li>B2B Users special price</li>
           <li>Date range dependent special prices</li>
@@ -141,7 +151,7 @@ const Home = ({ home }) => (
       </div>
 
       <div className="feature-set">
-        <h3>No-limit Discounts</h3>
+        <h3>Discounts</h3>
         <ul>
           <li>Christmas & Black Friday Discounts</li>
           <li>Percentage reducing discount codes</li>
@@ -152,7 +162,7 @@ const Home = ({ home }) => (
       </div>
 
       <div className="feature-set">
-        <h3>No-limit Warehousing</h3>
+        <h3>Warehousing</h3>
         <ul>
           <li>ERP as Inventory Management*</li>
           <li>Manage Inventory in Google Docs</li>
@@ -184,7 +194,7 @@ const Home = ({ home }) => (
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <h3 className="mt0 c-white">Choose your role to get more information</h3>
+          <h3 className="mt0 c-white">Get more information</h3>
           <div className="button-group">
             <Link href="/agencies">
               <a className="button">
@@ -222,6 +232,15 @@ const Home = ({ home }) => (
 
     <style jsx>{`
 
+      .icons {
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      .icon {
+        width: 100px;
+      }
+
       .feature-set ul li a,
       .link {
         color: blue;
@@ -233,6 +252,11 @@ const Home = ({ home }) => (
       }
 
       @media (min-width: 740px) {
+        .hero {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
         .feature-set {
           display: flex;
           justify-content: flex-start;
@@ -253,12 +277,13 @@ const Home = ({ home }) => (
 
       .hero-img {
         margin-top: 1em;
-        max-width: 400px;
+        width: 300px;
         display: block;
         margin-left: 0;
         margin-right: 0;
         z-index: -1;
         position: relative;
+        float: right;
       }
 
       .hero-text {
@@ -266,7 +291,7 @@ const Home = ({ home }) => (
         line-height: 1.5;
         color: #A3A3A3;
       }
-      .hero-text span:nth-child(2n) {
+      .hero-text span:nth-child(3n) {
         color: #666;
       }
       @media (max-width: 767px) {
@@ -275,10 +300,11 @@ const Home = ({ home }) => (
         }
       }
       @media (min-width: 1025px) {
-        .hero-text {
-          margin-left: 0;
-          margin-right: auto;
-          max-width: 80%;
+        .hero-img {
+          width: 44%
+        }
+        .hero__one {
+          width: 54%
         }
       }
 

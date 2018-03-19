@@ -60,13 +60,11 @@
 
 .hero {
   padding-top: 76px;
-  min-height: 560px;
 }
 
 @media (min-width: 768px) {
   .hero {
-    padding-top: 138px;
-    min-height: 780px;
+    padding-top: 118px;
   }
 }
 
