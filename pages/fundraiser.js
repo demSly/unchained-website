@@ -46,9 +46,6 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
           <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md?download">
                 Read our Business Plan
           </a>
-          <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/whitepaper.md?download">
-                Download the Whitepaper
-          </a>
         </div>
       </div>
     </div>
