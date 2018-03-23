@@ -115,11 +115,12 @@ const Footer = ({ intl }) => (
 
       <div className="flex-between">
         <div className="footer__payments">
-          <img className="cc" src="../static/img/icon/cc/visa.svg" alt="visa icon" />
+          <img className="icon-footer" src="../static/img/05- credit-card.svg" alt="" />
+          {/* <img className="cc" src="../static/img/icon/cc/visa.svg" alt="visa icon" />
           <img className="cc" src="../static/img/icon/cc/mastercard.svg" alt="mastercard icon" />
-          <img className="cc" src="../static/img/icon/cc/amex.svg" alt="amex icon" />
+          <img className="cc" src="../static/img/icon/cc/amex.svg" alt="amex icon" /> */}
           {/* <img className="cc" src="../static/img/postcard.png" alt="postfinance icon" /> */}
-          <img className="cc paypal" src="../static/img/paypal.jpeg" alt="paypal icon" />
+          {/* <img className="cc paypal" src="../static/img/paypal.jpeg" alt="paypal icon" /> */}
           {/* <div className="cc bill">{intl.formatMessage({ id: 'bill' })}</div> */}
         </div>
 
@@ -132,6 +133,9 @@ const Footer = ({ intl }) => (
     </div>
 
     <style jsx>{`
+      .icon-footer {
+        width: 96px; 
+      }
       #mc_embed_signup_scroll {
         display: flex;
         margin: 0 auto;
