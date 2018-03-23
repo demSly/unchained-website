@@ -83,7 +83,7 @@
             },
             {
               "name": "me",
-              "description": "",
+              "description": "Currently logged in user",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -95,7 +95,7 @@
             },
             {
               "name": "users",
-              "description": "",
+              "description": "Get list of users",
               "args": [
                 {
                   "name": "limit",
@@ -146,7 +146,7 @@
             },
             {
               "name": "user",
-              "description": "",
+              "description": "Specific user data if userId provided, else returns currently logged in",
               "args": [
                 {
                   "name": "userId",
@@ -169,7 +169,7 @@
             },
             {
               "name": "products",
-              "description": "",
+              "description": "Simple list of published products filtered by tags",
               "args": [
                 {
                   "name": "tags",
@@ -234,7 +234,7 @@
             },
             {
               "name": "product",
-              "description": "",
+              "description": "Get a specific product by id or slug",
               "args": [
                 {
                   "name": "productId",
@@ -267,7 +267,7 @@
             },
             {
               "name": "productCatalogPrices",
-              "description": "",
+              "description": "List prices",
               "args": [
                 {
                   "name": "productId",
@@ -302,7 +302,7 @@
             },
             {
               "name": "translatedProductTexts",
-              "description": "",
+              "description": "Localization: Meta data for product",
               "args": [
                 {
                   "name": "productId",
@@ -337,7 +337,7 @@
             },
             {
               "name": "translatedProductMediaTexts",
-              "description": "",
+              "description": "Localization: Media title/subtitle of a media that is attached to a product",
               "args": [
                 {
                   "name": "productMediaId",
@@ -372,7 +372,7 @@
             },
             {
               "name": "translatedProductVariationTexts",
-              "description": "",
+              "description": "Localization: Label of a variation option",
               "args": [
                 {
                   "name": "productVariationId",
@@ -417,7 +417,7 @@
             },
             {
               "name": "languages",
-              "description": "",
+              "description": "Get all languages",
               "args": [
                 {
                   "name": "limit",
@@ -468,7 +468,7 @@
             },
             {
               "name": "language",
-              "description": "",
+              "description": "Get a specific language",
               "args": [
                 {
                   "name": "languageId",
@@ -499,7 +499,7 @@
             },
             {
               "name": "countries",
-              "description": "",
+              "description": "Get all countries",
               "args": [
                 {
                   "name": "limit",
@@ -550,7 +550,7 @@
             },
             {
               "name": "country",
-              "description": "",
+              "description": "Get a specific country by ID",
               "args": [
                 {
                   "name": "countryId",
@@ -581,7 +581,7 @@
             },
             {
               "name": "currencies",
-              "description": "",
+              "description": "Get all currencies",
               "args": [
                 {
                   "name": "limit",
@@ -632,7 +632,7 @@
             },
             {
               "name": "currency",
-              "description": "",
+              "description": "Get a specific currency by ID",
               "args": [
                 {
                   "name": "currencyId",
@@ -663,7 +663,7 @@
             },
             {
               "name": "deliveryProviders",
-              "description": "",
+              "description": "Get all delivery providers, optionally filtered by type",
               "args": [
                 {
                   "name": "type",
@@ -694,7 +694,7 @@
             },
             {
               "name": "deliveryProvider",
-              "description": "",
+              "description": "Get a specific delivery provider by ID",
               "args": [
                 {
                   "name": "deliveryProviderId",
@@ -725,7 +725,7 @@
             },
             {
               "name": "deliveryInterfaces",
-              "description": "",
+              "description": "Get all delivery interfaces filtered by type",
               "args": [
                 {
                   "name": "type",
@@ -760,7 +760,7 @@
             },
             {
               "name": "warehousingProviders",
-              "description": "",
+              "description": "Get all delivery providers, optionally filtered by type",
               "args": [
                 {
                   "name": "type",
@@ -791,7 +791,7 @@
             },
             {
               "name": "warehousingProvider",
-              "description": "",
+              "description": "Get a specific warehousing provider by ID",
               "args": [
                 {
                   "name": "warehousingProviderId",
@@ -822,7 +822,7 @@
             },
             {
               "name": "warehousingInterfaces",
-              "description": "",
+              "description": "Get all warehousing interfaces filtered by type",
               "args": [
                 {
                   "name": "type",
@@ -857,7 +857,7 @@
             },
             {
               "name": "paymentProviders",
-              "description": "",
+              "description": "Get all payment providers, optionally filtered by type",
               "args": [
                 {
                   "name": "type",
@@ -888,7 +888,7 @@
             },
             {
               "name": "paymentProvider",
-              "description": "",
+              "description": "Get a specific payment provider by ID",
               "args": [
                 {
                   "name": "paymentProviderId",
@@ -919,7 +919,7 @@
             },
             {
               "name": "paymentInterfaces",
-              "description": "",
+              "description": "Get all payment interfaces filtered by type",
               "args": [
                 {
                   "name": "type",
@@ -954,7 +954,7 @@
             },
             {
               "name": "orders",
-              "description": "",
+              "description": "Get all orders",
               "args": [
                 {
                   "name": "limit",
@@ -995,7 +995,7 @@
             },
             {
               "name": "order",
-              "description": "",
+              "description": "Get a specific single order, use the otp to get access to the information\nwithout beeing logged in as the user that created the order",
               "args": [
                 {
                   "name": "orderId",
@@ -1036,7 +1036,7 @@
             },
             {
               "name": "logs",
-              "description": "",
+              "description": "Get all logs, sorted by most recent creation date first",
               "args": [
                 {
                   "name": "limit",
@@ -1077,7 +1077,7 @@
             },
             {
               "name": "shopInfo",
-              "description": "",
+              "description": "Get shop-global data and the resolved country/language pair",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -1962,7 +1962,7 @@
             },
             {
               "name": "isoCode",
-              "description": "",
+              "description": "ISO 639-1 alpha-2 https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2048,7 +2048,7 @@
             },
             {
               "name": "isoCode",
-              "description": "",
+              "description": "ISO 3166-1 alpha-2 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -5052,7 +5052,7 @@
             },
             {
               "name": "loginWithFacebook",
-              "description": "",
+              "description": "Login the user with a facebook access token",
               "args": [
                 {
                   "name": "accessToken",
@@ -5079,7 +5079,7 @@
             },
             {
               "name": "loginWithGoogle",
-              "description": "",
+              "description": "Login the user with a facebook access token",
               "args": [
                 {
                   "name": "accessToken",
@@ -5116,7 +5116,7 @@
             },
             {
               "name": "loginWithLinkedIn",
-              "description": "",
+              "description": "Login the user with a facebook access token",
               "args": [
                 {
                   "name": "code",
@@ -5157,7 +5157,7 @@
             },
             {
               "name": "loginWithPassword",
-              "description": "",
+              "description": "Log the user in with a password. ACL: Everybody",
               "args": [
                 {
                   "name": "username",
@@ -5210,7 +5210,7 @@
             },
             {
               "name": "createUser",
-              "description": "",
+              "description": "Create a new user. ACL: Everybody",
               "args": [
                 {
                   "name": "username",
@@ -5273,7 +5273,7 @@
             },
             {
               "name": "changePassword",
-              "description": "",
+              "description": "Change the current user's password. Must be logged in. ACL: Everybody",
               "args": [
                 {
                   "name": "oldPassword",
@@ -5314,7 +5314,7 @@
             },
             {
               "name": "forgotPassword",
-              "description": "",
+              "description": "Request a forgot password email. ACL: Everybody",
               "args": [
                 {
                   "name": "email",
@@ -5341,7 +5341,7 @@
             },
             {
               "name": "resetPassword",
-              "description": "",
+              "description": "Reset the password for a user using a token received in email. Logs the user in afterwards. ACL: Everybody",
               "args": [
                 {
                   "name": "newPassword",
@@ -5382,7 +5382,7 @@
             },
             {
               "name": "logout",
-              "description": "",
+              "description": "Log the user out.",
               "args": [
                 {
                   "name": "token",
@@ -5409,7 +5409,7 @@
             },
             {
               "name": "verifyEmail",
-              "description": "",
+              "description": "Marks the user's email address as verified. Logs the user in afterwards.",
               "args": [
                 {
                   "name": "token",
@@ -5436,7 +5436,7 @@
             },
             {
               "name": "resendVerificationEmail",
-              "description": "",
+              "description": "Send an email with a link the user can use verify their email address.",
               "args": [
                 {
                   "name": "email",
@@ -5459,7 +5459,7 @@
             },
             {
               "name": "loginAsGuest",
-              "description": "",
+              "description": "Login as Guest User (creates an anonymous user and returns logged in token) ACL: Everybody",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -5471,7 +5471,7 @@
             },
             {
               "name": "addCartProduct",
-              "description": "",
+              "description": "Add a new item to the cart. Order gets generated with status = open (= order\nbefore checkout / cart) if necessary. ACL: Logged in users (including guests)",
               "args": [
                 {
                   "name": "productId",
@@ -5512,7 +5512,7 @@
             },
             {
               "name": "updateCartItemQuantity",
-              "description": "",
+              "description": "Change the quantity of an item in the cart ACL: Logged in users (including guests)",
               "args": [
                 {
                   "name": "itemId",
@@ -5553,7 +5553,7 @@
             },
             {
               "name": "removeCartItem",
-              "description": "",
+              "description": "Remove an item from the cart ACL: Logged in users (including guests)",
               "args": [
                 {
                   "name": "itemId",
@@ -5584,7 +5584,7 @@
             },
             {
               "name": "addCartDiscount",
-              "description": "",
+              "description": "Add a new discount to the cart, a new order gets generated with status = open\n(= order before checkout / cart) if necessary ACL: Logged in users (including guests)",
               "args": [
                 {
                   "name": "code",
@@ -5615,7 +5615,7 @@
             },
             {
               "name": "removeCartDiscount",
-              "description": "",
+              "description": "Remove a discount from the cart ACL: Logged in users (including guests)",
               "args": [
                 {
                   "name": "discountId",
@@ -5646,7 +5646,7 @@
             },
             {
               "name": "removeOrder",
-              "description": "",
+              "description": "Remove an order while it's still a cart",
               "args": [
                 {
                   "name": "orderId",
@@ -5677,7 +5677,7 @@
             },
             {
               "name": "updateOrderAddress",
-              "description": "",
+              "description": "Change billing address of an open order",
               "args": [
                 {
                   "name": "orderId",
@@ -5722,7 +5722,7 @@
             },
             {
               "name": "updateOrderContact",
-              "description": "",
+              "description": "Change contact of an open order",
               "args": [
                 {
                   "name": "orderId",
@@ -5767,7 +5767,7 @@
             },
             {
               "name": "setOrderDeliveryProvider",
-              "description": "",
+              "description": "Change the delivery method/provider",
               "args": [
                 {
                   "name": "orderId",
@@ -5812,7 +5812,7 @@
             },
             {
               "name": "setOrderPaymentProvider",
-              "description": "",
+              "description": "Change the payment method/provider",
               "args": [
                 {
                   "name": "orderId",
@@ -5857,7 +5857,7 @@
             },
             {
               "name": "updateOrderDeliveryShipping",
-              "description": "",
+              "description": "Update a Shipping Delivery Provider's specific configuration",
               "args": [
                 {
                   "name": "orderDeliveryId",
@@ -5898,7 +5898,7 @@
             },
             {
               "name": "updateOrderDeliveryPickUp",
-              "description": "",
+              "description": "Update a Pick Up Delivery Provider's specific configuration",
               "args": [
                 {
                   "name": "orderDeliveryId",
@@ -5939,7 +5939,7 @@
             },
             {
               "name": "updateOrderPaymentCard",
-              "description": "",
+              "description": "Update a Card Payment Provider's specific configuration",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -5970,7 +5970,7 @@
             },
             {
               "name": "updateOrderPaymentPostfinance",
-              "description": "",
+              "description": "Update a PostFinance Payment Provider's specific configuration",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -6001,7 +6001,7 @@
             },
             {
               "name": "updateOrderPaymentInvoice",
-              "description": "",
+              "description": "Update am Invoice Payment Provider's specific configuration",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -6032,7 +6032,7 @@
             },
             {
               "name": "updateOrderPaymentPaypal",
-              "description": "",
+              "description": "Update a PayPal Payment Provider's specific configuration",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -6063,7 +6063,7 @@
             },
             {
               "name": "updateOrderPaymentCrypto",
-              "description": "",
+              "description": "Update a Crypo Provider's specific configuration",
               "args": [
                 {
                   "name": "orderPaymentId",
@@ -6094,7 +6094,7 @@
             },
             {
               "name": "checkout",
-              "description": "",
+              "description": "Process the checkout (automatically charge & deliver if possible), the cart will get\ntransformed to an ordinary order if everything goes well.",
               "args": [
                 {
                   "name": "paymentContext",
@@ -6131,7 +6131,7 @@
             },
             {
               "name": "captureOrder",
-              "description": "",
+              "description": "This method takes a cart by id and\ntransfers it to the currently logged in user\nif the current user already has an open order (cart), remove that one\nthis method is needed to transition from a guest user to a logged in user\nwhere the cart has to persist items",
               "args": [
                 {
                   "name": "orderId",
@@ -6158,7 +6158,7 @@
             },
             {
               "name": "updateUserAvatar",
-              "description": "",
+              "description": "Update Avatar of any user or logged in user if userId is not provided",
               "args": [
                 {
                   "name": "avatar",
@@ -6195,7 +6195,7 @@
             },
             {
               "name": "updateEmail",
-              "description": "",
+              "description": "Update E-Mail address of any user or logged in user if userId is not provided",
               "args": [
                 {
                   "name": "email",
@@ -6232,7 +6232,7 @@
             },
             {
               "name": "updateUserProfile",
-              "description": "",
+              "description": "Update Profile of any user or logged in user if userId is not provided",
               "args": [
                 {
                   "name": "profile",
@@ -6269,7 +6269,7 @@
             },
             {
               "name": "enrollUser",
-              "description": "",
+              "description": "Enroll a new user, setting enroll to true will let the user choose his password (e-mail gets sent)",
               "args": [
                 {
                   "name": "profile",
@@ -6320,7 +6320,7 @@
             },
             {
               "name": "setPassword",
-              "description": "",
+              "description": "Set a new password for a specific user",
               "args": [
                 {
                   "name": "newPassword",
@@ -6361,7 +6361,7 @@
             },
             {
               "name": "setRoles",
-              "description": "",
+              "description": "Set roles of a user",
               "args": [
                 {
                   "name": "roles",
@@ -6406,7 +6406,7 @@
             },
             {
               "name": "confirmOrder",
-              "description": "",
+              "description": "Manually confirm an order which is in progress",
               "args": [
                 {
                   "name": "orderId",
@@ -6437,7 +6437,7 @@
             },
             {
               "name": "payOrder",
-              "description": "",
+              "description": "Manually mark an unpaid/partially paid order as fully paid",
               "args": [
                 {
                   "name": "orderId",
@@ -6468,7 +6468,7 @@
             },
             {
               "name": "createProduct",
-              "description": "",
+              "description": "Create a new product",
               "args": [
                 {
                   "name": "product",
@@ -6499,7 +6499,7 @@
             },
             {
               "name": "publishProduct",
-              "description": "",
+              "description": "Make the product visible on any shop listings (product queries)",
               "args": [
                 {
                   "name": "productId",
@@ -6530,7 +6530,7 @@
             },
             {
               "name": "unpublishProduct",
-              "description": "",
+              "description": "Hide the product visible from any shop listings (product queries)",
               "args": [
                 {
                   "name": "productId",
@@ -6561,7 +6561,7 @@
             },
             {
               "name": "removeProduct",
-              "description": "",
+              "description": "Remove the product completely!",
               "args": [
                 {
                   "name": "productId",
@@ -6592,7 +6592,7 @@
             },
             {
               "name": "updateProduct",
-              "description": "",
+              "description": "Modify generic infos of a product (tags for ex.)",
               "args": [
                 {
                   "name": "productId",
@@ -6633,7 +6633,7 @@
             },
             {
               "name": "updateProductCommerce",
-              "description": "",
+              "description": "Modify commerce part of a product",
               "args": [
                 {
                   "name": "productId",
@@ -6674,7 +6674,7 @@
             },
             {
               "name": "updateProductSupply",
-              "description": "",
+              "description": "Modify delivery part of a product",
               "args": [
                 {
                   "name": "productId",
@@ -6715,7 +6715,7 @@
             },
             {
               "name": "updateProductWarehousing",
-              "description": "",
+              "description": "Modify warehousing part of a product",
               "args": [
                 {
                   "name": "productId",
@@ -6756,7 +6756,7 @@
             },
             {
               "name": "updateProductTexts",
-              "description": "",
+              "description": "Modify localized texts part of a product",
               "args": [
                 {
                   "name": "productId",
@@ -6817,7 +6817,7 @@
             },
             {
               "name": "addProductMedia",
-              "description": "",
+              "description": "Add a new media to a product's visualization",
               "args": [
                 {
                   "name": "productId",
@@ -6862,7 +6862,7 @@
             },
             {
               "name": "removeProductMedia",
-              "description": "",
+              "description": "Remove a media asset from a product's visualization",
               "args": [
                 {
                   "name": "productMediaId",
@@ -6893,7 +6893,7 @@
             },
             {
               "name": "reorderProductMedia",
-              "description": "",
+              "description": "Reorder a media asset (first is primary)",
               "args": [
                 {
                   "name": "sortKeys",
@@ -6940,7 +6940,7 @@
             },
             {
               "name": "updateProductMediaTexts",
-              "description": "",
+              "description": "Modify localized texts part of a product's media asset",
               "args": [
                 {
                   "name": "productMediaId",
@@ -8142,7 +8142,7 @@
           "fields": [
             {
               "name": "id",
-              "description": "",
+              "description": "Id of the user logged in user",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8158,7 +8158,7 @@
             },
             {
               "name": "token",
-              "description": "",
+              "description": "Token of the connection",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8174,7 +8174,7 @@
             },
             {
               "name": "tokenExpires",
-              "description": "",
+              "description": "Expiration date for the token",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -8190,7 +8190,7 @@
             },
             {
               "name": "user",
-              "description": "",
+              "description": "The logged in user",
               "args": [],
               "type": {
                 "kind": "OBJECT",
@@ -8219,12 +8219,12 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "HashedPassword",
-          "description": "",
+          "description": "A hashed password",
           "fields": null,
           "inputFields": [
             {
               "name": "digest",
-              "description": "",
+              "description": "The hashed password",
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -8238,7 +8238,7 @@
             },
             {
               "name": "algorithm",
-              "description": "",
+              "description": "Algorithm used to hash the password",
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -8931,7 +8931,7 @@
             },
             {
               "name": "clientToken",
-              "description": "",
+              "description": "Get the clientToken for Paypal Payments with the Braintree SDK",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -9028,7 +9028,7 @@
             },
             {
               "name": "walletAddress",
-              "description": "",
+              "description": "A crypto currency payment works via pre-payment like credit cards,\nso every order payment get's it's own public key",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -11649,7 +11649,7 @@
             },
             {
               "name": "vectors",
-              "description": "",
+              "description": "Query string key=val&key=val ...",
               "args": [],
               "type": {
                 "kind": "LIST",
@@ -11665,7 +11665,7 @@
             },
             {
               "name": "product",
-              "description": "",
+              "description": "Assigned Product",
               "args": [],
               "type": {
                 "kind": "INTERFACE",
