@@ -37,7 +37,7 @@ const updateSchema = async () => {
     schemaCache.set('schemaFallback', schema, 0);
     console.log('-> Remote Schema Merger: Reloaded remote schema');  // eslint-disable-line
   } catch (e) {
-    console.log('-> Remote Schema Merger: Remote schema not accessible (Unchained Shop down?)');  // eslint-disable-line
+    console.warn('-> Remote Schema Merger: Error retrieving remote schema', e); // eslint-disable-line
     if (!schemaCache.get('schemaFallback')) {
       schemaCache.set('schema', null, 10); // reset expiry
       schemaCache.set('schemaFallback', null, 0);
