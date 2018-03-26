@@ -32,16 +32,21 @@ class CockpitConnector {
   }
 
   async fetchCachedJSON(url) {
-    const cachedResponse = cockpitCache.get(url);
-    if (cachedResponse) {
-      console.log(`Cockpit -> fetchCachedJSON(${url.replace(this.token,'****')})) -> SERVE FROM CACHE`); // eslint-disable-line
-      return cachedResponse;
+    try {
+      const cachedResponse = cockpitCache.get(url);
+      if (cachedResponse) {
+        console.log(`Cockpit -> fetchCachedJSON(${url.replace(this.token,'****')})) -> SERVE FROM CACHE`); // eslint-disable-line
+        return cachedResponse;
+      }
+      console.log(`Cockpit -> fetchCachedJSON(${url.replace(this.token,'****')})) -> SERVE FROM COCKPIT`); // eslint-disable-line
+      const response = await fetch(url);
+      const json = await response.json();
+      cockpitCache.set(url, json);
+      return json;
+    } catch (error) {
+      console.warn(error); // eslint-disable-line
+      throw new Error('Could not get the requested data from CockpitCMS');
     }
-    console.log(`Cockpit -> fetchCachedJSON(${url.replace(this.token,'****')})) -> SERVE FROM COCKPIT`); // eslint-disable-line
-    const response = await fetch(url);
-    const json = await response.json();
-    cockpitCache.set(url, json);
-    return json;
   }
 
   async find(collectionName, params = {}, limit = 0, skip = 0, sortParams = {}) {
