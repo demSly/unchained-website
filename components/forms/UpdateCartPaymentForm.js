@@ -1,8 +1,8 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { compose, mapProps, pure } from 'recompose';
-import withCheckoutCartPayment from '../../lib/hoc/withCheckoutCartPayment';
-import withLoadingComponent from '../../lib/hoc/withLoadingComponent';
+import withCheckoutCartPayment from '../../lib/withCheckoutCartPayment';
+import withLoadingComponent from '../../lib/withLoadingComponent';
 import SelectPaymentMethod from './SelectPaymentMethod';
 import TermsConfirmation from './TermsConfirmation';
 import InvoiceForm from './InvoiceForm';

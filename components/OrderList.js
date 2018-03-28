@@ -1,7 +1,7 @@
 import React from 'react';
 import { compose, mapProps } from 'recompose';
-import withOrders from '../lib/hoc/withOrders';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withOrders from '../lib/withOrders';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import OrderListItem from './OrderListItem';
 
 const OrderList = ({ orders }) =>

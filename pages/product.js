@@ -1,9 +1,9 @@
 import React from 'react';
 import { compose, withProps } from 'recompose';
 import { withRouter } from 'next/router';
-import connectApollo from '../lib/hoc/connectApollo';
-import connectI18n from '../lib/hoc/connectI18n';
-import withProduct from '../lib/hoc/withProduct';
+import connectApollo from '../lib/connectApollo';
+import connectI18n from '../lib/connectI18n';
+import withProduct from '../lib/withProduct';
 import PageLayout from '../components/PageLayout';
 import ProductDetails from '../components/ProductDetails';
 

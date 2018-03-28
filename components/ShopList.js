@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { compose } from 'recompose';
-import withProducts from '../lib/hoc/withProducts';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withProducts from '../lib/withProducts';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import ShopListItem from './ShopListItem';
 
 const ShopList = ({ products }) =>

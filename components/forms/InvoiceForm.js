@@ -6,10 +6,10 @@ import gql from 'graphql-tag';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import AutoForm from 'uniforms-unstyled/AutoForm';
 import variables from '../../styles/variables';
-import withFormErrorHandlers from '../../lib/hoc/withFormErrorHandlers';
-import withFormInProgressHandlers from '../../lib/hoc/withFormInProgressHandlers';
-import withFormSchema from '../../lib/hoc/withFormSchema';
-import withFormModel from '../../lib/hoc/withFormModel';
+import withFormErrorHandlers from '../../lib/withFormErrorHandlers';
+import withFormInProgressHandlers from '../../lib/withFormInProgressHandlers';
+import withFormSchema from '../../lib/withFormSchema';
+import withFormModel from '../../lib/withFormModel';
 import ErrorsField from './ErrorsField';
 import Loading from '../Loading';
 

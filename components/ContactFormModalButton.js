@@ -1,7 +1,7 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, withHandlers, withState } from 'recompose';
-import createModalButton from '../lib/hoc/createModalButton';
+import createModalButton from '../lib/createModalButton';
 import Modal from './Modal';
 import ContactForm from './forms/ContactForm';
 

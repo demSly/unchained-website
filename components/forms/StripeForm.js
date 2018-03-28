@@ -7,12 +7,12 @@ import gql from 'graphql-tag';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import AutoForm from 'uniforms-unstyled/AutoForm';
 import variables from '../../styles/variables';
-import withStripePublicKey from '../../lib/hoc/withStripePublicKey';
-import withFormErrorHandlers from '../../lib/hoc/withFormErrorHandlers';
-import withFormInProgressHandlers from '../../lib/hoc/withFormInProgressHandlers';
-import withFormSchema from '../../lib/hoc/withFormSchema';
-import withLoadingComponent from '../../lib/hoc/withLoadingComponent';
-import withFormModel from '../../lib/hoc/withFormModel';
+import withStripePublicKey from '../../lib/withStripePublicKey';
+import withFormErrorHandlers from '../../lib/withFormErrorHandlers';
+import withFormInProgressHandlers from '../../lib/withFormInProgressHandlers';
+import withFormSchema from '../../lib/withFormSchema';
+import withLoadingComponent from '../../lib/withLoadingComponent';
+import withFormModel from '../../lib/withFormModel';
 import ErrorsField from './ErrorsField';
 import Loading from '../Loading';
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import withRegion from '../lib/hoc/withRegion';
-import createModalButton from '../lib/hoc/createModalButton';
+import withRegion from '../lib/withRegion';
+import createModalButton from '../lib/createModalButton';
 import Modal from './Modal';
 
 const PortalledModal = ({ onClose, regionId, ...props }) => (

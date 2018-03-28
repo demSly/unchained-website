@@ -1,7 +1,7 @@
 import React from 'react';
 import { compose } from 'recompose';
-import withCurrentUser from '../lib/hoc/withCurrentUser';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withCurrentUser from '../lib/withCurrentUser';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import LoginForm from '../components/forms/LoginForm';
 import AccountMenu from './AccountMenu';
 

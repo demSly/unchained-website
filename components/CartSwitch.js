@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { compose, withProps, getContext } from 'recompose';
 import variables from '../styles/variables';
-import withLittleCart from '../lib/hoc/withLittleCart';
+import withLittleCart from '../lib/withLittleCart';
 import CartDropdown from './CartDropdown';
 
 const CartSwitch = ({ isCartToggled, cartItemCount, toggleCart }) => (

@@ -1,8 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, pure, mapProps } from 'recompose';
-import withCheckoutCartDelivery from '../lib/hoc/withCheckoutCartDelivery';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withCheckoutCartDelivery from '../lib/withCheckoutCartDelivery';
+import withLoadingComponent from '../lib/withLoadingComponent';
 
 const Address = ({
   firstName, lastName, company, addressLine, postalCode, city, countryCode, countryName,

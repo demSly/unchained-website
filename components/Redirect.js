@@ -1,6 +1,6 @@
 import { compose, createSink } from 'recompose';
 import { withRouter } from 'next/router';
-import withCurrentUser from '../lib/hoc/withCurrentUser';
+import withCurrentUser from '../lib/withCurrentUser';
 
 export default compose(
   withCurrentUser,

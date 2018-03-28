@@ -3,8 +3,8 @@ import { compose, withProps } from 'recompose';
 import { injectIntl } from 'react-intl';
 import Moment from 'react-moment';
 import variables from '../styles/variables';
-import withOrder from '../lib/hoc/withOrder';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withOrder from '../lib/withOrder';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import productCover from '../lib/productCover';
 import Price from './Price';
 

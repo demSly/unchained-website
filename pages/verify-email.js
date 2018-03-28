@@ -3,8 +3,8 @@ import { createSink } from 'recompose';
 import { withApollo } from 'react-apollo';
 import { withRouter } from 'next/router';
 import { verifyEmail } from '../lib/accounts';
-import connectApollo from '../lib/hoc/connectApollo';
-import connectI18n from '../lib/hoc/connectI18n';
+import connectApollo from '../lib/connectApollo';
+import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
 const logger = console;

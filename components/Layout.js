@@ -6,7 +6,7 @@ import 'core-js/es6/symbol';
 import React from 'react';
 import Head from 'next/head';
 import { compose } from 'recompose';
-import connectGoogleAnalytics from '../lib/hoc/connectGoogleAnalytics';
+import connectGoogleAnalytics from '../lib/connectGoogleAnalytics';
 import variables from '../styles/variables';
 
 const Layout = ({

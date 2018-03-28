@@ -1,9 +1,9 @@
 import React from 'react';
 import { compose } from 'recompose';
 import { Link } from '../routes';
-import connectApollo from '../lib/hoc/connectApollo';
-import withRegion from '../lib/hoc/withRegion';
-import connectI18n from '../lib/hoc/connectI18n';
+import connectApollo from '../lib/connectApollo';
+import withRegion from '../lib/withRegion';
+import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
 const Home = ({ agencies }) => (

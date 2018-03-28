@@ -1,9 +1,9 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, withHandlers } from 'recompose';
-import createModalButton from '../lib/hoc/createModalButton';
-import withCountries from '../lib/hoc/withCountries';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import createModalButton from '../lib/createModalButton';
+import withCountries from '../lib/withCountries';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import Modal from './Modal';
 import variables from '../styles/variables';
 

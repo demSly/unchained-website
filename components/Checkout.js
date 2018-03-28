@@ -2,8 +2,8 @@ import React from 'react';
 import { withRouter } from 'next/router';
 import { injectIntl } from 'react-intl';
 import { compose, withProps, pure } from 'recompose';
-import withCheckoutCart from '../lib/hoc/withCheckoutCart';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withCheckoutCart from '../lib/withCheckoutCart';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import CheckoutCart from '../components/CheckoutCart';
 import CheckoutProcess from '../components/CheckoutProcess';
 

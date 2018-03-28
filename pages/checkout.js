@@ -1,8 +1,8 @@
 import React from 'react';
 import { compose } from 'recompose';
-import connectApollo from '../lib/hoc/connectApollo';
-import connectI18n from '../lib/hoc/connectI18n';
-import withRegion from '../lib/hoc/withRegion';
+import connectApollo from '../lib/connectApollo';
+import connectI18n from '../lib/connectI18n';
+import withRegion from '../lib/withRegion';
 import CheckoutLayout from '../components/CheckoutLayout';
 import CheckoutContent from '../components/Checkout';
 

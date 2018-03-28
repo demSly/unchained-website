@@ -2,7 +2,7 @@ import React from 'react';
 import { compose } from 'recompose';
 import Link from 'next/link';
 import { injectIntl } from 'react-intl';
-import withLittleCart from '../lib/hoc/withLittleCart';
+import withLittleCart from '../lib/withLittleCart';
 import variables from '../styles/variables';
 import productCover from '../lib/productCover';
 

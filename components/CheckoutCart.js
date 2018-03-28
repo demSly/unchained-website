@@ -1,8 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, pure } from 'recompose';
-import withCheckoutCartItems from '../lib/hoc/withCheckoutCartItems';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withCheckoutCartItems from '../lib/withCheckoutCartItems';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import CheckoutCartItem from './CheckoutCartItem';
 import CheckoutCartDiscountItem from './CheckoutCartDiscountItem';
 import AddCartDiscountForm from './forms/AddCartDiscountForm';

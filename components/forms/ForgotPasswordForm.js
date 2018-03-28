@@ -6,8 +6,8 @@ import { withApollo } from 'react-apollo';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import AutoForm from 'uniforms-unstyled/AutoForm';
 import { forgotPassword } from '../../lib/accounts';
-import withFormErrorHandlers from '../../lib/hoc/withFormErrorHandlers';
-import withFormSchema from '../../lib/hoc/withFormSchema';
+import withFormErrorHandlers from '../../lib/withFormErrorHandlers';
+import withFormSchema from '../../lib/withFormSchema';
 import TextField from './TextField';
 import ErrorsField from './ErrorsField';
 

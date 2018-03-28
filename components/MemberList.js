@@ -1,7 +1,7 @@
 import React from 'react';
 import { compose } from 'recompose';
-import withMembers from '../lib/hoc/withMembers';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withMembers from '../lib/withMembers';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import MemberListItem from './MemberListItem';
 
 const MemberList = ({ members }) =>

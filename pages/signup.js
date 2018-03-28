@@ -1,8 +1,8 @@
 import React from 'react';
 import { compose, withProps } from 'recompose';
 import SimpleSchema from 'simpl-schema';
-import connectApollo from '../lib/hoc/connectApollo';
-import connectI18n from '../lib/hoc/connectI18n';
+import connectApollo from '../lib/connectApollo';
+import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 import Redirect from '../components/Redirect';
 import RegisterForm from '../components/forms/RegisterForm';

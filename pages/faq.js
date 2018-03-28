@@ -2,10 +2,10 @@ import React from 'react';
 import { compose, pure } from 'recompose';
 import Markdown from 'react-remarkable';
 import variables from '../styles/variables';
-import connectApollo from '../lib/hoc/connectApollo';
-import withRegion from '../lib/hoc/withRegion';
-import withQuestions from '../lib/hoc/withQuestions';
-import connectI18n from '../lib/hoc/connectI18n';
+import connectApollo from '../lib/connectApollo';
+import withRegion from '../lib/withRegion';
+import withQuestions from '../lib/withQuestions';
+import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
 const Support = ({ faq, questions }) => (

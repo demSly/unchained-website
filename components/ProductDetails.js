@@ -9,9 +9,9 @@ import gql from 'graphql-tag';
 import Slider from 'react-slick';
 import Markdown from 'react-remarkable';
 import variables from '../styles/variables';
-import withProduct from '../lib/hoc/withProduct';
-import withCurrentUser from '../lib/hoc/withCurrentUser';
-import withLoadingComponent from '../lib/hoc/withLoadingComponent';
+import withProduct from '../lib/withProduct';
+import withCurrentUser from '../lib/withCurrentUser';
+import withLoadingComponent from '../lib/withLoadingComponent';
 import Price from './Price';
 
 const settings = {

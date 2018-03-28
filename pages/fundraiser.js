@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { Pie } from 'react-chartjs-2';
 import Markdown from 'react-remarkable';
 import variables from '../styles/variables';
-import connectApollo from '../lib/hoc/connectApollo';
-import withRegion from '../lib/hoc/withRegion';
-import withCurrentUser from '../lib/hoc/withCurrentUser';
-import connectI18n from '../lib/hoc/connectI18n';
+import connectApollo from '../lib/connectApollo';
+import withRegion from '../lib/withRegion';
+import withCurrentUser from '../lib/withCurrentUser';
+import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
 const pieOptions = {
