@@ -1,14 +1,6 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { getLocale } from '../lib/locale';
-import env from '../lib/env';
-
-const {
-  NODE_ENV,
-  TRACKING_CODE,
-  GRAPHQL_ENDPOINT,
-  DEBUG,
-} = env;
 
 const injectScript = `
   try {
@@ -40,9 +32,6 @@ const injectScript = `
   fbq('track', 'PageView');
 
   <!-- End Facebook Pixel Code -->
-  window.ENV = '${JSON.stringify({
-    NODE_ENV, TRACKING_CODE, GRAPHQL_ENDPOINT, DEBUG,
-  })}';
 `;
 
 export default class IntlDocument extends Document {
@@ -63,10 +52,10 @@ export default class IntlDocument extends Document {
         <Head />
         <body>
           <Main />
-          <script src="https://use.typekit.net/brk3xyh.js" />
+          <script async src="https://use.typekit.net/brk3xyh.js" />
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.de,Intl.~locale.en,Intl.~locale.fr" />
           <script src="https://js.stripe.com/v3/" />
-          <script dangerouslySetInnerHTML={{ // eslint-disable-line
+          <script async dangerouslySetInnerHTML={{ // eslint-disable-line
               __html: injectScript,
             }}
           />
