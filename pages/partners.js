@@ -51,11 +51,6 @@ const PartnerProgram = ({ partnerProgram }) => (
       </section>
     </div>
 
-    <style jsx>{`
-
-    `}
-    </style>
-
   </PageLayout>
 );
 

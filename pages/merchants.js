@@ -16,11 +16,6 @@ const Merchants = ({ merchants }) => (
 
       </section>
     </div>
-
-    <style jsx>{`
-
-    `}
-    </style>
   </PageLayout>
 );
 
