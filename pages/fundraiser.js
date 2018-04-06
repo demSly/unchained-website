@@ -53,7 +53,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
     <div className="wrap wrap--narrow mb7">
       <section className="section">
         <div className="text-center mv4">
-          <p>The pre-sale starts 2nd of April</p>
+          <p>Private pre-sale has started</p>
           {currentUser._id ? (
             <Link href="/profile">
               <a className="button">

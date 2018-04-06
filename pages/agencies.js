@@ -96,7 +96,7 @@ const Home = ({ agencies }) => (
       </div>
     </div>
 
-    <div className="mission wrap wrap--narrow">
+    <div className="agencies wrap wrap--narrow">
       <div className="dangerously">
         <p>
         A platform that is compatible with any kind of internet

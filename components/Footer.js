@@ -99,7 +99,7 @@ const Footer = ({ intl }) => (
               <small>{intl.formatMessage({ id: 'return_policy' })}</small>
             </a>
           </Link> */}
-          <Link href="/agencies">
+          <Link href="/partners">
             <a className="footer__link">
               <small>Partner Program</small>
             </a>
@@ -134,7 +134,7 @@ const Footer = ({ intl }) => (
 
     <style jsx>{`
       .icon-footer {
-        width: 96px; 
+        width: 96px;
       }
       #mc_embed_signup_scroll {
         display: flex;

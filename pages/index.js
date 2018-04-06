@@ -201,7 +201,7 @@ const Home = ({ home }) => (
                   Developer / Agency
               </a>
             </Link>
-            <Link href="/agencies">
+            <Link href="/merchants">
               <a className="button">
                   Merchant
               </a>
@@ -225,7 +225,7 @@ const Home = ({ home }) => (
               Read about our Fundraiser
             </a>
           </Link>
-          <p>Pre-sale starts 2nd of April</p>
+          <p>Private Pre-sale has started</p>
         </div>
       </div>
     </div>

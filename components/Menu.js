@@ -9,7 +9,7 @@ const Menu = ({ intl, hidden, ...props }) => (
   <div className={`menu ${hidden ? 'hidden' : ''}`} {...props}>
     <div className="menu__items">
       <ActiveLink activeClassName="active" href="/agencies">
-        <a className="menu__link">{intl.formatMessage({ id: 'mission' })}</a>
+        <a className="menu__link">{intl.formatMessage({ id: 'agencies' })}</a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/faq">
         <a className="menu__link">{intl.formatMessage({ id: 'faq' })}</a>
