@@ -5,7 +5,13 @@
     "www.unchained.shop"
   ],
   "dotenv": ".env",
-  "type": "docker",
+  "type": "npm",
   "forwardNpm": false,
-  "public": false
+  "public": false,
+  "scale": {
+    "bru1": {
+      "min": 2,
+      "max": 2
+    }
+  }
 }
