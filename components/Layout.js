@@ -14,21 +14,19 @@ const Layout = ({
 }) => (
   <main className={className}>
     <Head>
-      <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-      <meta httpEquiv="Content-Security-Policy" content="default-src * 'self' data: 'unsafe-inline' 'unsafe-eval' *" />
-      <meta httpEquiv="Content-Security-Policy" content="script-src * 'self' data: 'unsafe-inline' 'unsafe-eval' *" />
-      <meta charSet="utf-8" />
-      <meta content="telephone=no" name="format-detection" />
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <meta name="google-site-verification" content="Z9rrptXszSZyyIclbbA3_0ED9bte4dn3dz5QsivMUEU" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" />
-      <link rel="shortcut icon" href="/static/img/favicon.ico" />
-      <link href="/static/css/all.css" rel="stylesheet" />
-      {title && (<title>Unchained - {title}</title>)}
-      {metaDescription && (<meta content={metaDescription} name="description" hidden={!metaDescription} />)}
+      <meta content="IE=edge" httpEquiv="X-UA-Compatible" key="edge-compatibility" />
+      <meta charSet="utf-8" key="charset" />
+      <meta content="telephone=no" name="format-detection" key="format-detection" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" key="viewport" />
+      <meta name="google-site-verification" content="Z9rrptXszSZyyIclbbA3_0ED9bte4dn3dz5QsivMUEU" key="google site verification" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" key="mono font" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png" key="icon_180" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" key="icon_32" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" key="icon_16" />
+      <link rel="shortcut icon" href="/static/img/favicon.ico" key="favicon" />
+      <link href="/static/css/all.css" rel="stylesheet" key="css" />
+      {title && (<title key="title">Unchained - {title}</title>)}
+      {metaDescription && (<meta content={metaDescription} name="description" hidden={!metaDescription} key="meta description" />)}
     </Head>
     {children}
     <style jsx global>{`

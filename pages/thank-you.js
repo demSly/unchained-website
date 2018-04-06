@@ -15,7 +15,7 @@ const Thankyou = ({ thankyou, url }) => (
         </h2>
         <p>{thankyou.text}</p>
         <div className="text-center">
-          <button className="button" onClick={process.browser && window.print}>Print</button>
+          <button className="button" onClick={() => window.print()}>Print</button>
         </div>
       </div>
     </div>
