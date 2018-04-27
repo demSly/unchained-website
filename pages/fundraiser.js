@@ -26,8 +26,9 @@ const pieOptions = {
   animateRotate: true,
   // Boolean - Whether we animate scaling the Doughnut from the centre
   animateScale: false,
+  tooltip: false,
   legend: {
-    display: false,
+    display: true,
   },
 };
 
@@ -75,10 +76,10 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
             <Pie
               data={{
                 labels: [
-                  'Open Source Bounties',
-                  'Company Reserve',
-                  'Team & Advisors',
-                  'Sale',
+                  'Open Source Bounties 15%',
+                  'Company Reserve 10%',
+                  'Team & Advisors 15%',
+                  'Sale 60%',
                 ],
                 datasets: [{
                   data: [15, 10, 15, 60],
@@ -99,10 +100,10 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
             <Pie
               data={{
                   labels: [
-                    'Social Media & PR',
-                    'Engineering',
-                    'Business Administration',
-                    'Sales & Events',
+                    'Social Media & PR 20%',
+                    'Engineering 50%',
+                    'Business Administration 10%',
+                    'Sales & Events 20%',
                   ],
                   datasets: [{
                     data: [20, 50, 10, 20],
