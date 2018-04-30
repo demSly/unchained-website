@@ -1,17 +1,18 @@
 import React from 'react';
 import { compose } from 'recompose';
+import { withRouter } from 'next/router';
 import connectApollo from '../lib/connectApollo';
 import withRegion from '../lib/withRegion';
 import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
-const Thankyou = ({ thankyou, url }) => (
+const Thankyou = ({ thankyou, router }) => (
   <PageLayout title={thankyou.title} className="bg-image">
     <div className="wrap wrap--vertical-padding" id="top">
       <div className="thank-you-text">
         <h1>{thankyou.title}</h1>
         <h2>{thankyou.number}<br />
-          <span>{url.query.n}</span>
+          <span>{router.query.n}</span>
         </h2>
         <p>{thankyou.text}</p>
         <div className="text-center">
@@ -40,6 +41,7 @@ const Thankyou = ({ thankyou, url }) => (
 );
 
 export default connectApollo(compose(
+  withRouter,
   connectI18n,
   withRegion('thankyou'),
 )(Thankyou));

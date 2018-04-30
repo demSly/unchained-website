@@ -1,7 +1,4 @@
-import 'core-js/fn/string/ends-with';
-import 'core-js/fn/array/find';
-import 'core-js/fn/symbol';
-import 'core-js/es6/symbol';
+import 'core-js/es6';
 
 import React from 'react';
 import Head from 'next/head';

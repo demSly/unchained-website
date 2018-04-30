@@ -1,5 +1,5 @@
 import React from 'react';
-import { createSink } from 'recompose';
+import { createSink, compose } from 'recompose';
 import { withApollo } from 'react-apollo';
 import { withRouter } from 'next/router';
 import { verifyEmail } from '../lib/accounts';
@@ -11,8 +11,8 @@ const logger = console;
 
 let verificationStarted = false;
 
-const Verifier = withRouter(withApollo(createSink(async (
-  { client, router, url: { query: { expired, token } } },
+const Verifier = withApollo(createSink(async (
+  { client, router, router: { query: { expired, token } } },
 ) => {
   if (token && !expired && !verificationStarted) {
     verificationStarted = true;
@@ -25,18 +25,18 @@ const Verifier = withRouter(withApollo(createSink(async (
       router.push('/verify-email?expired=1');
     }
   }
-})));
+}));
 
 
-const VerifyEmail = ({ ...rest }) => (
+const VerifyEmail = ({ router, ...rest }) => (
   <PageLayout title="" {...rest}>
     <div
       className="wrap wrap--narrow wrap--vertical-padding"
     >
       {process.browser && (
-        <Verifier {...rest} />
+        <Verifier {...rest} router={router} />
       )}
-      {rest.url.query.expired ? (
+      {router.query.expired ? (
         <div>
           <h1>Token expired</h1>
           <p>Dieser Verifizierungstoken ist nicht mehr gültig,
@@ -54,4 +54,7 @@ const VerifyEmail = ({ ...rest }) => (
 );
 
 
-export default connectApollo(connectI18n(VerifyEmail));
+export default connectApollo(compose(
+  withRouter,
+  connectI18n,
+))(VerifyEmail);

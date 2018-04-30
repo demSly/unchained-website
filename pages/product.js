@@ -1,6 +1,6 @@
 import React from 'react';
-import { compose, withProps } from 'recompose';
 import { withRouter } from 'next/router';
+import { compose, withProps } from 'recompose';
 import connectApollo from '../lib/connectApollo';
 import connectI18n from '../lib/connectI18n';
 import withProduct from '../lib/withProduct';
@@ -24,9 +24,9 @@ const Product = ({
 export default connectApollo(compose(
   withRouter,
   connectI18n,
-  withProps(({ url }) => ({
-    productId: url.query._id,
-    slug: url.query.name,
+  withProps(({ router }) => ({
+    productId: router.query._id,
+    slug: router.query.name,
   })),
   withProduct,
 )(Product));
