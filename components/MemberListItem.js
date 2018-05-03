@@ -4,7 +4,7 @@ const MemberListItem = ({
   name, position, avatar, description, links,
 }) =>
   (
-    <a className="member">
+    <div className="member">
       {avatar && (
         <img alt={name} src={avatar.thumbnail} />
       )}
@@ -43,7 +43,7 @@ const MemberListItem = ({
         }
       `}
       </style>
-    </a>
+    </div>
   );
 
 export default MemberListItem;

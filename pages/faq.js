@@ -19,7 +19,7 @@ const Support = ({ faq, questions }) => (
         }}
         />
         {questions.map(({ question, answer }) => (
-          <React.Fragment>
+          <React.Fragment key={question}>
             <div className="question">{question}</div>
             <p className="answer">
               <Markdown source={answer} />

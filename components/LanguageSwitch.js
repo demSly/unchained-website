@@ -1,4 +1,5 @@
 import React from 'react';
+import cookie from 'cookie';
 import PropTypes from 'prop-types';
 import { compose, getContext, mapProps, withHandlers } from 'recompose';
 
@@ -54,7 +55,7 @@ export default compose(
     setLanguage: () => (element) => {
       const language = element.target.getAttribute('data-lang');
       if (document) {
-        document.cookie = `language=${language}`;
+        document.cookie = cookie.serialize('language', language, { path: '/' });
       }
     },
   }),

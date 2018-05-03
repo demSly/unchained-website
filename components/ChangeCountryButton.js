@@ -1,4 +1,5 @@
 import React from 'react';
+import cookie from 'cookie';
 import { injectIntl } from 'react-intl';
 import { compose, withHandlers } from 'recompose';
 import createModalButton from '../lib/createModalButton';
@@ -95,7 +96,7 @@ export default compose(
     setCountry: () => (element) => {
       const country = element.target.getAttribute('data-country');
       if (document) {
-        document.cookie = `country=${country}`;
+        document.cookie = cookie.serialize('country', country, { path: '/' });
       }
     },
   }),
