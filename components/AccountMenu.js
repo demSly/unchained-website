@@ -21,7 +21,7 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
         {intl.formatMessage({ id: 'your_account' })}
       </a>
     </Link>
-    <Link href="orders">
+    <Link href="/orders">
       <a className="logged-in-link">
         <img
           className="v-mid mr05"

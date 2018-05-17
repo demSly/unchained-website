@@ -40,7 +40,7 @@ const CheckoutCart = ({
       total,
       _id, interface: discountInterface,
     }) =>
-      (!discountInterface || discountInterface.interfaceId !== 'ch.freezyboy.kitchen-studios' ? (
+      (!discountInterface ? (
         <CheckoutCartDiscountItem
           key={_id}
           _id={_id}

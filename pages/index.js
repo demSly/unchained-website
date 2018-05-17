@@ -41,43 +41,37 @@ const Home = ({ home }) => (
 
     <div className="product-portfolio">
       <div className="product-portfolio__item product--one-black">
-        <Link route="product" params={{ name: 'one-black' }} >
-          <a className="unit">
-            <div className="unit__copy c-white">
-              <h3 className="unit__header">Headless Architecture</h3>
-              <p className="unit__subheader">Choose your decoupled CMS, connect the unchained API with your site, experience true customization</p>
-            </div>
-            <div className="unit__image-wrap">
-              <figure className="unit__image" />
-            </div>
-          </a>
-        </Link>
+        <a className="unit">
+          <div className="unit__copy c-white">
+            <h3 className="unit__header">Headless Architecture</h3>
+            <p className="unit__subheader">Choose your decoupled CMS, connect the unchained API with your site, experience true customization</p>
+          </div>
+          <div className="unit__image-wrap">
+            <figure className="unit__image" />
+          </div>
+        </a>
       </div>
       <div className="product-portfolio__item product--one-white">
-        <Link route="product" params={{ name: 'one-white' }} >
-          <a className="unit">
-            <div className="unit__copy">
-              <h3 className="unit__header">Easy Payment Integration</h3>
-              <p className="unit__subheader">One file, one payment provider. Credit Cards, PayPal, Bitcoins and more</p>
-            </div>
-            <div className="unit__image-wrap">
-              <figure className="unit__image" />
-            </div>
-          </a>
-        </Link>
+        <a className="unit">
+          <div className="unit__copy">
+            <h3 className="unit__header">Easy Payment Integration</h3>
+            <p className="unit__subheader">One file, one payment provider. Credit Cards, PayPal, Bitcoins and more</p>
+          </div>
+          <div className="unit__image-wrap">
+            <figure className="unit__image" />
+          </div>
+        </a>
       </div>
       <div className="product-portfolio__item product--oeco">
-        <Link route="product" params={{ name: 'oeco' }} >
-          <a className="unit">
-            <div className="unit__copy">
-              <h3 className="unit__header">Choose your CRM, ERP, SCM, SFA</h3>
-              <p className="unit__subheader">Integrate all your tools via our GraphQL API</p>
-            </div>
-            <div className="unit__image-wrap">
-              <figure className="unit__image" />
-            </div>
-          </a>
-        </Link>
+        <a className="unit">
+          <div className="unit__copy">
+            <h3 className="unit__header">Choose your CRM, ERP, SCM, SFA</h3>
+            <p className="unit__subheader">Integrate all your tools via our GraphQL API</p>
+          </div>
+          <div className="unit__image-wrap">
+            <figure className="unit__image" />
+          </div>
+        </a>
       </div>
       <div className="product-portfolio__item product-4">
         <div className="unit">
