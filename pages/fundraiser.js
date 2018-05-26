@@ -41,7 +41,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
         <Markdown source={fundraiser.intro} />
       </section>
     </div>
-    <div className="c-bg-primary mv1">
+    {/* <div className="c-bg-primary mv1">
       <div className="wrap wrap--narrow">
         <div className="button-group">
           <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md?download">
@@ -49,7 +49,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
           </a>
         </div>
       </div>
-    </div>
+    </div> */}
 
     <div className="wrap wrap--narrow mb7">
       <section className="section">
@@ -72,7 +72,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
 
         <div className="charts">
           <div className="chart">
-            <h3>Distribution</h3>
+            <h3 className="mb1">Distribution</h3>
             <Pie
               data={{
                 labels: [
@@ -96,7 +96,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
             <p>Unchained participation tokens account for a total of 55% of stock equity</p>
           </div>
           <div className="chart">
-            <h3>Allocation</h3>
+            <h3 className="mb1">Allocation</h3>
             <Pie
               data={{
                   labels: [
@@ -133,6 +133,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
       }
       .chart {
         margin-top: 1.5em;
+        margin-bottom: 4em;
         text-align: center;
         min-width: 30vw;
       }
