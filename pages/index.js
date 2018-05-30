@@ -13,9 +13,9 @@ const Home = ({ home }) => (
       <div className="hero__one">
         <h1>Unchained Commerce</h1>
         <h1 className="hero-text">
-          <span>No limits for business logic requirements.</span>
-          <span> Connect the data of any legacy and enterprise software the way you want.</span>
-          <span> Complete freedom in how your user interface should look like.</span>
+          <span>No limits for business opportunities.</span>
+          <span> Connect the data of your legacy & enterprise software and have</span>
+          <span> complete freedom in your user interface & experience</span>
         </h1>
       </div>
       <img className="hero-img" src="../static/img/robot-hand.svg" alt="robot hand" />
@@ -25,16 +25,13 @@ const Home = ({ home }) => (
       <img className="icon" src="../static/img/08- java-script-developer.svg" alt="" />
       <img className="icon" src="../static/img/06- desktop-imac-pen-tablet-notebook.svg" alt="" />
       <img className="icon" src="../static/img/15- web-programming-design-construction-3.svg" alt="" />
-      <img className="icon" src="../static/img/07- advertisement-banner.svg" alt="" />
       <img className="icon" src="../static/img/11- digital-cash-payment.svg" alt="" />
       <img className="icon" src="../static/img/39- bitcoin-cloud-computing.svg" alt="" />
+      <img className="icon" src="../static/img/08- shopping-cart-full.svg" alt="" />
       <img className="icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
-      <img className="icon" src="../static/img/07- container-package-logistic-truck.svg" alt="" />
       <img className="icon" src="../static/img/01- convenience-store.svg" alt="convenience store" />
       <img className="icon" src="../static/img/09- package-logistic-airplane.svg" alt="" />
-      <img className="icon" src="../static/img/09- supermarket-1.svg" alt="" />
       <img className="icon" src="../static/img/01- house-for-sale.svg" alt="house for sale" />
-      <img className="icon" src="../static/img/08- shopping-cart-full.svg" alt="" />
       <img className="icon" src="../static/img/27- html-achievement.svg" alt="" />
       <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
     </div>
@@ -182,7 +179,7 @@ const Home = ({ home }) => (
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
-      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
+      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q1 2019</a></p>
     </div>
 
     <div className="c-bg-primary">
@@ -210,7 +207,7 @@ const Home = ({ home }) => (
       </div>
     </div>
 
-    <div className="c-bg-secondary">
+    <div>
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
           <h1 className="mt0 c-black">Token Generation Event</h1>
@@ -232,7 +229,7 @@ const Home = ({ home }) => (
       }
 
       .icon {
-        width: 100px;
+        width: 80px;
       }
 
       .feature-set ul li a,
@@ -281,7 +278,7 @@ const Home = ({ home }) => (
       }
 
       .hero-text {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.5;
         color: #A3A3A3;
       }
@@ -290,7 +287,7 @@ const Home = ({ home }) => (
       }
       @media (max-width: 767px) {
         .hero-text {
-          font-size: 1.125em;
+          font-size: 1em;
         }
       }
       @media (min-width: 1025px) {

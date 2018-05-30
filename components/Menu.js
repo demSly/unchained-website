@@ -72,7 +72,7 @@ const Menu = ({ intl, hidden, ...props }) => (
           transition: .3s ease-in-out all;
         }
         .menu__items {
-          padding: .75em 1em 1em;
+          padding: 1.75em 1em 2em;
           font-size: 21px;
         }
         .menu__link {

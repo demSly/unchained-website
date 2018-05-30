@@ -48,6 +48,11 @@ const PartnerProgram = ({ partnerProgram }) => (
           </li>
         </ul>
 
+        <h2 className="mt7">Invested Partner</h2>
+        <a href="https://www.silbury.com/">
+          <img src="../static/img/silbury.jpg" alt="silbury logo" />
+        </a>
+
       </section>
     </div>
 
