@@ -38,17 +38,7 @@ const PartnerProgram = ({ partnerProgram }) => (
           <li>Forward incoming project leads</li>
         </ul>
 
-        <h3>Conditions</h3>
-        <ul>
-          <li>Price: CHF 30’000 annually</li>
-          <li>OSS: Unchained engine will be released under a GPLv3 license as soon
-            as 5 agencies signed our invested partners contract. Until then, every
-            agency will get a software license to build online shops on the base of
-             the product (no redistribution/resale).
-          </li>
-        </ul>
-
-        <h2 className="mt7">Invested Partner</h2>
+        <h2 className="mt7">Partnerss</h2>
         <a href="https://www.silbury.com/">
           <img src="../static/img/silbury.jpg" alt="silbury logo" />
         </a>
