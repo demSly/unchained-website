@@ -17,9 +17,17 @@ const Menu = ({ intl, hidden, ...props }) => (
       <ActiveLink activeClassName="active" href="/about">
         <a className="menu__link">{intl.formatMessage({ id: 'about' })}</a>
       </ActiveLink>
+      <a className="menu__link menu__link--phone" href="tel:+41445852004">Call us +41 44 585 20 04</a>
     </div>
     <style jsx global>{`
 
+      .menu__link--phone {
+        opacity: .7;
+        font-size: 14px;
+      }
+      .menu__link--phone:hover {
+        opacity: .9;
+      }
       .menu__link {
         text-transform: lowercase;
       }
@@ -45,7 +53,10 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 899px) {
+        .menu__link--phone {
+          margin-top: 3em !important;
+        }
         .menu.hidden {
           opacity: 0;
           transform: translateY(-600px);
@@ -75,7 +86,11 @@ const Menu = ({ intl, hidden, ...props }) => (
       }
 
 
-      @media (min-width: 768px) {
+      @media (min-width: 900px) {
+        .menu__link--phone {
+          margin-left: 8em !important;
+        }
+
         .menu-switch {
           display: none !important;
         }

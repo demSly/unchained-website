@@ -13,8 +13,10 @@ const About = ({ about }) => (
       <section className="section">
         <h2>{about.title}</h2>
         <MemberList />
-        <ContactForm />
       </section>
+    </div>
+    <div className="wrap wrap--narrow mb7">
+      <ContactForm />
     </div>
   </PageLayout>
 );

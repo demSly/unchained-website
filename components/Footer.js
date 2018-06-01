@@ -14,39 +14,6 @@ const Footer = ({ intl }) => (
           </div>
         </div>
 
-        {/* <div className="newsletter-form-wrap">
-          <small>{intl.formatMessage({ id: 'subscribe_to_newsletter' })}</small>
-          <div id="mc_embed_signup" className="form">
-            <form action="https://shop.us17.list-manage.com/subscribe/post?u=1c6b1723591711e408db610fb&amp;id=5eaceef803" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" noValidate>
-              <div id="mc_embed_signup_scroll" className="newsletter-form">
-                <div>
-                  <div className="mc-field-group field__input-wrapper">
-                    <input
-                      className="field__input required email"
-                      type="email"
-                      name="EMAIL"
-                      aria-label="newsletter e-mail"
-                      id="mce-EMAIL"
-                      required="required"
-                      placeholder="E-Mail"
-                    />
-                  </div>
-                  <div id="mce-responses" className="clear">
-                    <div className="response" id="mce-error-response" style={{ display: 'none' }} />
-                    <div className="response" id="mce-success-response" style={{ display: 'none' }} />
-                  </div>
-                  <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                    <input type="text" name="b_1c6b1723591711e408db610fb_5eaceef803" tabIndex="-1" value="" />
-                  </div>
-                </div>
-                <div className="clear">
-                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button footer-newsletter-button" />
-                </div>
-              </div>
-            </form>
-          </div>
-        </div> */}
-
         <div className="social-links">
           <a className="social-link" href="https://github.com/unchainedshop/">
             <svg width="18px" height="18px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +54,50 @@ const Footer = ({ intl }) => (
 
       </div>
 
-      <div className="footer__bottom flex-between">
+      <div className="footer__bottom">
+        <div>
+          <Link href="/community">
+            <a className="footer__link">
+              <small>community</small>
+            </a>
+          </Link>
+          <Link href="/partner-program">
+            <a className="footer__link">
+              <small>partner program</small>
+            </a>
+          </Link>
+          <Link href="/faq">
+            <a className="footer__link">
+              <small>faq</small>
+            </a>
+          </Link>
+          <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
+            <small>API (GraphiQL)</small>
+          </a>
+        </div>
+        <div>
+          <Link href="/fundraiser">
+            <a className="footer__link">
+              <small>fundraiser</small>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'about' })}</small></a>
+          </Link>
+          <Link href="/merchants">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'merchants' })}</small></a>
+          </Link>
+          <Link href="/partners">
+            <a className="footer__link">
+              <small>partners</small>
+            </a>
+          </Link>
+          <Link href="/showcase">
+            <a className="footer__link">
+              <small>showcase</small>
+            </a>
+          </Link>
+        </div>
         <div>
           <Link href="/imprint">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'imprint' })}</small></a>
@@ -95,54 +105,25 @@ const Footer = ({ intl }) => (
           <Link href="/terms">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'terms' })}</small></a>
           </Link>
-          {/* <Link href="/return-policy">
-            <a className="footer__link">
-              <small>{intl.formatMessage({ id: 'return_policy' })}</small>
-            </a>
-          </Link> */}
-          <Link href="/merchants">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'merchants' })}</small></a>
+          <Link href="/privacy">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'privacy' })}</small></a>
           </Link>
-          <Link href="/partners">
-            <a className="footer__link">
-              <small>partner program</small>
-            </a>
-          </Link>
+        </div>
+        <div>
           <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>announcements</small>
           </a>
-          <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
-            <small>API (GraphiQL)</small>
-          </a>
+          <Link href="/contact">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'contact' })}</small></a>
+          </Link>
         </div>
       </div>
 
-      {/* <div className="flex-between">
-        <div className="footer__payments">
-          <img className="cc" src="../static/img/icon/cc/visa.svg" alt="visa icon" />
-          <img className="cc" src="../static/img/icon/cc/mastercard.svg" alt="mastercard icon" />
-          <img className="cc" src="../static/img/icon/cc/amex.svg" alt="amex icon" />
-          <img className="cc" src="../static/img/postcard.png" alt="postfinance icon" />
-          <img className="cc paypal" src="../static/img/paypal.jpeg" alt="paypal icon" />
-          <div className="cc bill">{intl.formatMessage({ id: 'bill' })}</div>
-        </div>
-
-
-        <ChangeCountryButton
-          className="no-button"
-          icon="../static/img/icon/map-direction.svg"
-        />
-      </div> */}
     </div>
 
     <style jsx>{`
       .icon-footer {
         width: 96px;
-      }
-      #mc_embed_signup_scroll {
-        display: flex;
-        margin: 0 auto;
-        max-width: 270px;
       }
       @media (max-width: 899px) {
         .footer__contact {
@@ -151,24 +132,26 @@ const Footer = ({ intl }) => (
         .footer__bottom {
           text-align: center;
         }
+        .footer__bottom div {
+          margin-bottom: 1.5em;
+        }
+        .footer__link + .footer__link {
+          margin-left: 1em;
+        }
       }
-      .mc-field-group.field__input-wrapper {
-        min-width: 196px;
+      @media (min-width: 900px) {
+        .footer__bottom {
+          display: flex;
+          justify-content: space-between;
+          max-width: 800px;
+        }
+        .footer__link {
+          display: block;
+        }
       }
-      .footer-newsletter-button {
-        background-image: url(../../static/img/icon/email-send-1.svg);
-        height: 42px;
-        width: 60px;
-        background-position: center;
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-        margin-left: .25em;
-      }
+
       .footer__link {
         color: #676767;
-      }
-      .footer__link + .footer__link {
-        margin-left: 1em;
       }
       .hello {
         display: block;
@@ -226,46 +209,11 @@ const Footer = ({ intl }) => (
           text-align: initial;
           margin-top: 10px;
         }
-        .footer__link + .footer__link {
-          margin-left: 2em;
-        }
       }
 
-      .cc {
-        width: 51px;
-        height: 32px;
-        margin-right: .25em;
-        filter: grayscale(100%);
-        opacity: .2;
-        transition: all ease-in-out .2s;
-        vertical-align: top;
-      }
-      .cc:hover {
-        filter: grayscale(0%);
-        opacity: .9;
-      }
       @media (max-width: 640px) {
-        .cc {
-          width: 38px;
-          height: 24px;
-        }
         .footer__top {
           text-align: center;
-        }
-      }
-
-      .bill {
-        width: auto;
-        height: auto;
-        display: inline-block;
-        font-size: 11px;
-        border: 1px solid lightgray;
-        padding: 7px 10px;
-      }
-      @media (max-width: 640px) {
-        .bill {
-          height: 24px;
-          padding: 3px 6px;
         }
       }
 

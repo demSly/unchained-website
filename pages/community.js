@@ -10,14 +10,14 @@ const Home = ({ community }) => (
   <PageLayout title={community.meta_title} metaDescription={community.meta_description}>
 
     <div className="wrap mt7 text-center">
-      <Link href="/faq">
-        <a className="button">
-            FAQ
-        </a>
-      </Link>
       <Link href="/partner-program">
         <a className="button">
             Partner Program
+        </a>
+      </Link>
+      <Link href="/faq">
+        <a className="button">
+            FAQ
         </a>
       </Link>
       <a className="button" href="/graphiql">
@@ -26,7 +26,7 @@ const Home = ({ community }) => (
     </div>
 
 
-    <div className="wrap mt7 text-center">
+    <div className="wrap text-center">
       <h2>E-Commerce projects === fun</h2>
       <p>Use your running tech stack of choice and connect to the unchained engine.</p>
       <img className="hero-img" src="../static/img/110- online-website-shopping-male-african-american.svg" alt="robot hand" />
@@ -113,7 +113,7 @@ const Home = ({ community }) => (
       </div>
     </div>
 
-    <div className="community wrap wrap--narrow">
+    <div className="community mb7 wrap wrap--narrow">
       <div className="dangerously">
         <p>
         A platform that is compatible with any kind of internet
