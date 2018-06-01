@@ -12,61 +12,41 @@ const Showcase = ({ showcase }) => (
         <h1 className="text-center mb3">
           Showcase
         </h1>
-        <p>See how Unchained can look like as a potential Merchant</p>
         <ul className="mdc-image-list mdc-image-list--masonry masonry-image-list">
+
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/900x900/?multi,platform" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">Multi platform by design</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPad).png" alt="Text label" />
           </li>
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/1300x900/?data" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">Portable data by default</span>
-            </div>
-          </li>
-          <li className="mdc-image-list__item"><img className="mdc-image-list__image" src="https://source.unsplash.com/1000x900/?freedom" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">100% freedom in customization</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPad) (3).png" alt="Text label" />
           </li>
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/1200x600/?developers" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">Developers love it</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPhone 6_7_8).png" alt="Text label" />
           </li>
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/1600x1400/?no" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">No Lock-in</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(Laptop with HiDPI screen) (1).png" alt="Text label" />
           </li>
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/1600x900/?commerce" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">Commerce</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPad) (1).png" alt="Text label" />
           </li>
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/1400x980/?merchant" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">Merchant</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPad) (2).png" alt="Text label" />
           </li>
           <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="https://source.unsplash.com/1300x1200/?ecommerce" alt="Text label" />
-            <div className="mdc-image-list__supporting">
-              <span className="mdc-image-list__label">Delivery</span>
-            </div>
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPhone 6_7_8 Plus).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(Laptop with HiDPI screen) (2).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(Laptop with HiDPI screen).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(Nexus 6P).png" alt="Text label" />
           </li>
         </ul>
 
         <style jsx>{`
-          .mdc-image-list__label {
-            display: none;
-          }
           /* Material */
           .mdc-image-list {
             display: -ms-flexbox;
@@ -87,7 +67,8 @@ const Showcase = ({ showcase }) => (
             list-style-type: none; }
 
           .mdc-image-list__image {
-            width: 100%; }
+            width: 100%;
+            margin-bottom: 1em;}
 
           .mdc-image-list__image-aspect-container .mdc-image-list__image {
             position: absolute;
@@ -198,9 +179,16 @@ const Showcase = ({ showcase }) => (
       </section>
     </div>
     <div className="wrap wrap--narrow mb3">
-      <p>The content created in a headless system like unchained is “pure” and can be repurposed across multiple channels, including website, mobile app, digital assistant, virtual reality, smart watches, etc. anywhere and at any time through the customer journey.</p>
-      <p>Headless systems focus on content management; keeping things simple for those who use it on a daily basis. The entire user experience is managed within one backend.</p>
-      <p><span>An unchained shop </span><a className="button" href="https://freezyboy.com">freezyboy.com</a></p>
+      <p>A customer story</p>
+      <ul>
+        <li>Supports both B2C & B2B clients. Context-aware prices.</li>
+        <li>Combined with a standard CMS to lower costs</li>
+        <li>Unified React Storefront</li>
+        <li>Various Discount models</li>
+        <li>Delivery estimation through Google Spreadsheets</li>
+        <li>Document generation through smallinvoice</li>
+      </ul>
+      <p><span>See the shop in action </span><a className="button" href="https://freezyboy.com">freezyboy.com</a></p>
     </div>
   </PageLayout>
 );
