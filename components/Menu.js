@@ -20,7 +20,7 @@ const Menu = ({ intl, hidden, ...props }) => (
       <ActiveLink activeClassName="active" href="/about">
         <a className="menu__link">{intl.formatMessage({ id: 'about' })}</a>
       </ActiveLink>
-      <a className="menu__link menu__link--phone" href="tel:+41445852004">Call us +41 44 585 20 04</a>
+      <a className="menu__link menu__link--phone" href="tel:+41435051846">Call us +41 43 505 18 46</a>
     </div>
     <style jsx global>{`
 
