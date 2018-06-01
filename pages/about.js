@@ -13,7 +13,9 @@ const About = ({ about }) => (
       <section className="section">
         <h2>{about.title}</h2>
         <MemberList />
-        <ContactForm />
+        <div id="contact">
+          <ContactForm />
+        </div>
       </section>
     </div>
   </PageLayout>
