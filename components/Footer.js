@@ -84,17 +84,12 @@ const Footer = ({ intl }) => (
           <Link href="/about">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'about' })}</small></a>
           </Link>
-          <Link href="/merchants">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'merchants' })}</small></a>
+          <Link href="/showcase">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'showcase' })}</small></a>
           </Link>
           <Link href="/partners">
             <a className="footer__link">
               <small>partners</small>
-            </a>
-          </Link>
-          <Link href="/showcase">
-            <a className="footer__link">
-              <small>showcase</small>
             </a>
           </Link>
         </div>
@@ -113,7 +108,7 @@ const Footer = ({ intl }) => (
           <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>announcements</small>
           </a>
-          <Link href="/contact">
+          <Link href="/about#contact">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'contact' })}</small></a>
           </Link>
         </div>

@@ -56,7 +56,7 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
       }
 
-      @media (max-width: 899px) {
+      @media (max-width: 999px) {
         .menu__link--phone {
           margin-top: 3em !important;
         }
@@ -89,7 +89,7 @@ const Menu = ({ intl, hidden, ...props }) => (
       }
 
 
-      @media (min-width: 900px) {
+      @media (min-width: 1000px) {
         .menu__link--phone {
           margin-left: 8em !important;
         }
