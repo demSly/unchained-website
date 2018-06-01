@@ -41,15 +41,15 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
         <Markdown source={fundraiser.intro} />
       </section>
     </div>
-    {/* <div className="c-bg-primary mv1">
+    <div className="c-bg-primary mv1">
       <div className="wrap wrap--narrow">
         <div className="button-group">
-          <a className="button" href="https://gitprint.com/unchainedshop/unchained-evolution/blob/master/business-plan.md?download">
+          <a className="button" href="https://github.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
                 Read our Business Plan
           </a>
         </div>
       </div>
-    </div> */}
+    </div>
 
     <div className="wrap wrap--narrow mb7">
       <section className="section">

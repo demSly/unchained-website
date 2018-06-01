@@ -16,7 +16,6 @@ const Imprint = ({ imprint }) => (
       <br />
       <small>Development</small>
       <p>This is a Joint-venture of <a className="link underline" href="http://www.fliptation.ch">Fliptation GmbH</a> & <a className="link underline" href="http://www.reactive.one">Reactive Code GmbH</a>.
-      Visit <a className="link underline" href="http://www.fivelines.ch">fivelines</a> for information about our professional services
       </p>
     </div>
   </PageLayout>
