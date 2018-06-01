@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { compose } from 'recompose';
 import connectApollo from '../lib/connectApollo';
 import withRegion from '../lib/withRegion';
@@ -37,20 +38,27 @@ const PartnerProgram = ({ partnerProgram }) => (
           <li>Access to Source Code before OSS Relicensing</li>
           <li>Forward incoming project leads</li>
         </ul>
-
-        <h3>Conditions</h3>
-        <ul>
-          <li>Price: CHF 30’000 annually</li>
-          <li>OSS: Unchained engine will be released under a GPLv3 license as soon
-            as 5 agencies signed our invested partners contract. Until then, every
-            agency will get a software license to build online shops on the base of
-             the product (no redistribution/resale).
-          </li>
-        </ul>
-
       </section>
+      <div className="wrap mt7 text-center">
+        <a className="button" href="/static/partner-program-factsheet.pdf" target="_blank">
+          Download Factsheet
+        </a>
+      </div>
     </div>
-
+    <div className="c-bg-primary">
+      <div className="wrap wrap--narrow wrap--vertical-padding">
+        <p className="c-white">Just drop us a line if you want to become an
+          official partner of Unchained or you are in need of developer support
+        </p>
+        <div className="text-center">
+          <Link href="/about#contact">
+            <a className="button">
+                Become a Partner
+            </a>
+          </Link>
+        </div>
+      </div>
+    </div>
   </PageLayout>
 );
 

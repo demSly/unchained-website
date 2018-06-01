@@ -5,13 +5,14 @@ import withRegion from '../lib/withRegion';
 import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
-const Merchants = ({ merchants }) => (
-  <PageLayout title={merchants.meta_title} metaDescription={merchants.meta_description}>
+const Showcase = ({ showcase }) => (
+  <PageLayout title={showcase.meta_title} metaDescription={showcase.meta_description}>
     <div className="wrap mt7">
-      <section id="merchants" className="section">
+      <section id="showcase" className="section">
         <h1 className="text-center mb3">
-          Unchained for Merchants
+          Showcase
         </h1>
+        <p>See how Unchained can look like as a potential Merchant</p>
         <ul className="mdc-image-list mdc-image-list--masonry masonry-image-list">
           <li className="mdc-image-list__item">
             <img className="mdc-image-list__image" src="https://source.unsplash.com/900x900/?multi,platform" alt="Text label" />
@@ -207,5 +208,5 @@ const Merchants = ({ merchants }) => (
 
 export default connectApollo(compose(
   connectI18n,
-  withRegion('merchants'),
-)(Merchants));
+  withRegion('showcase'),
+)(Showcase));

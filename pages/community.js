@@ -166,7 +166,7 @@ const Home = ({ community }) => (
           <p className="c-white">Just drop us a line if you want to become an
             official partner of Unchained or you are in need of developer support
           </p>
-          <Link href="/contact">
+          <Link href="/about#contact">
             <a className="button">
                 Get in Contact now
             </a>

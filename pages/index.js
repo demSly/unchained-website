@@ -185,14 +185,14 @@ const Home = ({ home }) => (
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <h3 className="mt0 c-white">Get more information</h3>
+          <h3 className="mt0 c-white">Get more information by choosing your role</h3>
           <div className="button-group">
-            <Link href="/agencies">
+            <Link href="/community">
               <a className="button">
-                  Developer / Agency
+                  Developer / Consultant
               </a>
             </Link>
-            <Link href="/merchants">
+            <Link href="/showcase">
               <a className="button">
                   Merchant
               </a>

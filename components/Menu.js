@@ -8,6 +8,9 @@ import ActiveLink from './ActiveLink';
 const Menu = ({ intl, hidden, ...props }) => (
   <div className={`menu ${hidden ? 'hidden' : ''}`} {...props}>
     <div className="menu__items">
+      <ActiveLink activeClassName="active" href="/showcase">
+        <a className="menu__link">{intl.formatMessage({ id: 'showcase' })}</a>
+      </ActiveLink>
       <ActiveLink activeClassName="active" href="/community">
         <a className="menu__link">{intl.formatMessage({ id: 'community' })}</a>
       </ActiveLink>
