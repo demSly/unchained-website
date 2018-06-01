@@ -8,23 +8,14 @@ import ActiveLink from './ActiveLink';
 const Menu = ({ intl, hidden, ...props }) => (
   <div className={`menu ${hidden ? 'hidden' : ''}`} {...props}>
     <div className="menu__items">
-      <ActiveLink activeClassName="active" href="/agencies">
-        <a className="menu__link">{intl.formatMessage({ id: 'agencies' })}</a>
+      <ActiveLink activeClassName="active" href="/community">
+        <a className="menu__link">{intl.formatMessage({ id: 'community' })}</a>
       </ActiveLink>
-      <ActiveLink activeClassName="active" href="/faq">
-        <a className="menu__link">{intl.formatMessage({ id: 'faq' })}</a>
-      </ActiveLink>
-      {/* <ActiveLink activeClassName="active" href="/shop">
-        <a className="menu__link">{intl.formatMessage({ id: 'shop' })}</a>
-      </ActiveLink> */}
       <ActiveLink activeClassName="active" href="/fundraiser">
         <a className="menu__link">{intl.formatMessage({ id: 'fundraiser' })}</a>
       </ActiveLink>
-      <ActiveLink activeClassName="active" href="/team">
-        <a className="menu__link">{intl.formatMessage({ id: 'team' })}</a>
-      </ActiveLink>
-      <ActiveLink activeClassName="active" href="/contact">
-        <a className="menu__link">{intl.formatMessage({ id: 'contact' })}</a>
+      <ActiveLink activeClassName="active" href="/about">
+        <a className="menu__link">{intl.formatMessage({ id: 'about' })}</a>
       </ActiveLink>
     </div>
     <style jsx global>{`

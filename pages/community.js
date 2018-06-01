@@ -6,8 +6,25 @@ import withRegion from '../lib/withRegion';
 import connectI18n from '../lib/connectI18n';
 import PageLayout from '../components/PageLayout';
 
-const Home = ({ agencies }) => (
-  <PageLayout title={agencies.meta_title} metaDescription={agencies.meta_description}>
+const Home = ({ community }) => (
+  <PageLayout title={community.meta_title} metaDescription={community.meta_description}>
+
+    <div className="wrap mt7 text-center">
+      <Link href="/faq">
+        <a className="button">
+            FAQ
+        </a>
+      </Link>
+      <Link href="/partner-program">
+        <a className="button">
+            Partner Program
+        </a>
+      </Link>
+      <a className="button" href="/graphiql">
+        API
+      </a>
+    </div>
+
 
     <div className="wrap mt7 text-center">
       <h2>E-Commerce projects === fun</h2>
@@ -96,7 +113,7 @@ const Home = ({ agencies }) => (
       </div>
     </div>
 
-    <div className="agencies wrap wrap--narrow">
+    <div className="community wrap wrap--narrow">
       <div className="dangerously">
         <p>
         A platform that is compatible with any kind of internet
@@ -278,5 +295,5 @@ const Home = ({ agencies }) => (
 
 export default connectApollo(compose(
   connectI18n,
-  withRegion('agencies'),
+  withRegion('community'),
 )(Home));
