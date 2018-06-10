@@ -12,11 +12,14 @@ const MemberListItem = ({
       <div className="position">{position}</div>
       <div className="description">{description}</div>
       {links.map(({ _id: linkId, name: linkName, url: linkUrl }) => (
-        <div key={linkId}>
+        <div className="link" key={linkId}>
           <a href={linkUrl}>{linkName}</a>
         </div>
         ))}
       <style jsx>{`
+        .link {
+          margin-bottom: .5em
+        }
         .name,
         .position {
           font-weight: bold;
@@ -27,6 +30,7 @@ const MemberListItem = ({
         }
         .description {
           margin-top: 1em;
+          margin-bottom: 1em;
         }
         .member {
           display: block;
