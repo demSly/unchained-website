@@ -15,9 +15,9 @@ const Home = ({ home }) => (
         <div className="hero__one">
           <h1 className="hero__title">Redefine Commerce every day.</h1>
           <h1 className="hero-text">
-            <span>Unchained is a developer-first centered platform for multi-channel ecommerce.</span>
-            <span> Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of.</span>
-            <span> Connect all your backend systems & start selling.</span>
+            <span>Unchained sets the new standard for a multi-channel ecommerce platform.</span>
+            <span> We can now build all the crazy pricing, discount, sales ideas the marketing department always dreamed of.</span>
+            <span> Connect your backend systems & your CMS with our GraphQL API, deploy your container where and how you want and start selling.</span>
           </h1>
           <a href="/" className="button">Contact us</a>
         </div>
@@ -44,10 +44,11 @@ const Home = ({ home }) => (
             <img className="icon" src="../static/img/icon/duotone/45- program-setting-1.svg" alt="" />
             <h2 className="section-title">The most flexible platform for ecommerce</h2>
           </div>
-          <p>Unchained is soo cool. REally. fivelines Unchained is a developer-first centered platform for multi-channel ecommerce. Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect all your backend systems & start selling on any internet connected device.</p>
+          <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging e-commerce with the internet of things and distributed ledgers.</p>
           <p>Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect all your backend systems & start selling on any internet connected device.</p>
+          <p>With the combination of GraphQL as API technology and a built-for-headless approach, unchained.shop is the e-commerce engine that works with any UI, is indefinitely extendable and is by design compatible with any modern software.</p>
           <Link href="/showcase">
-            <a className="link">
+            <a className="link mt3 db">
                 See a showcase
             </a>
           </Link>
@@ -55,28 +56,19 @@ const Home = ({ home }) => (
       </section>
     </div>
 
-    <div className="dev-bg">
+    <div className="c-bg-dark">
       <section className="wrap developers-section">
         <div className="icon-title-pair">
           <img className="icon" src="../static/img/icon/duotone/66- osx-programmer-female-caucasian.svg" alt="" />
           <h2 className="section-title">Built for developers</h2>
         </div>
-        <p>With Unchained you'll get a modern platform with flexible tools for internet commerce. Install the Unchained Engine, use your tech stack of choice, edit & add functionality, connect your backend systems & start selling on any internet connected device.</p>
-        <Link href="/showcase">
+        <p>Unchained is by default headless, there is no UI, just a GraphQL schema you'll get to work with. This modern platform with flexible tools for internet commerce allows for fast feature development times & total flexibility. Install the Unchained Engine, use your tech stack of choice, edit & add functionality, connect your backend systems & start selling on any internet connected device. We are working on the Documentation. Stay tuned.</p>
+        <Link href="/develoeprs">
           <a className="link">
-              See a showcase
+              Learn more
           </a>
         </Link>
       </section>
-
-      <div className="wrap c-bg-dark tech-stack-wrap">
-        <div className="tech-stack-flex">
-          <img className="tech-stack" src="../static/img/tech/GraphQL_Logo.svg" alt="GraphQL Logo" />
-          <img className="tech-stack" src="../static/img/tech/JavaScript-logo.png" alt="Javascript Logo" />
-          <img className="tech-stack" src="../static/img/tech/apollo-logo.png" alt="Apollo Logo" />
-        </div>
-      </div>
-
     </div>
 
 
@@ -108,7 +100,7 @@ const Home = ({ home }) => (
           <a className="unit">
             <div className="unit__copy">
               <h3 className="unit__header">Choose your CRM, ERP, SCM, SFA</h3>
-              <p className="unit__subheader">Integrate all your tools via our GraphQL API</p>
+              <p className="unit__subheader">Integrate all your backend tools via our GraphQL API</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -134,6 +126,22 @@ const Home = ({ home }) => (
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
       <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q1 2019</a></p>
+      <div className="wrap tech-stack-wrap">
+        <small className="text-center db">Built on:</small>
+        <div className="tech-stack-flex">
+          <img className="tech-stack" src="../static/img/tech/GraphQL_Logo.svg" alt="GraphQL Logo" />
+          <img className="tech-stack" src="../static/img/tech/JavaScript-logo.png" alt="Javascript Logo" />
+          <img className="tech-stack" src="../static/img/tech/nodejs.png" alt="Node JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/apollo-logo.png" alt="Apollo Logo" />
+        </div>
+        <small className="text-center db">Fits well with:</small>
+        <div className="tech-stack-flex">
+          <img className="tech-stack" src="../static/img/tech/react-logo.svg" alt="React JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
+        </div>
+        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python & Haskell. You choose.</small>
+      </div>
     </div>
 
     <div className="c-bg-primary">
@@ -176,12 +184,18 @@ const Home = ({ home }) => (
 
     <style jsx>{`
 
+      .tech-stack-wrap {
+        padding: 0;
+      }
+
       .tech-stack-flex {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,.5), 0 4px 14px rgba(0,0,0,.7);
-
+        box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
+        padding: 1em;
+        border: 2px solid rgba(255,255,255,.4);
+        margin-bottom: 3em;
       }
 
       .tech-stack {
@@ -202,13 +216,11 @@ const Home = ({ home }) => (
         margin-right: 1em;
       }
 
-      .dev-bg {
+      .c-bg-dark {
         position: relative;
         z-index: 0;
         margin-bottom: 10em;
         padding: 3em 0 4em;
-        background-color: ${variables.primaryColor};
-        color: white;
       }
 
       .hero__title {
@@ -239,7 +251,7 @@ const Home = ({ home }) => (
       }
 
       .hero-text {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.5;
         color: #A3A3A3;
       }
@@ -295,7 +307,7 @@ const Home = ({ home }) => (
       .primary-section::before {
         display: block;
         content: '';
-        background-color: ${variables.grayColor};
+        background-image: linear-gradient(to bottom, ${variables.grayColor}, white);
         background-size: 100%;
         background-repeat: no-repeat;
         width: 100%;
