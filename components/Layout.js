@@ -15,7 +15,7 @@ const Layout = ({
       <meta content="telephone=no" name="format-detection" key="format-detection" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" key="viewport" />
       <meta name="google-site-verification" content="Z9rrptXszSZyyIclbbA3_0ED9bte4dn3dz5QsivMUEU" key="google site verification" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" key="mono font" />
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900|Roboto+Mono:400,500" rel="stylesheet" key="mono font" />
       <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png" key="icon_180" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" key="icon_32" />
       <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" key="icon_16" />

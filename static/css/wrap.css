@@ -1,5 +1,5 @@
 .wrap {
-  max-width: 1340px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 1em;
 }
@@ -41,5 +41,5 @@
 }
 
 .wrap--narrow {
-  max-width: 744px;
+  max-width: 900px;
 }

@@ -64,7 +64,8 @@
 
 @media (min-width: 768px) {
   .hero {
-    padding-top: 118px;
+    padding-top: 164px;
+    padding-bottom: 64px;
   }
 }
 
@@ -177,4 +178,10 @@
 
 .c-bg-dark .footer * {
   color: inherit;
+}
+
+.section-title {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  text-transform: uppercase;
 }
