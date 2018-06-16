@@ -15,9 +15,27 @@ const Home = ({ home }) => (
         <div className="hero__one">
           <h1 className="hero__title">Redefine Commerce every day.</h1>
           <h1 className="hero-text">
-            <span>Unchained is a developer-first centered platform for multi-channel ecommerce.</span>
-            <span> Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of.</span>
-            <span> Install the Unchained Engine, connect all your backend systems & start selling on any internet connected device.</span>
+            <div className="tags">
+              <Link href="/platform">
+                <a className="tag">
+                  <div className="tag__flex">
+                    <span className="tag__pill">Headless-CMS</span>
+                    <span className="tag__text">for Content</span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/platform">
+                <a className="tag">
+                  <div className="tag__flex">
+                    <span className="tag__pill">API-based</span>
+                    <span className="tag__text">for Communication</span>
+                  </div>
+                </a>
+              </Link>
+            </div>
+            <span>Unchained sets the new standard for a multi-channel ecommerce platform.</span>
+            <span> We can now build all the crazy pricing, discount, sales ideas the marketing department always dreamed of.</span>
+            <span> Connect your backend systems & your CMS with our GraphQL API, deploy your container where and how you want and start selling.</span>
           </h1>
           <a href="/" className="button">Contact us</a>
         </div>
@@ -38,34 +56,39 @@ const Home = ({ home }) => (
       </div>
 
 
-      <section className="wrap primary-section">
-        <div className="icon-title-pair">
-          <img className="icon" src="../static/img/icon/duotone/45- program-setting-1.svg" alt="" />
-          <h2 className="section-title">The most flexible platform for ecommerce</h2>
+      <section className="primary-section">
+        <div className="wrap">
+          <div className="icon-title-pair">
+            <img className="icon" src="../static/img/icon/duotone/45- program-setting-1.svg" alt="" />
+            <h2 className="section-title">The most flexible platform for ecommerce</h2>
+          </div>
+          <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging e-commerce with the internet of things and distributed ledgers.</p>
+          <p>Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect all your backend systems & start selling on any internet connected device.</p>
+          <p>With the combination of GraphQL as API technology and a built-for-headless approach, unchained.shop is the e-commerce engine that works with any UI, is indefinitely extendable and is by design compatible with any modern software.</p>
+          <Link href="/showcase">
+            <a className="link mt3 db">
+                See a showcase
+            </a>
+          </Link>
         </div>
-        <p>Unchained is soo cool. REally. fivelines</p>
-        <Link href="/showcase">
-          <a className="link">
-              See a showcase
-          </a>
-        </Link>
       </section>
     </div>
 
-    <div className="dev-bg">
+    <div className="c-bg-dark">
       <section className="wrap developers-section">
         <div className="icon-title-pair">
           <img className="icon" src="../static/img/icon/duotone/66- osx-programmer-female-caucasian.svg" alt="" />
           <h2 className="section-title">Built for developers</h2>
         </div>
-        <p>With Unchained you'll get a modern platform with flexible tools for internet commerce. Install the Unchained Engine, use your tech stack of choice, edit & add functionality, connect your backend systems & start selling on any internet connected device.</p>
-        <Link href="/showcase">
+        <p>Unchained is by default headless, there is no UI, just a GraphQL schema you'll get to work with. This modern platform with flexible tools for internet commerce allows for fast feature development times & total flexibility. Install the Unchained Engine, use your tech stack of choice, edit & add functionality, connect your backend systems & start selling on any internet connected device. We are working on the Documentation. Stay tuned.</p>
+        <Link href="/develoeprs">
           <a className="link">
-              See a showcase
+              Learn more
           </a>
         </Link>
       </section>
     </div>
+
 
     <div className="wrap">
       <div className="product-portfolio">
@@ -95,7 +118,7 @@ const Home = ({ home }) => (
           <a className="unit">
             <div className="unit__copy">
               <h3 className="unit__header">Choose your CRM, ERP, SCM, SFA</h3>
-              <p className="unit__subheader">Integrate all your tools via our GraphQL API</p>
+              <p className="unit__subheader">Integrate all your backend tools via our GraphQL API</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -115,104 +138,28 @@ const Home = ({ home }) => (
         </div>
       </div>
 
-      <div className="wrap wrap--vertical-padding">
-        <h2>Our incomplete features & plugin list</h2>
-        <div className="feature-set">
-          <h3>Delivery</h3>
-          <ul>
-            <li>Downloadable Products</li>
-            <li>E-Mail the order to a third-party logistics provider&apos;s central inbox</li>
-            <li>Upload orders as CSV to a FTP host*</li>
-            <li>Transfer orders electronically to any other system</li>
-            <li>Post (Yellowcube), UPS, DHL Comissioning*</li>
-          </ul>
-        </div>
 
-        <div className="feature-set">
-          <h3>Documents</h3>
-          <ul>
-            <li>Generate PDF&apos;s locally through a local bookkeeping system
-              (SAP R/3, Abacus, ...)
-            </li>
-            <li>Generate PDF&apos;s through SaaS services (Smallinvoice)</li>
-            <li>Generate a new XML file for external processing</li>
-          </ul>
-        </div>
-
-        <div className="feature-set">
-          <h3>Messaging</h3>
-          <ul>
-            <li>Send Order Confirmations and Invoices by E-Mail, SMS or Whatsapp</li>
-            <li>Send User Registration Notifications via Slack</li>
-            <li>Twitter new orders anonymized*</li>
-          </ul>
-        </div>
-
-        <div className="feature-set">
-          <h3>Payments</h3>
-          <ul>
-            <li>Bitcoin, Ether & more cryptocurrencies</li>
-            <li>Invoice</li>
-            <li>Stripe</li>
-            <li>PostFinance</li>
-            <li>PayPal</li>
-            <li>Bonity-checked invoices (Deltavista)</li>
-          </ul>
-        </div>
-
-        <div className="feature-set">
-          <h3>Pricing</h3>
-          <ul>
-            <li>B2B Users special price</li>
-            <li>Date range dependent special prices</li>
-            <li>Dynamic tax rate retrieval</li>
-            <li>Product, Payment, Order or Delivery prices confiurable</li>
-            <li>Weather-dependent barbeque sausage price*</li>
-            <li>Order total weight dependent charges, dynamically calculated by UPS*</li>
-            <li>Prices that depend on Languages, countries, users, order quantities, ...*</li>
-          </ul>
-        </div>
-
-        <div className="feature-set">
-          <h3>Discounts</h3>
-          <ul>
-            <li>Christmas & Black Friday Discounts</li>
-            <li>Percentage reducing discount codes</li>
-            <li>Absolute amount reducing discount codes</li>
-            <li>Swear word dependent daily discounts based on Donald Trump Twitter feed*</li>
-            <li>Lottery or random prices: Every 1000th buyer gets the stuff free of charge*</li>
-          </ul>
-        </div>
-
-        <div className="feature-set">
-          <h3>Warehousing</h3>
-          <ul>
-            <li>ERP as Inventory Management*</li>
-            <li>Manage Inventory in Google Docs</li>
-            <li>Fire Just-in-time Production of any goods*</li>
-            <li>Real-time quantities (see an event get sold out live)*</li>
-          </ul>
-        </div>
-
-        <div className="feature-set">
-          <h3>And so much more</h3>
-          <ul>
-            <li>One shop for one world (Multi-country support)</li>
-            <li>Price your products in any currency or crypto-currency you like. $XLM maybe?</li>
-            <li>Multi-language support</li>
-            <li>Dynamic catalogs</li>
-          </ul>
-        </div>
-
-        <p>* Examples of crazy plugins possible, built during the e-commerce project.
-          Every plugin is implementable by a Junior Javascript developer in less than a day
-        </p>
-      </div>
     </div>
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
       <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q1 2019</a></p>
+      <div className="wrap tech-stack-wrap">
+        <small className="text-center db">Built on:</small>
+        <div className="tech-stack-flex">
+          <img className="tech-stack" src="../static/img/tech/GraphQL_Logo.svg" alt="GraphQL Logo" />
+          <img className="tech-stack" src="../static/img/tech/JavaScript-logo.png" alt="Javascript Logo" />
+          <img className="tech-stack" src="../static/img/tech/nodejs.png" alt="Node JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/apollo-logo.png" alt="Apollo Logo" />
+        </div>
+        <small className="text-center db">Fits well with:</small>
+        <div className="tech-stack-flex">
+          <img className="tech-stack" src="../static/img/tech/react-logo.svg" alt="React JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
+        </div>
+        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python & Haskell. You choose.</small>
+      </div>
     </div>
 
     <div className="c-bg-primary">
@@ -255,29 +202,83 @@ const Home = ({ home }) => (
 
     <style jsx>{`
 
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 4px 15px 4px 10px;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        margin-bottom: 1em;
+      }
+      .tag + .tag {
+        margin-left: 1em;
+      }
+      .tag__flex {
+        display: flex;
+        align-items: center;
+      }
+      .tag__pill {
+        border-radius: 8px;
+        background-color: ${variables.primaryColor};
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin-right: .75em;
+        font-size: 12px;
+        padding: 0px 6px;
+      }
+      .tag__text {
+        font-size: 14px;
+      }
+
+      .tech-stack-wrap {
+        padding: 0;
+      }
+
+      .tech-stack-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
+        padding: 1em;
+        border: 2px solid rgba(255,255,255,.4);
+        margin-bottom: 3em;
+      }
+
+      .tech-stack {
+        width: 80px;
+      }
+
+      .tech-stack + .tech-stack {
+        margin-left: 1em;
+      }
+
       .icon-title-pair {
         display: flex;
         align-items: center;
       }
 
       .icon-title-pair .icon {
-        width: 100px;
+        width: 120px;
         margin-right: 1em;
       }
 
-      .dev-bg {
-        margin-top: 14em;
+      .c-bg-dark {
+        position: relative;
+        z-index: 0;
         margin-bottom: 10em;
         padding: 3em 0 4em;
-        background-color: ${variables.primaryColor};
-        color: white;
       }
 
       .hero__title {
         font-family: 'Montserrat', sans-serif;
-        font-size: 3em;
-        font-weight: 900;
+        font-size: 3.25em;
+        font-weight: 800;
         line-height: 1.1;
+        max-width: 70%;
       }
 
       .milestone {
@@ -300,7 +301,7 @@ const Home = ({ home }) => (
       }
 
       .hero-text {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.5;
         color: #A3A3A3;
       }
@@ -345,21 +346,29 @@ const Home = ({ home }) => (
 
       .primary-section {
         position: relative;
+        padding: 200px 0;
+        transform: skew(0deg, -10deg);
+        margin-top: -150px;
+      }
+      .primary-section .wrap {
+        transform: skew(0deg, 10deg);
       }
 
       .primary-section::before {
         display: block;
         content: '';
-        background-color: ${variables.grayColor};
+        background-image: linear-gradient(to bottom, ${variables.grayColor}, white);
         background-size: 100%;
         background-repeat: no-repeat;
         width: 100%;
-        height: 560px;
+        height: 90%;
         box-shadow: 0 2px 8px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.1);
         z-index: -1;
         position: absolute;
-        left: -50px;
-        top: -150px;
+        left: 0px;
+        top: 100px;
+        border-top: 12px solid ${variables.secondaryColor};
+        border-bottom: 12px solid white;
       }
 
 

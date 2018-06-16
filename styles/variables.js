@@ -2,6 +2,7 @@ export default {
   primaryColor: '#1178FF',
   secondaryColor: '#00F5BC',
   fontColor: '#676767',
+  nightColor: '#1f263b',
   darkColor: '#31302E',
   darkGrayColor: '#A3A3A3',
   lineGrayColor: '#E0E0E0',

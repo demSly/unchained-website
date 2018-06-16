@@ -65,7 +65,7 @@ Lowlight.registerLanguage('graphql', graphql);
 const Developers = ({ developers }) => (
   <PageLayout title={developers.meta_title} metaDescription={developers.meta_description}>
 
-    <div className="wrap mt7 text-center">
+    <div className="wrap mt7">
       <Link href="/partner-program">
         <a className="button">
             Partner Program
@@ -82,7 +82,7 @@ const Developers = ({ developers }) => (
     </div>
 
 
-    <div className="wrap text-center">
+    <div className="wrap">
       <h2>Weather-dependent barbeque sausage pricing</h2>
       <p>Usually when summer kicks in in Switzerland and people start to invite friends to the
         first barbeque party of the year, demand for sausages surges instantly.
@@ -91,10 +91,12 @@ const Developers = ({ developers }) => (
         his online shop and had this crazy idea of a special product pricing he calls
         Weather-dependent barbeque sausage pricing.
       </p>
-
-      <img className="hero-img" src="../static/img/110- online-website-shopping-male-african-american.svg" alt="robot hand" />
-      <p>Scroll down to see how easy it is to implement an extremely custom
-        pricing module with Unchained Engine
+      <div className="sausage-pricing-icons">
+        <img src="../static/img/05- high-temperature.svg" alt="" />
+        <img src="../static/img/110- online-website-shopping-male-african-american.svg" alt="" />
+      </div>
+      <p>See how easy it is to implement an extremely custom
+        pricing module with Unchained Engine below.
       </p>
     </div>
 
@@ -199,14 +201,16 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       <a href="https://graphqlbin.com/v2/AP02IZ" target="_blank">Try it out live @ GraphQL Bin</a>
     </div>
 
-    <div className="wrap">
+    <div className="wrap section">
       <h2>Build the UI</h2>
       <p>Of course because Unchained Commerce is headless, you can build any UI on any operating system that can somehow connect to the HTTP endpoint.
         How awesome? Let's just use a small widget to display some product details on our page right here:
       </p>
-      <ProductDetails slug="🌭" />
+      <div className="stage">
+        <ProductDetails slug="🌭" />
+      </div>
+      <a className="mb3" href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js" target="_blank">Our very own ProductDetails component used throughout unchained.shop</a>
 
-      <a href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js" target="_blank">Our very own ProductDetails component used throughout unchained.shop</a>
     </div>
 
     <div className="c-bg-dark c-white pa1">
@@ -230,6 +234,17 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
     </div>
 
     <style jsx>{`
+
+      .sausage-pricing-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sausage-pricing-icons img {
+        display: block;
+        width: 300px;
+      }
 
       .feature-set ul li a,
       .link {
@@ -294,51 +309,6 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
         }
       }
 
-      .advantages {
-        padding-bottom: 2em;
-      }
-      @media (min-width: 768px) {
-        .advantages {
-          display: flex;
-        }
-      }
-
-      .advantage {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-      .advantage {
-        margin-top: 2.5em;
-      }
-
-      .advantage h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .advantage p {
-        margin-top: .25em;
-        margin-bottom: 0;
-      }
-
-      .advantage-img {
-        margin-left: auto;
-        margin-right: auto;
-        width: 200px;
-        height: 200px;
-      }
-
-      @media (min-width: 768px) {
-        .advantage p {
-          max-width: 80%;
-        }
-        .advantage-img {
-          width: 120px;
-          height: 120px;
-        }
-      }
 
     `}
     </style>

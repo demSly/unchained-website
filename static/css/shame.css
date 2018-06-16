@@ -181,7 +181,17 @@
 }
 
 .section-title {
-  font-family: 'Montserrat';
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+.lowlight {
+  margin-top: 3.2em;
+  font-size: 80%;
+  max-width: 800px;
+  max-height: 560px;
+  overflow: auto;
+  border: 1px solid #b7b7b7;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
 }
