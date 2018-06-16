@@ -56,9 +56,9 @@ const Footer = ({ intl }) => (
 
       <div className="footer__bottom">
         <div>
-          <Link href="/community">
+          <Link href="/developers">
             <a className="footer__link">
-              <small>community</small>
+              <small>developers</small>
             </a>
           </Link>
           <Link href="/partner-program">

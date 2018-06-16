@@ -42,6 +42,7 @@ const Layout = ({
 
     .c-bg-dark {
       background-color: ${variables.darkColor} !important;
+      background-image: linear-gradient(to top left, ${variables.darkColor}, ${variables.nightColor});
     }
 
     .c-gray {
@@ -145,6 +146,10 @@ const Layout = ({
 
     .section {
       margin-bottom: 3em;
+    }
+    .stage {
+      margin: 1em auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.1);
     }
     `}
     </style>

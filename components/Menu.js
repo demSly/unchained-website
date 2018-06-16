@@ -11,8 +11,11 @@ const Menu = ({ intl, hidden, ...props }) => (
       <ActiveLink activeClassName="active" href="/showcase">
         <a className="menu__link">{intl.formatMessage({ id: 'showcase' })}</a>
       </ActiveLink>
-      <ActiveLink activeClassName="active" href="/community">
-        <a className="menu__link">{intl.formatMessage({ id: 'community' })}</a>
+      <ActiveLink activeClassName="active" href="/developers">
+        <a className="menu__link">{intl.formatMessage({ id: 'developers' })}</a>
+      </ActiveLink>
+      <ActiveLink activeClassName="active" href="/platform">
+        <a className="menu__link">{intl.formatMessage({ id: 'platform' })}</a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/fundraiser">
         <a className="menu__link">{intl.formatMessage({ id: 'fundraiser' })}</a>
@@ -33,6 +36,7 @@ const Menu = ({ intl, hidden, ...props }) => (
       }
       .menu__link {
         text-transform: lowercase;
+        font-size: 15px;
       }
 
       @media (min-width: 1220px) {
