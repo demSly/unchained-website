@@ -34,8 +34,8 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <span>Unchained sets the new standard for a multi-channel ecommerce platform.</span>
-            <span> We can now build all the crazy pricing, discount, sales ideas the marketing department always dreamed of.</span>
-            <span> Connect your backend systems & your CMS with our GraphQL API, deploy your container where and how you want and start selling.</span>
+            <span> Building all the crazy ideas we always had.</span>
+            <span> Connect your backend systems & your CMS with our GraphQL API, deploy and start selling.</span>
           </h1>
           <a href="/" className="button">Contact us</a>
         </div>
