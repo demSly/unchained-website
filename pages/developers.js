@@ -176,7 +176,9 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
 
     <div className="wrap">
       <h2>Craft the query</h2>
-      <p>Unchained Commerce is headless by design. So in order to get the product data from our Unchained Engine, we need to craft a small GraphQL query that actually resolves some texts and the current price of our sausage.
+      <p>Unchained Commerce is headless by design. So in order to get the product
+        data from our Unchained Engine, we need to craft a small GraphQL query
+        that actually resolves some texts and the current price of our sausage.
       </p>
       <Lowlight
         language="graphql"
@@ -198,24 +200,37 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
 }`}
       />
 
-      <a href="https://graphqlbin.com/v2/AP02IZ" target="_blank">Try it out live @ GraphQL Bin</a>
+      <a
+        href="https://graphqlbin.com/v2/AP02IZ"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Try it out live @ GraphQL Bin
+      </a>
     </div>
 
     <div className="wrap section">
       <h2>Build the UI</h2>
-      <p>Of course because Unchained Commerce is headless, you can build any UI on any operating system that can somehow connect to the HTTP endpoint.
-        How awesome? Let's just use a small widget to display some product details on our page right here:
+      <p>Of course because Unchained Commerce is headless, you can build any UI
+        on any operating system that can somehow connect to the HTTP endpoint.
+        How awesome? Let's just use a small widget to display some product details
+        on our page right here:
       </p>
       <div className="stage">
         <ProductDetails slug="🌭" />
       </div>
-      <a className="mb3" href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js" target="_blank">Our very own ProductDetails component used throughout unchained.shop</a>
+      <a
+        className="mb3"
+        href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Checkout our very own ProductDetails component used throughout unchained.shop
+      </a>
 
     </div>
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
-      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q3 2018</a></p>
+      <p className="text-center">* The Unchained Engine OSS release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows end of Q4 2018</a></p>
     </div>
 
     <div className="c-bg-primary">
