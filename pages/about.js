@@ -9,14 +9,16 @@ import ContactForm from '../components/forms/ContactForm';
 
 const About = ({ about }) => (
   <PageLayout title={about.meta_title} metaDescription={about.meta_description}>
-    <div className="wrap mv7">
+    <div className="wrap mt7">
       <section className="section">
         <h2>{about.title}</h2>
         <MemberList />
       </section>
     </div>
-    <div className="wrap wrap--narrow mb7" id="contact">
-      <ContactForm />
+    <div className="c-bg-dark">
+      <div className="wrap wrap--narrow mb7" id="contact">
+        <ContactForm />
+      </div>
     </div>
   </PageLayout>
 );

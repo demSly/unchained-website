@@ -18,7 +18,9 @@
     border: 5px solid #fff;
     box-shadow: 0 8px 21px rgba(0,0,0,.2);
   }
+}
 
+@media (min-width: 1224px) {
   .product-portfolio__item:nth-child(1) {
     margin-left: -64px;
     margin-top: 48px;

@@ -228,15 +228,15 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
 
     </div>
 
-    <div className="c-bg-dark c-white pa1">
+    <div className="c-bg-dark c-white pa1 mt7">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
       <p className="text-center">* The Unchained Engine OSS release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows end of Q4 2018</a></p>
     </div>
 
-    <div className="c-bg-primary">
+    <div className="c-bg-secondary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <p className="c-white">Just drop us a line if you want to become an
+          <p className="">Just drop us a line if you want to become an
             official partner of Unchained or you are in need of developer support
           </p>
           <Link href="/about#contact">

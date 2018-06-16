@@ -50,11 +50,10 @@
   display: block;
   min-width: 120px;
   max-width: 320px;
-  margin: 0 auto;
   border-color: transparent;
   border-radius: 5px;
   background-color: #00F5BC;
-  color: #232323;
+  color: #232323 !important;
 }
 
 
@@ -106,6 +105,8 @@
 
 .button-group .button {
   margin: .5em;
+  padding: 2em;
+  max-height: 132px;
 }
 
 
