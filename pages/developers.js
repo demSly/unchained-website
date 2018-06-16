@@ -174,16 +174,18 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
 
     <div className="wrap">
       <h2>Craft the query</h2>
-      <p>As communicated multiple times, Unchained Commerce is headless by design. So in order to build a Widget to display our sausage we need to craft a small GraphQL query that actually resolves some texts and the current price of our sausage.
+      <p>Unchained Commerce is headless by design. So in order to get the product data from our Unchained Engine, we need to craft a small GraphQL query that actually resolves some texts and the current price of our sausage.
       </p>
       <Lowlight
         language="graphql"
         value={`query getProduct {
   product(slug: "🌭") {
     _id
-    ... on ProductCommerce {
+    ... on SimpleProduct {
+      texts {
+        title
+      }
       catalogPrice {
-        _id
         price {
           amount
           currency
