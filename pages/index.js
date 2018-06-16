@@ -19,24 +19,25 @@ const Home = ({ home }) => (
               <Link href="/platform">
                 <a className="tag">
                   <div className="tag__flex">
-                    <span className="tag__pill">Headless-CMS</span>
-                    <span className="tag__text">for Content</span>
+                    <span className="tag__pill">#headless</span>
+                    <span className="tag__text">Bring your own UI</span>
                   </div>
                 </a>
               </Link>
               <Link href="/platform">
                 <a className="tag">
                   <div className="tag__flex">
-                    <span className="tag__pill">API-based</span>
-                    <span className="tag__text">for Communication</span>
+                    <span className="tag__pill">#developer</span>
+                    <span className="tag__text">Free software</span>
                   </div>
                 </a>
               </Link>
             </div>
-            <span>Unchained sets the new standard for a multi-channel e-commerce platform.</span>
-            <span> Building all the crazy ideas we always had.</span>
-            <span> Connect your backend systems & your CMS with our GraphQL API, deploy and start selling.</span>
-
+            <span>Unchained is the best developer-first platform for multi-channel digital commerce. </span>
+            <span>Implement all the crazy pricing, discount and loyalty
+              ideas, connect it to your backend systems and start selling goods
+              on any internet connected device.
+            </span>
           </h1>
           <a href="/" className="button">Contact us</a>
         </div>
