@@ -33,7 +33,7 @@ const Home = ({ home }) => (
                 </a>
               </Link>
             </div>
-            <span>Unchained sets the new standard for a multi-channel ecommerce platform.</span>
+            <span>Unchained sets the new standard for a multi-channel e-commerce platform.</span>
             <span> Building all the crazy ideas we always had.</span>
             <span> Connect your backend systems & your CMS with our GraphQL API, deploy and start selling.</span>
           </h1>
@@ -60,7 +60,7 @@ const Home = ({ home }) => (
         <div className="wrap">
           <div className="icon-title-pair">
             <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
-            <h2 className="section-title">The most flexible platform for ecommerce</h2>
+            <h2 className="section-title">The most flexible platform for e-commerce</h2>
           </div>
           <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging e-commerce with the internet of things and distributed ledgers.</p>
           <p>Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect all your backend systems & start selling on any internet connected device.</p>
