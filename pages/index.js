@@ -15,6 +15,24 @@ const Home = ({ home }) => (
         <div className="hero__one">
           <h1 className="hero__title">Redefine Commerce every day.</h1>
           <h1 className="hero-text">
+            <div className="tags">
+              <Link href="/platform">
+                <a className="tag">
+                  <div className="tag__flex">
+                    <span className="tag__pill">Headless-CMS</span>
+                    <span className="tag__text">for Content</span>
+                  </div>
+                </a>
+              </Link>
+              <Link href="/platform">
+                <a className="tag">
+                  <div className="tag__flex">
+                    <span className="tag__pill">API-based</span>
+                    <span className="tag__text">for Communication</span>
+                  </div>
+                </a>
+              </Link>
+            </div>
             <span>Unchained sets the new standard for a multi-channel ecommerce platform.</span>
             <span> We can now build all the crazy pricing, discount, sales ideas the marketing department always dreamed of.</span>
             <span> Connect your backend systems & your CMS with our GraphQL API, deploy your container where and how you want and start selling.</span>
@@ -183,6 +201,38 @@ const Home = ({ home }) => (
     </div>
 
     <style jsx>{`
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 4px 15px 4px 10px;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        margin-bottom: 1em;
+      }
+      .tag + .tag {
+        margin-left: 1em;
+      }
+      .tag__flex {
+        display: flex;
+        align-items: center;
+      }
+      .tag__pill {
+        border-radius: 8px;
+        background-color: ${variables.primaryColor};
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin-right: .75em;
+        font-size: 12px;
+        padding: 0px 6px;
+      }
+      .tag__text {
+        font-size: 14px;
+      }
 
       .tech-stack-wrap {
         padding: 0;
