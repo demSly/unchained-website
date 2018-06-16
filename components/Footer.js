@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import variables from '../styles/variables';
 import { injectIntl } from 'react-intl';
 import ChangeCountryButton from './ChangeCountryButton';
 
@@ -114,34 +115,36 @@ const Footer = ({ intl }) => (
         </div>
       </div>
 
+      <div className="copyright">
+        <small>© Unchained Commerce 2018.</small>
+      </div>
+
     </div>
 
     <style jsx>{`
       .icon-footer {
         width: 96px;
       }
-      @media (max-width: 899px) {
+      .footer__link {
+        display: block;
+      }
+
+      @media (max-width: 799px) {
+        .footer__link + .footer__link {
+          margin-top: .5em;
+        }
         .footer__contact {
           margin-bottom: 2em;
         }
-        .footer__bottom {
-          text-align: center;
-        }
         .footer__bottom div {
-          margin-bottom: 1.5em;
-        }
-        .footer__link + .footer__link {
-          margin-left: 1em;
+          margin-bottom: 2.5em;
         }
       }
-      @media (min-width: 900px) {
+      @media (min-width: 800px) {
         .footer__bottom {
           display: flex;
           justify-content: space-between;
           max-width: 800px;
-        }
-        .footer__link {
-          display: block;
         }
       }
 
@@ -206,10 +209,11 @@ const Footer = ({ intl }) => (
         }
       }
 
-      @media (max-width: 640px) {
-        .footer__top {
-          text-align: center;
-        }
+      .copyright small {
+        display: block;
+        margin-top: 3.6em;
+        font-size: 14px;
+        color: ${variables.darkGrayColor};;
       }
 
     `}

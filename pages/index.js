@@ -28,12 +28,13 @@ const Home = ({ home }) => (
                 <a className="tag">
                   <div className="tag__flex">
                     <span className="tag__pill">#developer</span>
-                    <span className="tag__text">Free software</span>
+                    <span className="tag__text">Open source software</span>
                   </div>
                 </a>
               </Link>
             </div>
-            <span>Unchained is the best developer-first platform for multi-channel digital commerce. </span>
+            <span>Unchained is the best software platform for multi-channel digital commerce. Developers-first driven, headless & unstoppable. </span>
+            <br />
             <span>Implement all the crazy pricing, discount and loyalty
               ideas, connect it to your backend systems and start selling goods
               on any internet connected device.
@@ -45,15 +46,15 @@ const Home = ({ home }) => (
           <img className="icon" src="../static/img/08- java-script-developer.svg" alt="" />
           <img className="icon" src="../static/img/06- desktop-imac-pen-tablet-notebook.svg" alt="" />
           <img className="icon" src="../static/img/15- web-programming-design-construction-3.svg" alt="" />
-          <img className="icon" src="../static/img/11- digital-cash-payment.svg" alt="" />
+          <img className="icon" src="../static/img/01- cloud-network-device.svg" alt="" />
           <img className="icon" src="../static/img/39- bitcoin-cloud-computing.svg" alt="" />
           <img className="icon" src="../static/img/08- shopping-cart-full.svg" alt="" />
+          <img className="icon" src="../static/img/11- digital-cash-payment.svg" alt="" />
           <img className="icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
           <img className="icon" src="../static/img/01- convenience-store.svg" alt="convenience store" />
           <img className="icon" src="../static/img/09- package-logistic-airplane.svg" alt="" />
           <img className="icon" src="../static/img/01- house-for-sale.svg" alt="house for sale" />
           <img className="icon" src="../static/img/27- html-achievement.svg" alt="" />
-          <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
         </div>
       </div>
 
@@ -100,7 +101,7 @@ const Home = ({ home }) => (
               <h3 className="unit__header">Headless Architecture</h3>
               <p className="unit__subheader">Choose your decoupled CMS, connect the unchained API with your site, experience true customization</p>
             </div>
-            <div className="unit__image-wrap">
+            <div className="unit__image-wrap">ub
               <figure className="unit__image" />
             </div>
           </a>
@@ -119,7 +120,7 @@ const Home = ({ home }) => (
         <div className="product-portfolio__item product--oeco">
           <a className="unit">
             <div className="unit__copy">
-              <h3 className="unit__header">Choose your CRM, ERP, SCM, SFA</h3>
+              <h3 className="unit__header">Choose your CRM, ERP, PIM, SCM</h3>
               <p className="unit__subheader">Integrate all your backend tools via our GraphQL API</p>
             </div>
             <div className="unit__image-wrap">
@@ -164,10 +165,10 @@ const Home = ({ home }) => (
       </div>
     </div>
 
-    <div className="c-bg-primary">
+    <div className="c-bg-secondary">
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
-          <h3 className="mt0 c-white">Get more information by choosing your role</h3>
+          <h3 className="mt0">Get more information by choosing your role</h3>
           <div className="button-group">
             <Link href="/developers">
               <a className="button button--secondary">
@@ -211,6 +212,7 @@ const Home = ({ home }) => (
       .w72px {
         width: 72px;
         display: block;
+        margin: 0 auto;
       }
 
       .icon-investment {
@@ -251,6 +253,7 @@ const Home = ({ home }) => (
 
       .tech-stack-wrap {
         padding: 0;
+
       }
 
       .tech-stack-flex {
@@ -260,7 +263,8 @@ const Home = ({ home }) => (
         box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
         padding: 1em;
         border: 2px solid rgba(255,255,255,.4);
-        margin-bottom: 3em;
+        max-width: 480px;
+        margin: 0 auto 3em;
       }
 
       .tech-stack {
@@ -284,7 +288,7 @@ const Home = ({ home }) => (
       .c-bg-dark {
         position: relative;
         z-index: 0;
-        margin-bottom: 10em;
+        margin-bottom: 3em;
         padding: 3em 0 4em;
       }
 

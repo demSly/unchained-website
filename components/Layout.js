@@ -45,6 +45,14 @@ const Layout = ({
       background-image: linear-gradient(to bottom right, #141e30, #243b55);
     }
 
+    .c-bg-dark .wrap * {
+      color: white;
+    }
+
+    .c-bg-dark .footer * {
+      color: inherit;
+    }
+
     .c-gray {
       color: ${variables.darkGrayColor} !important;
     }
