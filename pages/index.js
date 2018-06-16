@@ -59,7 +59,7 @@ const Home = ({ home }) => (
       <section className="primary-section">
         <div className="wrap">
           <div className="icon-title-pair">
-            <img className="icon" src="../static/img/icon/duotone/45- program-setting-1.svg" alt="" />
+            <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
             <h2 className="section-title">The most flexible platform for ecommerce</h2>
           </div>
           <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging e-commerce with the internet of things and distributed ledgers.</p>
@@ -77,12 +77,12 @@ const Home = ({ home }) => (
     <div className="c-bg-dark">
       <section className="wrap developers-section">
         <div className="icon-title-pair">
-          <img className="icon" src="../static/img/icon/duotone/66- osx-programmer-female-caucasian.svg" alt="" />
+          <img className="icon" src="../static/img/66- osx-programmer-female-caucasian.svg" alt="" />
           <h2 className="section-title">Built for developers</h2>
         </div>
         <p>Unchained is by default headless, there is no UI, just a GraphQL schema you'll get to work with. This modern platform with flexible tools for internet commerce allows for fast feature development times & total flexibility. Install the Unchained Engine, use your tech stack of choice, edit & add functionality, connect your backend systems & start selling on any internet connected device. We are working on the Documentation. Stay tuned.</p>
-        <Link href="/develoeprs">
-          <a className="link">
+        <Link href="/developers">
+          <a className="button button--primary mt3">
               Learn more
           </a>
         </Link>
@@ -167,19 +167,22 @@ const Home = ({ home }) => (
         <div className="text-center">
           <h3 className="mt0 c-white">Get more information by choosing your role</h3>
           <div className="button-group">
-            <Link href="/community">
-              <a className="button">
-                  Developer / Consultant
+            <Link href="/developers">
+              <a className="button button--secondary">
+                  Developer
+                  <img className="w72px" src="../static/img/58- programmer-male-african-american.svg" alt="" />
               </a>
             </Link>
             <Link href="/showcase">
-              <a className="button">
+              <a className="button button--secondary">
                   Merchant
+                  <img src="../static/img/06- business-team.svg" alt="" />
               </a>
             </Link>
             <Link href="/fundraiser">
-              <a className="button">
+              <a className="button button--secondary">
                   Investor
+                  <img src="../static/img/86- business-income-female-asian.svg" alt="" />
               </a>
             </Link>
           </div>
@@ -190,6 +193,7 @@ const Home = ({ home }) => (
     <div>
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
+          <img className="icon-investment" src="../static/img/21- money-investment.svg" alt="" />
           <h1 className="mt0 c-black">Token Generation Event</h1>
           <Link href="/fundraiser">
             <a className="button hero-button">
@@ -202,9 +206,20 @@ const Home = ({ home }) => (
 
     <style jsx>{`
 
+      .w72px {
+        width: 72px;
+        display: block;
+      }
+
+      .icon-investment {
+        display: block;
+        margin: 0 auto;
+        width: 240px;
+      }
       .tags {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1.6em;
       }
 
       .tag {
@@ -213,9 +228,7 @@ const Home = ({ home }) => (
         border-radius: 20px;
         background-color: #F5F5F5;
         margin-bottom: 1em;
-      }
-      .tag + .tag {
-        margin-left: 1em;
+        margin-right: 1em;
       }
       .tag__flex {
         display: flex;
@@ -274,11 +287,10 @@ const Home = ({ home }) => (
       }
 
       .hero__title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 3.25em;
-        font-weight: 800;
+        font-size: 2.75em;
+        font-weight: 600;
         line-height: 1.1;
-        max-width: 70%;
+        max-width: 480px;
       }
 
       .milestone {
@@ -301,9 +313,9 @@ const Home = ({ home }) => (
       }
 
       .hero-text {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.5;
-        color: #A3A3A3;
+        color: rgba(0,0,0,.4);
       }
       @media (max-width: 767px) {
         .hero-text {
@@ -311,6 +323,10 @@ const Home = ({ home }) => (
         }
       }
       @media (min-width: 1025px) {
+        .hero__title {
+          font-size: 2.5em;
+          margin-bottom: 1.2em;
+        }
         .hero-img {
           width: 44%
         }

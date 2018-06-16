@@ -41,20 +41,18 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
         <Markdown source={fundraiser.intro} />
       </section>
     </div>
-    <div className="c-bg-primary mv1">
+    <div className="c-bg-dark mv1">
       <div className="wrap wrap--narrow">
-        <div className="button-group">
-          <a className="button" href="https://github.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
-                Read our Business Plan
-          </a>
-        </div>
+        <a className="button button--primary" href="https://github.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
+              Read our Business Plan
+        </a>
       </div>
     </div>
 
     <div className="wrap wrap--narrow mb7">
       <section className="section">
-        <div className="text-center mv4">
-          <p>Private pre-sale has started</p>
+        <div className="mv4">
+          <p>Get whitelisted as an investor</p>
           {currentUser._id ? (
             <Link href="/profile">
               <a className="button">
