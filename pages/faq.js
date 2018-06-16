@@ -11,7 +11,7 @@ import PageLayout from '../components/PageLayout';
 const Support = ({ faq, questions }) => (
   <PageLayout title={faq.meta_title} metaDescription={faq.meta_description}>
 
-    <div className="wrap wrap--narrow mv7">
+    <div className="wrap mv7">
       <section id="faq" className="section">
         <h2>{faq.faq_title}</h2>
         <div className="dangerously mb4" dangerouslySetInnerHTML={{ // eslint-disable-line
@@ -20,10 +20,12 @@ const Support = ({ faq, questions }) => (
         />
         {questions.map(({ question, answer }) => (
           <React.Fragment key={question}>
-            <div className="question">{question}</div>
-            <p className="answer">
-              <Markdown source={answer} />
-            </p>
+            <div className="faq-item">
+              <div className="question">{question}</div>
+              <p className="answer">
+                <Markdown source={answer} />
+              </p>
+            </div>
           </React.Fragment>
         ))}
       </section>
@@ -32,14 +34,30 @@ const Support = ({ faq, questions }) => (
 
 
     <style jsx>{`
+      .faq-item {
+        margin-top: 2em;
+        border-top: 2px dashed ${variables.lineGrayColor};
+      }
       .question {
-        padding-top: 1em;
+        padding-top: 2em;
         font-weight: 500;
       }
       .answer {
-        padding-top: .5em;
         padding-bottom: 1.5em;
-        border-bottom: 2px dashed ${variables.lineGrayColor};
+      }
+      @media (min-width: 1140px) {
+        .faq-item {
+          display: flex;
+          justify-content: space-between;
+        }
+        .question {
+          margin-right: 2em;
+          width: 30%;
+        }
+        .answer {
+          width: 66%;
+          padding-bottom: 1.5em;
+        }
       }
     `}
     </style>
