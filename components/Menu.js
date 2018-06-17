@@ -8,14 +8,14 @@ import ActiveLink from './ActiveLink';
 const Menu = ({ intl, hidden, ...props }) => (
   <div className={`menu ${hidden ? 'hidden' : ''}`} {...props}>
     <div className="menu__items">
-      <ActiveLink activeClassName="active" href="/showcase">
-        <a className="menu__link">{intl.formatMessage({ id: 'showcase' })}</a>
-      </ActiveLink>
       <ActiveLink activeClassName="active" href="/developers">
         <a className="menu__link">{intl.formatMessage({ id: 'developers' })}</a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/platform">
         <a className="menu__link">{intl.formatMessage({ id: 'platform' })}</a>
+      </ActiveLink>
+      <ActiveLink activeClassName="active" href="/showcase">
+        <a className="menu__link">{intl.formatMessage({ id: 'showcase' })}</a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/fundraiser">
         <a className="menu__link">{intl.formatMessage({ id: 'fundraiser' })}</a>
@@ -60,7 +60,7 @@ const Menu = ({ intl, hidden, ...props }) => (
         }
       }
 
-      @media (max-width: 999px) {
+      @media (max-width: 1023px) {
         .menu__link--phone {
           margin-top: 3em !important;
         }
@@ -93,7 +93,7 @@ const Menu = ({ intl, hidden, ...props }) => (
       }
 
 
-      @media (min-width: 1000px) {
+      @media (min-width: 1024px) {
         .menu__link--phone {
           margin-left: 8em !important;
         }

@@ -27,7 +27,7 @@ const Home = ({ home }) => (
               <Link href="/platform">
                 <a className="tag">
                   <div className="tag__flex">
-                    <span className="tag__pill">#opensource</span>
+                    <span className="tag__pill">#open-source</span>
                     <span className="tag__text">No vendor-lock in</span>
                   </div>
                 </a>
@@ -232,7 +232,7 @@ const Home = ({ home }) => (
         padding: 4px 15px 4px 10px;
         border-radius: 20px;
         background-color: #F5F5F5;
-        margin-bottom: 1em;
+        margin-bottom: .5em;
         margin-right: 1em;
       }
       .tag__flex {
@@ -243,7 +243,6 @@ const Home = ({ home }) => (
         border-radius: 8px;
         background-color: ${variables.primaryColor};
         color: #FFFFFF;
-        text-transform: uppercase;
         margin-right: .75em;
         font-size: 12px;
         padding: 0px 6px;
@@ -371,7 +370,7 @@ const Home = ({ home }) => (
         position: relative;
         padding: 200px 0;
         transform: skew(0deg, -10deg);
-        margin-top: -150px;
+        margin-top: -160px;
       }
       .primary-section .wrap {
         transform: skew(0deg, 10deg);

@@ -14,8 +14,8 @@ const CheckoutLayout = ({ intl, children, ...props }) => (
           <img className="mr05" src="/static/img/icon/left-arrow-hexagon.svg" alt="left arrow icon" />
           <img
             className="logo"
-            src="/static/img/logo_freezyboy_schwarz.png"
-            alt="logo"
+            src="/static/img/unchained-logo-black.png"
+            alt="unchained logo"
           />
         </a>
       </Link>

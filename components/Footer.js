@@ -57,15 +57,17 @@ const Footer = ({ intl }) => (
 
       <div className="footer__bottom">
         <div>
+          <div className="footer-label">Resources</div>
           <Link href="/developers">
             <a className="footer__link">
               <small>developers</small>
             </a>
           </Link>
-          <Link href="/partner-program">
-            <a className="footer__link">
-              <small>partner program</small>
-            </a>
+          <Link href="/platform">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'platform' })}</small></a>
+          </Link>
+          <Link href="/showcase">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'showcase' })}</small></a>
           </Link>
           <Link href="/faq">
             <a className="footer__link">
@@ -76,17 +78,13 @@ const Footer = ({ intl }) => (
             <small>API (GraphiQL)</small>
           </a>
         </div>
+
         <div>
-          <Link href="/fundraiser">
+          <div className="footer-label">Partners</div>
+          <Link href="/partner-program">
             <a className="footer__link">
-              <small>fundraiser</small>
+              <small>partner program</small>
             </a>
-          </Link>
-          <Link href="/about">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'about' })}</small></a>
-          </Link>
-          <Link href="/showcase">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'showcase' })}</small></a>
           </Link>
           <Link href="/partners">
             <a className="footer__link">
@@ -94,25 +92,36 @@ const Footer = ({ intl }) => (
             </a>
           </Link>
         </div>
+
         <div>
-          <Link href="/imprint">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'imprint' })}</small></a>
+          <div className="footer-label">Company</div>
+          <Link href="/about">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'about' })}</small></a>
           </Link>
-          <Link href="/terms">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'terms' })}</small></a>
-          </Link>
-          <Link href="/privacy">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'privacy' })}</small></a>
-          </Link>
-        </div>
-        <div>
           <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>announcements</small>
           </a>
+          <Link href="/fundraiser">
+            <a className="footer__link">
+              <small>fundraiser</small>
+            </a>
+          </Link>
           <Link href="/about#contact">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'contact' })}</small></a>
           </Link>
         </div>
+      </div>
+
+      <div className="copyright">
+        <Link href="/imprint">
+          <a className="footer-bottom-link"><small>{intl.formatMessage({ id: 'imprint' })}</small></a>
+        </Link>
+        <Link href="/terms">
+          <a className="footer-bottom-link"><small>{intl.formatMessage({ id: 'terms' })}</small></a>
+        </Link>
+        <Link href="/privacy">
+          <a className="footer-bottom-link"><small>{intl.formatMessage({ id: 'privacy' })}</small></a>
+        </Link>
       </div>
 
       <div className="copyright">
@@ -122,11 +131,25 @@ const Footer = ({ intl }) => (
     </div>
 
     <style jsx>{`
+      .footer-bottom-link {
+        display: inline-block;
+        margin-right: 1em;
+      }
+      .footer-label {
+        margin-bottom: .5em;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: ${variables.darkGrayColor};;
+      }
       .icon-footer {
         width: 96px;
       }
       .footer__link {
         display: block;
+      }
+
+      .footer__bottom > div {
+        margin-bottom: 2.5em;
       }
 
       @media (max-width: 799px) {
@@ -136,15 +159,12 @@ const Footer = ({ intl }) => (
         .footer__contact {
           margin-bottom: 2em;
         }
-        .footer__bottom div {
-          margin-bottom: 2.5em;
-        }
       }
       @media (min-width: 800px) {
         .footer__bottom {
           display: flex;
           justify-content: space-between;
-          max-width: 800px;
+          max-width: 600px;
         }
       }
 
@@ -174,7 +194,6 @@ const Footer = ({ intl }) => (
 
       .footer__bottom {
         margin-top: 1.75em;
-        margin-bottom: 1em;
       }
 
 

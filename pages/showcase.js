@@ -188,7 +188,10 @@ const Showcase = ({ showcase }) => (
         <li>Delivery estimation through Google Spreadsheets</li>
         <li>Document generation through smallinvoice</li>
       </ul>
-      <p><span>See the shop in action </span><a className="button" href="https://freezyboy.com">freezyboy.com</a></p>
+      <div className="mt3">
+        <p>See the shop in action </p>
+        <a className="button" href="https://freezyboy.com">freezyboy.com</a>
+      </div>
     </div>
   </PageLayout>
 );
