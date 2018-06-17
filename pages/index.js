@@ -64,9 +64,27 @@ const Home = ({ home }) => (
             <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
             <h2 className="section-title">The most flexible platform for digital commerce</h2>
           </div>
-          <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging digital commerce with the internet of things and distributed ledgers.</p>
-          <p>Now you can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect your backend systems and add your own domain logic code</p>
-          <p>With the combination of GraphQL as API technology, unchained.shop is the digital commerce engine that works with any UI, is indefinitely extendable and is by design compatible with any modern software.</p>
+          <p>A platform that is compatible with any kind of internet based
+            devices and services, empowers developers to integrate proprietary and
+            decentralized systems, bridging digital commerce with the internet of
+            things and distributed ledgers.
+          </p>
+          <p>The headless approach with the combination of
+            GraphQL leverages using Unchained Engine
+            for more than just an e-commerce solution.
+            Instead it acts as modern gateway to your legacy systems
+            while providing all needed tools to satisfy your
+            digital commerce needs.
+          </p>
+          <p>
+            We built the platform with Node.js and MongoDB because we wanted
+            something that you can onboard developers quickly, empowering change
+            rather than the traditional "let's stick with the standard process"
+            mindset, effectively breaking the need to hire expensive specialized consultants.
+            With extensibility and ease of use in mind, the popularity of a programming language
+            and a friction-free extension of logic, db structure and code is what
+            matters most.
+          </p>
           <Link href="/showcase">
             <a className="link mt3 db">
                 See a showcase
@@ -82,10 +100,18 @@ const Home = ({ home }) => (
           <img className="icon" src="../static/img/66- osx-programmer-female-caucasian.svg" alt="" />
           <h2 className="section-title">Built for developers</h2>
         </div>
-        <p>Unchained is by default headless, there is no UI, just a GraphQL schema you'll get to work with. This modern platform with flexible tools for internet commerce allows for fast feature development times & total flexibility. Install the Unchained Engine, use your tech stack of choice, edit & add functionality, connect your backend systems & start selling on any internet connected device. We are working on the Documentation. Stay tuned.</p>
+        <p>Unchained Engine is headless by default, so there is no UI. Just
+          build your own interface on top of the GraphQL API.
+          Maybe you want to connect your existing backends? or add a cryptocurrency as a way
+          of payment? Write a small plugin, build your own module, add a micro-service,
+          fork the whole thing or just extend the GraphQL API schema
+          with with your own queries and types. All you need
+          is some Javascript (Node.js) knowhow. This is the last shop system you
+          will ever need to satisfy your software's commerce requirements.
+        </p>
         <Link href="/developers">
           <a className="button button--primary mt3">
-              Learn more
+              Show me some code
           </a>
         </Link>
       </section>
@@ -97,19 +123,8 @@ const Home = ({ home }) => (
         <div className="product-portfolio__item product--one-black">
           <a className="unit">
             <div className="unit__copy c-white">
-              <h3 className="unit__header">Headless Architecture</h3>
-              <p className="unit__subheader">Choose your decoupled CMS, connect the unchained API with your site, experience true customization</p>
-            </div>
-            <div className="unit__image-wrap">ub
-              <figure className="unit__image" />
-            </div>
-          </a>
-        </div>
-        <div className="product-portfolio__item product--one-white">
-          <a className="unit">
-            <div className="unit__copy">
-              <h3 className="unit__header">Easy Payment Integration</h3>
-              <p className="unit__subheader">One file, one payment provider. Credit Cards, PayPal, Bitcoins and more</p>
+              <h3 className="unit__header">Your Frontend</h3>
+              <p className="unit__subheader">Integrate with your iOS App, Android Watch, Website, Car. Connect the Unchained GraphQL API with your frontend of choice and build the perfect experience. This page is built with Next.js and Apollo Client</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -119,28 +134,15 @@ const Home = ({ home }) => (
         <div className="product-portfolio__item product--oeco">
           <a className="unit">
             <div className="unit__copy">
-              <h3 className="unit__header">Choose your CRM, ERP, PIM, SCM</h3>
-              <p className="unit__subheader">Integrate all your backend tools via our GraphQL API</p>
+              <h3 className="unit__header">Your Backend</h3>
+              <p className="unit__subheader">Add your CRM, ERP, PIM, SCM. We already successfully connected Unchained to various core systems like MS Navision, Crossbase, Smallinvoice, Google Spreadsheets, ...</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
             </div>
           </a>
         </div>
-        <div className="product-portfolio__item product-4">
-          <div className="unit">
-            <div className="unit__copy">
-              <h3 className="unit__header">Fast DEV & always 100% FLEX</h3>
-              <p className="unit__subheader">Made to improve, enhance, scale your digital commerce business</p>
-            </div>
-            <div className="unit__image-wrap">
-              <figure className="unit__image" />
-            </div>
-          </div>
-        </div>
       </div>
-
-
     </div>
 
     <div className="c-bg-dark c-white pa1">
@@ -160,7 +162,7 @@ const Home = ({ home }) => (
           <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
           <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
         </div>
-        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python & Haskell. You choose.</small>
+        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python, Swift, Go, Haskell & whatever programming language. Your choice.</small>
       </div>
     </div>
 

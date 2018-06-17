@@ -89,7 +89,7 @@ const Developers = ({ developers }) => (
         Our dear friend, butcher Bruno wants to sell his homemade sausages directly
         to the customer with
         his online shop and had this crazy idea of a special product pricing he calls
-        Weather-dependent barbeque sausage pricing.
+        weather-dependent barbeque sausage pricing.
       </p>
       <div className="sausage-pricing-icons">
         <img src="../static/img/05- high-temperature.svg" alt="" />
@@ -102,7 +102,7 @@ const Developers = ({ developers }) => (
 
     <div className="wrap">
       <h2>Add a pricing module</h2>
-      <p>Unchained is codeable. Codeable means we only provide very basic
+      <p>Unchained is hackable. With hackable we mean to provide you with only very basic
         customization out of the box but on the other hand allow the developer to
         completely customize the business logic through code. This is achieved
         through a staged approach ranging from plugins to a full
@@ -226,6 +226,9 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       >Checkout our very own ProductDetails component used throughout unchained.shop
       </a>
 
+      <p>We are working on the Documentation. Stay tuned.</p>
+      <p>TODO: Want to get reminded when we have news to share? Follow our twitter account
+      </p>
     </div>
 
     <div className="c-bg-dark c-white pa1 mt7">
