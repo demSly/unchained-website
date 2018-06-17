@@ -147,7 +147,7 @@ const Home = ({ home }) => (
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
-      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q1 2019</a></p>
+      <p className="text-center">* The Unchained Engine OSS Release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows end of Q1 2019</a></p>
       <div className="wrap tech-stack-wrap">
         <small className="text-center db">Built on:</small>
         <div className="tech-stack-flex">
