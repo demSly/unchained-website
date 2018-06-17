@@ -27,8 +27,8 @@ const Home = ({ home }) => (
               <Link href="/platform">
                 <a className="tag">
                   <div className="tag__flex">
-                    <span className="tag__pill">#developer</span>
-                    <span className="tag__text">Open source software</span>
+                    <span className="tag__pill">#open-source</span>
+                    <span className="tag__text">Free software</span>
                   </div>
                 </a>
               </Link>
@@ -101,7 +101,7 @@ const Home = ({ home }) => (
               <h3 className="unit__header">Headless Architecture</h3>
               <p className="unit__subheader">Choose your decoupled CMS, connect the unchained API with your site, experience true customization</p>
             </div>
-            <div className="unit__image-wrap">ub
+            <div className="unit__image-wrap">
               <figure className="unit__image" />
             </div>
           </a>
@@ -161,7 +161,7 @@ const Home = ({ home }) => (
           <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
           <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
         </div>
-        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python & Haskell. You choose.</small>
+        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python, Haskell & whatever stack you are using, you choose.</small>
       </div>
     </div>
 
@@ -231,7 +231,7 @@ const Home = ({ home }) => (
         padding: 4px 15px 4px 10px;
         border-radius: 20px;
         background-color: #F5F5F5;
-        margin-bottom: 1em;
+        margin-bottom: .5em;
         margin-right: 1em;
       }
       .tag__flex {
@@ -242,7 +242,6 @@ const Home = ({ home }) => (
         border-radius: 8px;
         background-color: ${variables.primaryColor};
         color: #FFFFFF;
-        text-transform: uppercase;
         margin-right: .75em;
         font-size: 12px;
         padding: 0px 6px;
@@ -370,7 +369,7 @@ const Home = ({ home }) => (
         position: relative;
         padding: 200px 0;
         transform: skew(0deg, -10deg);
-        margin-top: -150px;
+        margin-top: -160px;
       }
       .primary-section .wrap {
         transform: skew(0deg, 10deg);

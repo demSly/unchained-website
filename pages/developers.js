@@ -210,21 +210,24 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
 
     <div className="wrap section">
       <h2>Build the UI</h2>
-      <p>Of course because Unchained Commerce is headless, you can build any UI
+      <p>Because Unchained Commerce is headless, you can build any UI
         on any operating system that can somehow connect to the HTTP endpoint.
-        How awesome? Let's just use a small widget to display some product details
+        How awesome is that? Let's just use a small widget to display some product details
         on our page right here:
       </p>
       <div className="stage">
         <ProductDetails slug="🌭" />
       </div>
-      <a
-        className="mb3"
-        href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js"
-        target="_blank"
-        rel="noopener noreferrer"
-      >Checkout our very own ProductDetails component used throughout unchained.shop
-      </a>
+      <p>Checkout our very own <span>
+        <a
+          className="mb3 link"
+          href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js"
+          target="_blank"
+          rel="noopener noreferrer"
+        >ProductDetails component
+        </a></span>
+        <span> used throughout unchained.shop</span>
+      </p>
 
     </div>
 

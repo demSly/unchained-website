@@ -117,7 +117,7 @@ const ProductDetails = ({
         font-size: 16px;
       }
       .loader {
-        width: 80%;
+        width: 100%;
         background-color: ${variables.darkColor};
       }
       .price-details {
@@ -138,9 +138,6 @@ const ProductDetails = ({
       }
 
       @media ${variables.mq.medium} {
-        .button {
-          width: 80%;
-        }
         .product {
           display: flex;
           justify-content: space-between;
