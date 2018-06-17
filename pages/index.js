@@ -27,16 +27,15 @@ const Home = ({ home }) => (
               <Link href="/platform">
                 <a className="tag">
                   <div className="tag__flex">
-                    <span className="tag__pill">#developer</span>
-                    <span className="tag__text">Open source software</span>
+                    <span className="tag__pill">#opensource</span>
+                    <span className="tag__text">No vendor-lock in</span>
                   </div>
                 </a>
               </Link>
             </div>
-            <span>Unchained is the best software platform for multi-channel digital commerce. Developers-first driven, headless & unstoppable. </span>
-            <br />
-            <span>Implement all the crazy pricing, discount and loyalty
-              ideas, connect it to your backend systems and start selling goods
+            <span>Unchained is the best software platform for multi-channel digital commerce.
+              Implement all the crazy pricing, discount and loyalty
+              ideas through the unique developers-first approach and start selling goods
               on any internet connected device.
             </span>
           </h1>
@@ -63,11 +62,11 @@ const Home = ({ home }) => (
         <div className="wrap">
           <div className="icon-title-pair">
             <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
-            <h2 className="section-title">The most flexible platform for e-commerce</h2>
+            <h2 className="section-title">The most flexible platform for digital commerce</h2>
           </div>
-          <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging e-commerce with the internet of things and distributed ledgers.</p>
-          <p>Now we can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect all your backend systems & start selling on any internet connected device.</p>
-          <p>With the combination of GraphQL as API technology and a built-for-headless approach, unchained.shop is the e-commerce engine that works with any UI, is indefinitely extendable and is by design compatible with any modern software.</p>
+          <p>A platform that is compatible with any kind of internet devices and decentralized systems, bridging digital commerce with the internet of things and distributed ledgers.</p>
+          <p>Now you can build all the crazy pricing, discount, sales ideas the marketing department ever dreamed of. Install the Unchained Engine, connect your backend systems and add your own domain logic code</p>
+          <p>With the combination of GraphQL as API technology, unchained.shop is the digital commerce engine that works with any UI, is indefinitely extendable and is by design compatible with any modern software.</p>
           <Link href="/showcase">
             <a className="link mt3 db">
                 See a showcase
@@ -132,7 +131,7 @@ const Home = ({ home }) => (
           <div className="unit">
             <div className="unit__copy">
               <h3 className="unit__header">Fast DEV & always 100% FLEX</h3>
-              <p className="unit__subheader">Made to improve, enhance, scale your e-commerce business</p>
+              <p className="unit__subheader">Made to improve, enhance, scale your digital commerce business</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />

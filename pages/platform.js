@@ -56,7 +56,7 @@ const Platform = ({ platform }) => (
         <img alt="easy-to-use-cake" className="advantage-img" src="../static/img/38- easy-to-use-cake.svg" />
         <div>
           <h3>Easy to use</h3>
-          <p>Traditional e-commerce systems tend to be cumbersome and
+          <p>Traditional digital commerce systems tend to be cumbersome and
           complex* as vendors attempt to offer every available feature in one box and force you to
           read &quot;how to theme X?&quot; documentation.
           Headless systems focus on content management; keeping things simple for those
@@ -199,7 +199,7 @@ const Platform = ({ platform }) => (
             </ul>
           </div>
 
-          <p>* Examples of crazy plugins possible, built during the e-commerce project.
+          <p>* Examples of crazy plugins possible, built during projects.
             Every plugin is implementable by a Junior Javascript developer in less than a day
           </p>
         </div>
