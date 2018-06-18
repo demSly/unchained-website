@@ -28,7 +28,7 @@ const Home = ({ home }) => (
                 <a className="tag">
                   <div className="tag__flex">
                     <span className="tag__pill">#open-source</span>
-                    <span className="tag__text">No vendor-lock in</span>
+                    <span className="tag__text">No vendor lock-in</span>
                   </div>
                 </a>
               </Link>
