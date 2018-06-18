@@ -55,6 +55,7 @@ const Header = ({ isMenuToggled }) => (
         max-width: 20px;
         margin-right: 8px;
         z-index: 10;
+        opacity: .7;
       }
       .header {
         position: fixed;
