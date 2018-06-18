@@ -34,8 +34,8 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <span>Unchained is the best software platform for multi-channel digital commerce.
-              Implement all the crazy pricing, discount and loyalty
-              ideas through the unique developers-first approach and start selling goods
+              Implement all the crazy pricing, discount & loyalty
+              ideas through the unique developers-first approach & start selling goods, services or subscriptions
               on any internet connected device.
             </span>
           </h1>
@@ -65,9 +65,9 @@ const Home = ({ home }) => (
             <h2 className="section-title">The most flexible platform for digital commerce</h2>
           </div>
           <p>A platform that is compatible with any kind of internet based
-            devices and services, empowers developers to integrate proprietary and
+            devices & services, empowers developers to integrate proprietary &
             decentralized systems, bridging digital commerce with the internet of
-            things and distributed ledgers.
+            things & distributed ledgers.
           </p>
           <p>The headless approach with the combination of
             GraphQL leverages using Unchained Engine
@@ -77,12 +77,12 @@ const Home = ({ home }) => (
             digital commerce needs.
           </p>
           <p>
-            We built the platform with Node.js and MongoDB because we wanted
+            We built the platform with Node.js & MongoDB because we wanted
             something that you can onboard developers quickly, empowering change
             rather than the traditional "let's stick with the standard process"
             mindset, effectively breaking the need to hire expensive specialized consultants.
-            With extensibility and ease of use in mind, the popularity of a programming language
-            and a friction-free extension of logic, db structure and code is what
+            With extensibility & ease of use in mind, the popularity of a programming language
+            & a friction-free extension of logic, db structure & code is what
             matters most.
           </p>
           <Link href="/showcase">
@@ -105,7 +105,7 @@ const Home = ({ home }) => (
           Maybe you want to connect your existing backends? or add a cryptocurrency as a way
           of payment? Write a small plugin, build your own module, add a micro-service,
           fork the whole thing or just extend the GraphQL API schema
-          with with your own queries and types. All you need
+          with with your own queries & types. All you need
           is some Javascript (Node.js) knowhow. This is the last shop system you
           will ever need to satisfy your software's commerce requirements.
         </p>
@@ -120,22 +120,22 @@ const Home = ({ home }) => (
 
     <div className="wrap">
       <div className="product-portfolio">
-        <div className="product-portfolio__item product--one-black">
+        <div className="product-portfolio__item frontend">
           <a className="unit">
-            <div className="unit__copy c-white">
+            <div className="unit__copy">
               <h3 className="unit__header">Your Frontend</h3>
-              <p className="unit__subheader">Integrate with your iOS App, Android Watch, Website, Car. Connect the Unchained GraphQL API with your frontend of choice and build the perfect experience. This page is built with Next.js and Apollo Client</p>
+              <p className="unit__subheader">Integrate with your iOS App, Android Watch, Website, Car. Connect the Unchained GraphQL API with your frontend of choice & build the perfect experience. This page is built with Next.js & Apollo Client.</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
             </div>
           </a>
         </div>
-        <div className="product-portfolio__item product--oeco">
+        <div className="product-portfolio__item backend">
           <a className="unit">
-            <div className="unit__copy">
+            <div className="unit__copy c-white">
               <h3 className="unit__header">Your Backend</h3>
-              <p className="unit__subheader">Add your CRM, ERP, PIM, SCM. We already successfully connected Unchained to various core systems like MS Navision, Crossbase, Smallinvoice, Google Spreadsheets, ...</p>
+              <p className="unit__subheader">Add your CRM, ERP, PIM, etc. <br />We already successfully connected Unchained to various core systems like MS Navision & Crossbase as well as Smallinvoice, Google Spreadsheets.<br />API available? Go.</p>
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -368,7 +368,7 @@ const Home = ({ home }) => (
 
       .primary-section {
         position: relative;
-        padding: 200px 0;
+        padding: 200px 0 100px;
         transform: skew(0deg, -10deg);
         margin-top: -160px;
       }

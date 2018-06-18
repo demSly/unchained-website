@@ -8,7 +8,7 @@ import PageLayout from '../components/PageLayout';
 
 const PartnerProgram = ({ partnerProgram }) => (
   <PageLayout title={partnerProgram.meta_title} metaDescription={partnerProgram.meta_description}>
-    <div className="wrap wrap--narrow mv7">
+    <div className="wrap mv7">
       <section id="partnerProgram" className="section">
         <h1>
           Unchained for Enterprise Partners

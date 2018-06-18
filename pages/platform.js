@@ -10,7 +10,7 @@ const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
     <div className="wrap wrap--vertical-padding">
-      <h2 className="section-title">Why is headless technology so important us?</h2>
+      <h2>Why is headless technology so important us?</h2>
 
       <div className="advantage">
         <img alt="digital-cash-payment" className="advantage-img" src="../static/img/11- digital-cash-payment.svg" />
@@ -199,9 +199,9 @@ const Platform = ({ platform }) => (
             </ul>
           </div>
 
-          <p>* Examples of crazy plugins possible, built during projects.
+          <small className="mt3 db">* Examples of crazy plugins possible, built during projects.
             Every plugin is implementable by a Junior Javascript developer in less than a day
-          </p>
+          </small>
         </div>
       </section>
     </div>

@@ -182,7 +182,7 @@
   font-size: 80%;
   max-width: 800px;
   max-height: 560px;
-  overflow: auto;
+  overflow-x: auto;
   border: 1px solid #b7b7b7;
   box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
 }

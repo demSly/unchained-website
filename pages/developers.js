@@ -230,7 +230,7 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       </p>
 
       <p>We are working on the Documentation. Stay tuned.</p>
-      <p>TODO: Want to get reminded when we have news to share? Follow our twitter account
+      <p>Want to get reminded when we have news to share? Follow our twitter account <a className="link" href="https://twitter.com/unchained_shop">@unchained_shop</a>.
       </p>
     </div>
 
