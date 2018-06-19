@@ -13,9 +13,9 @@
   line-height: 1.57;
   letter-spacing: 0.5px;
   text-align: center;
-  transition-duration: .2s;
+  transition-duration: 0.25s;
   transition-property: box-shadow, transform;
-  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @media (min-width: 1024px) {
@@ -25,13 +25,16 @@
 }
 
 @media (hover: hover) {
-  .button:hover {
+  .button:hover,
+  .button:focus {
     cursor: pointer;
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   .button:active {
-    transform: translateY(1px);
+    transform: translateY(0);
     outline: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
   }
 }
 
