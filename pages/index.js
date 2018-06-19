@@ -166,6 +166,103 @@ const Home = ({ home }) => (
       </div>
     </div>
 
+    <section className="timeline wrap">
+      <div className="container">
+        <div className="timeline-item">
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content js--fadeInLeft">
+            <h2 className="timeline-title">The Avantyard Team needs an online shop</h2>
+            <div className="date">1 MAY 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content timeline-card js--fadeInRight">
+            <div className="timeline-img-header">
+              <h2 className="timeline-title">Card Title</h2>
+            </div>
+            <div className="date">25 MAY 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a className="button" href="javascript:void(0)">More</a>
+          </div>
+
+        </div>
+
+        <div className="timeline-item">
+
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content js--fadeInLeft">
+            <h2 className="timeline-title">Title</h2>
+            <div className="date">3 JUN 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a className="button" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content js--fadeInRight">
+            <h2 className="timeline-title">Title</h2>
+            <div className="date">22 JUN 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a className="button" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content timeline-card js--fadeInLeft">
+            <div className="timeline-img-header">
+              <h2 className="timeline-title">Card Title</h2>
+            </div>
+            <div className="date">10 JULY 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a className="button" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content timeline-card js--fadeInRight">
+            <div className="timeline-img-header">
+              <h2 className="timeline-title">Card Title</h2>
+            </div>
+            <div className="date">30 JULY 2017</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a className="button" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+
+          <div className="timeline-img"></div>
+
+          <div className="timeline-content js--fadeInLeft">
+            <div className="date">1 SEP 2017</div>
+            <h2 className="timeline-title">Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a className="button" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+
     <div className="c-bg-secondary">
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
