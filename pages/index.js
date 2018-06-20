@@ -188,7 +188,7 @@ const Home = ({ home }) => (
           <div className="timeline-img"></div>
           <div className="timeline-content">
             <div className="date">Nov 2017</div>
-            <p>GoLive with first Customer Freezyboy</p>
+            <p>GoLive with first customer "Freezyboy"</p>
             <a className="button" href="https://freezyboy.com">See Freezyboy.com</a>
           </div>
         </div>
@@ -223,7 +223,7 @@ const Home = ({ home }) => (
           <div className="timeline-img"></div>
           <div className="timeline-content">
             <div className="date">Q2-Q4 2018</div>
-            <p>Roadshow for Zurich based agencies</p>
+            <p>Roadshow for Zürich based agencies</p>
           </div>
         </div>
 
@@ -246,19 +246,8 @@ const Home = ({ home }) => (
             <ul>
               <li>Release of Plugin Marketplace 1.0 Beta as SaaS</li>
               <li>Release of Unchained Control Panel 1.0 Beta as SaaS</li>
-              <li>Unchained Conference 2019</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img"></div>
-          <div className="timeline-content">
-            <div className="date">2020</div>
-            <ul>
-              <li>Release  Roadmap 3.0</li>
               <li>Global Roadshow</li>
-              <li>Unchained Conference 2020</li>
+              <li>Unchained Conference 2019</li>
             </ul>
           </div>
         </div>
