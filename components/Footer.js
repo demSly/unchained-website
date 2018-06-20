@@ -60,23 +60,38 @@ const Footer = ({ intl }) => (
           <div className="footer-label">Resources</div>
           <Link href="/developers">
             <a className="footer__link">
-              <small>developers</small>
+              <small>quick-start</small>
             </a>
-          </Link>
-          <Link href="/platform">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'platform' })}</small></a>
-          </Link>
-          <Link href="/showcase">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'showcase' })}</small></a>
           </Link>
           <Link href="/faq">
             <a className="footer__link">
               <small>faq</small>
             </a>
           </Link>
+          <Link href="/headless">
+            <a className="footer__link">
+              <small>why headless</small>
+            </a>
+          </Link>
           <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>API (GraphiQL)</small>
           </a>
+        </div>
+
+        <div>
+          <div className="footer-label">Platform</div>
+          <Link href="/platform">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'overview' })}</small></a>
+          </Link>
+          <Link href="/engine">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'engine' })}</small></a>
+          </Link>
+          <Link href="/hosting">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'hosting' })}</small></a>
+          </Link>
+          <Link href="/control panel">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'control panel' })}</small></a>
+          </Link>
         </div>
 
         <div>
@@ -86,9 +101,9 @@ const Footer = ({ intl }) => (
               <small>partner program</small>
             </a>
           </Link>
-          <Link href="/partners">
+          <Link href="/showcase">
             <a className="footer__link">
-              <small>partners</small>
+              <small>showcase</small>
             </a>
           </Link>
         </div>
@@ -164,7 +179,7 @@ const Footer = ({ intl }) => (
         .footer__bottom {
           display: flex;
           justify-content: space-between;
-          max-width: 600px;
+          max-width: 700px;
         }
       }
 

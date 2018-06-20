@@ -11,12 +11,8 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--vertical-padding">
       <section className="section">
-        <h1>The Unchained Commerce Platform</h1>
+        <h1>The Unchained Engine</h1>
         <p>To fully concentrate on the product development, unchained will not build storefronts and websites for sellers. We are going to build SaaS services to complement and fund the development of our open source software.</p>
-        <h2>Unchained Engine</h2>
-        <h2>Managed Hosting</h2>
-        <p>soon</p>
-        <h2>Control Panel</h2>
       </section>
 
       <section className="section">
