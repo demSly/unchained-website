@@ -49,7 +49,8 @@ const CheckoutLayout = ({ intl, children, ...props }) => (
         width: 100%;
       }
       .logo {
-        max-width: 167px;
+        max-width: 32px;
+        opacity: .7;
       }
       .checkout-footer {
         font-size: 80%;
