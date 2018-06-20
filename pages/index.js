@@ -162,7 +162,7 @@ const Home = ({ home }) => (
           <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
           <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
         </div>
-        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python, Swift, Go, Haskell & whatever programming language. Your choice.</small>
+        <small className="text-center db">Works with PHP, Ruby on Rails, Java, Python, Swift, Go, Haskell & any other programming language. Your choice.</small>
       </div>
     </div>
 
@@ -170,94 +170,98 @@ const Home = ({ home }) => (
       <div className="container">
         <div className="timeline-item">
           <div className="timeline-img"></div>
-
-          <div className="timeline-content js--fadeInLeft">
-            <h2 className="timeline-title">The Avantyard Team needs an online shop</h2>
-            <div className="date">1 MAY 2017</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+          <div className="timeline-content">
+            <div className="date">Apr 2017</div>
+            <p>Sketch out the architecture of a headless digital commerce platform</p>
           </div>
         </div>
 
         <div className="timeline-item">
-
           <div className="timeline-img"></div>
-
-          <div className="timeline-content timeline-card js--fadeInRight">
-            <div className="timeline-img-header">
-              <h2 className="timeline-title">Card Title</h2>
-            </div>
-            <div className="date">25 MAY 2017</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            <a className="button" href="javascript:void(0)">More</a>
-          </div>
-
-        </div>
-
-        <div className="timeline-item">
-
-          <div className="timeline-img"></div>
-
-          <div className="timeline-content js--fadeInLeft">
-            <h2 className="timeline-title">Title</h2>
-            <div className="date">3 JUN 2017</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            <a className="button" href="javascript:void(0)">More</a>
+          <div className="timeline-content">
+            <div className="date">Jun 2017</div>
+            <p>Signed first customer contract</p>
           </div>
         </div>
 
         <div className="timeline-item">
-
           <div className="timeline-img"></div>
-
-          <div className="timeline-content js--fadeInRight">
-            <h2 className="timeline-title">Title</h2>
-            <div className="date">22 JUN 2017</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            <a className="button" href="javascript:void(0)">More</a>
+          <div className="timeline-content">
+            <div className="date">Nov 2017</div>
+            <p>GoLive with first Customer Freezyboy</p>
+            <a className="button" href="https://freezyboy.com">See Freezyboy.com</a>
           </div>
         </div>
 
         <div className="timeline-item">
-
-          <div className="timeline-img"></div>
-
-          <div className="timeline-content timeline-card js--fadeInLeft">
-            <div className="timeline-img-header">
-              <h2 className="timeline-title">Card Title</h2>
-            </div>
-            <div className="date">10 JULY 2017</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            <a className="button" href="javascript:void(0)">More</a>
+          <div className="timeline-content">
+            <div className="date">Jan 2018</div>
+            <p>Release of Unchained Website</p>
           </div>
         </div>
 
         <div className="timeline-item">
-
           <div className="timeline-img"></div>
-
-          <div className="timeline-content timeline-card js--fadeInRight">
-            <div className="timeline-img-header">
-              <h2 className="timeline-title">Card Title</h2>
-            </div>
-            <div className="date">30 JULY 2017</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            <a className="button" href="javascript:void(0)">More</a>
+          <div className="timeline-content">
+            <div className="date">Mar 2018</div>
+            <p>Release of Roadmap 1.0</p>
           </div>
         </div>
 
         <div className="timeline-item">
-
           <div className="timeline-img"></div>
-
-          <div className="timeline-content js--fadeInLeft">
-            <div className="date">1 SEP 2017</div>
-            <h2 className="timeline-title">Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
-            <a className="button" href="javascript:void(0)">More</a>
+          <div className="timeline-content">
+            <div className="date">Apr 2018</div>
+            <p>Init Partner Program for Agencies</p>
+            <Link href="/partner-program">
+              <a className="button">To the Partner Program</a>
+            </Link>
           </div>
         </div>
 
+        <div className="timeline-item">
+          <div className="timeline-img"></div>
+          <div className="timeline-content">
+            <div className="date">Q2-Q4 2018</div>
+            <p>Roadshow for Zurich based agencies</p>
+          </div>
+        </div>
 
+        <div className="timeline-item">
+          <div className="timeline-img"></div>
+          <div className="timeline-content">
+            <div className="date">Q1-Q2 2019</div>
+            <ul>
+              <li>Release of Unchained Managed Hosting</li>
+              <li>Release of Plaform 1.0 as OSS</li>
+              <li>Release of Roadmap 2.0</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-img"></div>
+          <div className="timeline-content">
+            <div className="date">Q3-Q4 2019</div>
+            <ul>
+              <li>Release of Plugin Marketplace 1.0 Beta as SaaS</li>
+              <li>Release of Unchained Control Panel 1.0 Beta as SaaS</li>
+              <li>Unchained Conference 2019</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-img"></div>
+          <div className="timeline-content">
+            <div className="date">2020</div>
+            <ul>
+              <li>Release  Roadmap 3.0</li>
+              <li>Global Roadshow</li>
+              <li>Unchained Conference 2020</li>
+            </ul>
+          </div>
+        </div>
 
       </div>
     </section>
