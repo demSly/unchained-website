@@ -43,7 +43,7 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
     </div>
     <div className="c-bg-dark mv1">
       <div className="wrap wrap--narrow">
-        <a className="button button--primary" href="https://github.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
+        <a className="button button--primary button--blocked" href="https://github.com/unchainedshop/unchained-evolution/blob/master/business-plan.md">
               Read our Business Plan
         </a>
       </div>

@@ -5,7 +5,7 @@
   display: inline-block;
   padding: .75em 1.5em;
   font-weight: bold;
-  background-color: rgba(255,255,255,.9);
+  background-color: #F9F8F8;
   border: 1px solid #CCC;
   border-radius: 5px;
   text-transform: uppercase;
@@ -16,12 +16,6 @@
   transition-duration: 0.25s;
   transition-property: box-shadow, transform;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-@media (min-width: 1024px) {
-  .button + .button {
-    margin-left: 1.5em;
-  }
 }
 
 @media (hover: hover) {
@@ -38,8 +32,6 @@
   }
 }
 
-
-
 .button--full-width {
   width: 100%;
   margin-top: .75em;
@@ -50,16 +42,16 @@
 }
 
 .button--primary {
-  display: block;
-  min-width: 120px;
-  max-width: 320px;
-  border-color: transparent;
-  border-radius: 5px;
+  border-color: #1ED1A3;
   background-color: #00F5BC;
   color: #232323 !important;
 }
 
-
+.button--blocked {
+  display: block;
+  min-width: 120px;
+  max-width: 320px;
+}
 
 .hero-button {
   min-width: 84px;
@@ -79,7 +71,7 @@
   text-align: right;
 }
 
-.button--next-wrap .button--primary {
+.button--next-wrap .button--blocked {
   display: inline;
 }
 
@@ -98,21 +90,14 @@
 
 .button-group {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.button-group .button {
-  margin: .5em;
-  padding: 2em;
-  max-height: 150px;
+.button-group [class^='button'],
+.button-group [class*=' button'] {
+  margin-right: 1em;
 }
-
-
 
 .no-button {
   cursor: pointer;

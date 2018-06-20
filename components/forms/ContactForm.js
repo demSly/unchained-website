@@ -66,7 +66,7 @@ const CallBackForm = ({
           {inProgress && (
             <Loading color="#31302E" />
           )}
-          <SubmitField className="button button--primary mt1 mb3" value="Send" />
+          <SubmitField className="button button--primary button--blocked mt1 mb3" value="Send" />
         </div>
       </div>
       <style jsx>{`

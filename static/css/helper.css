@@ -13,6 +13,13 @@
   flex-wrap: wrap;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .full-width {
   width: 100%;
   max-width: none;
@@ -106,7 +113,7 @@
 
 .mv7 {
   margin-top: 7em;
-  margin-bottom: 7em;  
+  margin-bottom: 7em;
 }
 
 /* Paddings */

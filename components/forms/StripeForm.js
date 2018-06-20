@@ -89,7 +89,7 @@ const StripeForm = ({
       <button className="button mb" type="normal" onClick={onBack}>{intl.formatMessage({ id: 'back' })}</button>
       <div className="loader-wrap">
         {inProgress && <Loading color={variables.darkColor} /> }
-        <SubmitField disabled={inProgress} className="button button--primary mb" value={intl.formatMessage({ id: 'checkout_button_card' })} />
+        <SubmitField disabled={inProgress} className="button button--primary button--blocked mb" value={intl.formatMessage({ id: 'checkout_button_card' })} />
       </div>
     </div>
     <style jsx>{`

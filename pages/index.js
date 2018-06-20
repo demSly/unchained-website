@@ -77,19 +77,25 @@ const Home = ({ home }) => (
             digital commerce needs.
           </p>
           <p>
-            We built the platform with Node.js & MongoDB because we wanted
-            something that you can onboard developers quickly, empowering change
+            We built the engine with Node.js & MongoDB because of quick onboarding for developers, empowering rapid change
             rather than the traditional "let's stick with the standard process"
             mindset, effectively breaking the need to hire expensive specialized consultants.
             With extensibility & ease of use in mind, the popularity of a programming language
-            & a friction-free extension of logic, db structure & code is what
+            & a friction-free extension of logic, database structure & code is what
             matters most.
           </p>
-          <Link href="/showcase">
-            <a className="link mt3 db">
-                See a showcase
-            </a>
-          </Link>
+          <div className="button-group mt3">
+            <Link href="/platform">
+              <a className="button button--primary">
+                  Read more
+              </a>
+            </Link>
+            <Link href="/showcase">
+              <a className="button">
+                  See a showcase
+              </a>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -260,21 +266,21 @@ const Home = ({ home }) => (
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
           <h3 className="mt0">Get more information by choosing your role</h3>
-          <div className="button-group">
+          <div className="button-group flex-center">
             <Link href="/developers">
-              <a className="button button--secondary">
+              <a className="button button--role">
                   Developer
                 <img className="w72px" src="../static/img/58- programmer-male-african-american.svg" alt="" />
               </a>
             </Link>
             <Link href="/showcase">
-              <a className="button button--secondary">
+              <a className="button button--role">
                   Merchant
                 <img src="../static/img/06- business-team.svg" alt="" />
               </a>
             </Link>
             <Link href="/fundraiser">
-              <a className="button button--secondary">
+              <a className="button button--role">
                   Investor
                 <img src="../static/img/86- business-income-female-asian.svg" alt="" />
               </a>
@@ -299,6 +305,10 @@ const Home = ({ home }) => (
     </div>
 
     <style jsx>{`
+
+      .button--role {
+        min-height: 130px;
+      }
 
       .w72px {
         width: 72px;
@@ -443,13 +453,6 @@ const Home = ({ home }) => (
 
       .icon {
         width: 80px;
-      }
-
-      .link {
-        color: ${variables.primaryColor};
-      }
-      .link:hover {
-        text-decoration: underline;
       }
 
       .c-bg-dark .link {

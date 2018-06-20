@@ -167,7 +167,7 @@ const UpdateCartDeliveryForm = ({
         {inProgress && (
           <Loading color="#31302E" />
         )}
-        <SubmitField className="button button--primary" value={intl.formatMessage({ id: 'continue_to_payment_methods' })} />
+        <SubmitField className="button button--primary button--blocked" value={intl.formatMessage({ id: 'continue_to_payment_methods' })} />
       </div>
     </div>
     <style jsx>{`

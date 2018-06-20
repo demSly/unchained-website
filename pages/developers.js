@@ -66,19 +66,21 @@ const Developers = ({ developers }) => (
   <PageLayout title={developers.meta_title} metaDescription={developers.meta_description}>
 
     <div className="wrap mt7">
-      <Link href="/partner-program">
-        <a className="button">
-            Partner Program
+      <div className="button-group flex-center">
+        <Link href="/partner-program">
+          <a className="button">
+              Partner Program
+          </a>
+        </Link>
+        <Link href="/faq">
+          <a className="button">
+              FAQ
+          </a>
+        </Link>
+        <a className="button" href="/graphiql">
+          API
         </a>
-      </Link>
-      <Link href="/faq">
-        <a className="button">
-            FAQ
-        </a>
-      </Link>
-      <a className="button" href="/graphiql">
-        API
-      </a>
+      </div>
     </div>
 
 
@@ -267,12 +269,6 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
         width: 300px;
       }
 
-      .feature-set ul li a,
-      .link {
-        color: blue;
-        text-decoration: underline;
-      }
-
       .c-bg-dark .link {
         color: white;
       }
@@ -284,17 +280,6 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
         }
         .feature-set h3 {
           min-width: 200px;
-        }
-      }
-
-      .button {
-        margin-right: 1.5em;
-        margin-bottom: 1em;
-      }
-
-      @media (min-width: 1024px) {
-        .button + .button {
-          margin-left: 1.5em;
         }
       }
 

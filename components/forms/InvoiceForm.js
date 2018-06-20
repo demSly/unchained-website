@@ -35,7 +35,7 @@ const StripeForm = ({
         <button className="button mb" type="normal" onClick={onBack}>{intl.formatMessage({ id: 'back' })}</button>
         <div className="loader-wrap">
           {inProgress && <Loading color={variables.darkColor} /> }
-          <SubmitField className="button button--primary mb" disabled={inProgress} value={intl.formatMessage({ id: 'checkout_button_invoice' })} />
+          <SubmitField className="button button--primary button--blocked mb" disabled={inProgress} value={intl.formatMessage({ id: 'checkout_button_invoice' })} />
         </div>
       </div>
     </AutoForm>
