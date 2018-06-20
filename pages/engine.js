@@ -12,8 +12,9 @@ const Platform = ({ platform }) => (
     <div className="wrap wrap--vertical-padding">
       <section className="section">
         <h1>Unchained Engine</h1>
-        <p>The Unchained Engine is our core product. Our engine is written in
-          Node.js ES6 and exposes all functions through a GraphQL API.
+        <p>The Unchained Engine is our core product and is written in Node.js ES6.
+          It exposes all data exclusively through a GraphQL API (headless). The web
+          application is served stateless and therefore container friendly.
         </p>
         <h2>Core Values</h2>
         <h3>Open Source</h3>
