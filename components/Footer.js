@@ -89,8 +89,8 @@ const Footer = ({ intl }) => (
           <Link href="/hosting">
             <a className="footer__link"><small>{intl.formatMessage({ id: 'hosting' })}</small></a>
           </Link>
-          <Link href="/control panel">
-            <a className="footer__link"><small>{intl.formatMessage({ id: 'control panel' })}</small></a>
+          <Link href="/control-panel">
+            <a className="footer__link"><small>{intl.formatMessage({ id: 'control-panel' })}</small></a>
           </Link>
         </div>
 

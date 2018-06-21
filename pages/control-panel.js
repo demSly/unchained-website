@@ -12,11 +12,16 @@ const Platform = ({ platform }) => (
     <div className="wrap wrap--vertical-padding">
       <section className="section">
         <h1>Unchained Control Panel</h1>
-        <p>Our Unchained Control Panel is a sweet UI to all data management API's
-          that the unchained engine provides out of the box. We provide it to you through a
-          SaaS model starting at USD 49 a month.
-
-          Contact us now if you want to use the engine and our control panel before the open source release of unchained engine.
+        <p>Our Unchained Control Panel is our Web UI to all data management API's
+          that the unchained engine provides out of the box. It allows managing
+          assortments, products and provides analytics and reporting on orders.
+          We provide it to you through a
+          Subscription model and ensure compatibility and feature parity with our
+          unchained engine.
+        </p>
+        <p>
+          Contact us now if you want to use the engine and our control panel
+          before the open source release of unchained engine.
         </p>
       </section>
 

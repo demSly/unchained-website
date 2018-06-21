@@ -16,6 +16,10 @@ const Platform = ({ platform }) => (
           It exposes all data exclusively through a GraphQL API (headless). The web
           application is served stateless and therefore container friendly.
         </p>
+        <p>
+          Contact us now if you want to use the engine and our control panel
+          before the open source release of unchained engine.
+        </p>
         <h2>Core Values</h2>
         <h3>Open Source</h3>
         <p>
