@@ -185,10 +185,10 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
         value={`query getProduct {
   product(slug: "🌭") {
     _id
+    texts {
+      title
+    }
     ... on SimpleProduct {
-      texts {
-        title
-      }
       catalogPrice {
         price {
           amount
@@ -201,7 +201,7 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       />
 
       <a
-        href="https://graphqlbin.com/v2/AP02IZ"
+        href="https://graphqlbin.com/v2/VApjsg"
         target="_blank"
         rel="noopener noreferrer"
       >Try it out live @ GraphQL Bin
@@ -225,7 +225,8 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
           target="_blank"
           rel="noopener noreferrer"
         >ProductDetails component
-        </a></span>
+        </a>
+      </span>
         <span> used throughout unchained.shop</span>
       </p>
 
