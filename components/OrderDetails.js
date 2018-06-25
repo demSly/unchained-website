@@ -18,19 +18,36 @@ const OrderDetails = ({
 }) => (
   <div>
     <div>
-      <h1 className="order__title">{intl.formatMessage({ id: 'order' })} {orderNumber}</h1>
-      <p className="order__date"><Moment format="llll">{ordered}</Moment></p>
-      <p className="order__count">{totalQuantity} {intl.formatMessage({ id: 'article' })}</p>
+      <h1 className="order__title">
+        {intl.formatMessage({ id: 'order' })}
+        {' '}
+        {orderNumber}
+      </h1>
+      <p className="order__date">
+        <Moment format="llll">
+          {ordered}
+        </Moment>
+      </p>
+      <p className="order__count">
+        {totalQuantity}
+        {' '}
+        {intl.formatMessage({ id: 'article' })}
+      </p>
     </div>
     <div className="order__items">
       {items && items.map(({
         _id, product: { media, texts }, total: itemTotal, quantity, unitPrice,
-        }) =>
-      (
+      }) => (
         <div className="order__item" key={_id}>
-          <div className="item__quantity">{quantity} x</div>
+          <div className="item__quantity">
+            {quantity}
+            {' '}
+x
+          </div>
           <img className="item__image" src={productCover(media).url} alt={productCover(media).title} />
-          <div className="item__title">{texts && texts.title}</div>
+          <div className="item__title">
+            {texts && texts.title}
+          </div>
           <span className="item__unit-price">
             <Price {...unitPrice} />
           </span>
@@ -38,18 +55,22 @@ const OrderDetails = ({
             <Price {...itemTotal} />
           </span>
         </div>
-       ))
+      ))
      }
     </div>
     <div className="order-totals">
       <div className="order__subtotal">
-        <div className="label">{intl.formatMessage({ id: 'discounts' })}</div>
+        <div className="label">
+          {intl.formatMessage({ id: 'discounts' })}
+        </div>
         <div className="total">
           <Price {...discountsTotal} />
         </div>
       </div>
       <div className="order__subtotal">
-        <div className="label">{intl.formatMessage({ id: 'subtotal' })}</div>
+        <div className="label">
+          {intl.formatMessage({ id: 'subtotal' })}
+        </div>
         <div className="total">
           <Price
             amount={(itemsTotal.amount + (discountsTotal ? discountsTotal.amount : 0))}
@@ -58,31 +79,40 @@ const OrderDetails = ({
         </div>
       </div>
       <div className="order__shipping">
-        <div className="label">{intl.formatMessage({ id: 'delivery_fees' })}</div>
+        <div className="label">
+          {intl.formatMessage({ id: 'delivery_fees' })}
+        </div>
         <div className="total">
           <Price {...deliveryTotal} />
         </div>
       </div>
       <div className="order__shipping">
-        <div className="label">{intl.formatMessage({ id: 'payment_fees' })}</div>
+        <div className="label">
+          {intl.formatMessage({ id: 'payment_fees' })}
+        </div>
         <div className="total">
           <Price {...paymentTotal} />
         </div>
       </div>
       <div className="order__total">
-        <div className="label">{intl.formatMessage({ id: 'total' })}</div>
+        <div className="label">
+          {intl.formatMessage({ id: 'total' })}
+        </div>
         <div className="total">
           <Price {...total} />
         </div>
       </div>
       <div className="order__vat">
-        <div className="label">{intl.formatMessage({ id: 'included_tax' })}</div>
+        <div className="label">
+          {intl.formatMessage({ id: 'included_tax' })}
+        </div>
         <div className="total">
           <Price {...taxesTotal} />
         </div>
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .order-totals > div {
         line-height: 2.5;
       }

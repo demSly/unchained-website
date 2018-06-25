@@ -8,7 +8,9 @@ import PageLayout from '../components/PageLayout';
 const Terms = ({ terms }) => (
   <PageLayout title={terms.title}>
     <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h1>{terms.title}</h1>
+      <h1>
+        {terms.title}
+      </h1>
       <div
         dangerouslySetInnerHTML={{ // eslint-disable-line
           __html: terms.text,

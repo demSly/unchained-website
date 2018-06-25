@@ -21,9 +21,8 @@ const CheckoutCart = ({
     </div>
     <div className="cart__items">
       {items && items.map(({
- _id, total, product: { texts, media }, quantity,
-}) =>
-      (
+        _id, total, product: { texts, media }, quantity,
+      }) => (
         <CheckoutCartItem
           key={_id}
           _id={_id}
@@ -39,20 +38,19 @@ const CheckoutCart = ({
     {discounts && discounts.map(({
       total,
       _id, interface: discountInterface,
-    }) =>
-      (!discountInterface ? (
-        <CheckoutCartDiscountItem
-          key={_id}
-          _id={_id}
-          interfaceId={discountInterface && discountInterface._id}
-          isManualRemovalAllowed={discountInterface
-             ? discountInterface.isManualRemovalAllowed : true}
-          total={total}
-        />
-          ) : (
-            <span />
-          )
-        ))
+    }) => (!discountInterface ? (
+      <CheckoutCartDiscountItem
+        key={_id}
+        _id={_id}
+        interfaceId={discountInterface && discountInterface._id}
+        isManualRemovalAllowed={discountInterface
+          ? discountInterface.isManualRemovalAllowed : true}
+        total={total}
+      />
+    ) : (
+      <span />
+    )
+    ))
       }
 
     {(!discounts || discounts.length === 0) && (
@@ -61,20 +59,27 @@ const CheckoutCart = ({
 
     <div className="total-lines">
       <div className="flex-between total-line">
-        <div className="total-line__name">{intl.formatMessage({ id: 'checkout_cart_total' })}</div>
-        <div className="total-line__price"><Price {...(itemsTotal && ({
-          amount: itemsTotal.amount + (discountsTotal ? discountsTotal.amount : 0),
-          currency: itemsTotal.currency,
-        }))}
-        />
+        <div className="total-line__name">
+          {intl.formatMessage({ id: 'checkout_cart_total' })}
+        </div>
+        <div className="total-line__price">
+          <Price {...(itemsTotal && ({
+            amount: itemsTotal.amount + (discountsTotal ? discountsTotal.amount : 0),
+            currency: itemsTotal.currency,
+          }))}
+          />
         </div>
       </div>
 
       <div className="flex-between total-line">
-        <div className="total-line__name">{intl.formatMessage({ id: 'delivery_fees' })}</div>
+        <div className="total-line__name">
+          {intl.formatMessage({ id: 'delivery_fees' })}
+        </div>
         <div className="total-line__price">
           {(!deliveryTotal || deliveryTotal.amount === 0) ? (
-            <span>{intl.formatMessage({ id: 'free_of_charge' })}</span>
+            <span>
+              {intl.formatMessage({ id: 'free_of_charge' })}
+            </span>
           ) : (
             <Price
               amount={deliveryTotal.amount}
@@ -84,10 +89,14 @@ const CheckoutCart = ({
         </div>
       </div>
       <div className="flex-between total-line">
-        <div className="total-line__name">{intl.formatMessage({ id: 'payment_fees' })}</div>
+        <div className="total-line__name">
+          {intl.formatMessage({ id: 'payment_fees' })}
+        </div>
         <div className="total-line__price">
           {(!paymentTotal || paymentTotal.amount === 0) ? (
-            <span>{intl.formatMessage({ id: 'free_of_charge' })}</span>
+            <span>
+              {intl.formatMessage({ id: 'free_of_charge' })}
+            </span>
           ) : (
             <Price
               amount={paymentTotal.amount}
@@ -100,19 +109,25 @@ const CheckoutCart = ({
 
     <div className="flex-between order-total">
       <div>
-        <div>{intl.formatMessage({ id: 'order_total' })}</div>
+        <div>
+          {intl.formatMessage({ id: 'order_total' })}
+        </div>
         {(taxesTotal && taxesTotal.amount > 0) ? (
           <div className="taxes">
-            {intl.formatMessage({ id: 'including' })}&nbsp;
+            {intl.formatMessage({ id: 'including' })}
+&nbsp;
             <Price
               amount={taxesTotal.amount}
               currency={taxesTotal.currency}
-            />&nbsp;
+            />
+&nbsp;
             {intl.formatMessage({ id: 'vat' })}
           </div>
         ) : (
           <div className="taxes">
-            {intl.formatMessage({ id: 'excluding' })} {intl.formatMessage({ id: 'vat' })}
+            {intl.formatMessage({ id: 'excluding' })}
+            {' '}
+            {intl.formatMessage({ id: 'vat' })}
           </div>
         )}
       </div>
@@ -126,7 +141,8 @@ const CheckoutCart = ({
       )}
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       @media (min-width: 1024px) {
         .checkout-cart {
           margin-left: 1em;

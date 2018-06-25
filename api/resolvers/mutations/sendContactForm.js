@@ -5,16 +5,15 @@ const {
   MAIL_RECIPIENT,
 } = process.env;
 
-const send = async mailOptions =>
-  new Promise((resolve, reject) => {
-    mailer.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        reject(error);
-        return;
-      }
-      resolve(info);
-    });
+const send = async mailOptions => new Promise((resolve, reject) => {
+  mailer.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      reject(error);
+      return;
+    }
+    resolve(info);
   });
+});
 
 module.exports = async (root, { request }) => {
   const {

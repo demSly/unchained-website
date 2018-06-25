@@ -11,8 +11,11 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--vertical-padding">
       <section className="section">
-        <h1>Unchained Professional Services</h1>
-        <p>Sometimes you need a little help with your projects and of cours we don't
+        <h1>
+Unchained Professional Services
+        </h1>
+        <p>
+Sometimes you need a little help with your projects and of cours we don&apos;t
           let you stay in the rain.
         </p>
 
@@ -22,7 +25,7 @@ const Platform = ({ platform }) => (
         - Support: We answer tickets through e-mail or our system
         - Training: Training offerings you will find here.
 
-        To get access to these services, it's required that you join us as an
+        To get access to these services, it&apos;s required that you join us as an
         official unchained partner:
         <Link href="/partner-program">
           <a className="button">

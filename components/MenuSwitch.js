@@ -15,7 +15,8 @@ const MenuSwitch = ({ isMenuToggled, toggleMenu }) => (
     <span />
     <span />
     <span />
-    <style jsx>{`
+    <style jsx>
+      {`
       .menu-switch {
         width: 20px;
         height: 14px;

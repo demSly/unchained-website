@@ -18,8 +18,11 @@ const ToggleButton = ({
     onClick={onClick}
   >
     <img className="v-mid mr05" src={icon} alt="change shipping country" />
-    <small>{label || currentCountry.name}</small>
-    <style jsx>{`
+    <small>
+      {label || currentCountry.name}
+    </small>
+    <style jsx>
+      {`
       .change-shipping-country {
         height: 64px;
         appearance: none;
@@ -39,20 +42,25 @@ const ChangeCountry = ({
   <Modal title={intl.formatMessage({ id: 'select_country' })} visible onClose={onClose}>
     <div className="countries clearfix">
       {countries.map(({
- flagEmoji, isoCode, name, _id,
-}) => (
-  <a
-    key={_id}
-    href="/"
-    data-country={isoCode}
-    onClick={setCountry}
-    className={`country  ${(currentCountry._id === _id) ? 'is-active' : ''}`}
-  >
-    <span className="flag-emoji">{flagEmoji}</span> {name}
-  </a>
-))}
+        flagEmoji, isoCode, name, _id,
+      }) => (
+        <a
+          key={_id}
+          href="/"
+          data-country={isoCode}
+          onClick={setCountry}
+          className={`country  ${(currentCountry._id === _id) ? 'is-active' : ''}`}
+        >
+          <span className="flag-emoji">
+            {flagEmoji}
+          </span>
+          {' '}
+          {name}
+        </a>
+      ))}
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .flag-emoji {
         margin-left: .5em;
         margin-right: .5em;

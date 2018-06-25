@@ -1,6 +1,5 @@
 import React from 'react';
 import { compose } from 'recompose';
-import variables from '../styles/variables';
 import connectApollo from '../lib/connectApollo';
 import withRegion from '../lib/withRegion';
 import connectI18n from '../lib/connectI18n';
@@ -11,10 +10,13 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--vertical-padding">
       <section className="section">
-        <h1>Unchained Managed Hosting</h1>
-        <p>Let us host the Unchained Engine for you so you can concentrate on
+        <h1>
+Unchained Managed Hosting
+        </h1>
+        <p>
+Let us host the Unchained Engine for you so you can concentrate on
           your business. We use Docker Swarm and a bunch of modern Software to setup
-          a scalable Unchained infrastructure for you. It doesn't matter to us
+          a scalable Unchained infrastructure for you. It doesn&apos;t matter to us
           where the datacenter is.
         </p>
 

@@ -8,14 +8,28 @@ import PageLayout from '../components/PageLayout';
 const Imprint = ({ imprint }) => (
   <PageLayout title={imprint.title}>
     <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h1>{imprint.title}</h1>
+      <h1>
+        {imprint.title}
+      </h1>
       <address dangerouslySetInnerHTML={{ // eslint-disable-line
         __html: imprint.address,
-        }}
+      }}
       />
       <br />
-      <small>Development</small>
-      <p>This is a Joint-venture of <a className="link underline" href="http://www.fliptation.ch">Fliptation GmbH</a> & <a className="link underline" href="http://www.reactive.one">Reactive Code GmbH</a>.
+      <small>
+Development
+      </small>
+      <p>
+This is a Joint-venture of
+        <a className="link underline" href="http://www.fliptation.ch">
+Fliptation GmbH
+        </a>
+        {' '}
+&
+        <a className="link underline" href="http://www.reactive.one">
+Reactive Code GmbH
+        </a>
+.
       </p>
     </div>
   </PageLayout>

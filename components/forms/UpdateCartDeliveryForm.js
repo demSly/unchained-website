@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import { compose, withHandlers, withState, pure } from 'recompose';
+import {
+  compose, withHandlers, withState, pure,
+} from 'recompose';
 import SimpleSchema from 'simpl-schema';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
@@ -41,7 +43,9 @@ const UpdateCartDeliveryForm = ({
       />
     </div>
 
-    <h5>{intl.formatMessage({ id: 'delivery_address' })}</h5>
+    <h5>
+      {intl.formatMessage({ id: 'delivery_address' })}
+    </h5>
     <div className="fieldset">
       <TextField
         half
@@ -105,12 +109,16 @@ const UpdateCartDeliveryForm = ({
         defaultChecked={isInvoiceAddressDifferent}
         onChange={toggleInvoiceAddressDifferent}
       />
-      <span>{intl.formatMessage({ id: 'other_billing_address' })}</span>
+      <span>
+        {intl.formatMessage({ id: 'other_billing_address' })}
+      </span>
     </label>
 
     {isInvoiceAddressDifferent && (
     <div>
-      <h5>{intl.formatMessage({ id: 'billing_address' })}</h5>
+      <h5>
+        {intl.formatMessage({ id: 'billing_address' })}
+      </h5>
       <div className="fieldset">
         <TextField
           half
@@ -160,7 +168,7 @@ const UpdateCartDeliveryForm = ({
         />
       </div>
     </div>
-      )}
+    )}
     <ErrorsField />
     <div className="button--next-wrap">
       <div className="loader-wrap">
@@ -170,7 +178,8 @@ const UpdateCartDeliveryForm = ({
         <SubmitField className="button button--primary" value={intl.formatMessage({ id: 'continue_to_payment_methods' })} />
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
         .loader-wrap {
           float: right;
         }

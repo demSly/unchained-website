@@ -7,32 +7,34 @@ import Price from './Price';
 
 const CheckoutCartItem = ({
   _id, total, texts, media, quantity, removeItem, decreaseItemQuantity, increaseItemQuantity,
-}) =>
-  (
-    <div className="cart__item" key={_id}>
-      <div className="item__img">
-        <img src={productCover(media).url} alt={productCover(media).title} />
-      </div>
-      <div className="item__right">
-        <div className="item__name-and-price">
-          <div className="item__name">
-            {texts && texts.title}
-          </div>
-          <div className="item__price">
-            <Price {...total} />
-          </div>
+}) => (
+  <div className="cart__item" key={_id}>
+    <div className="item__img">
+      <img src={productCover(media).url} alt={productCover(media).title} />
+    </div>
+    <div className="item__right">
+      <div className="item__name-and-price">
+        <div className="item__name">
+          {texts && texts.title}
         </div>
-        <div className="quantity-stepper">
-          <button onClick={quantity === 1 ? removeItem : decreaseItemQuantity} className="no-button">
-            <img src="../static/img/icon/subtract-hexagon-1.svg" alt="subtract icon" />
-          </button>
-          <span>{quantity}</span>
-          <button onClick={increaseItemQuantity} className="no-button">
-            <img src="../static/img/icon/add-hexagon-1.svg" alt="plus icon" />
-          </button>
+        <div className="item__price">
+          <Price {...total} />
         </div>
       </div>
-      <style jsx>{`
+      <div className="quantity-stepper">
+        <button type="button" onClick={quantity === 1 ? removeItem : decreaseItemQuantity} className="no-button">
+          <img src="../static/img/icon/subtract-hexagon-1.svg" alt="subtract icon" />
+        </button>
+        <span>
+          {quantity}
+        </span>
+        <button type="button" onClick={increaseItemQuantity} className="no-button">
+          <img src="../static/img/icon/add-hexagon-1.svg" alt="plus icon" />
+        </button>
+      </div>
+    </div>
+    <style jsx>
+      {`
       .cart__item {
         display: flex;
         margin-bottom: 1em;
@@ -61,9 +63,10 @@ const CheckoutCartItem = ({
         width: 80px;
         margin-top: .5em;
       }
-    `}</style>
-    </div>
-  );
+    `}
+    </style>
+  </div>
+);
 
 export default compose(
   graphql(gql`
@@ -130,32 +133,35 @@ export default compose(
     },
   }),
   withHandlers({
-    increaseItemQuantity: ({ quantity, _id, updateCartItemQuantity }) => async () =>
-      updateCartItemQuantity({
-        variables: { itemId: _id, quantity: quantity + 1 },
-        optimisticResponse: {
-          __typename: 'Mutation',
-          updateCartItemQuantity: {
-            __typename: 'OrderItem',
-            _id,
-            quantity: quantity + 1,
-          },
+    increaseItemQuantity: ({
+      quantity, _id, updateCartItemQuantity,
+    }) => async () => updateCartItemQuantity({
+      variables: { itemId: _id, quantity: quantity + 1 },
+      optimisticResponse: {
+        __typename: 'Mutation',
+        updateCartItemQuantity: {
+          __typename: 'OrderItem',
+          _id,
+          quantity: quantity + 1,
         },
-      }),
-    decreaseItemQuantity: ({ quantity, _id, updateCartItemQuantity }) => async () =>
-      updateCartItemQuantity({
-        variables: { itemId: _id, quantity: quantity - 1 },
-        optimisticResponse: {
-          __typename: 'Mutation',
-          updateCartItemQuantity: {
-            __typename: 'OrderItem',
-            _id,
-            quantity: quantity - 1,
-          },
+      },
+    }),
+    decreaseItemQuantity: ({
+      quantity, _id, updateCartItemQuantity,
+    }) => async () => updateCartItemQuantity({
+      variables: { itemId: _id, quantity: quantity - 1 },
+      optimisticResponse: {
+        __typename: 'Mutation',
+        updateCartItemQuantity: {
+          __typename: 'OrderItem',
+          _id,
+          quantity: quantity - 1,
         },
-      }),
-    removeItem: ({ _id, removeCartItem }) => async () =>
-      removeCartItem({ variables: { itemId: _id } }),
+      },
+    }),
+    removeItem: ({
+      _id, removeCartItem,
+    }) => async () => removeCartItem({ variables: { itemId: _id } }),
   }),
   pure,
 )(CheckoutCartItem);

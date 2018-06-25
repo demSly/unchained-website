@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import { compose, withHandlers, pure, withState } from 'recompose';
+import {
+  compose, withHandlers, pure, withState,
+} from 'recompose';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import SubmitField from 'uniforms-unstyled/SubmitField';
@@ -17,10 +19,14 @@ const CallBackForm = ({
   schema, onSubmit, model, error, onSubmitFailure, inProgress, onChange,
   onSubmitSuccess, isSent,
 }) => (isSent ? (
-  <h3>Thanks! We will reach out to you</h3>
+  <h3>
+Thanks! We will reach out to you
+  </h3>
 ) : (
   <React.Fragment>
-    <h2>Contact us</h2>
+    <h2>
+Contact us
+    </h2>
     <AutoForm
       disabled={inProgress}
       schema={schema}
@@ -69,7 +75,8 @@ const CallBackForm = ({
           <SubmitField className="button button--primary mt1 mb3" value="Send" />
         </div>
       </div>
-      <style jsx>{`
+      <style jsx>
+        {`
         .loader-wrap {
           float: right;
         }

@@ -4,7 +4,7 @@ import { injectIntl } from 'react-intl';
 import Link from 'next/link';
 import Layout from './Layout';
 import variables from '../styles/variables';
-import PageModalButton from '../components/PageModalButton';
+import PageModalButton from './PageModalButton';
 
 const CheckoutLayout = ({ intl, children, ...props }) => (
   <Layout {...props}>
@@ -30,7 +30,8 @@ const CheckoutLayout = ({ intl, children, ...props }) => (
       </div>
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       @media (min-width: 1400px) {
         .back-button {
           margin-left: -1.5em;
@@ -62,7 +63,8 @@ const CheckoutLayout = ({ intl, children, ...props }) => (
       }
     `}
     </style>
-    <style jsx global>{`
+    <style jsx global>
+      {`
       .checkout-footer__link + .checkout-footer__link {
         margin-left: 1em;
       }

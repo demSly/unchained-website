@@ -1,5 +1,7 @@
 import React from 'react';
-import { compose, withHandlers, getContext, withState, withProps } from 'recompose';
+import {
+  compose, withHandlers, getContext, withState, withProps,
+} from 'recompose';
 import { graphql } from 'react-apollo';
 import { injectIntl } from 'react-intl';
 import { withRouter } from 'next/router';
@@ -40,8 +42,12 @@ const ProductDetails = ({
       </Slider>
     </div>
     <div className="product__item">
-      <h1>{product.texts && product.texts.title}</h1>
-      <p>{product.texts && product.texts.subtitle}</p>
+      <h1>
+        {product.texts && product.texts.title}
+      </h1>
+      <p>
+        {product.texts && product.texts.subtitle}
+      </p>
       <p className="price">
         <Price {...(priceConfiguration && priceConfiguration.price)} />
       </p>
@@ -100,10 +106,14 @@ const ProductDetails = ({
           </div>
         )}
         {isBuyable ? (
-          <button className="button" onClick={addToCart}>{intl.formatMessage({ id: 'add_to_cart' })}</button>
+          <button type="button" className="button" onClick={addToCart}>
+            {intl.formatMessage({ id: 'add_to_cart' })}
+          </button>
         ) : (
           <Link href="/support#studio-finder">
-            <a className="button">{intl.formatMessage({ id: 'to_the_studiofinder' })}</a>
+            <a className="button">
+              {intl.formatMessage({ id: 'to_the_studiofinder' })}
+            </a>
           </Link>
         )}
       </div>
@@ -111,7 +121,8 @@ const ProductDetails = ({
         <Markdown source={product.texts && product.texts.description} />
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .product__description {
         margin-top: 3.2em;
         font-size: 16px;

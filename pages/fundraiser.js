@@ -37,7 +37,9 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
 
     <div className="wrap wrap--narrow mt7">
       <section id="fundraiser" className="section">
-        <h2>{fundraiser.title}</h2>
+        <h2>
+          {fundraiser.title}
+        </h2>
         <Markdown source={fundraiser.intro} />
       </section>
     </div>
@@ -52,7 +54,9 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
     <div className="wrap wrap--narrow mb7">
       <section className="section">
         <div className="mv4">
-          <p>Get whitelisted as an investor</p>
+          <p>
+Get whitelisted as an investor
+          </p>
           {currentUser._id ? (
             <Link href="/profile">
               <a className="button">
@@ -70,7 +74,9 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
 
         <div className="charts">
           <div className="chart">
-            <h3 className="mb1">Distribution</h3>
+            <h3 className="mb1">
+Distribution
+            </h3>
             <Pie
               data={{
                 labels: [
@@ -91,28 +97,32 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
               }}
               options={pieOptions}
             />
-            <p>Unchained participation tokens account for a total of 55% of stock equity</p>
+            <p>
+Unchained participation tokens account for a total of 55% of stock equity
+            </p>
           </div>
           <div className="chart">
-            <h3 className="mb1">Allocation</h3>
+            <h3 className="mb1">
+Allocation
+            </h3>
             <Pie
               data={{
-                  labels: [
-                    'Social Media & PR 20%',
-                    'Engineering 50%',
-                    'Business Administration 10%',
-                    'Sales & Events 20%',
+                labels: [
+                  'Social Media & PR 20%',
+                  'Engineering 50%',
+                  'Business Administration 10%',
+                  'Sales & Events 20%',
+                ],
+                datasets: [{
+                  data: [20, 50, 10, 20],
+                  backgroundColor: [
+                    variables.darkGrayColor,
+                    variables.secondaryColor,
+                    variables.darkColor,
+                    variables.grayColor,
                   ],
-                  datasets: [{
-                    data: [20, 50, 10, 20],
-                    backgroundColor: [
-                      variables.darkGrayColor,
-                      variables.secondaryColor,
-                      variables.darkColor,
-                      variables.grayColor,
-                    ],
-                  }],
-                }}
+                }],
+              }}
               options={pieOptions}
             />
           </div>
@@ -123,7 +133,8 @@ const Fundraiser = ({ fundraiser, currentUser }) => (
       }}
       />
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .charts {
         display: flex;
         justify-content: space-around;

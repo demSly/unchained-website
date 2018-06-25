@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import { compose, withHandlers, mapProps, pure } from 'recompose';
+import {
+  compose, withHandlers, mapProps, pure,
+} from 'recompose';
 import { graphql, withApollo } from 'react-apollo';
 import gql from 'graphql-tag';
 import SubmitField from 'uniforms-unstyled/SubmitField';

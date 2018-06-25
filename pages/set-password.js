@@ -13,7 +13,9 @@ const SetPassword = ({ setnewpassword, router }) => (
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">
-        <h1>{setnewpassword.title}</h1>
+        <h1>
+          {setnewpassword.title}
+        </h1>
         <SetPasswordForm token={router.query.token} />
       </div>
     </div>

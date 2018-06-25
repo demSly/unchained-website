@@ -11,7 +11,9 @@ const About = ({ about }) => (
   <PageLayout title={about.meta_title} metaDescription={about.meta_description}>
     <div className="wrap mt7">
       <section className="section">
-        <h2>{about.title}</h2>
+        <h2>
+          {about.title}
+        </h2>
         <MemberList />
       </section>
     </div>

@@ -4,15 +4,15 @@ import { injectIntl } from 'react-intl';
 import { compose, withProps, pure } from 'recompose';
 import withCheckoutCart from '../lib/withCheckoutCart';
 import withLoadingComponent from '../lib/withLoadingComponent';
-import CheckoutCart from '../components/CheckoutCart';
-import CheckoutProcess from '../components/CheckoutProcess';
+import CheckoutCart from './CheckoutCart';
+import CheckoutProcess from './CheckoutProcess';
 
-const Checkout = ({ readyForCheckout, cartEmpty }) =>
-  (
-    <div className="checkout animated fadeIn">
-      <CheckoutCart cartEmpty={cartEmpty} />
-      <CheckoutProcess readyForCheckout={readyForCheckout} cartEmpty={cartEmpty} />
-      <style jsx>{`
+const Checkout = ({ readyForCheckout, cartEmpty }) => (
+  <div className="checkout animated fadeIn">
+    <CheckoutCart cartEmpty={cartEmpty} />
+    <CheckoutProcess readyForCheckout={readyForCheckout} cartEmpty={cartEmpty} />
+    <style jsx>
+      {`
         @media (min-width: 1024px) {
           .checkout {
             display: flex;
@@ -36,9 +36,9 @@ const Checkout = ({ readyForCheckout, cartEmpty }) =>
         }
 
       `}
-      </style>
-    </div>
-  );
+    </style>
+  </div>
+);
 
 export default compose(
   injectIntl,

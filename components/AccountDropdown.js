@@ -2,7 +2,7 @@ import React from 'react';
 import { compose } from 'recompose';
 import withCurrentUser from '../lib/withCurrentUser';
 import withLoadingComponent from '../lib/withLoadingComponent';
-import LoginForm from '../components/forms/LoginForm';
+import LoginForm from './forms/LoginForm';
 import AccountMenu from './AccountMenu';
 
 const AccountDropdown = ({
@@ -14,7 +14,8 @@ const AccountDropdown = ({
     ) : (
       <LoginForm />
     )}
-    <style jsx>{`
+    <style jsx>
+      {`
       .is-loggedIn {
         margin-top: -.5em;
         margin-bottom: -.5em;

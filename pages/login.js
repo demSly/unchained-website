@@ -16,7 +16,9 @@ const Login = ({ login, intl }) => (
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">
-        <h1>{intl.formatMessage({ id: 'login' })}</h1>
+        <h1>
+          {intl.formatMessage({ id: 'login' })}
+        </h1>
         <LoginForm />
       </div>
     </div>

@@ -18,7 +18,9 @@ const Header = ({ isMenuToggled }) => (
               <a>
                 <div className="unchained-brand">
                   <img className="unchained-logo" src="../static/img/unchained-logo-black.png" alt="Unchained logo" />
-                  <span>unchained</span>
+                  <span>
+unchained
+                  </span>
                 </div>
               </a>
             </Link>
@@ -33,7 +35,8 @@ const Header = ({ isMenuToggled }) => (
       )}
     </Sticky>
 
-    <style jsx global>{`
+    <style jsx global>
+      {`
       @media (max-width: 1219px) {
         .language-switch-in-head {
           display: none;
@@ -45,7 +48,8 @@ const Header = ({ isMenuToggled }) => (
     `}
     </style>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       .unchained-brand {
         display: flex;
         align-items: center;

@@ -13,7 +13,9 @@ const Signup = ({ intl, router }) => (
     <Redirect to={(router.query && router.query.redirect) || '/'} ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">
-        <h1>{intl.formatMessage({ id: 'register' })}</h1>
+        <h1>
+          {intl.formatMessage({ id: 'register' })}
+        </h1>
         <RegisterForm />
       </div>
     </div>

@@ -47,7 +47,8 @@ const UpdateCartDeliveryForm = ({
 
       <ErrorsField />
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .loader {
         height: 37px;
         width: 89%;

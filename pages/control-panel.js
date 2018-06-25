@@ -11,8 +11,11 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--vertical-padding">
       <section className="section">
-        <h1>Unchained Control Panel</h1>
-        <p>Our Unchained Control Panel is our Web UI to all data management API's
+        <h1>
+Unchained Control Panel
+        </h1>
+        <p>
+          Our Unchained Control Panel is our Web UI to all data management API&apos;s
           that the unchained engine provides out of the box. It allows managing
           assortments, products and provides analytics and reporting on orders.
           We provide it to you through a
@@ -28,67 +31,112 @@ const Platform = ({ platform }) => (
       <section className="section">
 
         <div>
-          <h2>Features</h2>
+          <h2>
+Features
+          </h2>
           <div className="feature-set">
-            <h3>Users</h3>
+            <h3>
+Users
+            </h3>
             <ul>
-              <li>Delete & edit users</li>
-              <li>Enroll new users</li>
-              <li>See user profiles</li>
-              <li>See user logs</li>
+              <li>
+Delete & edit users
+              </li>
+              <li>
+Enroll new users
+              </li>
+              <li>
+See user profiles
+              </li>
+              <li>
+See user logs
+              </li>
             </ul>
           </div>
 
           <div className="feature-set">
-            <h3>Products</h3>
+            <h3>
+Products
+            </h3>
             <ul>
-              <li>Manage Products</li>
+              <li>
+Manage Products
+              </li>
             </ul>
           </div>
 
           <div className="feature-set">
-            <h3>Assortments</h3>
+            <h3>
+Assortments
+            </h3>
             <ul>
-              <li>Manage Assortments</li>
+              <li>
+Manage Assortments
+              </li>
             </ul>
           </div>
 
           <div className="feature-set">
-            <h3>Orders</h3>
+            <h3>
+Orders
+            </h3>
             <ul>
-              <li>Manage Orders</li>
+              <li>
+Manage Orders
+              </li>
             </ul>
           </div>
 
           <div className="feature-set">
-            <h3>Logs</h3>
+            <h3>
+Logs
+            </h3>
             <ul>
-              <li>See rich application logs, allowing you to drill down by user, product or order</li>
+              <li>
+See rich application logs, allowing you to drill down by user, product or order
+              </li>
             </ul>
           </div>
 
           <div className="feature-set">
-            <h3>Analytics</h3>
+            <h3>
+Analytics
+            </h3>
             <ul>
-              <li>Observe key indices</li>
+              <li>
+Observe key indices
+              </li>
             </ul>
           </div>
 
           <div className="feature-set">
-            <h3>More</h3>
+            <h3>
+More
+            </h3>
             <ul>
-              <li>Manage Countries</li>
-              <li>Manage Languages</li>
-              <li>Manage Payment Providers</li>
-              <li>Manage Delivery Providers</li>
-              <li>Manage Warehousing Providers</li>
+              <li>
+Manage Countries
+              </li>
+              <li>
+Manage Languages
+              </li>
+              <li>
+Manage Payment Providers
+              </li>
+              <li>
+Manage Delivery Providers
+              </li>
+              <li>
+Manage Warehousing Providers
+              </li>
             </ul>
           </div>
         </div>
       </section>
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       .advantages {
         padding-bottom: 2em;
       }

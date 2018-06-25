@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { compose, withHandlers, withProps, pure, renderNothing, branch } from 'recompose';
+import {
+  compose, withHandlers, withProps, pure, renderNothing, branch,
+} from 'recompose';
 import paypal from 'paypal-checkout';
 import braintree from 'braintree-web';
 import getConfig from 'next/config';

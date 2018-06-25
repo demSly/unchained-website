@@ -35,7 +35,9 @@ const StripeForm = ({
       {children}
       <ErrorsField />
       <div className="flex-between">
-        <button className="button mb" type="normal" onClick={onBack}>{intl.formatMessage({ id: 'back' })}</button>
+        <button type="button" className="button mb" onClick={onBack}>
+          {intl.formatMessage({ id: 'back' })}
+        </button>
         <div className="loader-wrap">
           {inProgress && <Loading color={variables.darkColor} /> }
           <SubmitField className="button button--primary mb" disabled={inProgress} value={intl.formatMessage({ id: 'continue_with_bitcoin' })} />

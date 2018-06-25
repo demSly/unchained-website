@@ -14,10 +14,13 @@ const Orders = ({ intl, orders }) => (
   >
     <Redirect to="/login?redirect=/orders" ifLoggedIn={false} />
     <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h1>{intl.formatMessage({ id: 'all_orders' })}</h1>
+      <h1>
+        {intl.formatMessage({ id: 'all_orders' })}
+      </h1>
       <OrderList />
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       h1 {
         font-size: 32px;
       }

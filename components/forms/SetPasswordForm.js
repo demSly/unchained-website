@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import { compose, withHandlers, mapProps, pure } from 'recompose';
+import {
+  compose, withHandlers, mapProps, pure,
+} from 'recompose';
 import { withApollo } from 'react-apollo';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import AutoForm from 'uniforms-unstyled/AutoForm';

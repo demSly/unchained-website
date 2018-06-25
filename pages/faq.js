@@ -13,7 +13,9 @@ const Support = ({ faq, questions }) => (
 
     <div className="wrap mv7">
       <section id="faq" className="section">
-        <h2>{faq.faq_title}</h2>
+        <h2>
+          {faq.faq_title}
+        </h2>
         <div className="dangerously mb4" dangerouslySetInnerHTML={{ // eslint-disable-line
           __html: faq.faq_content,
         }}
@@ -21,7 +23,9 @@ const Support = ({ faq, questions }) => (
         {questions.map(({ question, answer }) => (
           <React.Fragment key={question}>
             <div className="faq-item">
-              <div className="question">{question}</div>
+              <div className="question">
+                {question}
+              </div>
               <p className="answer">
                 <Markdown source={answer} />
               </p>
@@ -33,7 +37,8 @@ const Support = ({ faq, questions }) => (
     </div>
 
 
-    <style jsx>{`
+    <style jsx>
+      {`
       .faq-item {
         margin-top: 2em;
         border-top: 2px dashed ${variables.lineGrayColor};

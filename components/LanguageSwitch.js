@@ -1,7 +1,9 @@
 import React from 'react';
 import cookie from 'cookie';
 import PropTypes from 'prop-types';
-import { compose, getContext, mapProps, withHandlers } from 'recompose';
+import {
+  compose, getContext, mapProps, withHandlers,
+} from 'recompose';
 
 const LanguageSwitch = ({ language, setLanguage, ...rest }) => (
   <div className="lang-switch" {...rest}>
@@ -12,9 +14,12 @@ const LanguageSwitch = ({ language, setLanguage, ...rest }) => (
       lang="de"
       href=""
       onClick={setLanguage}
-    >DE
+    >
+DE
     </a>
-    <span className="pipe">|</span>
+    <span className="pipe">
+|
+    </span>
     <a
       className={`lang-switch__link ${language === 'en' ? 'is-active' : ''}`}
       hrefLang="en"
@@ -22,10 +27,12 @@ const LanguageSwitch = ({ language, setLanguage, ...rest }) => (
       data-lang="en"
       href=""
       onClick={setLanguage}
-    >EN
+    >
+EN
     </a>
 
-    <style jsx>{`
+    <style jsx>
+      {`
 
       .lang-switch__link {
         display: inline;

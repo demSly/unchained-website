@@ -1,39 +1,41 @@
 import React from 'react';
 import { withRouter } from 'next/router';
 import { injectIntl } from 'react-intl';
-import { compose, withProps, withState, withHandlers, pure } from 'recompose';
-import CheckoutCartDeliverySummary from '../components/CheckoutCartDeliverySummary';
-import CheckoutStep from '../components/CheckoutStep';
-import UpdateCartDeliveryForm from '../components/forms/UpdateCartDeliveryForm';
-import UpdateCartPaymentForm from '../components/forms/UpdateCartPaymentForm';
+import {
+  compose, withProps, withState, withHandlers, pure,
+} from 'recompose';
+import CheckoutCartDeliverySummary from './CheckoutCartDeliverySummary';
+import CheckoutStep from './CheckoutStep';
+import UpdateCartDeliveryForm from './forms/UpdateCartDeliveryForm';
+import UpdateCartPaymentForm from './forms/UpdateCartPaymentForm';
 import variables from '../styles/variables';
 
 const CheckoutProcess = ({
   isPaymentStepVisible, toggleDeliveryForm,
   isDeliveryFormToggled, intl, thankThatDudeForPayMeBitch,
-}) =>
-  (
-    <div className="checkout-process">
-      <CheckoutStep number="1" title={intl.formatMessage({ id: 'checkout_your_info' })}>
-        {isDeliveryFormToggled ? (
-          <UpdateCartDeliveryForm
-            onSubmitSuccess={toggleDeliveryForm}
-          />
-        ) : (
-          <CheckoutCartDeliverySummary
-            onEdit={toggleDeliveryForm}
-          />
-        )}
-      </CheckoutStep>
-      {isPaymentStepVisible && (
-        <CheckoutStep number="2" title={intl.formatMessage({ id: 'select_payment_method' })}>
-          <UpdateCartPaymentForm
-            onBack={toggleDeliveryForm}
-            onSubmitSuccess={thankThatDudeForPayMeBitch}
-          />
-        </CheckoutStep>
+}) => (
+  <div className="checkout-process">
+    <CheckoutStep number="1" title={intl.formatMessage({ id: 'checkout_your_info' })}>
+      {isDeliveryFormToggled ? (
+        <UpdateCartDeliveryForm
+          onSubmitSuccess={toggleDeliveryForm}
+        />
+      ) : (
+        <CheckoutCartDeliverySummary
+          onEdit={toggleDeliveryForm}
+        />
       )}
-      <style jsx>{`
+    </CheckoutStep>
+    {isPaymentStepVisible && (
+    <CheckoutStep number="2" title={intl.formatMessage({ id: 'select_payment_method' })}>
+      <UpdateCartPaymentForm
+        onBack={toggleDeliveryForm}
+        onSubmitSuccess={thankThatDudeForPayMeBitch}
+      />
+    </CheckoutStep>
+    )}
+    <style jsx>
+      {`
         @media (min-width: 1024px) {
           .checkout-process {
             width: 70%;
@@ -46,9 +48,10 @@ const CheckoutProcess = ({
             padding-right: 2.5em;
           }
         }
-    `}</style>
-    </div>
-  );
+    `}
+    </style>
+  </div>
+);
 
 export default compose(
   injectIntl,

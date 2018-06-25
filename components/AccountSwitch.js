@@ -4,7 +4,7 @@ import { compose, getContext } from 'recompose';
 import AccountDropdown from './AccountDropdown';
 
 const AccountSwitch = ({ isAccountToggled, toggleAccount }) => (
-  <div className={`switch ${isAccountToggled ? 'open' : ''}`} >
+  <div className={`switch ${isAccountToggled ? 'open' : ''}`}>
     <button className="switch__button no-button" type="button" onClick={toggleAccount}>
       <span className="cart-caret" />
       <img
@@ -13,7 +13,8 @@ const AccountSwitch = ({ isAccountToggled, toggleAccount }) => (
       />
     </button>
     <AccountDropdown hidden={!isAccountToggled} />
-    <style jsx>{`
+    <style jsx>
+      {`
       img {
         vertical-align: middle;
       }

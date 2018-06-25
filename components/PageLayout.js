@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { compose, withContext, withState, withHandlers } from 'recompose';
+import {
+  compose, withContext, withState, withHandlers,
+} from 'recompose';
 import Header from './Header';
 import Layout from './Layout';
 import Footer from './Footer';

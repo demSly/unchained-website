@@ -9,7 +9,9 @@ const Partners = ({ partners }) => (
   <PageLayout title={partners.meta_title} metaDescription={partners.meta_description}>
     <div className="wrap mt7">
       <section id="partners" className="section">
-        <h2>Invested Partner</h2>
+        <h2>
+Invested Partner
+        </h2>
         <a href="https://www.silbury.com/">
           <img src="../static/img/silbury.jpg" alt="silbury logo" />
         </a>

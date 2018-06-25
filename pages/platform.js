@@ -12,21 +12,47 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--vertical-padding">
       <section className="section">
-        <h1>Platform overview</h1>
-        <h2>Unchained Engine</h2>
-        <p>Open-source digital commerce engine...</p>
-        <Link href="/engine">More infos about the Engine</Link>
+        <h1>
+Platform overview
+        </h1>
+        <h2>
+Unchained Engine
+        </h2>
+        <p>
+Open-source digital commerce engine...
+        </p>
+        <Link href="/engine">
+More infos about the Engine
+        </Link>
 
-        <h2>Control Panel</h2>
-        <p>Our cloud-based admin ui to view, edit and analyze data on the unchained engine</p>
-        <Link href="/control-panel">More infos about the Control Panel</Link>
-        <h2>Professional Services</h2>
-        <p>Support, Training, Events, Partnerships, ...</p>
-        <Link href="/professional-services">More infos about our Services</Link>
+        <h2>
+Control Panel
+        </h2>
+        <p>
+Our cloud-based admin ui to view, edit and analyze data on the unchained engine
+        </p>
+        <Link href="/control-panel">
+More infos about the Control Panel
+        </Link>
+        <h2>
+Professional Services
+        </h2>
+        <p>
+Support, Training, Events, Partnerships, ...
+        </p>
+        <Link href="/professional-services">
+More infos about our Services
+        </Link>
 
-        <h2>Managed Hosting</h2>
-        <p>Containerized Managed Hosting through Docker Swarm, bring your own datacenter ...</p>
-        <Link href="/managed-hosting">More infos about the Managed Hosting</Link>
+        <h2>
+Managed Hosting
+        </h2>
+        <p>
+Containerized Managed Hosting through Docker Swarm, bring your own datacenter ...
+        </p>
+        <Link href="/managed-hosting">
+More infos about the Managed Hosting
+        </Link>
 
       </section>
       <section>
@@ -40,7 +66,8 @@ const Platform = ({ platform }) => (
       </section>
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       .advantages {
         padding-bottom: 2em;
       }

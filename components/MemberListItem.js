@@ -2,21 +2,29 @@ import React from 'react';
 
 const MemberListItem = ({
   name, position, avatar, description, links,
-}) =>
-  (
-    <div className="member">
-      {avatar && (
-        <img alt={name} src={avatar.thumbnail} />
-      )}
-      <div className="name">{name}</div>
-      <div className="position">{position}</div>
-      <div className="description">{description}</div>
-      {links.map(({ _id: linkId, name: linkName, url: linkUrl }) => (
-        <div className="link" key={linkId}>
-          <a href={linkUrl}>{linkName}</a>
-        </div>
-        ))}
-      <style jsx>{`
+}) => (
+  <div className="member">
+    {avatar && (
+    <img alt={name} src={avatar.thumbnail} />
+    )}
+    <div className="name">
+      {name}
+    </div>
+    <div className="position">
+      {position}
+    </div>
+    <div className="description">
+      {description}
+    </div>
+    {links.map(({ _id: linkId, name: linkName, url: linkUrl }) => (
+      <div className="link" key={linkId}>
+        <a href={linkUrl}>
+          {linkName}
+        </a>
+      </div>
+    ))}
+    <style jsx>
+      {`
         .link {
           margin-bottom: .5em
         }
@@ -46,8 +54,8 @@ const MemberListItem = ({
           }
         }
       `}
-      </style>
-    </div>
-  );
+    </style>
+  </div>
+);
 
 export default MemberListItem;

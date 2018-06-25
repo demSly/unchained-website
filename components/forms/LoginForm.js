@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import { compose, withHandlers, mapProps, pure } from 'recompose';
+import {
+  compose, withHandlers, mapProps, pure,
+} from 'recompose';
 import { withApollo } from 'react-apollo';
 import Link from 'next/link';
 import SubmitField from 'uniforms-unstyled/SubmitField';
@@ -13,7 +15,7 @@ import TextField from './TextField';
 import ErrorsField from './ErrorsField';
 
 const Login = ({ intl, ...props }) => (
-  <AutoForm {...props} >
+  <AutoForm {...props}>
     <div className="fieldset">
       <TextField
         id="login-email-field"
@@ -32,9 +34,18 @@ const Login = ({ intl, ...props }) => (
     </div>
     <ErrorsField />
     <SubmitField className="button button--full-width" value={intl.formatMessage({ id: 'login' })} />
-    <Link href="/signup"><a className="links hide">{intl.formatMessage({ id: 'register' })}</a></Link>
-    <Link href="/forgot-password"><a className="links">{intl.formatMessage({ id: 'forgot_password' })}</a></Link>
-    <style jsx>{`
+    <Link href="/signup">
+      <a className="links hide">
+        {intl.formatMessage({ id: 'register' })}
+      </a>
+    </Link>
+    <Link href="/forgot-password">
+      <a className="links">
+        {intl.formatMessage({ id: 'forgot_password' })}
+      </a>
+    </Link>
+    <style jsx>
+      {`
       .links {
         margin-top: 1em;
         display: block;

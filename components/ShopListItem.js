@@ -15,11 +15,14 @@ const ShopListItem = ({
 }) => (
   <a className="product" {...rest}>
     <img src={url} alt={coverTitle} />
-    <h3>{title}</h3>
+    <h3>
+      {title}
+    </h3>
     <p className="price">
       <Price {...price} />
     </p>
-    <style jsx>{`
+    <style jsx>
+      {`
         .product {
           background-color: white;
           text-align: center;

@@ -10,17 +10,28 @@ const Thankyou = ({ thankyou, router }) => (
   <PageLayout title={thankyou.title} className="bg-image">
     <div className="wrap wrap--vertical-padding" id="top">
       <div className="thank-you-text">
-        <h1>{thankyou.title}</h1>
-        <h2>{thankyou.number}<br />
-          <span>{router.query.n}</span>
+        <h1>
+          {thankyou.title}
+        </h1>
+        <h2>
+          {thankyou.number}
+          <br />
+          <span>
+            {router.query.n}
+          </span>
         </h2>
-        <p>{thankyou.text}</p>
+        <p>
+          {thankyou.text}
+        </p>
         <div className="text-center">
-          <button className="button" onClick={() => window.print()}>Print</button>
+          <button type="button" className="button" onClick={() => window.print()}>
+Print
+          </button>
         </div>
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .thank-you-text {
         margin-top: 3em;
         max-width: 500px;
