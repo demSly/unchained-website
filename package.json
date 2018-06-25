@@ -71,6 +71,7 @@
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "devDependencies": {
+    "apollo-codegen": "^0.20.1",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
@@ -85,7 +86,7 @@
     "dev:local": "NODE_ENV=development SHOP_GRAPHQL_ENDPOINT=http://localhost:4010/graphql node index.js",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production node index.js",
-    "update-schema": "graphql get-schema && graphql get-schema -j -c > schema.json",
+    "update-schema": "graphql get-schema && graphql get-schema -j -o schema.json",
     "deploy": "now --dotenv=.env.production"
   }
 }
