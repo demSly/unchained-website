@@ -6,7 +6,7 @@ const {
 } = process.env;
 
 const send = async mailOptions => new Promise((resolve, reject) => {
-  mailer.sendMail(mailOptions, (error, info) => {
+  mailer().sendMail(mailOptions, (error, info) => {
     if (error) {
       reject(error);
       return;
