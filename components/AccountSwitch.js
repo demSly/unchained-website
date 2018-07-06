@@ -8,7 +8,7 @@ const AccountSwitch = ({ isAccountToggled, toggleAccount }) => (
     <button className="switch__button no-button" type="button" onClick={toggleAccount}>
       <span className="cart-caret" />
       <img
-        src="/static/img/icon/door-enter.svg"
+        src="/static/img/icon/account-protect.svg"
         alt="door enter"
       />
     </button>

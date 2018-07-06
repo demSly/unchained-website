@@ -9,7 +9,7 @@ import PageModalButton from './PageModalButton';
 const CheckoutLayout = ({ intl, children, ...props }) => (
   <Layout {...props}>
     <div className="wrap wrap--checkout">
-      <Link href="/shop">
+      <Link href="/developers">
         <a className="back-button">
           <img className="mr05" src="/static/img/icon/left-arrow-hexagon.svg" alt="left arrow icon" />
           <img
