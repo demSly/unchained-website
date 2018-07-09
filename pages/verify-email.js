@@ -64,4 +64,4 @@ Du wirst gleich weitergeleitet...
 export default connectApollo(compose(
   withRouter,
   connectI18n,
-))(VerifyEmail);
+)(VerifyEmail));

@@ -16,6 +16,7 @@ const AccountMenu = ({ intl, user, logoutUser }) => (
       </span>
       <span>
         {intl.formatMessage({ id: 'hello' })}
+        &nbsp;
         {user.name}
       </span>
     </div>
