@@ -379,12 +379,12 @@ Get more information by choosing your role
                 <img src="../static/img/06- business-team.svg" alt="" />
               </a>
             </Link>
-            <Link href="/fundraiser">
+            {/* <Link href="/fundraiser">
               <a className="button button--secondary">
                   Investor
                 <img src="../static/img/86- business-income-female-asian.svg" alt="" />
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

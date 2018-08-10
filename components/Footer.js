@@ -163,13 +163,13 @@ Company
 announcements
             </small>
           </a>
-          <Link href="/fundraiser">
+          {/* <Link href="/fundraiser">
             <a className="footer__link">
               <small>
 fundraiser
               </small>
             </a>
-          </Link>
+          </Link> */}
           <Link href="/about#contact">
             <a className="footer__link">
               <small>
