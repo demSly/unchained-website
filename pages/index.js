@@ -14,7 +14,7 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-Redefine Commerce every day.
+            Redefine Commerce every day.
           </h1>
           <h1 className="hero-text">
             <div className="tags">
@@ -390,7 +390,7 @@ Get more information by choosing your role
       </div>
     </div>
 
-    <div>
+    {/* <div>
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
           <img className="icon-investment" src="../static/img/21- money-investment.svg" alt="" />
@@ -404,7 +404,7 @@ Token Generation Event
           </Link>
         </div>
       </div>
-    </div>
+    </div> */}
 
     <style jsx>
       {`

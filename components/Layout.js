@@ -23,7 +23,7 @@ const Layout = ({
       <link href="/static/css/all.css" rel="stylesheet" key="css" />
       {title && (
       <title key="title">
-Unchained -
+        Unchained -&nbsp;
         {title}
       </title>
       )}

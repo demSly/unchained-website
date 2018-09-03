@@ -131,6 +131,13 @@ Platform
           <div className="footer-label">
 Partners
           </div>
+          <Link href="/partners">
+            <a className="footer__link">
+              <small>
+find a partner
+              </small>
+            </a>
+          </Link>
           <Link href="/partner-program">
             <a className="footer__link">
               <small>

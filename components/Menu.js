@@ -28,6 +28,11 @@ const Menu = ({ intl, hidden, ...props }) => (
           {intl.formatMessage({ id: 'fundraiser' })}
         </a>
       </ActiveLink> */}
+      <ActiveLink activeClassName="active" href="/chat">
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'chat' })}
+        </a>
+      </ActiveLink>
       <ActiveLink activeClassName="active" href="/about">
         <a className="menu__link">
           {intl.formatMessage({ id: 'about' })}
