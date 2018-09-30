@@ -46,7 +46,8 @@ const Showcase = ({ showcase }) => (
           </li>
         </ul>
 
-        <style jsx>{`
+        <style jsx>
+          {`
           /* Material */
           .mdc-image-list {
             display: -ms-flexbox;
@@ -179,18 +180,37 @@ const Showcase = ({ showcase }) => (
       </section>
     </div>
     <div className="wrap wrap--narrow mb3">
-      <p>A customer story</p>
+      <p>
+A customer story
+      </p>
       <ul>
-        <li>Supports both B2C & B2B clients. Context-aware prices.</li>
-        <li>Combined with a standard CMS to lower costs</li>
-        <li>Unified React Storefront</li>
-        <li>Various Discount models</li>
-        <li>Delivery estimation through Google Spreadsheets</li>
-        <li>Document generation through smallinvoice</li>
+        <li>
+Supports both B2C & B2B clients. Context-aware prices.
+        </li>
+        <li>
+Combined with a standard CMS to lower costs
+        </li>
+        <li>
+Unified React Storefront
+        </li>
+        <li>
+Various Discount models
+        </li>
+        <li>
+Delivery estimation through Google Spreadsheets
+        </li>
+        <li>
+Document generation through smallinvoice
+        </li>
       </ul>
       <div className="mt3">
-        <p>See the shop in action </p>
-        <a className="button" href="https://freezyboy.com">freezyboy.com</a>
+        <p>
+See the shop in action
+          {' '}
+        </p>
+        <a className="button" href="https://freezyboy.com">
+freezyboy.com
+        </a>
       </div>
     </div>
   </PageLayout>

@@ -21,17 +21,20 @@ const SelectPaymentMethod = ({
             checked={_id === (paymentProvider && paymentProvider._id)}
             onChange={selectPaymentMethod}
           />
-          <span className="radio__span">{intl.formatMessage({ id: `payment_type_${type.toLowerCase()}` })}</span>
+          <span className="radio__span">
+            {intl.formatMessage({ id: `payment_type_${type.toLowerCase()}` })}
+          </span>
           {type === 'CARD' && (
           <span>
             <img className="cc-icon" src="../static/img/icon/cc/visa.svg" alt="visa icon" />
             <img className="cc-icon" src="../static/img/icon/cc/mastercard.svg" alt="mastercard icon" />
             <img className="cc-icon" src="../static/img/icon/cc/amex.svg" alt="amex icon" />
           </span>
-        )}
+          )}
         </label>
-    ))}
-    <style jsx>{`
+      ))}
+    <style jsx>
+      {`
       .cc-icon {
         width: 51px;
         height: 32px;
@@ -89,13 +92,14 @@ export default compose(
     },
   }),
   withHandlers({
-    selectPaymentMethod: ({ orderId, setOrderPaymentProvider }) => async event =>
-      setOrderPaymentProvider({
-        variables: {
-          paymentProviderId: event.currentTarget.value,
-          orderId,
-        },
-      }),
+    selectPaymentMethod: ({
+      orderId, setOrderPaymentProvider,
+    }) => async event => setOrderPaymentProvider({
+      variables: {
+        paymentProviderId: event.currentTarget.value,
+        orderId,
+      },
+    }),
   }),
   pure,
 )(SelectPaymentMethod);

@@ -8,10 +8,12 @@ import PageLayout from '../components/PageLayout';
 const Privacy = ({ privacy }) => (
   <PageLayout title={privacy.title}>
     <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h1>{privacy.title}</h1>
+      <h1>
+        {privacy.title}
+      </h1>
       <address dangerouslySetInnerHTML={{ // eslint-disable-line
         __html: privacy.content,
-        }}
+      }}
       />
     </div>
   </PageLayout>

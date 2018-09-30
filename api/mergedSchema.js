@@ -2,9 +2,9 @@ const {
   makeExecutableSchema, makeRemoteExecutableSchema, mergeSchemas, introspectSchema,
 } = require('graphql-tools');
 const { createApolloFetch } = require('apollo-fetch');
+const NodeCache = require('node-cache');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
-const NodeCache = require('node-cache');
 
 const {
   SHOP_GRAPHQL_ENDPOINT,
@@ -26,9 +26,9 @@ unchainedFetch.use(({ request, options }, next) => {
 });
 
 // set staleness of cockpit cache for dev and prod
-const schemaCache = new NodeCache((NODE_ENV === 'production') ?
-  { stdTTL: 180, checkperiod: 10 } : // 4 minutes lag in production
-  { stdTTL: 10, checkperiod: 2 }); // 7 seconds lag in development
+const schemaCache = new NodeCache((NODE_ENV === 'production')
+  ? { stdTTL: 180, checkperiod: 10 } // 4 minutes lag in production
+  : { stdTTL: 10, checkperiod: 2 }); // 7 seconds lag in development
 
 const updateSchema = async () => {
   try {

@@ -8,7 +8,9 @@ import PageLayout from '../components/PageLayout';
 const ReturnPolicy = ({ returnpolicy }) => (
   <PageLayout title={returnpolicy.title} metaDescription={returnpolicy.text}>
     <div className="wrap wrap--narrow wrap--vertical-padding">
-      <h1>{returnpolicy.title}</h1>
+      <h1>
+        {returnpolicy.title}
+      </h1>
       <div
         dangerouslySetInnerHTML={{ // eslint-disable-line
           __html: returnpolicy.text,

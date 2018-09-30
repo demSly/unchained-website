@@ -37,7 +37,8 @@ C22.32,8.481,24.301,9.057,26.013,10.047z"
         />
       </path>
     </svg>
-    <style jsx>{`
+    <style jsx>
+      {`
       .loader {
         background-color: ${color || ''};
       }

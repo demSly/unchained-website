@@ -1,8 +1,12 @@
 {
-  "schemaPath": "schema.graphql",
-  "extensions": {
-    "endpoints": {
-      "dev": "http://localhost:3000/graphql"
+  "projects": {
+    "unchained-website-proxy": {
+      "schemaPath": "schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "default": "http://localhost:3000/graphql"
+        }
+      }
     }
   }
 }

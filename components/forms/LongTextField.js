@@ -39,11 +39,11 @@ const Text = ({
       {label && (
         <label // eslint-disable-line
           className={classnames(
-          {
-            'field__label--hidden': inlineLabel,
-          },
-          'field__label',
-        )}
+            {
+              'field__label--hidden': inlineLabel,
+            },
+            'field__label',
+          )}
           htmlFor={id}
         >
           {label}

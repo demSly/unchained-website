@@ -7,21 +7,19 @@ import nothing from 'uniforms/nothing';
 
 const ErrorsField = ({
   intl, children, className, ...props
-}, { uniforms: { error, schema } }) =>
-  (!error ? nothing : (
-    <div className={classnames('error-message', className)} {...filterDOMProps(props)}>
-      {children || intl.formatMessage({ id: 'form_errors_title' })}
-      <ul>
-        {schema.getErrorMessages(error).map(message =>
-          (
-            <li key={message}>
-              {message}
-            </li>
-          ))
+}, { uniforms: { error, schema } }) => (!error ? nothing : (
+  <div className={classnames('error-message', className)} {...filterDOMProps(props)}>
+    {children || intl.formatMessage({ id: 'form_errors_title' })}
+    <ul>
+      {schema.getErrorMessages(error).map(message => (
+        <li key={message}>
+          {message}
+        </li>
+      ))
         }
-      </ul>
-    </div>
-  ));
+    </ul>
+  </div>
+));
 ErrorsField.contextTypes = BaseField.contextTypes;
 
 export default injectIntl(ErrorsField);

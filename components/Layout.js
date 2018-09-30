@@ -21,11 +21,17 @@ const Layout = ({
       <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" key="icon_16" />
       <link rel="shortcut icon" href="/static/img/favicon.ico" key="favicon" />
       <link href="/static/css/all.css" rel="stylesheet" key="css" />
-      {title && (<title key="title">Unchained - {title}</title>)}
+      {title && (
+      <title key="title">
+        Unchained -&nbsp;
+        {title}
+      </title>
+      )}
       {metaDescription && (<meta content={metaDescription} name="description" hidden={!metaDescription} key="meta description" />)}
     </Head>
     {children}
-    <style jsx global>{`
+    <style jsx global>
+      {`
     /* Colors */
 
     .c-primary {

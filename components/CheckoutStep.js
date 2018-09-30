@@ -6,11 +6,16 @@ const CheckoutStep = ({
 }) => (
   <div className="step" {...props}>
     <div className="step-head">
-      <span className="step-number">{number}</span>
-      <span className="step-title">{title}</span>
+      <span className="step-number">
+        {number}
+      </span>
+      <span className="step-title">
+        {title}
+      </span>
     </div>
     {children}
-    <style jsx>{`
+    <style jsx>
+      {`
       .step-title {
         text-transform: uppercase;
         letter-spacing: 1px;

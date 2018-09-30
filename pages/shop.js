@@ -9,7 +9,9 @@ import ShopList from '../components/ShopList';
 const Shop = ({ shop }) => (
   <PageLayout title={shop.title} metaDescription={shop.subtitle}>
     <div className="wrap wrap--vertical-padding">
-      <h2>Unchained Shop</h2>
+      <h2>
+Unchained Shop
+      </h2>
       <ShopList />
     </div>
   </PageLayout>

@@ -9,10 +9,12 @@ import productCover from '../lib/productCover';
 const CartDropdown = ({
   cart: { items }, intl, className, hidden,
 }) => (
-  <div className={`dropdown ${hidden ? 'hidden' : ''} ${className || ''}`} >
+  <div className={`dropdown ${hidden ? 'hidden' : ''} ${className || ''}`}>
     <div className="cart__items">
       {(!items || items.length === 0) && (
-        <div className="cart__empty">{intl.formatMessage({ id: 'your_bag_is_empty' })}</div>
+        <div className="cart__empty">
+          {intl.formatMessage({ id: 'your_bag_is_empty' })}
+        </div>
       )}
       {items && items.map(({ _id, product: { texts, media }, quantity }) => (
         <div className="cart__item" key={_id}>
@@ -21,7 +23,9 @@ const CartDropdown = ({
           </div>
           <div className="item__info">
             {texts && texts.title}
-            <div className="item__qty">{quantity}</div>
+            <div className="item__qty">
+              {quantity}
+            </div>
           </div>
         </div>
       ))}
@@ -31,7 +35,8 @@ const CartDropdown = ({
         </Link>
       )}
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
 
       .cart__item {
         display: flex;

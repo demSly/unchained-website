@@ -8,9 +8,11 @@ export default ({
   <div role="dialog" className={`modal-backdrop ${visible ? 'modal-backdrop--is-visible' : ''}`}>
     <div className="modal">
       <div className="modal__header">
-        <h1 className="modal__title">{title}</h1>
+        <h1 className="modal__title">
+          {title}
+        </h1>
         <div className="modal__close">
-          <button className="no-button" onClick={onClose}>
+          <button type="button" className="no-button" onClick={onClose}>
             <img src="../static/img/icon/close-hexagon.svg" alt="close icon" />
           </button>
         </div>
@@ -18,8 +20,10 @@ export default ({
       <div className="modal__content">
         {children}
       </div>
-    </div>;
-    <style jsx>{`
+    </div>
+;
+    <style jsx>
+      {`
       .modal {
         background: #fff;
         box-shadow: 0 4px 28px rgba(0,0,0,0.2);
@@ -69,6 +73,7 @@ export default ({
         align-items: center;
         border-bottom: 1px solid ${variables.lineGrayColor};
       }
-  `}</style>
+  `}
+    </style>
   </div>
 );

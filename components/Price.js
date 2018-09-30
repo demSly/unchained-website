@@ -5,7 +5,7 @@ export default ({ amount = 0, currency = null } = {}) => {
   if (currency === 'BTC') {
     if (amount === 0) {
       return '0 Ƀ';
-    } else if (amount < 9999) {
+    } if (amount < 9999) {
       return `${amount} sat (${amount / 1000000000} Ƀ)`;
     }
     return `${amount / 1000000000} Ƀ`;

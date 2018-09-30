@@ -1,6 +1,8 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
-import { compose, withHandlers, mapProps, pure } from 'recompose';
+import {
+  compose, withHandlers, mapProps, pure,
+} from 'recompose';
 import { withApollo } from 'react-apollo';
 import SubmitField from 'uniforms-unstyled/SubmitField';
 import BoolField from 'uniforms-unstyled/BoolField';
@@ -57,7 +59,7 @@ export default compose(
       type: Boolean,
       label: intl.formatMessage({ id: 'above18' }),
       custom() {
-        if (!this.value) return 'required';
+        if (!this.value) return 'required'; // eslint-disable-line
         return null;
       },
     },

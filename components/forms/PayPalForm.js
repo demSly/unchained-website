@@ -33,7 +33,9 @@ const PayPalForm = ({
       {children}
       <ErrorsField />
       <div className="flex-between">
-        <button className="button mb" type="normal" onClick={onBack}>{intl.formatMessage({ id: 'back' })}</button>
+        <button type="button" className="button mb" onClick={onBack}>
+          {intl.formatMessage({ id: 'back' })}
+        </button>
         <div className="loader-wrap">
           {inProgress && <Loading color={variables.darkColor} /> }
           <PayPalButton

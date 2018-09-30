@@ -9,14 +9,29 @@ const Partners = ({ partners }) => (
   <PageLayout title={partners.meta_title} metaDescription={partners.meta_description}>
     <div className="wrap mt7">
       <section id="partners" className="section">
-        <h2>Invested Partner</h2>
-        <a href="https://www.silbury.com/">
-          <img src="../static/img/silbury.jpg" alt="silbury logo" />
-        </a>
-
+        <h2>
+          Invested Partners
+        </h2>
+        <div className="partner">
+          <a href="https://www.silbury.com/">
+            <img src="../static/img/silbury.jpg" alt="silbury logo" />
+          </a>
+        </div>
+        <div className="partner">
+          <a href="https://www.fivelines.ch/">
+            <img src="../static/img/fivelines.png" alt="fivelines logo" />
+          </a>
+        </div>
       </section>
     </div>
-
+    <style jsx>
+      {`
+      .partner img {
+        max-width: 250px;
+        max-height: 250px;
+      }
+    `}
+    </style>
   </PageLayout>
 );
 

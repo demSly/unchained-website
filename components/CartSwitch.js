@@ -7,7 +7,9 @@ import CartDropdown from './CartDropdown';
 
 const CartSwitch = ({ isCartToggled, cartItemCount, toggleCart }) => ((cartItemCount > 0) ? (
   <div className={`switch ${cartItemCount > 0 ? 'active' : ''} ${isCartToggled ? 'open' : ''}`}>
-    <span className="badge">{cartItemCount}</span>
+    <span className="badge">
+      {cartItemCount}
+    </span>
     <button className="switch__button no-button" type="button" onClick={toggleCart}>
       <span className="cart-caret" />
       <span className="cart">
@@ -19,7 +21,8 @@ const CartSwitch = ({ isCartToggled, cartItemCount, toggleCart }) => ((cartItemC
       </span>
     </button>
     <CartDropdown hidden={!isCartToggled} />
-    <style jsx>{`
+    <style jsx>
+      {`
       img {
         vertical-align: middle;
       }

@@ -57,9 +57,9 @@ export default compose(
     supportedPaymentProviders: cart.supportedPaymentProviders,
     paymentProvider: cart.payment && cart.payment.provider,
     Form:
-      (cart.payment &&
-      cart.payment.provider &&
-      formComponents[cart.payment.provider.type]) || null,
+      (cart.payment
+      && cart.payment.provider
+      && formComponents[cart.payment.provider.type]) || null,
     ...props,
   })),
   pure,

@@ -9,11 +9,16 @@ const NewsletterThankyou = ({ newsletterthankyou }) => (
   <PageLayout title={newsletterthankyou.title} className="bg-image" metaDescription={newsletterthankyou.text}>
     <div className="wrap wrap--vertical-padding" id="top">
       <div className="thank-you-text">
-        <h2>{newsletterthankyou.title}</h2>
-        <h2>{newsletterthankyou.text}</h2>
+        <h2>
+          {newsletterthankyou.title}
+        </h2>
+        <h2>
+          {newsletterthankyou.text}
+        </h2>
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .thank-you-text {
         margin-top: 3em;
         max-width: 500px;

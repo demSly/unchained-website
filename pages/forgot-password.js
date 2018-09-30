@@ -12,8 +12,12 @@ const ForgotPassword = ({ forgotpassword }) => (
     <Redirect to="/" ifLoggedIn />
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <div className="box">
-        <h1>{forgotpassword.title}</h1>
-        <p>{forgotpassword.text}</p>
+        <h1>
+          {forgotpassword.title}
+        </h1>
+        <p>
+          {forgotpassword.text}
+        </p>
         <ForgotPasswordForm />
       </div>
     </div>

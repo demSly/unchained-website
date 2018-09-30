@@ -9,23 +9,41 @@ const Menu = ({ intl, hidden, ...props }) => (
   <div className={`menu ${hidden ? 'hidden' : ''}`} {...props}>
     <div className="menu__items">
       <ActiveLink activeClassName="active" href="/developers">
-        <a className="menu__link">{intl.formatMessage({ id: 'developers' })}</a>
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'developers' })}
+        </a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/platform">
-        <a className="menu__link">{intl.formatMessage({ id: 'platform' })}</a>
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'platform' })}
+        </a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/showcase">
-        <a className="menu__link">{intl.formatMessage({ id: 'showcase' })}</a>
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'showcase' })}
+        </a>
       </ActiveLink>
-      <ActiveLink activeClassName="active" href="/fundraiser">
-        <a className="menu__link">{intl.formatMessage({ id: 'fundraiser' })}</a>
+      {/* <ActiveLink activeClassName="active" href="/fundraiser">
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'fundraiser' })}
+        </a>
+      </ActiveLink> */}
+      <ActiveLink activeClassName="active" href="/chat">
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'chat' })}
+        </a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/about">
-        <a className="menu__link">{intl.formatMessage({ id: 'about' })}</a>
+        <a className="menu__link">
+          {intl.formatMessage({ id: 'about' })}
+        </a>
       </ActiveLink>
-      <a className="menu__link menu__link--phone" href="tel:+41435051846">Call us +41 43 505 18 46</a>
+      <a className="menu__link menu__link--phone" href="tel:+41435051846">
+Call us +41 43 505 18 46
+      </a>
     </div>
-    <style jsx global>{`
+    <style jsx global>
+      {`
 
       .menu__link--phone {
         opacity: .7;

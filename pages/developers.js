@@ -85,8 +85,11 @@ const Developers = ({ developers }) => (
 
 
     <div className="wrap">
-      <h2>Weather-dependent barbeque sausage pricing</h2>
-      <p>Usually when summer kicks in in Switzerland and people start to invite friends to the
+      <h2>
+Weather-dependent barbeque sausage pricing
+      </h2>
+      <p>
+Usually when summer kicks in in Switzerland and people start to invite friends to the
         first barbeque party of the year, demand for sausages surges instantly.
         Our dear friend, butcher Bruno wants to sell his homemade sausages directly
         to the customer with
@@ -97,14 +100,18 @@ const Developers = ({ developers }) => (
         <img src="../static/img/05- high-temperature.svg" alt="" />
         <img src="../static/img/110- online-website-shopping-male-african-american.svg" alt="" />
       </div>
-      <p>See how easy it is to implement an extremely custom
+      <p>
+See how easy it is to implement an extremely custom
         pricing module with Unchained Engine below.
       </p>
     </div>
 
     <div className="wrap">
-      <h2>Add a pricing module</h2>
-      <p>Unchained is hackable. With hackable we mean to provide you with only very basic
+      <h2>
+Add a pricing module
+      </h2>
+      <p>
+Unchained is hackable. With hackable we mean to provide you with only very basic
         customization out of the box but on the other hand allow the developer to
         completely customize the business logic through code. This is achieved
         through a staged approach ranging from plugins to a full
@@ -112,7 +119,8 @@ const Developers = ({ developers }) => (
       </p>
 
       <p>
-        To demonstrate, we will implement an ingenious pricing that increases the catalog price by 1 USD if the temperature reaches 20 degrees celsius in Zürich:
+        To demonstrate, we will implement an ingenious pricing that increases
+        the catalog price by 1 USD if the temperature reaches 20 degrees celsius in Zürich:
       </p>
 
       <Lowlight
@@ -177,8 +185,11 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
     </div>
 
     <div className="wrap">
-      <h2>Craft the query</h2>
-      <p>Unchained Commerce is headless by design. So in order to get the product
+      <h2>
+Craft the query
+      </h2>
+      <p>
+Unchained Commerce is headless by design. So in order to get the product
         data from our Unchained Engine, we need to craft a small GraphQL query
         that actually resolves some texts and the current price of our sausage.
       </p>
@@ -187,10 +198,10 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
         value={`query getProduct {
   product(slug: "🌭") {
     _id
+    texts {
+      title
+    }
     ... on SimpleProduct {
-      texts {
-        title
-      }
       catalogPrice {
         price {
           amount
@@ -203,48 +214,77 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       />
 
       <a
-        href="https://graphqlbin.com/v2/AP02IZ"
+        href="https://graphqlbin.com/v2/VApjsg"
         target="_blank"
         rel="noopener noreferrer"
-      >Try it out live @ GraphQL Bin
+      >
+Try it out live @ GraphQL Bin
       </a>
     </div>
 
     <div className="wrap section">
-      <h2>Build the UI</h2>
-      <p>Because Unchained Commerce is headless, you can build any UI
+      <h2>
+Build the UI
+      </h2>
+      <p>
+Because Unchained Commerce is headless, you can build any UI
         on any operating system that can somehow connect to the HTTP endpoint.
-        How awesome is that? Let's just use a small widget to display some product details
+        How awesome is that? Let&apos;s just use a small widget to display some product details
         on our page right here:
       </p>
       <div className="stage">
         <ProductDetails slug="🌭" />
       </div>
-      <p>Checkout our very own <span>
-        <a
-          className="mb3 link"
-          href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js"
-          target="_blank"
-          rel="noopener noreferrer"
-        >ProductDetails component
-        </a></span>
-        <span> used throughout unchained.shop</span>
+      <p>
+Checkout our very own
+        <span>
+          <a
+            className="mb3 link"
+            href="https://github.com/unchainedshop/unchained-website/blob/master/components/ProductDetails.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+ProductDetails component
+          </a>
+        </span>
+        <span>
+          {' '}
+used throughout unchained.shop
+        </span>
       </p>
 
-      <p>We are working on the Documentation. Stay tuned.</p>
-      <p>Want to get reminded when we have news to share? Follow our twitter account <a className="link" href="https://twitter.com/unchained_shop">@unchained_shop</a>.
+      <p>
+We are working on the Documentation. Stay tuned.
+      </p>
+      <p>
+Want to get reminded when we have news to share? Follow our twitter account
+        <a className="link" href="https://twitter.com/unchained_shop">
+@unchained_shop
+        </a>
+.
       </p>
     </div>
 
     <div className="c-bg-dark c-white pa1 mt7">
-      <h2 className="text-center">open-source, available on <a className="link" href="https://github.com/unchainedshop">Github*</a></h2>
-      <p className="text-center">* The Unchained Engine OSS release <a className="link" href="https://github.com/unchainedshop/unchained-evolution">follows Q1 2019</a></p>
+      <h2 className="text-center">
+open-source, available on
+        <a className="link" href="https://github.com/unchainedshop">
+Github*
+        </a>
+      </h2>
+      <p className="text-center">
+* The Unchained Engine OSS release
+        <a className="link" href="https://github.com/unchainedshop/unchained-evolution">
+follows Q1 2019
+        </a>
+      </p>
     </div>
 
     <div className="c-bg-secondary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
-          <p className="">Just drop us a line if you want to become an
+          <p className="">
+Just drop us a line if you want to become an
             official partner of Unchained or you are in need of developer support
           </p>
           <Link href="/about#contact">
@@ -256,7 +296,8 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       </div>
     </div>
 
-    <style jsx>{`
+    <style jsx>
+      {`
 
       .sausage-pricing-icons {
         display: flex;

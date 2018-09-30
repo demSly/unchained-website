@@ -10,24 +10,33 @@ const CheckoutCartDiscountItem = ({
 }) => (
   <div className="coupon-wrap">
     <div className="success-message clearfix">
-      <small className="coupon-price">(<Price {...total} />)</small>
+      <small className="coupon-price">
+(
+        <Price {...total} />
+)
+      </small>
       <div>
         <img className="v-mid mr05" src="../static/img/icon/check-hexagon-2.svg" alt="check icon" />
         {interfaceId ? (
-          <small>{intl.formatMessage({ id: interfaceId.split('.').join('_') })}</small>
+          <small>
+            {intl.formatMessage({ id: interfaceId.split('.').join('_') })}
+          </small>
         ) : (
-          <small>{intl.formatMessage({ id: 'unknown_discount_interface' })}</small>
+          <small>
+            {intl.formatMessage({ id: 'unknown_discount_interface' })}
+          </small>
         )}
       </div>
       {isManualRemovalAllowed && (
         <small>
-          <button className="link no-button mv05" onClick={onClick}>
+          <button type="button" className="link no-button mv05" onClick={onClick}>
             {intl.formatMessage({ id: 'remove_coupon' })}
           </button>
         </small>
       )}
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .success-message {
         width: 100%;
       }
@@ -59,10 +68,9 @@ export default compose(
     },
   }),
   withHandlers({
-    onClick: ({ _id, removeCartDiscount }) => async () =>
-      removeCartDiscount({
-        variables: { discountId: _id },
-      }),
+    onClick: ({ _id, removeCartDiscount }) => async () => removeCartDiscount({
+      variables: { discountId: _id },
+    }),
   }),
   pure,
 )(CheckoutCartDiscountItem);

@@ -38,15 +38,22 @@ const VerifyEmail = ({ router, ...rest }) => (
       )}
       {router.query.expired ? (
         <div>
-          <h1>Token expired</h1>
-          <p>Dieser Verifizierungstoken ist nicht mehr gültig,
+          <h1>
+Token expired
+          </h1>
+          <p>
+Dieser Verifizierungstoken ist nicht mehr gültig,
           melde dich an und lass dir einen neuen zusenden
           </p>
         </div>
       ) : (
         <div>
-          <h1>Verifizierung...</h1>
-          <p>Du wirst gleich weitergeleitet...</p>
+          <h1>
+Verifizierung...
+          </h1>
+          <p>
+Du wirst gleich weitergeleitet...
+          </p>
         </div>
       )}
     </div>
@@ -57,4 +64,4 @@ const VerifyEmail = ({ router, ...rest }) => (
 export default connectApollo(compose(
   withRouter,
   connectI18n,
-))(VerifyEmail);
+)(VerifyEmail));

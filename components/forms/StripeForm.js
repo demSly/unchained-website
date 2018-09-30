@@ -1,7 +1,9 @@
 import React from 'react';
 import { injectIntl } from 'react-intl';
 import { compose, withHandlers, pure } from 'recompose';
-import { StripeProvider, injectStripe, Elements, CardNumberElement, CardCVCElement, CardExpiryElement } from 'react-stripe-elements';
+import {
+  StripeProvider, injectStripe, Elements, CardNumberElement, CardCVCElement, CardExpiryElement,
+} from 'react-stripe-elements';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import SubmitField from 'uniforms-unstyled/SubmitField';
@@ -54,7 +56,9 @@ const StripeForm = ({
     <div className="fieldset">
       <div className="field">
         <label htmlFor="cc-number">
-          <span className="cc-label">{intl.formatMessage({ id: 'card_number' })}</span>
+          <span className="cc-label">
+            {intl.formatMessage({ id: 'card_number' })}
+          </span>
           <CardNumberElement
             id="cc-number"
             className="field__input"
@@ -64,7 +68,9 @@ const StripeForm = ({
       </div>
       <div className="field field--half">
         <label htmlFor="cc-expiry">
-          <span className="cc-label">{intl.formatMessage({ id: 'expiration_date' })}</span>
+          <span className="cc-label">
+            {intl.formatMessage({ id: 'expiration_date' })}
+          </span>
           <CardExpiryElement
             id="cc-expiry"
             className="field__input"
@@ -74,7 +80,9 @@ const StripeForm = ({
       </div>
       <div className="field field--half">
         <label htmlFor="cvc">
-          <span className="cc-label">{intl.formatMessage({ id: 'cvc' })}</span>
+          <span className="cc-label">
+            {intl.formatMessage({ id: 'cvc' })}
+          </span>
           <CardCVCElement
             id="cvc"
             className="field__input"
@@ -86,13 +94,16 @@ const StripeForm = ({
     {children}
     <ErrorsField />
     <div className="flex-between">
-      <button className="button mb" type="normal" onClick={onBack}>{intl.formatMessage({ id: 'back' })}</button>
+      <button type="button" className="button mb" onClick={onBack}>
+        {intl.formatMessage({ id: 'back' })}
+      </button>
       <div className="loader-wrap">
         {inProgress && <Loading color={variables.darkColor} /> }
         <SubmitField disabled={inProgress} className="button button--primary button--blocked mb" value={intl.formatMessage({ id: 'checkout_button_card' })} />
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .cc-label {
         font-size: 16px;
       }

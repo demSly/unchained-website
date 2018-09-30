@@ -25,7 +25,7 @@ module.exports = {
     return url;
   },
   title(picture) {
-    return (picture.meta && picture.meta.title && picture.meta.title !== '') ?
-      picture.meta.title : null;
+    return (picture.meta && picture.meta.title && picture.meta.title !== '')
+      ? picture.meta.title : null;
   },
 };

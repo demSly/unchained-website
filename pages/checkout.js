@@ -11,11 +11,14 @@ const Checkout = ({ checkout }) => (
     <div className="wrap wrap--bottom-padding">
       <div className="free-shipping-on-top">
         <img src="../static/img/icon/delivery-package-2.svg" alt="delivery package" />
-        <small>{checkout.subtitle}</small>
+        <small>
+          {checkout.subtitle}
+        </small>
       </div>
       <CheckoutContent />
     </div>
-    <style jsx>{`
+    <style jsx>
+      {`
       .free-shipping-on-top {
         margin-bottom: .5em;
         display: flex;
