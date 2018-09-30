@@ -92,6 +92,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .button-group [class^='button'],
@@ -106,4 +107,10 @@
   padding: 0;
   background-color: transparent;
   border: 0;
+}
+
+.button--role {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

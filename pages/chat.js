@@ -14,6 +14,7 @@ const Chat = ({ chat }) => (
           <h1 className="mt0 c-black">
             Unchained on Spectrum
           </h1>
+          <p>Spectrum is a place where communities can share, discuss, and grow together.</p>
           <a href="https://spectrum.chat/unchained" className="button hero-button">
             Join Spectrum Community
           </a>

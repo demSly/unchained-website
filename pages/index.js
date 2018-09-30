@@ -22,10 +22,10 @@ const Home = ({ home }) => (
                 <a className="tag">
                   <div className="tag__flex">
                     <span className="tag__pill">
-#headless
+                      #headless
                     </span>
                     <span className="tag__text">
-Bring your own UI
+                      Bring your own UI
                     </span>
                   </div>
                 </a>
@@ -34,26 +34,23 @@ Bring your own UI
                 <a className="tag">
                   <div className="tag__flex">
                     <span className="tag__pill">
-#open-source
+                      #open-source
                     </span>
                     <span className="tag__text">
-No vendor lock-in
+                      No vendor lock-in
                     </span>
                   </div>
                 </a>
               </Link>
             </div>
             <span>
-Unchained is the best software platform for multi-channel digital commerce.
+              Unchained is the best software platform for multi-channel digital commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach & start selling
               goods, services or subscriptions
               on any internet connected device.
             </span>
           </h1>
-          <a href="/" className="button">
-Contact us
-          </a>
         </div>
         <div className="icons">
           <img className="icon" src="../static/img/08- java-script-developer.svg" alt="" />
@@ -73,21 +70,21 @@ Contact us
 
 
       <section className="primary-section">
-        <div className="wrap">
+        <div className="wrap wrap--narrow">
           <div className="icon-title-pair">
             <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
             <h2 className="section-title">
-The most flexible platform for digital commerce
+              The most flexible platform for digital commerce
             </h2>
           </div>
           <p>
-A platform that is compatible with any kind of internet based
+            A platform that is compatible with any kind of internet based
             devices & services, empowers developers to integrate proprietary &
             decentralized systems, bridging digital commerce with the internet of
             things & distributed ledgers.
           </p>
           <p>
-The headless approach with the combination of
+            The headless approach with the combination of
             GraphQL leverages using Unchained Engine
             for more than just an e-commerce solution.
             Instead it acts as modern gateway to your legacy systems
@@ -104,11 +101,6 @@ The headless approach with the combination of
             matters most.
           </p>
           <div className="button-group mt3">
-            <Link href="/platform">
-              <a className="button button--primary">
-                  Read more
-              </a>
-            </Link>
             <Link href="/showcase">
               <a className="button">
                   See a showcase
@@ -120,15 +112,15 @@ The headless approach with the combination of
     </div>
 
     <div className="c-bg-dark">
-      <section className="wrap developers-section">
+      <section className="wrap wrap--narrow developers-section">
         <div className="icon-title-pair">
           <img className="icon" src="../static/img/66- osx-programmer-female-caucasian.svg" alt="" />
           <h2 className="section-title">
-Built for developers
+          Built for developers
           </h2>
         </div>
         <p>
-Unchained Engine is headless by default, so there is no UI. Just
+          Unchained Engine is headless by default, so there is no UI. Just
           build your own interface on top of the GraphQL API.
           Maybe you want to connect your existing backends? or add a cryptocurrency as a way
           of payment? Write a small plugin, build your own module, add a micro-service,
@@ -191,20 +183,20 @@ Unchained Engine is headless by default, so there is no UI. Just
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">
-open-source, available on
+        open-source, available on
         <a className="link" href="https://github.com/unchainedshop">
-Github*
+          Github*
         </a>
       </h2>
       <p className="text-center">
-* The Unchained Engine OSS Release
+        * The Unchained Engine OSS Release
         <a className="link" href="https://github.com/unchainedshop/unchained-evolution">
-follows end of Q1 2019
+          follows end of Q1 2019
         </a>
       </p>
       <div className="wrap tech-stack-wrap">
         <small className="text-center db">
-Built on:
+          Built on:
         </small>
         <div className="tech-stack-flex">
           <img className="tech-stack" src="../static/img/tech/GraphQL_Logo.svg" alt="GraphQL Logo" />
@@ -370,20 +362,20 @@ Unchained Conference 2019
     <div className="c-bg-secondary">
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
-          <h3 className="mt0">
-Get more information by choosing your role
+          <h3 className="mt0 mb">
+            Get more information for
           </h3>
           <div className="button-group">
             <Link href="/developers">
               <a className="button button--role">
-                  Developer
+                  Developers
                 <img className="w72px" src="../static/img/58- programmer-male-african-american.svg" alt="" />
               </a>
             </Link>
             <Link href="/showcase">
               <a className="button button--role">
-                  Merchant
-                <img src="../static/img/06- business-team.svg" alt="" />
+                  Merchants
+                <img className="w72px" src="../static/img/06- business-team.svg" alt="" />
               </a>
             </Link>
             {/* <Link href="/fundraiser">
@@ -506,7 +498,7 @@ Token Generation Event
         font-size: 2.75em;
         font-weight: 600;
         line-height: 1.1;
-        max-width: 480px;
+        max-width: 488px;
       }
 
       .milestone {

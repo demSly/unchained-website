@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { compose } from 'recompose';
 import variables from '../styles/variables';
 import connectApollo from '../lib/connectApollo';
@@ -9,7 +10,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--vertical-padding">
+    <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
         <h1>
 Unchained Control Panel
@@ -132,6 +133,13 @@ Manage Warehousing Providers
             </ul>
           </div>
         </div>
+        <Link href="/platform">
+          <div className="text-center">
+            <a className="button mt3">
+                Back to Platform overview
+            </a>
+          </div>
+        </Link>
       </section>
     </div>
 

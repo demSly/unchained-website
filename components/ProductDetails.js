@@ -107,7 +107,7 @@ const ProductDetails = ({
           </div>
         )}
         {isBuyable ? (
-          <button type="button" className="button" onClick={addToCart}>
+          <button type="button" className="button c-white" onClick={addToCart}>
             {intl.formatMessage({ id: 'add_to_cart' })}
           </button>
         ) : (

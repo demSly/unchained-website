@@ -10,7 +10,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--vertical-padding">
+    <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
         <h1>
 Platform overview
@@ -19,10 +19,10 @@ Platform overview
 Unchained Engine
         </h2>
         <p>
-Open-source digital commerce engine...
+Open-source digital commerce engine
         </p>
         <Link href="/engine">
-More infos about the Engine
+          <span className="link">More infos about the Engine</span>
         </Link>
 
         <h2>
@@ -32,42 +32,36 @@ Control Panel
 Our cloud-based admin ui to view, edit and analyze data on the unchained engine
         </p>
         <Link href="/control-panel">
-More infos about the Control Panel
+          <span className="link">More infos about the Control Panel</span>
         </Link>
         <h2>
 Professional Services
         </h2>
         <p>
-Support, Training, Events, Partnerships, ...
+Support, Training, Events, Partnerships
         </p>
         <Link href="/professional-services">
-More infos about our Services
+          <span className="link">More infos about our Services</span>
         </Link>
 
         <h2>
 Managed Hosting
         </h2>
         <p>
-Containerized Managed Hosting through Docker Swarm, bring your own datacenter ...
+Containerized Managed Hosting through Docker Swarm, bring your own datacenter
         </p>
         <Link href="/managed-hosting">
-More infos about the Managed Hosting
+          <span className="link">More infos about the Managed Hosting</span>
         </Link>
 
-      </section>
-      <section>
-        Our Vision:
-        <blockquote cite="vision">
-          <p>
-            Become the next global market leader in digital commerce, unchaining
-            enterprises from monolithic proprietary software.
-          </p>
-        </blockquote>
       </section>
     </div>
 
     <style jsx>
       {`
+        h2 {
+          margin-top: 2em;
+        }
       .advantages {
         padding-bottom: 2em;
       }

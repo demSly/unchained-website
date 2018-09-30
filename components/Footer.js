@@ -79,7 +79,7 @@ faq
               </small>
             </a>
           </Link>
-          <Link href="/headless">
+          <Link href="/why-headless">
             <a className="footer__link">
               <small>
 why headless
@@ -111,7 +111,7 @@ Platform
               </small>
             </a>
           </Link>
-          <Link href="/hosting">
+          <Link href="/managed-hosting">
             <a className="footer__link">
               <small>
                 {intl.formatMessage({ id: 'hosting' })}

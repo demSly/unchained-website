@@ -5,6 +5,7 @@
 .link:hover,
 .link:focus {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .social-links {

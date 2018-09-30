@@ -17,7 +17,7 @@ const About = ({ about }) => (
         <MemberList />
       </section>
     </div>
-    <div className="c-bg-dark mt7" id="contact">
+    <div className="c-bg-dark mt7 pb7" id="contact">
       <div className="wrap wrap--narrow">
         <ContactForm />
       </div>
