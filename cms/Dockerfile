@@ -17,7 +17,7 @@ RUN apt-get update \
 RUN echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/mongodb.ini
 RUN echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
-RUN wget https://github.com/agentejo/cockpit/archive/master.zip -O /tmp/cockpit.zip; unzip /tmp/cockpit.zip -d /tmp/; rm /tmp/cockpit.zip
+RUN wget https://github.com/agentejo/cockpit/archive/0.7.2.zip -O /tmp/cockpit.zip; unzip /tmp/cockpit.zip -d /tmp/; rm /tmp/cockpit.zip
 RUN mv /tmp/cockpit-master/.htaccess /var/www/html/.htaccess
 RUN mv /tmp/cockpit-master/* /var/www/html/
 RUN rm -R /tmp/cockpit-master/
