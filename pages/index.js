@@ -14,8 +14,11 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            Redefine Commerce every day.
+            Build your Online Shop and sell your Products on any Device.
           </h1>
+          <h3>
+            The Digital Commerce Platform made for Enterprises.
+          </h3>
           <h1 className="hero-text">
             <div className="tags">
               <Link href="/platform">
@@ -44,10 +47,10 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <span>
-              Unchained is the best software platform for multi-channel digital commerce.
+              Unchained is the best software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach & start selling
-              goods, services or subscriptions
+              goods, services & subscriptions
               on any internet connected device.
             </span>
           </h1>
@@ -78,27 +81,19 @@ const Home = ({ home }) => (
             </h2>
           </div>
           <p>
-            A platform that is compatible with any kind of internet based
-            devices & services, empowers developers to integrate proprietary &
+            The headless approach allows you to build e-commerce apps which run natively
+            on mobile phones, watches, TVs, wearables and your own hardware. It empowers developers to integrate proprietary &
             decentralized systems, bridging digital commerce with the internet of
             things & distributed ledgers.
           </p>
+
           <p>
-            The headless approach with the combination of
-            GraphQL leverages using Unchained Engine
-            for more than just an e-commerce solution.
-            Instead it acts as modern gateway to your legacy systems
-            while providing all needed tools to satisfy your
-            digital commerce needs.
-          </p>
-          <p>
-            We built the platform with Node.js & MongoDB because we wanted
-            something that you can onboard developers quickly, empowering change
-            rather than the traditional &quot;let&apos;s stick with the standard process&quot;
-            mindset, effectively breaking the need to hire expensive specialized consultants.
-            With extensibility & ease of use in mind, the popularity of a programming language
-            & a friction-free extension of logic, database structure & code is what
-            matters most.
+            {`
+              By using open-source technologies & popular programming languages,
+              it is very easy for developers to extend and adapt the platform for
+              the company specific needs. This enables Product
+              owners to design creative business processes like never before.
+            `}
           </p>
           <div className="button-group mt3">
             <Link href="/showcase">
@@ -122,12 +117,12 @@ const Home = ({ home }) => (
         <p>
           Unchained Engine is headless by default, so there is no UI. Just
           build your own interface on top of the GraphQL API.
-          Maybe you want to connect your existing backends? or add a cryptocurrency as a way
-          of payment? Write a small plugin, build your own module, add a micro-service,
-          fork the whole thing or just extend the GraphQL API schema
+          If you want to connect your existing backends or add a cryptocurrency as a way
+          of payment, just write a small plugin, build your own module, add a micro-service,
+          fork the whole thing or just extend the GraphQL API
           with with your own queries & types. All you need
           is some Javascript (Node.js) knowhow. This is the last shop system you
-          will ever need to satisfy your software&apos;s commerce requirements.
+          will ever need to satisfy your software&apos;s e-commerce requirements.
         </p>
         <Link href="/developers">
           <a className="button button--primary mt3">
