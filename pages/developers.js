@@ -214,6 +214,7 @@ Unchained Commerce is headless by design. So in order to get the product
       />
 
       <a
+        className="link"
         href="https://graphqlbin.com/v2/VApjsg"
         target="_blank"
         rel="noopener noreferrer"
@@ -237,6 +238,7 @@ Because Unchained Commerce is headless, you can build any UI
       </div>
       <p>
 Checkout our very own
+        {' '}
         <span>
           <a
             className="mb3 link"
@@ -258,6 +260,7 @@ We are working on the Documentation. Stay tuned.
       </p>
       <p>
 Want to get reminded when we have news to share? Follow our twitter account
+        {' '}
         <a className="link" href="https://twitter.com/unchained_shop">
 @unchained_shop
         </a>

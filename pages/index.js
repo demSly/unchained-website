@@ -299,6 +299,19 @@ To the Partner Program
           <div className="timeline-img" />
           <div className="timeline-content">
             <div className="date">
+Jun 2018
+            </div>
+            <p>
+Signed second customer contract & added first partner
+            </p>
+          </div>
+        </div>
+
+
+        <div className="timeline-item">
+          <div className="timeline-img" />
+          <div className="timeline-content">
+            <div className="date">
 Q2-Q4 2018
             </div>
             <p>
