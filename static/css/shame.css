@@ -185,6 +185,7 @@
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  max-width: 500px;
 }
 
 .lowlight {
@@ -195,4 +196,12 @@
   overflow-x: auto;
   border: 1px solid #b7b7b7;
   box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
+}
+
+@media (min-width: 680px) {
+  .undraw {
+    width: 39%;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+  }
 }

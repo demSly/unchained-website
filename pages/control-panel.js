@@ -15,18 +15,23 @@ const Platform = ({ platform }) => (
         <h1>
 Unchained Control Panel
         </h1>
-        <p>
-          Our Unchained Control Panel is our Web UI to all data management API&apos;s
-          that the unchained engine provides out of the box. It allows managing
-          assortments, products and provides analytics and reporting on orders.
-          We provide it to you through a
-          Subscription model and ensure compatibility and feature parity with our
-          unchained engine.
-        </p>
-        <p>
-          Contact us now if you want to use the engine and our control panel
-          before the open source release of unchained engine.
-        </p>
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_control_panel1_20gm.svg" alt="control panel" />
+          <div>
+            <p>
+              Our Unchained Control Panel is our Web UI to all data management API&apos;s
+              that the unchained engine provides out of the box. It allows managing
+              assortments, products and provides analytics and reporting on orders.
+              We provide it to you through a
+              Subscription model and ensure compatibility and feature parity with our
+              unchained engine.
+            </p>
+            <p>
+              Contact us now if you want to use the engine and our control panel
+              before the open source release of unchained engine.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className="section">

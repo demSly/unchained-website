@@ -14,12 +14,15 @@ const Platform = ({ platform }) => (
         <h1>
           Unchained Managed Hosting
         </h1>
-        <p>
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_cloud_hosting_aodd.svg" alt="cloud hosting" />
+          <p>
           Let us host the Unchained Engine for you so you can concentrate on
           your business. We use Docker Swarm and a bunch of modern Software to setup
           a scalable Unchained infrastructure for you. It doesn&apos;t matter to us
           where the datacenter is.
-        </p>
+          </p>
+        </div>
 
         <ul>
           <li>Bring your own Datacenter or go with us (We use Exoscale.ch)</li>

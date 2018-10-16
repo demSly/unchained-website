@@ -15,15 +15,20 @@ const Platform = ({ platform }) => (
         <h1>
 Unchained Engine
         </h1>
-        <p>
-The Unchained Engine is our core product and is written in Node.js ES6.
-          It exposes all data exclusively through a GraphQL API (headless). The web
-          application is served stateless and therefore container friendly.
-        </p>
-        <p>
-          Contact us now if you want to use the engine and our control panel
-          before the open source release of unchained engine.
-        </p>
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
+          <div>
+            <p>
+              The Unchained Engine is our core product and is written in Node.js ES6.
+              It exposes all data exclusively through a GraphQL API (headless). The web
+              application is served stateless and therefore container friendly.
+            </p>
+            <p>
+              Contact us now if you want to use the engine and our control panel
+              before the open source release of unchained engine.
+            </p>
+          </div>
+        </div>
         <h2>
 Core Values
         </h2>

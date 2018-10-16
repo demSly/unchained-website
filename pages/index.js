@@ -14,10 +14,10 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            Build your Online Shop and sell your Products on any Device.
+            Digital Commerce Platform made for Enterprises.
           </h1>
-          <h3>
-            The Digital Commerce Platform made for Enterprises.
+          <h3 className="hero__subtitle">
+            Build professional Online Shops and sell Products on any Device.
           </h3>
           <h1 className="hero-text">
             <div className="tags">
@@ -46,13 +46,13 @@ const Home = ({ home }) => (
                 </a>
               </Link>
             </div>
-            <span>
+            <p className="explainer">
               Unchained is the best software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach & start selling
               goods, services & subscriptions
               on any internet connected device.
-            </span>
+            </p>
           </h1>
         </div>
         <div className="icons">
@@ -82,7 +82,8 @@ const Home = ({ home }) => (
           </div>
           <p>
             The headless approach allows you to build e-commerce apps which run natively
-            on mobile phones, watches, TVs, wearables and your own hardware. It empowers developers to integrate proprietary &
+            on mobile phones, watches, TVs, wearables and your own hardware.
+            It empowers developers to integrate proprietary &
             decentralized systems, bridging digital commerce with the internet of
             things & distributed ledgers.
           </p>
@@ -91,14 +92,14 @@ const Home = ({ home }) => (
             {`
               By using open-source technologies & popular programming languages,
               it is very easy for developers to extend and adapt the platform for
-              the company specific needs. This enables Product
+              the company specific needs. This enables product
               owners to design creative business processes like never before.
             `}
           </p>
           <div className="button-group mt3">
             <Link href="/showcase">
               <a className="button">
-                  See a showcase
+                  See a simple showcase
               </a>
             </Link>
           </div>
@@ -163,9 +164,9 @@ const Home = ({ home }) => (
                 <br />
                 We already successfully connected Unchained to various
                 core systems like MS Navision & Crossbase as
-                well as Smallinvoice, Google Spreadsheets.
+                well as Smallinvoice & Google Spreadsheets.
                 <br />
-                API available? Go.
+                API available? Go!
               </p>
             </div>
             <div className="unit__image-wrap">
@@ -386,12 +387,12 @@ Unchained Conference 2019
                 <img className="w72px" src="../static/img/06- business-team.svg" alt="" />
               </a>
             </Link>
-            {/* <Link href="/fundraiser">
+            <Link href="/partner-program">
               <a className="button button--secondary">
-                  Investor
-                <img src="../static/img/86- business-income-female-asian.svg" alt="" />
+                  Partners
+                <img className="w72px" src="../static/img/86- business-income-female-asian.svg" alt="" />
               </a>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
@@ -417,7 +418,7 @@ Token Generation Event
       {`
 
       .button--role {
-        min-height: 130px;
+        min-height: 126px;
       }
 
       .w72px {
@@ -503,10 +504,20 @@ Token Generation Event
       }
 
       .hero__title {
-        font-size: 2.75em;
-        font-weight: 600;
-        line-height: 1.1;
+        font-size: 1.75em;
         max-width: 488px;
+      }
+
+      .hero__subtitle {
+        margin-bottom: 2em;
+        opacity: .75;
+        max-width: 468px;
+      }
+
+      .explainer {
+        line-height: 1.4;
+        font-size: 16px;
+        max-width: 468px;
       }
 
       .milestone {
@@ -540,7 +551,6 @@ Token Generation Event
       }
       @media (min-width: 1025px) {
         .hero__title {
-          font-size: 2.5em;
           margin-bottom: 1.2em;
         }
         .hero-img {

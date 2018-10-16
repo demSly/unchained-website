@@ -12,43 +12,44 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
-        <h1>
-Platform overview
-        </h1>
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_product_tour_foyt.svg" alt="product tour" />
+          <h1>
+            Platform overview
+          </h1>
+        </div>
         <h2>
-Unchained Engine
+          Unchained Engine
         </h2>
         <p>
-Open-source digital commerce engine
+          Open-source digital commerce engine
         </p>
         <Link href="/engine">
           <span className="link">More infos about the Engine</span>
         </Link>
-
         <h2>
-Control Panel
+          Control Panel
         </h2>
         <p>
-Our cloud-based admin ui to view, edit and analyze data on the unchained engine
+          Our cloud-based admin ui to view, edit and analyze data on the unchained engine
         </p>
         <Link href="/control-panel">
           <span className="link">More infos about the Control Panel</span>
         </Link>
         <h2>
-Professional Services
+          Professional Services
         </h2>
         <p>
-Support, Training, Events, Partnerships
+          Support, Training, Events, Partnerships
         </p>
         <Link href="/professional-services">
           <span className="link">More infos about our Services</span>
         </Link>
-
         <h2>
-Managed Hosting
+          Managed Hosting
         </h2>
         <p>
-Containerized Managed Hosting through Docker Swarm, bring your own datacenter
+          Containerized Managed Hosting through Docker Swarm, bring your own datacenter
         </p>
         <Link href="/managed-hosting">
           <span className="link">More infos about the Managed Hosting</span>
