@@ -18,42 +18,53 @@ const Platform = ({ platform }) => (
             Platform overview
           </h1>
         </div>
-        <h2>
-          Unchained Engine
-        </h2>
-        <p>
-          Open-source digital commerce engine
-        </p>
-        <Link href="/engine">
-          <span className="link">More infos about the Engine</span>
-        </Link>
-        <h2>
-          Control Panel
-        </h2>
-        <p>
-          Our cloud-based admin ui to view, edit and analyze data on the unchained engine
-        </p>
-        <Link href="/control-panel">
-          <span className="link">More infos about the Control Panel</span>
-        </Link>
-        <h2>
-          Professional Services
-        </h2>
-        <p>
-          Support, Training, Events, Partnerships
-        </p>
-        <Link href="/professional-services">
-          <span className="link">More infos about our Services</span>
-        </Link>
-        <h2>
-          Managed Hosting
-        </h2>
-        <p>
-          Containerized Managed Hosting through Docker Swarm, bring your own datacenter
-        </p>
-        <Link href="/managed-hosting">
-          <span className="link">More infos about the Managed Hosting</span>
-        </Link>
+
+        <div className="flex-between">
+          <div className="platform-feature">
+            <h2>
+              Unchained Engine
+            </h2>
+            <p>
+              Open-source digital commerce engine
+            </p>
+            <Link href="/engine">
+              <span className="link">More infos about the Engine</span>
+            </Link>
+          </div>
+          <div className="platform-feature">
+            <h2>
+              Control Panel
+            </h2>
+            <p>
+              Our cloud-based admin ui to view, edit and analyze data on the unchained engine
+            </p>
+            <Link href="/control-panel">
+              <span className="link">More infos about the Control Panel</span>
+            </Link>
+          </div>
+          <div className="platform-feature">
+            <h2>
+              Professional Services
+            </h2>
+            <p>
+              Support, Training, Events, Partnerships
+            </p>
+            <Link href="/professional-services">
+              <span className="link">More infos about our Services</span>
+            </Link>
+          </div>
+          <div className="platform-feature">
+            <h2>
+              Managed Hosting
+            </h2>
+            <p>
+              Containerized Managed Hosting through Docker Swarm, bring your own datacenter
+            </p>
+            <Link href="/managed-hosting">
+              <span className="link">More infos about the Managed Hosting</span>
+            </Link>
+          </div>
+        </div>
 
       </section>
     </div>

@@ -11,13 +11,18 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
-        <h1>
-          Unchained Professional Services
-        </h1>
-        <p>
-          Sometimes you need a little help with your projects and of cours we don&apos;t
-          let you stay in the rain.
-        </p>
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_work_chat_erdt.svg" alt="before dawn" />
+          <div>
+            <h1>
+              Unchained Professional Services
+            </h1>
+            <p>
+              Sometimes you need a little help with your projects and of course we don&apos;t
+              let you stay in the rain.
+            </p>
+          </div>
+        </div>
 
         <ul>
           <li>

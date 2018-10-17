@@ -13,13 +13,19 @@ const Support = ({ faq, questions }) => (
 
     <div className="wrap mv7">
       <section id="faq" className="section">
-        <h2>
-          {faq.faq_title}
-        </h2>
-        <div className="dangerously mb4" dangerouslySetInnerHTML={{ // eslint-disable-line
-          __html: faq.faq_content,
-        }}
-        />
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_questions_75e0.svg" alt="question" />
+          <div>
+            <h2>
+              {faq.faq_title}
+            </h2>
+            <div className="dangerously mb4" dangerouslySetInnerHTML={{ // eslint-disable-line
+              __html: faq.faq_content,
+            }}
+            />
+          </div>
+        </div>
+
         {questions.map(({ question, answer }) => (
           <React.Fragment key={question}>
             <div className="faq-item">

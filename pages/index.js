@@ -17,7 +17,7 @@ const Home = ({ home }) => (
             Digital Commerce Platform made for Enterprises.
           </h1>
           <h3 className="hero__subtitle">
-            Build professional Online Shops and sell Products on any Device.
+            Build the best possible Online Shop and sell your Products on any Device.
           </h3>
           <h1 className="hero-text">
             <div className="tags">
@@ -55,7 +55,11 @@ const Home = ({ home }) => (
             </p>
           </h1>
         </div>
-        <div className="icons">
+        <div className="text-center">
+          <img className="undraw" src="../static/img/undraw_online_shopping_ga73.svg" alt="online shopping" />
+        </div>
+
+        {/* <div className="icons">
           <img className="icon" src="../static/img/08- java-script-developer.svg" alt="" />
           <img className="icon" src="../static/img/06- desktop-imac-pen-tablet-notebook.svg" alt="" />
           <img className="icon" src="../static/img/15- web-programming-design-construction-3.svg" alt="" />
@@ -68,7 +72,7 @@ const Home = ({ home }) => (
           <img className="icon" src="../static/img/09- package-logistic-airplane.svg" alt="" />
           <img className="icon" src="../static/img/01- house-for-sale.svg" alt="house for sale" />
           <img className="icon" src="../static/img/27- html-achievement.svg" alt="" />
-        </div>
+        </div> */}
       </div>
 
 
@@ -416,6 +420,11 @@ Token Generation Event
 
     <style jsx>
       {`
+      @media (min-width: 680px) {
+        .undraw {
+          width: 90%;
+        }
+      }
 
       .button--role {
         min-height: 126px;
@@ -515,7 +524,7 @@ Token Generation Event
       }
 
       .explainer {
-        line-height: 1.4;
+        line-height: 1.45;
         font-size: 16px;
         max-width: 468px;
       }
@@ -548,6 +557,9 @@ Token Generation Event
         .hero-text {
           font-size: 1em;
         }
+      }
+      .hero__one {
+        min-width: 60%;
       }
       @media (min-width: 1025px) {
         .hero__title {
@@ -602,7 +614,7 @@ Token Generation Event
         position: absolute;
         left: 0px;
         top: 100px;
-        border-top: 12px solid ${variables.secondaryColor};
+        border-top: 12px solid ${variables.primaryColor};
         border-bottom: 12px solid white;
       }
 

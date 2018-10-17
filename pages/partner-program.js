@@ -13,16 +13,21 @@ const PartnerProgram = ({ partnerProgram }) => (
         <h1>
           Unchained for Enterprise Partners
         </h1>
-        <p>
-Join a partnership that lifts your digital commerce projects to the next level.
-        </p>
-        <p>
-The Unchained Enterprise Partners Program is suited for agencies who
-          like to work together with us on a strategic level.
-          Following you will find a list of benefits you will get as an exclusive
-          partner which wants to invest and help a young open source company grow
-          in a sustainable way.
-        </p>
+        <div className="flex-between nowrap">
+          <img className="undraw" src="../static/img/undraw_agreement_aajr.svg" alt="agreement" />
+          <div>
+            <p>
+              Join a partnership that lifts your digital commerce projects to the next level.
+            </p>
+            <p>
+              The Unchained Enterprise Partners Program is suited for agencies who
+              like to work together with us on a strategic level.
+              Following you will find a list of benefits you will get as an exclusive
+              partner which wants to invest and help a young open source company grow
+              in a sustainable way.
+            </p>
+          </div>
+        </div>
 
         <h2>
 Benefits

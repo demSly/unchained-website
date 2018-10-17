@@ -96,9 +96,8 @@ Usually when summer kicks in in Switzerland and people start to invite friends t
         his online shop and had this crazy idea of a special product pricing he calls
         weather-dependent barbeque sausage pricing.
       </p>
-      <div className="sausage-pricing-icons">
-        <img src="../static/img/05- high-temperature.svg" alt="" />
-        <img src="../static/img/110- online-website-shopping-male-african-american.svg" alt="" />
+      <div className="text-center">
+        <img className="undraw" src="../static/img/undraw_artificial_intelligence_upfn.svg" alt="ai" />
       </div>
       <p>
 See how easy it is to implement an extremely custom
