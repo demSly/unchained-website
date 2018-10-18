@@ -150,6 +150,10 @@
 
 
 @media screen and (max-width: 768px) {
+  .timeline-item {
+    font-size: 14px;
+  }
+
   .timeline ul {
     margin-left: -1.5em;
   }

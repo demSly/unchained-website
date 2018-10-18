@@ -11,7 +11,7 @@ const Platform = ({ platform }) => (
 
     <div className="wrap wrap--vertical-padding">
       <h2>
-Why is headless technology so important us?
+Why is headless technology so important?
       </h2>
 
       <div className="advantage">

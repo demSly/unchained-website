@@ -186,6 +186,8 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lowlight {
@@ -203,6 +205,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
+}
+
+.undraw--mini {
+  max-width: 200px;
 }
 
 @media (min-width: 680px) {

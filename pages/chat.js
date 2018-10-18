@@ -10,7 +10,7 @@ const Chat = ({ chat }) => (
     <div className="chat">
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
-          <img className="icon" src="../static/img/06- business-team.svg" alt="" />
+          <img className="undraw" src="../static/img/undraw_work_chat_erdt.svg" alt="work chat" />
           <h1 className="mt0 c-black">
             Unchained on Spectrum
           </h1>

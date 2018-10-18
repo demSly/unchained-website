@@ -67,9 +67,9 @@ const Developers = ({ developers }) => (
 
     <div className="wrap mt7">
       <div className="button-group flex-center">
-        <Link href="/partner-program">
+        <Link href="/why-headless">
           <a className="button">
-              Partner Program
+              Headless
           </a>
         </Link>
         <Link href="/faq">
@@ -84,7 +84,7 @@ const Developers = ({ developers }) => (
     </div>
 
 
-    <div className="wrap">
+    <div className="wrap wrap--narrow">
       <h2>
 Weather-dependent barbeque sausage pricing
       </h2>
@@ -105,7 +105,7 @@ See how easy it is to implement an extremely custom
       </p>
     </div>
 
-    <div className="wrap">
+    <div className="wrap wrap--narrow">
       <h2>
 Add a pricing module
       </h2>
@@ -183,7 +183,7 @@ ProductPricingDirector.registerAdapter(WeatherDependentBarbequeSausagePricing);`
       />
     </div>
 
-    <div className="wrap">
+    <div className="wrap wrap--narrow">
       <h2>
 Craft the query
       </h2>
@@ -222,7 +222,7 @@ Try it out live @ GraphQL Bin
       </a>
     </div>
 
-    <div className="wrap section">
+    <div className="wrap wrap--narrow section">
       <h2>
 Build the UI
       </h2>
@@ -289,9 +289,9 @@ follows Q1 2019
 Just drop us a line if you want to become an
             official partner of Unchained or you are in need of developer support
           </p>
-          <Link href="/about#contact">
+          <Link href="/contact">
             <a className="button">
-                Get in Contact now
+                Get in Touch now
             </a>
           </Link>
         </div>

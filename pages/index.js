@@ -14,10 +14,10 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            Digital Commerce Platform made for Enterprises.
+            Build the best possible Online Shop and sell your Products on any Device.
           </h1>
           <h3 className="hero__subtitle">
-            Build the best possible Online Shop and sell your Products on any Device.
+            Digital Commerce Platform made for Enterprises.
           </h3>
           <h1 className="hero-text">
             <div className="tags">
@@ -47,7 +47,7 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <p className="explainer">
-              Unchained is the best software platform for multi-channel e-commerce.
+              Unchained is a first of its kind software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach & start selling
               goods, services & subscriptions
@@ -78,8 +78,8 @@ const Home = ({ home }) => (
 
       <section className="primary-section">
         <div className="wrap wrap--narrow">
-          <div className="icon-title-pair">
-            <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
+          <div className="text-center">
+            <img className="undraw undraw--mini" src="../static/img/undraw_create_f05x.svg" alt="" />
             <h2 className="section-title">
               The most flexible platform for digital commerce
             </h2>
@@ -113,10 +113,10 @@ const Home = ({ home }) => (
 
     <div className="c-bg-dark">
       <section className="wrap wrap--narrow developers-section">
-        <div className="icon-title-pair">
-          <img className="icon" src="../static/img/66- osx-programmer-female-caucasian.svg" alt="" />
+        <div className="text-center">
+          <img className="undraw undraw--mini" src="../static/img/undraw_programming_2svr-2.svg" alt="" />
           <h2 className="section-title">
-          Built for developers
+            Built for developers
           </h2>
         </div>
         <p>
@@ -129,11 +129,13 @@ const Home = ({ home }) => (
           is some Javascript (Node.js) knowhow. This is the last shop system you
           will ever need to satisfy your software&apos;s e-commerce requirements.
         </p>
-        <Link href="/developers">
-          <a className="button button--primary mt3">
-              Show me some code
-          </a>
-        </Link>
+        <div className="button-group mt3">
+          <Link href="/developers">
+            <a className="button button--primary">
+                Show me some code
+            </a>
+          </Link>
+        </div>
       </section>
     </div>
 
@@ -184,12 +186,14 @@ const Home = ({ home }) => (
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">
         open-source, available on
+        {' '}
         <a className="link" href="https://github.com/unchainedshop">
           Github*
         </a>
       </h2>
       <p className="text-center">
         * The Unchained Engine OSS Release
+        {' '}
         <a className="link" href="https://github.com/unchainedshop/unchained-evolution">
           follows end of Q1 2019
         </a>
@@ -392,7 +396,7 @@ Unchained Conference 2019
               </a>
             </Link>
             <Link href="/partner-program">
-              <a className="button button--secondary">
+              <a className="button button--role">
                   Partners
                 <img className="w72px" src="../static/img/86- business-income-female-asian.svg" alt="" />
               </a>
@@ -428,6 +432,7 @@ Token Generation Event
 
       .button--role {
         min-height: 126px;
+        margin-bottom: 1em;
       }
 
       .w72px {
@@ -488,21 +493,11 @@ Token Generation Event
       }
 
       .tech-stack {
-        width: 80px;
+        width: 60px;
       }
 
       .tech-stack + .tech-stack {
         margin-left: 1em;
-      }
-
-      .icon-title-pair {
-        display: flex;
-        align-items: center;
-      }
-
-      .icon-title-pair .icon {
-        width: 120px;
-        margin-right: 1em;
       }
 
       .c-bg-dark {
@@ -520,7 +515,7 @@ Token Generation Event
       .hero__subtitle {
         margin-bottom: 2em;
         opacity: .75;
-        max-width: 468px;
+        max-width: 340px;
       }
 
       .explainer {
@@ -556,6 +551,9 @@ Token Generation Event
       @media (max-width: 767px) {
         .hero-text {
           font-size: 1em;
+        }
+        .tech-stack {
+          width: 40px;
         }
       }
       .hero__one {
