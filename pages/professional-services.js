@@ -12,7 +12,7 @@ const Platform = ({ platform }) => (
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
         <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_work_chat_erdt.svg" alt="before dawn" />
+          <img className="undraw" src="../static/img/undraw_upload_87y9.svg" alt="" />
           <div>
             <h1>
               Unchained Professional Services

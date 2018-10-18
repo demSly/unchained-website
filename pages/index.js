@@ -14,10 +14,10 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            Digital Commerce Platform made for Enterprises.
+            Build the best possible Online Shop and sell your Products on any Device.
           </h1>
           <h3 className="hero__subtitle">
-            Build the best possible Online Shop and sell your Products on any Device.
+            Digital Commerce Platform made for Enterprises.
           </h3>
           <h1 className="hero-text">
             <div className="tags">
@@ -47,7 +47,7 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <p className="explainer">
-              Unchained is the best software platform for multi-channel e-commerce.
+              Unchained is a first of its kind software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach & start selling
               goods, services & subscriptions
@@ -392,7 +392,7 @@ Unchained Conference 2019
               </a>
             </Link>
             <Link href="/partner-program">
-              <a className="button button--secondary">
+              <a className="button button--role">
                   Partners
                 <img className="w72px" src="../static/img/86- business-income-female-asian.svg" alt="" />
               </a>
@@ -428,6 +428,7 @@ Token Generation Event
 
       .button--role {
         min-height: 126px;
+        margin-bottom: 1em;
       }
 
       .w72px {
@@ -520,7 +521,7 @@ Token Generation Event
       .hero__subtitle {
         margin-bottom: 2em;
         opacity: .75;
-        max-width: 468px;
+        max-width: 340px;
       }
 
       .explainer {
