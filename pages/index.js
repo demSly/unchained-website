@@ -78,7 +78,7 @@ const Home = ({ home }) => (
 
       <section className="primary-section">
         <div className="wrap wrap--narrow">
-          <div className="icon-title-pair">
+          <div className="text-center">
             <img className="undraw undraw--mini" src="../static/img/undraw_create_f05x.svg" alt="" />
             <h2 className="section-title">
               The most flexible platform for digital commerce
@@ -113,10 +113,10 @@ const Home = ({ home }) => (
 
     <div className="c-bg-dark">
       <section className="wrap wrap--narrow developers-section">
-        <div className="icon-title-pair">
-          <img className="undraw undraw--mini" src="../static/img/undraw_programming_2svr.svg" alt="" />
+        <div className="text-center">
+          <img className="undraw undraw--mini" src="../static/img/undraw_programming_2svr-2.svg" alt="" />
           <h2 className="section-title">
-          Built for developers
+            Built for developers
           </h2>
         </div>
         <p>
@@ -129,11 +129,13 @@ const Home = ({ home }) => (
           is some Javascript (Node.js) knowhow. This is the last shop system you
           will ever need to satisfy your software&apos;s e-commerce requirements.
         </p>
-        <Link href="/developers">
-          <a className="button button--primary mt3">
-              Show me some code
-          </a>
-        </Link>
+        <div className="button-group mt3">
+          <Link href="/developers">
+            <a className="button button--primary">
+                Show me some code
+            </a>
+          </Link>
+        </div>
       </section>
     </div>
 
@@ -496,16 +498,6 @@ Token Generation Event
 
       .tech-stack + .tech-stack {
         margin-left: 1em;
-      }
-
-      .icon-title-pair {
-        display: flex;
-        align-items: center;
-      }
-
-      .icon-title-pair .icon {
-        width: 120px;
-        margin-right: 1em;
       }
 
       .c-bg-dark {
