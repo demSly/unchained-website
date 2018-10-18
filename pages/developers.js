@@ -289,9 +289,9 @@ follows Q1 2019
 Just drop us a line if you want to become an
             official partner of Unchained or you are in need of developer support
           </p>
-          <Link href="/about#contact">
+          <Link href="/contact">
             <a className="button">
-                Get in Contact now
+                Get in Touch now
             </a>
           </Link>
         </div>

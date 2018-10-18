@@ -177,7 +177,7 @@ fundraiser
               </small>
             </a>
           </Link> */}
-          <Link href="/about#contact">
+          <Link href="/contact">
             <a className="footer__link">
               <small>
                 {intl.formatMessage({ id: 'contact' })}

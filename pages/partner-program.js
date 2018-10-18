@@ -30,42 +30,42 @@ const PartnerProgram = ({ partnerProgram }) => (
         </div>
 
         <h2>
-Benefits
+          Benefits
         </h2>
 
         <h3>
-Sales & Marketing
+          Sales & Marketing
         </h3>
         <ul>
           <li>
-Promoting partnership in press releases, social media, blog posts or mailings
+            Promoting partnership in press releases, social media, blog posts or mailings
           </li>
           <li>
-Listing as Partner on unchained.shop & logo rights
+            Listing as Partner on unchained.shop & logo rights
           </li>
           <li>
-Guaranteed conference speech seats
+            Guaranteed conference speech seats
           </li>
           <li>
-Forward incoming project leads
+            Forward incoming project leads
           </li>
         </ul>
 
         <h3>
-Engineering
+          Engineering
         </h3>
         <ul>
           <li>
-Access to unchained engineers
+            Access to unchained engineers
           </li>
           <li>
-Feature Request Prioritization for Unchained core modules
+            Feature Request Prioritization for Unchained core modules
           </li>
           <li>
-Access to Source Code before OSS Relicensing
+            Access to Source Code before OSS Relicensing
           </li>
           <li>
-Forward incoming project leads
+            Forward incoming project leads
           </li>
         </ul>
       </section>
@@ -78,11 +78,11 @@ Forward incoming project leads
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <p className="c-white">
-Just drop us a line if you want to become an
+          Just drop us a line if you want to become an
           official partner of Unchained or you are in need of developer support
         </p>
         <div className="text-center">
-          <Link href="/about#contact">
+          <Link href="/contact">
             <a className="button">
                 Become a Partner
             </a>

@@ -55,6 +55,10 @@ const Layout = ({
       color: white;
     }
 
+    .c-bg-dark .wrap .field__input {
+      color: #333333;
+    }
+
     .c-bg-dark .footer * {
       color: inherit;
     }
