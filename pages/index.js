@@ -47,9 +47,9 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <p className="explainer">
-              Unchained is a first of its kind software platform for multi-channel e-commerce.
+              First of its kind software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
-              ideas through the unique developers-first approach & start selling
+              ideas through the unique developers-first approach. Start selling
               goods, services & subscriptions
               on any internet connected device.
             </p>
