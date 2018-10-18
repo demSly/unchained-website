@@ -79,7 +79,7 @@ const Home = ({ home }) => (
       <section className="primary-section">
         <div className="wrap wrap--narrow">
           <div className="icon-title-pair">
-            <img className="icon" src="../static/img/45- program-setting-1.svg" alt="" />
+            <img className="undraw undraw--mini" src="../static/img/undraw_create_f05x.svg" alt="" />
             <h2 className="section-title">
               The most flexible platform for digital commerce
             </h2>
@@ -114,7 +114,7 @@ const Home = ({ home }) => (
     <div className="c-bg-dark">
       <section className="wrap wrap--narrow developers-section">
         <div className="icon-title-pair">
-          <img className="icon" src="../static/img/66- osx-programmer-female-caucasian.svg" alt="" />
+          <img className="undraw undraw--mini" src="../static/img/undraw_programming_2svr.svg" alt="" />
           <h2 className="section-title">
           Built for developers
           </h2>
@@ -184,12 +184,14 @@ const Home = ({ home }) => (
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">
         open-source, available on
+        {' '}
         <a className="link" href="https://github.com/unchainedshop">
           Github*
         </a>
       </h2>
       <p className="text-center">
         * The Unchained Engine OSS Release
+        {' '}
         <a className="link" href="https://github.com/unchainedshop/unchained-evolution">
           follows end of Q1 2019
         </a>
@@ -489,7 +491,7 @@ Token Generation Event
       }
 
       .tech-stack {
-        width: 80px;
+        width: 60px;
       }
 
       .tech-stack + .tech-stack {
@@ -557,6 +559,9 @@ Token Generation Event
       @media (max-width: 767px) {
         .hero-text {
           font-size: 1em;
+        }
+        .tech-stack {
+          width: 40px;
         }
       }
       .hero__one {

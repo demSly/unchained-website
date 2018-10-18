@@ -205,6 +205,10 @@
   margin-bottom: 1em;
 }
 
+.undraw--mini {
+  max-width: 200px;
+}
+
 @media (min-width: 680px) {
   .undraw {
     width: 39%;
