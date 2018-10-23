@@ -98,12 +98,17 @@ Distribution
               options={pieOptions}
             />
             <p>
-Unchained participation tokens account for a total of 55% of stock equity
+              Unchained tokens account for a total of approximately
+              3 decades of Unchained Managed Hosting.
+            </p>
+            <p>
+              This allows us to secure the development and sustain
+              maintenance of the Unchained Platform for years.
             </p>
           </div>
           <div className="chart">
             <h3 className="mb1">
-Allocation
+              Allocation
             </h3>
             <Pie
               data={{
