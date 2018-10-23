@@ -156,7 +156,7 @@ showcase
 
         <div>
           <div className="footer-label">
-Company
+            Company
           </div>
           <Link href="/about">
             <a className="footer__link">
@@ -167,7 +167,7 @@ Company
           </Link>
           <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>
-announcements
+              announcements
             </small>
           </a>
           {/* <Link href="/fundraiser">
@@ -177,6 +177,13 @@ fundraiser
               </small>
             </a>
           </Link> */}
+          <Link href="/chat">
+            <a className="footer__link">
+              <small>
+                {intl.formatMessage({ id: 'chat' })}
+              </small>
+            </a>
+          </Link>
           <Link href="/contact">
             <a className="footer__link">
               <small>

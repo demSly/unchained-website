@@ -18,19 +18,14 @@ const Menu = ({ intl, hidden, ...props }) => (
           {intl.formatMessage({ id: 'platform' })}
         </a>
       </ActiveLink>
-      {/* <ActiveLink activeClassName="active" href="/showcase">
+      <ActiveLink activeClassName="active" href="/showcase">
         <a className="menu__link">
           {intl.formatMessage({ id: 'showcase' })}
         </a>
-      </ActiveLink> */}
+      </ActiveLink>
       <ActiveLink activeClassName="active" href="/partners">
         <a className="menu__link">
           partners
-        </a>
-      </ActiveLink>
-      <ActiveLink activeClassName="active" href="/chat">
-        <a className="menu__link">
-          {intl.formatMessage({ id: 'chat' })}
         </a>
       </ActiveLink>
       <ActiveLink activeClassName="active" href="/about">
