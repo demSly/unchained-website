@@ -75,7 +75,7 @@ Get whitelisted as an investor
         <div className="charts">
           <div className="chart">
             <h3 className="mb1">
-Distribution
+              Distribution
             </h3>
             <Pie
               data={{
