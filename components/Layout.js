@@ -26,7 +26,13 @@ const Layout = ({
       <link rel="apple-touch-icon" sizes="144x144" href="/static/img/apple-icon-144x144.png" />
       <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-icon-152x152.png" />
       <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-icon-180x180.png" />
+      <link rel="icon" type="image/png" sizes="48x48" href="/static/img/android-icon-48x48.png" />
+      <link rel="icon" type="image/png" sizes="72x72" href="/static/img/android-icon-72x72.png" />
+      <link rel="icon" type="image/png" sizes="96x96" href="/static/img/android-icon-96x96.png" />
+      <link rel="icon" type="image/png" sizes="144x144" href="/static/img/android-icon-144x144.png" />
       <link rel="icon" type="image/png" sizes="192x192" href="/static/img/android-icon-192x192.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/static/img/android-chrome-192x192.png" />
+      <link rel="icon" type="image/png" sizes="384x384" href="/static/img/android-chrome-384x384.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon-96x96.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" />
