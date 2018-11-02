@@ -16,10 +16,26 @@ const Layout = ({
       <meta content="width=device-width, initial-scale=1.0" name="viewport" key="viewport" />
       <meta name="google-site-verification" content="Z9rrptXszSZyyIclbbA3_0ED9bte4dn3dz5QsivMUEU" key="google site verification" />
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600" rel="stylesheet" key="mono font" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png" key="icon_180" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" key="icon_32" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" key="icon_16" />
-      <link rel="shortcut icon" href="/static/img/favicon.ico" key="favicon" />
+
+      <link rel="apple-touch-icon" sizes="57x57" href="/static/img/apple-icon-57x57.png" />
+      <link rel="apple-touch-icon" sizes="60x60" href="/static/img/apple-icon-60x60.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="/static/img/apple-icon-72x72.png" />
+      <link rel="apple-touch-icon" sizes="76x76" href="/static/img/apple-icon-76x76.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="/static/img/apple-icon-114x114.png" />
+      <link rel="apple-touch-icon" sizes="120x120" href="/static/img/apple-icon-120x120.png" />
+      <link rel="apple-touch-icon" sizes="144x144" href="/static/img/apple-icon-144x144.png" />
+      <link rel="apple-touch-icon" sizes="152x152" href="/static/img/apple-icon-152x152.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-icon-180x180.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/static/img/android-icon-192x192.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon-96x96.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png" />
+      <link rel="shortcut icon" href="/static/img/favicon.ico" />
+      <link rel="manifest" href="/static/img/manifest.json" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="msapplication-TileImage" content="/static/img/ms-icon-144x144.png" />
+      <meta name="theme-color" content="#ffffff" />
+
       <link href="/static/css/all.css" rel="stylesheet" key="css" />
       {title && (
       <title key="title">
