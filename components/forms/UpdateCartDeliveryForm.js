@@ -271,26 +271,8 @@ export default compose(
     countryName: { type: String, optional: true },
   })),
   graphql(gql`
-    mutation updateOrderContact($orderId: ID!, $contact: ContactInput!) {
-      updateOrderContact(orderId: $orderId, contact: $contact) {
-        _id
-      }
-    }
-  `, {
-    name: 'updateOrderContact',
-  }),
-  graphql(gql`
-    mutation updateOrderDeliveryShipping($orderDeliveryId: ID!, $address: AddressInput) {
-      updateOrderDeliveryShipping(orderDeliveryId: $orderDeliveryId, address: $address) {
-       _id
-     }
-    }
-  `, {
-    name: 'updateOrderDeliveryShipping',
-  }),
-  graphql(gql`
-    mutation updateOrderAddress($orderId: ID!, $address: AddressInput!) {
-      updateOrderAddress(orderId: $orderId, address: $address) {
+    mutation updateOrder($orderId: ID!, $contact: ContactInput!, $address: AddressInput!) {
+      updateOrder(orderId: $orderId, contact: $contact, address: $address) {
         _id
         contact {
           emailAddress
@@ -319,12 +301,21 @@ export default compose(
       }
     }
   `, {
-    name: 'updateOrderAddress',
+    name: 'updateOrder',
     options: {
       refetchQueries: [
         'checkoutCart',
       ],
     },
+  }),
+  graphql(gql`
+    mutation updateOrderDeliveryShipping($orderDeliveryId: ID!, $address: AddressInput) {
+      updateOrderDeliveryShipping(orderDeliveryId: $orderDeliveryId, address: $address) {
+       _id
+     }
+    }
+  `, {
+    name: 'updateOrderDeliveryShipping',
   }),
   withHandlers(() => {
     let formRef;
@@ -339,27 +330,22 @@ export default compose(
         }
       },
       onSubmit: ({
-        updateOrderContact, updateOrderAddress,
+        updateOrder,
         updateOrderDeliveryShipping, cart, intl,
       }) => async ({ emailAddress, delivery, billing }) => {
         try {
-          await updateOrderContact({
-            variables: {
-              orderId: cart._id,
-              contact: { emailAddress },
-            },
-          });
           const { __typename: ___, countryCode: _, ...shippingAddress } = delivery;
+          const { __typename, countryCode, ...address } = billing || delivery;
           await updateOrderDeliveryShipping({
             variables: {
               orderDeliveryId: cart.delivery && cart.delivery._id,
               address: billing ? shippingAddress : null,
             },
           });
-          const { __typename, countryCode, ...address } = billing || delivery;
-          await updateOrderAddress({
+          await updateOrder({
             variables: {
               orderId: cart._id,
+              contact: { emailAddress },
               address,
             },
           });
