@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require('isomorphic-unfetch');
 const NodeCache = require('node-cache');
 
 const {

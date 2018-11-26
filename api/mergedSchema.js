@@ -1,70 +1,35 @@
 const {
   makeExecutableSchema, makeRemoteExecutableSchema, mergeSchemas, introspectSchema,
 } = require('graphql-tools');
-const { createApolloFetch } = require('apollo-fetch');
-const NodeCache = require('node-cache');
+const fetch = require('isomorphic-unfetch');
+const { HttpLink } = require('apollo-link-http');
+const { setContext } = require('apollo-link-context');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 
 const {
   SHOP_GRAPHQL_ENDPOINT,
-  NODE_ENV,
 } = process.env;
 
 console.log(`Connecting to Engine: ${SHOP_GRAPHQL_ENDPOINT}`);  // eslint-disable-line
-const unchainedFetch = createApolloFetch({ uri: SHOP_GRAPHQL_ENDPOINT });
-unchainedFetch.use(({ request, options }, next) => {
-  if (request.context && request.context.graphqlContext) {
-    const { forwardHeaders } = request.context.graphqlContext;
-    if (!options.headers) options.headers = {}; // eslint-disable-line
-    options.headers = { // eslint-disable-line
-      ...options.headers,
-      ...forwardHeaders,
-    };
-  }
-  next();
-});
+const http = new HttpLink({ uri: SHOP_GRAPHQL_ENDPOINT, fetch });
 
-// set staleness of cockpit cache for dev and prod
-const schemaCache = new NodeCache((NODE_ENV === 'production')
-  ? { stdTTL: 180, checkperiod: 10 } // 4 minutes lag in production
-  : { stdTTL: 10, checkperiod: 2 }); // 7 seconds lag in development
+const link = setContext((request, previousContext) => {
+  const { graphqlContext: { forwardHeaders } = {} } = previousContext;
+  return {
+    headers: forwardHeaders || {},
+  };
+}).concat(http);
 
-const updateSchema = async () => {
-  try {
-    const schema = await introspectSchema(unchainedFetch);
-    schemaCache.set('schema', schema);
-    schemaCache.set('schemaFallback', schema, 0);
-    console.log('-> Remote Schema Merger: Reloaded remote schema');  // eslint-disable-line
-  } catch (e) {
-    console.warn('-> Remote Schema Merger: Error retrieving remote schema', e); // eslint-disable-line
-    if (!schemaCache.get('schemaFallback')) {
-      schemaCache.set('schema', null, 10); // reset expiry
-      schemaCache.set('schemaFallback', null, 0);
-      console.log('-> Remote Schema Merger: Cache reset (waiting 10 seconds to retry)');  // eslint-disable-line
-    }
-  }
-};
-updateSchema();
-
-schemaCache.on('expired', () => {
-  updateSchema();
-});
-
-module.exports = () => {
-  const fetcher = ({
-    query, variables, operationName, context,
-  }) => unchainedFetch({
-    query, variables, operationName, context,
-  });
+module.exports = async () => {
   const localSchema = makeExecutableSchema({
     typeDefs,
     resolvers,
   });
-  const schema = schemaCache.get('schema') || schemaCache.get('schemaFallback');
+
   const unchainedSchema = makeRemoteExecutableSchema({
-    schema,
-    fetcher,
+    schema: await introspectSchema(link),
+    link,
   });
   return mergeSchemas({
     schemas: [localSchema, unchainedSchema],

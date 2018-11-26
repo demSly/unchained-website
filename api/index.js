@@ -1,10 +1,9 @@
 require('dotenv').config();
-const { microGraphiql, microGraphql } = require('apollo-server-micro');
-const { send } = require('micro');
-const microrouter = require('microrouter');
+const { ApolloServer } = require('apollo-server-micro');
 const locale = require('locale');
 const { Z_DEFAULT_COMPRESSION } = require('zlib');
 const compress = require('micro-compress');
+const cors = require('micro-cors')();
 
 // backend connector
 const CockpitConnector = require('./cockpitConnector');
@@ -28,34 +27,23 @@ const mapForwardHeaders = ({ headers, ...req }) => {
   return forwardHeaders;
 };
 
-const graphqlHandler = (context, schema) => microGraphql({ schema, context });
-const graphiqlHandler = microGraphiql({ endpointURL: '/graphql' });
-const corsEnhancer = (res) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Accept-Language, X-Shop-Country, Authorization');
-};
+const createApolloServer = async () => new ApolloServer({
+  schema: await mergedSchema(),
+  introspection: true,
+  cors: false,
+  context: ({ req }) => {
+    const language = req && req.headers && req.headers['accept-language'];
+    const normalizedLocale = new locale.Locale(language);
+    return {
+      api: new CockpitConnector(normalizedLocale.language),
+      forwardHeaders: mapForwardHeaders(req),
+    };
+  },
+});
 
-module.exports = compress({ level: Z_DEFAULT_COMPRESSION }, microrouter.router(
-  microrouter.get('/graphql', async (req, res) => {
-    corsEnhancer(res);
-    const normalizedLocale = new locale.Locale(req.headers['accept-language']);
-    return graphqlHandler({
-      api: new CockpitConnector(normalizedLocale.language),
-      forwardHeaders: mapForwardHeaders(req),
-    }, mergedSchema())(req, res);
-  }),
-  microrouter.post('/graphql', async (req, res) => {
-    corsEnhancer(res);
-    const normalizedLocale = new locale.Locale(req.headers['accept-language']);
-    return graphqlHandler({
-      api: new CockpitConnector(normalizedLocale.language),
-      forwardHeaders: mapForwardHeaders(req),
-    }, mergedSchema())(req, res);
-  }),
-  microrouter.options('/graphql', (req, res) => {
-    corsEnhancer(res);
-    res.end();
-  }),
-  microrouter.get('/graphiql', graphiqlHandler),
-  (req, res) => send(res, 404, 'not found'),
-));
+const apolloServerPromise = createApolloServer();
+
+module.exports = async (...args) => {
+  const apolloServer = await apolloServerPromise;
+  return compress({ level: Z_DEFAULT_COMPRESSION }, cors(apolloServer.createHandler()))(...args);
+};
