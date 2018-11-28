@@ -21,7 +21,7 @@ const Home = ({ home }) => (
           </h3>
           <h1 className="hero-text">
             <div className="tags">
-              <Link href="/platform">
+              <Link href="/why-headless">
                 <a className="tag">
                   <div className="tag__flex">
                     <span className="tag__pill">
