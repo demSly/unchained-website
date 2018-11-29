@@ -84,6 +84,6 @@
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production node index.js",
     "update-schema": "graphql get-schema && graphql get-schema -j -o schema.json",
-    "deploy": "now --dotenv=.env.production"
+    "deploy": "npx now --dotenv=.env.production"
   }
 }
