@@ -1,9 +1,8 @@
 {
   "name": "@unchainedshop/unchained-website",
   "description": "Unchained Shop Web UI",
-  "version": "1.0.0-canary",
-  "private": true,
-  "license": "AGPL-3.0+",
+  "version": "1.0.0",
+  "license": "EUPL-1.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unchainedshop/unchained-website.git"
