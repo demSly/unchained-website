@@ -11,32 +11,26 @@ const Partners = ({ partners }) => (
     <div className="wrap mt7">
       <section id="partners" className="section">
         <h1>
-          If you need an agency with experience in enterprise e-commerce
-          & development, feel free to contact our partners.
+          We have worked together & successfully launched online shops with the following partners
         </h1>
-        <h3 className="mt3 mb0">
-          Invested Partners
-        </h3>
         <div className="partners">
           <div className="partner">
             <a href="https://www.silbury.com/">
-              <img src="../static/img/silbury.jpg" alt="silbury logo" />
+              <img src="../static/img/silbury-logo_retina.png" alt="silbury logo" />
             </a>
           </div>
           <div className="partner">
-            <a href="https://www.fivelines.ch/">
-              <img src="../static/img/fivelines.png" alt="fivelines logo" />
+            <a href="https://www.evux.ch/">
+              <img src="../static/img/evux.png" alt="evux logo" />
+            </a>
+          </div>
+          <div className="partner">
+            <a href="https://www.panter.ch/">
+              <img src="../static/img/panter-black-bg.png" alt="panter logo" />
             </a>
           </div>
         </div>
       </section>
-      <Link href="/partner-program">
-        <div className="text-center">
-          <a className="button mt3">
-              Become a partner
-          </a>
-        </div>
-      </Link>
     </div>
     <style jsx>
       {`
@@ -46,7 +40,7 @@ const Partners = ({ partners }) => (
         align-items: center;
       }
       .partner {
-        margin: 0 2em 2em 2em;
+        margin: 4em 4em 4em 0;
       }
       .partner img {
         max-width: 250px;
