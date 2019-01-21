@@ -13,7 +13,64 @@ const Showcase = ({ showcase }) => (
           Showcase
         </h1>
         <ul className="mdc-image-list mdc-image-list--masonry masonry-image-list">
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_(iPhone 6_7_8 Plus).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_prod_desderman-pure-gel-500ml(iPhone 6_7_8 Plus).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_prod_mediset-katheter-set-fr-frauen(iPad).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_produkte_ergnzende-produkte-web.png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_produkte_wund-web_desinfektion(iPad).png" alt="Text label" />
+          </li>
+          <li className="mdc-image-list__item">
+            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_signup(iPhone 6_7_8).png" alt="Text label" />
+          </li>
+        </ul>
+        <div className="wrap wrap--narrow mb3">
+          <p>
+    Publicare Digital Experience
+          </p>
+          <ul>
+            <li>
+    Supports both B2C & B2B clients. Context-aware prices.
+            </li>
+            <li>
+    Customer self service portal
+            </li>
+            <li>
+    Recipe generation wizard during chekcout
+            </li>
+            <li>
+    Faceted search & filter
+            </li>
+            <li>
+    ERP & PIM integration
+            </li>
+            <li>
+    React Widget Integration into Drupal
+            </li>
+            <li>
+    Partners: evux & Silbury
+            </li>
+          </ul>
+          <div className="mt3">
+            <p>
+    See the shop in action
+              {' '}
+            </p>
+            <a className="button" href="https://publicare.ch">
+    publicare.ch
+            </a>
+          </div>
+        </div>
 
+        <ul className="mdc-image-list mdc-image-list--masonry masonry-image-list">
           <li className="mdc-image-list__item">
             <img className="mdc-image-list__image" src="../static/img/freezyboy/freezyboy.com_(iPad).png" alt="Text label" />
           </li>
@@ -181,7 +238,7 @@ const Showcase = ({ showcase }) => (
     </div>
     <div className="wrap wrap--narrow mb3">
       <p>
-A customer story
+Freezyboy
       </p>
       <ul>
         <li>
