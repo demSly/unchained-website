@@ -21,17 +21,23 @@ const link = setContext((request, previousContext) => {
   };
 }).concat(http);
 
-module.exports = async () => {
+module.exports = async () => { // eslint-disable-line
   const localSchema = makeExecutableSchema({
     typeDefs,
     resolvers,
   });
 
-  const unchainedSchema = makeRemoteExecutableSchema({
-    schema: await introspectSchema(link),
-    link,
-  });
-  return mergeSchemas({
-    schemas: [localSchema, unchainedSchema],
-  });
+  try {
+    const unchainedSchema = makeRemoteExecutableSchema({
+      schema: await introspectSchema(link),
+      link,
+    });
+
+    return mergeSchemas({
+      schemas: [localSchema, unchainedSchema],
+    });
+  } catch (e) {
+    console.error('Could not load Unchained Engine Schema, abort here so the docker container restarts...');
+    process.exit(500);
+  }
 };
