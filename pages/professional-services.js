@@ -36,7 +36,7 @@ const Platform = ({ platform }) => (
 
         To get access to these services, it&apos;s required that you join us as an
         official unchained partner:
-        <Link href="/partner-program">
+        <Link href="/partners">
           <div className="text-center">
             <a className="button mt3">
                 Partner Program

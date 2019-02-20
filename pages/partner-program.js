@@ -64,16 +64,8 @@ const PartnerProgram = ({ partnerProgram }) => (
           <li>
             Access to Source Code before OSS Relicensing
           </li>
-          <li>
-            Forward incoming project leads
-          </li>
         </ul>
       </section>
-      <div className="wrap mt7 text-center">
-        <a className="button" href="/static/partner-program-factsheet.pdf" target="_blank">
-          Download Factsheet
-        </a>
-      </div>
     </div>
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">

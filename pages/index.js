@@ -296,7 +296,7 @@ Apr 2018
             <p>
 Init Partner Program for Agencies
             </p>
-            <Link href="/partner-program">
+            <Link href="/partners">
               <a className="button">
 To the Partner Program
               </a>
@@ -395,7 +395,7 @@ Unchained Conference 2019
                 <img className="w72px" src="../static/img/06- business-team.svg" alt="" />
               </a>
             </Link>
-            <Link href="/partner-program">
+            <Link href="/partners">
               <a className="button button--role">
                   Partners
                 <img className="w72px" src="../static/img/86- business-income-female-asian.svg" alt="" />
