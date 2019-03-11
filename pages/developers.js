@@ -287,7 +287,7 @@ follows Q1 2019
         <div className="text-center">
           <p className="">
 Just drop us a line if you want to become an
-            official partner of Unchained or you are in need of developer support
+            official partner of Unchained or you are in need of professional services
           </p>
           <Link href="/contact">
             <a className="button">

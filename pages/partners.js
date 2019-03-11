@@ -21,7 +21,7 @@ const Partners = ({ partners }) => (
       <div className="wrap wrap--narrow wrap--vertical-padding">
         <p className="c-white">
           Just drop us a line if you want to become an
-          official partner of Unchained or you are in need of developer support
+          official partner of Unchained or you are in need of professional services
         </p>
         <div className="text-center">
           <Link href="/contact">

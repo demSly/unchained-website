@@ -53,13 +53,13 @@ const Platform = ({ platform }) => (
           </div>
           <div className="platform-feature">
             <h2>
-              Developer Support
+              Consulting
             </h2>
             <p>
-              Project Support, Consulting, Training, Events, Partnerships
+              Developer Support, UX & E-Commerce Consuling, Training, Events, Partnerships
             </p>
-            <Link href="/support">
-              <span className="link">More infos about Developer Support</span>
+            <Link href="/consulting">
+              <span className="link">More infos about Consulting</span>
             </Link>
           </div>
           <div className="platform-feature">

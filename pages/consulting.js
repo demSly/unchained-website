@@ -15,7 +15,7 @@ const Platform = ({ platform }) => (
           <img className="undraw" src="../static/img/undraw_upload_87y9.svg" alt="" />
           <div>
             <h1>
-              Unchained Developer Support
+              Unchained Consulting
             </h1>
             <p>
               Sometimes you need a little help with your projects and of course we don&apos;t
