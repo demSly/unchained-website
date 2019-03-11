@@ -31,63 +31,6 @@ const Partners = ({ partners }) => (
           </div>
         </div>
       </section>
-      <section id="partnerProgram" className="section">
-        <h1>
-          Unchained for Enterprise Partners
-        </h1>
-        <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_agreement_aajr.svg" alt="agreement" />
-          <div>
-            <p>
-              Join a partnership that lifts your digital commerce projects to the next level.
-            </p>
-            <p>
-              The Unchained Enterprise Partners Program is suited for agencies who
-              like to work together with us on a strategic level.
-              Following you will find a list of benefits you will get as an exclusive
-              partner which wants to invest and help a young open source company grow
-              in a sustainable way.
-            </p>
-          </div>
-        </div>
-
-        <h2>
-          Benefits
-        </h2>
-
-        <h3>
-          Sales & Marketing
-        </h3>
-        <ul>
-          <li>
-            Promoting partnership in press releases, social media, blog posts or mailings
-          </li>
-          <li>
-            Listing as Partner on unchained.shop & logo rights
-          </li>
-          <li>
-            Guaranteed conference speech seats
-          </li>
-          <li>
-            Forward incoming project leads
-          </li>
-        </ul>
-
-        <h3>
-          Engineering
-        </h3>
-        <ul>
-          <li>
-            Access to unchained engineers
-          </li>
-          <li>
-            Feature Request Prioritization for Unchained core modules
-          </li>
-          <li>
-            Access to Source Code before OSS Relicensing
-          </li>
-        </ul>
-      </section>
     </div>
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow wrap--vertical-padding">

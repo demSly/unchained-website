@@ -23,7 +23,7 @@ const Platform = ({ platform }) => (
               that the unchained engine provides out of the box.
             </p>
             <ul>
-              <li>Products, Users & Collection management</li>
+              <li>Products, Users & Assortment management</li>
               <li>Analytics, logs & reporting on orders</li>
               <li>Compatibility and feature parity with the unchained engine</li>
             </ul>
@@ -42,9 +42,10 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/17- employee-smart-tag.svg" alt="" />
                 <h3>
-  Users
+                  Users
                 </h3>
               </div>
+              <p>Manage Users</p>
               <ul>
                 <li>
   Delete & edit users
@@ -68,9 +69,27 @@ Features
                 Products & Variants
                 </h3>
               </div>
+              <p>Manage Products</p>
               <ul>
-                <li>Search and filter</li>
-                <li>Add Attributes, Tags, Categories & Collections.</li>
+                <li>Add simple, multi-variant and bundle products</li>
+                <li>Edit base prices by country/currency</li>
+                <li>Edit texts and images for multiple languages</li>
+                <li>Edit warehousing relevant data and other meta data</li>
+              </ul>
+            </div>
+
+            <div className="feature-set">
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/05- sneakers.svg" alt="" />
+                <h3>
+                Faceted Search Filters
+                </h3>
+              </div>
+              <p>Manage Filters</p>
+              <ul>
+                <li>Add indexable filters for faceted search</li>
+                <li>Edit texts and images for multiple languages</li>
+                <li>Edit values</li>
               </ul>
             </div>
 
@@ -78,19 +97,19 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/40- easy-to-use-2.svg" alt="" />
                 <h3>
-                Collections
+                Assortments
                 </h3>
               </div>
-              <p>Product Assignemnts by</p>
+              <p>Manage Assortments</p>
               <ul>
                 <li>
-                  Look or theme
+                  Structure your products into deep assortments
                 </li>
                 <li>
-                  Regions & Countries
+                  Assign Faceted Search Filters on all hierarchical levels
                 </li>
                 <li>
-                  Discount group, vouchers & seasonal assortments
+                  Append custom text and images on all hierarchical levels
                 </li>
               </ul>
             </div>
@@ -99,17 +118,52 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
                 <h3>
-  Order Management
+                  Quotation Management
+                </h3>
+              </div>
+              <p>Manage Quotations / RFP</p>
+              <ul>
+                <li>
+                  See open RFP and generated offer documents
+                </li>
+                <li>
+                  Manually confirm elligibility for a request
+                </li>
+                <li>
+                  Reject quotations
+                </li>
+              </ul>
+            </div>
+
+            <div className="feature-set">
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
+                <h3>
+                  Order Management
                 </h3>
               </div>
               <p>Manage Orders</p>
+              <ul>
+                <li>
+                See order data and generated documents
+                </li>
+                <li>
+                Manually confirm orders
+                </li>
+                <li>
+                Delete carts
+                </li>
+                <li>
+                Mark orders as paid
+                </li>
+              </ul>
             </div>
 
             <div className="feature-set">
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/63- graph-area.svg" alt="" />
                 <h3>
-  Logs
+                  Logs
                 </h3>
               </div>
               <p>See rich application logs, allowing you to drill down by</p>
@@ -123,6 +177,9 @@ Features
                 <li>
                 Order
                 </li>
+                <li>
+                Quotation
+                </li>
               </ul>
             </div>
 
@@ -130,7 +187,7 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/50- business-graph-2.svg" alt="" />
                 <h3>
-  Analytics
+                  Analytics
                 </h3>
               </div>
               <p>Observe key indices</p>
@@ -140,13 +197,12 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/13 navigator-business-compass-map.svg" alt="" />
                 <h3>
-  More
+                  Settings
                 </h3>
               </div>
               <ul>
                 <li>
-                  International by default. Manage all Languages, Countries,
-                  Regions, Currencies, Formats & Conventions
+                  Manage all Languages, Countries, Currencies
                 </li>
                 <li>
                   Manage Payment Providers

@@ -296,11 +296,6 @@ Apr 2018
             <p>
 Init Partner Program for Agencies
             </p>
-            <Link href="/partners">
-              <a className="button">
-To the Partner Program
-              </a>
-            </Link>
           </div>
         </div>
 
