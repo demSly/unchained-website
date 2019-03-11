@@ -13,7 +13,7 @@ const Platform = ({ platform }) => (
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
         <h1>
-Unchained Engine
+          Unchained Engine
         </h1>
         <div className="flex-between nowrap">
           <img className="undraw" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
@@ -30,10 +30,10 @@ Unchained Engine
           </div>
         </div>
         <h2>
-Core Values
+          Core Values
         </h2>
         <h3>
-Open Source
+          Open Source
         </h3>
         <p>
           Usage of OSS prevents vendor lock-in. Using software that is open to
@@ -41,7 +41,7 @@ Open Source
           resilient to economic issues like bankruptcy of the software owner.
         </p>
         <h3>
-Headless & Hackable
+          Headless & Hackable
         </h3>
         <p>
           Non-hackable software (like SaaS) use the technique of &quot;customizing&quot;,
@@ -55,10 +55,10 @@ Headless & Hackable
            the software that were not intended to get configured by the core developers.
         </p>
         <h2>
-Stack in detail
+          Stack in detail
         </h2>
         <h3>
-Node.js ES6
+          Node.js ES6
         </h3>
         <p>
           We use the most popular programming language in the web because we think
@@ -69,26 +69,26 @@ Node.js ES6
           and longevity of our stack we further have selected Meteor.js as the build tool.
         </p>
         <h3>
-MongoDB
+          MongoDB
         </h3>
         <p>
           We&quot;ve chosen MongoDB because it is the most popular NoSQL DBMS out there.
           With a schema-less database, development of plugins and extensions
           that need to extend the existing data structure are much easier to develop.
           <a href="/faq">
-More infos about why Meteor.js or MongoDB you can find in our FAQ
+            More infos about why Meteor.js or MongoDB you can find in our FAQ
           </a>
         </p>
         <h3>
-Apollo GraphQL Server
+          Apollo GraphQL Server
         </h3>
         <p>
-          GraphQL will be the new REST. Having a schema on the API helps with connecting systems
+          GraphQL is the new REST. Having a schema on the API helps with connecting systems
           in a micro-service architecture and makes it extremely easy to implement in client apps
           for all kind of operating systems and programming languages.
         </p>
         <h3>
-Software Modules
+          Software Modules
         </h3>
         <svg width="783px" height="630px" viewBox="0 0 783 630" version="1.1">
           <defs />
@@ -99,7 +99,7 @@ Software Modules
                 <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="202.5" width="150" height="93" />
                 <text id="Products" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="54" y="254">
-Products
+                    Products
                   </tspan>
                 </text>
                 <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="202.5" width="150" height="93" />
@@ -107,7 +107,7 @@ Products
                 <rect id="Rectangle" stroke="#C9C9C9" fill="#FFFFFF" x="16.5" y="154.5" width="750" height="47" />
                 <text id="Products" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="54" y="254">
-Products
+                    Products
                   </tspan>
                 </text>
                 <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="295.5" width="150" height="93" />
@@ -124,27 +124,27 @@ Products
                 <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="202.5" width="150" height="93" />
                 <text id="Core-SDK-+-API" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="321" y="183">
-Core SDK + API
+                    Core SDK + API
                   </tspan>
                 </text>
                 <text id="Core" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="53" y="51">
-Core
+                    Core
                   </tspan>
                 </text>
                 <text id="Payment" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="356" y="256">
-Payment
+                    Payment
                   </tspan>
                 </text>
                 <text id="Orders" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="210" y="256">
-Orders
+                    Orders
                   </tspan>
                 </text>
                 <text id="Delivery" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
                   <tspan x="56" y="349">
-Delivery
+                    Delivery
                   </tspan>
                 </text>
                 <text id="Pricing" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
@@ -314,11 +314,14 @@ Features by module
               </div>
               <ul>
                 <li>
-  Generate PDF&apos;s locally through a local bookkeeping system
+  Generate Documents&apos;s through a local bookkeeping system
                   (SAP R/3, Abacus, ...)
                 </li>
                 <li>
-  Generate PDF&apos;s through SaaS services (Smallinvoice)
+  Generate Documents&apos;s with HTML Templates
+                </li>
+                <li>
+  Generate Documents&apos;s through SaaS services (Smallinvoice for ex.)
                 </li>
                 <li>
   Generate a new XML file for external processing
@@ -351,27 +354,27 @@ Features by module
                 <img className="feature-set__icon" src="../static/img/01- currency-money-hand-1.svg" alt="" />
 
                 <h3>
-  Payments
+                  Payments
                 </h3>
               </div>
               <ul>
                 <li>
-  Bitcoin, Ether & more cryptocurrencies
+                  Invoice (Post- and prepaid)
                 </li>
                 <li>
-  Invoice
+                  Stripe
                 </li>
                 <li>
-  Stripe
+                  PostFinance
                 </li>
                 <li>
-  PostFinance
+                  PayPal
                 </li>
                 <li>
-  PayPal
+                 Datatrans
                 </li>
                 <li>
-  Bonity-checked invoices (Deltavista)
+                  Bonity-checked invoices (Deltavista)
                 </li>
               </ul>
             </div>
@@ -380,30 +383,30 @@ Features by module
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/09- price-tag.svg" alt="" />
                 <h3>
-  Pricing
+                  Pricing
                 </h3>
               </div>
               <ul>
                 <li>
-  B2B Users special price
+                  B2B Users special price
                 </li>
                 <li>
-  Date range dependent special prices
+                  Date range dependent special prices
                 </li>
                 <li>
-  Dynamic tax rate retrieval
+                  Dynamic tax rate retrieval
                 </li>
                 <li>
-  Product, Payment, Order or Delivery prices confiurable
+                  Product, Payment, Order or Delivery prices confiurable
                 </li>
                 <li>
-  Weather-dependent barbeque sausage price*
+                  Weather-dependent barbeque sausage price*
                 </li>
                 <li>
-  Order total weight dependent charges, dynamically calculated by UPS*
+                  Order total weight dependent charges, dynamically calculated by UPS*
                 </li>
                 <li>
-  Prices that depend on Languages, countries, users, order quantities, ...*
+                  Prices that depend on Languages, countries, users, order quantities, ...*
                 </li>
               </ul>
             </div>
@@ -413,24 +416,24 @@ Features by module
 
                 <img className="feature-set__icon" src="../static/img/06- shopping-bag-money.svg" alt="" />
                 <h3>
-  Discounts
+                  Discounts
                 </h3>
               </div>
               <ul>
                 <li>
-  Christmas & Black Friday Discounts
+                  Christmas & Black Friday Discounts
                 </li>
                 <li>
-  Percentage reducing discount codes
+                  Percentage reducing discount codes
                 </li>
                 <li>
-  Absolute amount reducing discount codes
+                  Absolute amount reducing discount codes
                 </li>
                 <li>
-  Swear word dependent daily discounts based on Donald Trump Twitter feed*
+                  Swear word dependent daily discounts based on Donald Trump Twitter feed*
                 </li>
                 <li>
-  Lottery or random prices: Every 1000th buyer gets the stuff free of charge*
+                  Lottery or random prices: Every 1000th buyer gets the stuff free of charge*
                 </li>
               </ul>
             </div>
@@ -439,21 +442,91 @@ Features by module
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
                 <h3>
-  Warehousing
+                  Warehousing
                 </h3>
               </div>
               <ul>
                 <li>
-  ERP as Inventory Management*
+                  ERP as Inventory Management*
                 </li>
                 <li>
-  Manage Inventory in Google Docs
+                  Manage Inventory in Google Docs
                 </li>
                 <li>
-  Fire Just-in-time Production of any goods*
+                  Fire Just-in-time Production of any goods*
                 </li>
                 <li>
-  Real-time quantities (see an event get sold out live)*
+                  Real-time quantities (see an event get sold out live)*
+                </li>
+              </ul>
+            </div>
+
+            <div className="feature-set">
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <h3>
+                  Quotations
+                </h3>
+              </div>
+              <ul>
+                <li>
+                  Automatically build individual offers in response to RFP's
+                </li>
+                <li>
+                  Quotation workflow to confirm and reject offers
+                </li>
+                <li>
+                  Allow users to digitally negotiate with the vendor
+                </li>
+              </ul>
+            </div>
+
+            <div className="feature-set">
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <h3>
+                  Product Reviews
+                </h3>
+              </div>
+              <ul>
+                <li>
+                  Allow users to comment on ordered products
+                </li>
+                <li>
+                  Allow users to rate a product
+                </li>
+                <li>
+                  Allow users to post custom data and/or reply to others messages
+                </li>
+                <li>
+                  Intelligent Workflow that allows to scan
+                  incomming reviews and controls the obligation for manual approvement.
+                </li>
+              </ul>
+            </div>
+
+            <div className="feature-set">
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <h3>
+                  Faceted Search
+                </h3>
+              </div>
+              <ul>
+                <li>
+                  Filters on any hierarchical level
+                </li>
+                <li>
+                  Filters that get filtered by filters (Faceted)
+                </li>
+                <li>
+                  Range, Selection and custom Filter types
+                </li>
+                <li>
+                  Fast (custom index)
+                </li>
+                <li>
+                  Item count prediction
                 </li>
               </ul>
             </div>
@@ -462,21 +535,21 @@ Features by module
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/08- java-script-developer.svg" alt="" />
                 <h3>
-  And so much more
+                  And so much more
                 </h3>
               </div>
               <ul>
                 <li>
-  One shop for one world (Multi-country support)
+                  One shop for one world (Multi-country support)
                 </li>
                 <li>
-  Price your products in any currency or crypto-currency you like. $XLM maybe?
+                  Price your products in any currency you like. $XLM maybe?
                 </li>
                 <li>
-  Multi-language support
+                  Multi-language support
                 </li>
                 <li>
-  Dynamic catalogs
+                  Metadata extension on any entity easily possible
                 </li>
               </ul>
             </div>
