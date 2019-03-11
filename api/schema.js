@@ -24,6 +24,18 @@ module.exports = gql`
     links: [MemberLink]!
     avatar: Picture
   }
+  type Job {
+    _id: ID!
+    slug: String!
+    title: String
+    workload: String
+    location: String
+    content: String
+    skills: String
+    tasks: String
+    compensation: String
+    features: String
+  }
   type MemberLink {
     _id: ID!
     name: String
@@ -36,8 +48,10 @@ module.exports = gql`
   }
   type Query {
     members: [Member]!
+    jobs: [Job]!
     questions: [Question]!
     region(regionId: String!): JSON
+    job(slug: String!): Job!
   }
   type Mutation {
     # Send a Call-me-back request to the Company, returns messageId if successfully sent mail
