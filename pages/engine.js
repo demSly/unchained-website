@@ -280,10 +280,12 @@ Features by module
           </h2>
           <div className="features">
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/07- container-package-logistic-truck.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/07- container-package-logistic-truck.svg" alt="" />
+                <h3>
   Delivery
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   Downloadable Products
@@ -304,10 +306,12 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/65- cloud-server-document-sync.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/65- cloud-server-document-sync.svg" alt="" />
+                <h3>
   Documents
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   Generate PDF&apos;s locally through a local bookkeeping system
@@ -323,10 +327,12 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/14- iphone-message-notification.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/14- iphone-message-notification.svg" alt="" />
+                <h3>
   Messaging
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   Send Order Confirmations and Invoices by E-Mail, SMS or Whatsapp
@@ -341,11 +347,13 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/01- currency-money-hand-1.svg" alt="" />
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/01- currency-money-hand-1.svg" alt="" />
 
-              <h3>
+                <h3>
   Payments
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   Bitcoin, Ether & more cryptocurrencies
@@ -369,10 +377,12 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/09- price-tag.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/09- price-tag.svg" alt="" />
+                <h3>
   Pricing
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   B2B Users special price
@@ -399,10 +409,13 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/06- shopping-bag-money.svg" alt="" />
-              <h3>
+              <div className="flex">
+
+                <img className="feature-set__icon" src="../static/img/06- shopping-bag-money.svg" alt="" />
+                <h3>
   Discounts
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   Christmas & Black Friday Discounts
@@ -423,10 +436,12 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <h3>
   Warehousing
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   ERP as Inventory Management*
@@ -444,10 +459,12 @@ Features by module
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/08- java-script-developer.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/08- java-script-developer.svg" alt="" />
+                <h3>
   And so much more
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   One shop for one world (Multi-country support)

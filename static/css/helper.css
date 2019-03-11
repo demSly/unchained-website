@@ -6,6 +6,11 @@
   display: block;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;
@@ -16,7 +21,7 @@
 @media (min-width: 680px) {
   .nowrap {
     flex-wrap: nowrap;
-  }  
+  }
 }
 
 .flex-center {

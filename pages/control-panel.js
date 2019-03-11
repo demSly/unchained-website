@@ -39,10 +39,12 @@ Features
           </h2>
           <div className="features">
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/17- employee-smart-tag.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/17- employee-smart-tag.svg" alt="" />
+                <h3>
   Users
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
   Delete & edit users
@@ -60,10 +62,12 @@ Features
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/05- sneakers.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/05- sneakers.svg" alt="" />
+                <h3>
                 Products & Variants
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>Search and filter</li>
                 <li>Add Attributes, Tags, Categories & Collections.</li>
@@ -71,10 +75,12 @@ Features
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/40- easy-to-use-2.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/40- easy-to-use-2.svg" alt="" />
+                <h3>
                 Collections
-              </h3>
+                </h3>
+              </div>
               <p>Product Assignemnts by</p>
               <ul>
                 <li>
@@ -90,18 +96,22 @@ Features
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
+                <h3>
   Order Management
-              </h3>
+                </h3>
+              </div>
               <p>Manage Orders</p>
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/63- graph-area.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/63- graph-area.svg" alt="" />
+                <h3>
   Logs
-              </h3>
+                </h3>
+              </div>
               <p>See rich application logs, allowing you to drill down by</p>
               <ul>
                 <li>
@@ -117,18 +127,22 @@ Features
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/50- business-graph-2.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/50- business-graph-2.svg" alt="" />
+                <h3>
   Analytics
-              </h3>
+                </h3>
+              </div>
               <p>Observe key indices</p>
             </div>
 
             <div className="feature-set">
-              <img className="feature-set__icon" src="../static/img/13 navigator-business-compass-map.svg" alt="" />
-              <h3>
+              <div className="flex">
+                <img className="feature-set__icon" src="../static/img/13 navigator-business-compass-map.svg" alt="" />
+                <h3>
   More
-              </h3>
+                </h3>
+              </div>
               <ul>
                 <li>
                   International by default. Manage all Languages, Countries,
