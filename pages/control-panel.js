@@ -13,139 +13,148 @@ const Platform = ({ platform }) => (
     <div className="wrap wrap--narrow wrap--vertical-padding">
       <section className="section">
         <h1>
-Unchained Control Panel
+          Unchained Control Panel
         </h1>
         <div className="flex-between nowrap">
           <img className="undraw" src="../static/img/undraw_control_panel1_20gm.svg" alt="control panel" />
           <div>
             <p>
-              Our Unchained Control Panel is our Web UI to all data management API&apos;s
-              that the unchained engine provides out of the box. It allows managing
-              assortments, products and provides analytics and reporting on orders.
-              We provide it to you through a
-              Subscription model and ensure compatibility and feature parity with our
-              unchained engine.
+              The Unchained Control Panel is our Web UI to all data management API&apos;s
+              that the unchained engine provides out of the box.
             </p>
-            <p>
-              Contact us now if you want to use the engine and our control panel
-              before the open source release of unchained engine.
-            </p>
+            <ul>
+              <li>Products, Users & Collection management</li>
+              <li>Analytics, logs & reporting on orders</li>
+              <li>Compatibility and feature parity with the unchained engine</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="mb7 db">
 
         <div>
           <h2>
 Features
           </h2>
-          <div className="feature-set">
-            <h3>
-Users
-            </h3>
-            <ul>
-              <li>
-Delete & edit users
-              </li>
-              <li>
-Enroll new users
-              </li>
-              <li>
-See user profiles
-              </li>
-              <li>
-See user logs
-              </li>
-            </ul>
-          </div>
+          <div className="features">
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/17- employee-smart-tag.svg" alt="" />
+              <h3>
+  Users
+              </h3>
+              <ul>
+                <li>
+  Delete & edit users
+                </li>
+                <li>
+  Enroll new users
+                </li>
+                <li>
+  See user profiles
+                </li>
+                <li>
+  See user logs
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Products
-            </h3>
-            <ul>
-              <li>
-Manage Products
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/05- sneakers.svg" alt="" />
+              <h3>
+                Products & Variants
+              </h3>
+              <ul>
+                <li>Search and filter</li>
+                <li>Add Attributes, Tags, Categories & Collections.</li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Assortments
-            </h3>
-            <ul>
-              <li>
-Manage Assortments
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/40- easy-to-use-2.svg" alt="" />
+              <h3>
+                Collections
+              </h3>
+              <p>Product Assignemnts by</p>
+              <ul>
+                <li>
+                  Look or theme
+                </li>
+                <li>
+                  Regions & Countries
+                </li>
+                <li>
+                  Discount group, vouchers & seasonal assortments
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Orders
-            </h3>
-            <ul>
-              <li>
-Manage Orders
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
+              <h3>
+  Order Management
+              </h3>
+              <p>Manage Orders</p>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Logs
-            </h3>
-            <ul>
-              <li>
-See rich application logs, allowing you to drill down by user, product or order
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/63- graph-area.svg" alt="" />
+              <h3>
+  Logs
+              </h3>
+              <p>See rich application logs, allowing you to drill down by</p>
+              <ul>
+                <li>
+                User
+                </li>
+                <li>
+                Product
+                </li>
+                <li>
+                Order
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Analytics
-            </h3>
-            <ul>
-              <li>
-Observe key indices
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/50- business-graph-2.svg" alt="" />
+              <h3>
+  Analytics
+              </h3>
+              <p>Observe key indices</p>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-More
-            </h3>
-            <ul>
-              <li>
-Manage Countries
-              </li>
-              <li>
-Manage Languages
-              </li>
-              <li>
-Manage Payment Providers
-              </li>
-              <li>
-Manage Delivery Providers
-              </li>
-              <li>
-Manage Warehousing Providers
-              </li>
-            </ul>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/13 navigator-business-compass-map.svg" alt="" />
+              <h3>
+  More
+              </h3>
+              <ul>
+                <li>
+                  International by default. Manage all Languages, Countries,
+                  Regions, Currencies, Formats & Conventions
+                </li>
+                <li>
+                  Manage Payment Providers
+                </li>
+                <li>
+                  Manage Delivery Providers
+                </li>
+                <li>
+                  Manage Warehousing Providers
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <Link href="/platform">
-          <div className="text-center">
-            <a className="button mt3">
-                Back to Platform overview
-            </a>
-          </div>
-        </Link>
       </section>
+      <Link href="/platform">
+        <div className="text-center mt3">
+          <a className="button mt3">
+              Back to Platform overview
+          </a>
+        </div>
+      </Link>
     </div>
 
     <style jsx>

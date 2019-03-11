@@ -34,15 +34,6 @@ const Platform = ({ platform }) => (
           <li>Training: Training offerings you will find here.</li>
         </ul>
 
-        To get access to these services, it&apos;s required that you join us as an
-        official unchained partner:
-        <Link href="/partners">
-          <div className="text-center">
-            <a className="button mt3">
-                Partner Program
-            </a>
-          </div>
-        </Link>
       </section>
       <Link href="/platform">
         <div className="text-center">

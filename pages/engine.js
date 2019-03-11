@@ -278,180 +278,191 @@ Kernel
           <h2>
 Features by module
           </h2>
-          <div className="feature-set">
-            <h3>
-Delivery
-            </h3>
-            <ul>
-              <li>
-Downloadable Products
-              </li>
-              <li>
-E-Mail the order to a third-party logistics provider&apos;s central inbox
-              </li>
-              <li>
-Upload orders as CSV to a FTP host*
-              </li>
-              <li>
-Transfer orders electronically to any other system
-              </li>
-              <li>
-Post (Yellowcube), UPS, DHL Comissioning*
-              </li>
-            </ul>
-          </div>
+          <div className="features">
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/07- container-package-logistic-truck.svg" alt="" />
+              <h3>
+  Delivery
+              </h3>
+              <ul>
+                <li>
+  Downloadable Products
+                </li>
+                <li>
+  E-Mail the order to a third-party logistics provider&apos;s central inbox
+                </li>
+                <li>
+  Upload orders as CSV to a FTP host*
+                </li>
+                <li>
+  Transfer orders electronically to any other system
+                </li>
+                <li>
+  Post (Yellowcube), UPS, DHL Comissioning*
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Documents
-            </h3>
-            <ul>
-              <li>
-Generate PDF&apos;s locally through a local bookkeeping system
-                (SAP R/3, Abacus, ...)
-              </li>
-              <li>
-Generate PDF&apos;s through SaaS services (Smallinvoice)
-              </li>
-              <li>
-Generate a new XML file for external processing
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/65- cloud-server-document-sync.svg" alt="" />
+              <h3>
+  Documents
+              </h3>
+              <ul>
+                <li>
+  Generate PDF&apos;s locally through a local bookkeeping system
+                  (SAP R/3, Abacus, ...)
+                </li>
+                <li>
+  Generate PDF&apos;s through SaaS services (Smallinvoice)
+                </li>
+                <li>
+  Generate a new XML file for external processing
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Messaging
-            </h3>
-            <ul>
-              <li>
-Send Order Confirmations and Invoices by E-Mail, SMS or Whatsapp
-              </li>
-              <li>
-Send User Registration Notifications via Slack
-              </li>
-              <li>
-Twitter new orders anonymized*
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/14- iphone-message-notification.svg" alt="" />
+              <h3>
+  Messaging
+              </h3>
+              <ul>
+                <li>
+  Send Order Confirmations and Invoices by E-Mail, SMS or Whatsapp
+                </li>
+                <li>
+  Send User Registration Notifications via Slack
+                </li>
+                <li>
+  Twitter new orders anonymized*
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Payments
-            </h3>
-            <ul>
-              <li>
-Bitcoin, Ether & more cryptocurrencies
-              </li>
-              <li>
-Invoice
-              </li>
-              <li>
-Stripe
-              </li>
-              <li>
-PostFinance
-              </li>
-              <li>
-PayPal
-              </li>
-              <li>
-Bonity-checked invoices (Deltavista)
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/01- currency-money-hand-1.svg" alt="" />
 
-          <div className="feature-set">
-            <h3>
-Pricing
-            </h3>
-            <ul>
-              <li>
-B2B Users special price
-              </li>
-              <li>
-Date range dependent special prices
-              </li>
-              <li>
-Dynamic tax rate retrieval
-              </li>
-              <li>
-Product, Payment, Order or Delivery prices confiurable
-              </li>
-              <li>
-Weather-dependent barbeque sausage price*
-              </li>
-              <li>
-Order total weight dependent charges, dynamically calculated by UPS*
-              </li>
-              <li>
-Prices that depend on Languages, countries, users, order quantities, ...*
-              </li>
-            </ul>
-          </div>
+              <h3>
+  Payments
+              </h3>
+              <ul>
+                <li>
+  Bitcoin, Ether & more cryptocurrencies
+                </li>
+                <li>
+  Invoice
+                </li>
+                <li>
+  Stripe
+                </li>
+                <li>
+  PostFinance
+                </li>
+                <li>
+  PayPal
+                </li>
+                <li>
+  Bonity-checked invoices (Deltavista)
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Discounts
-            </h3>
-            <ul>
-              <li>
-Christmas & Black Friday Discounts
-              </li>
-              <li>
-Percentage reducing discount codes
-              </li>
-              <li>
-Absolute amount reducing discount codes
-              </li>
-              <li>
-Swear word dependent daily discounts based on Donald Trump Twitter feed*
-              </li>
-              <li>
-Lottery or random prices: Every 1000th buyer gets the stuff free of charge*
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/09- price-tag.svg" alt="" />
+              <h3>
+  Pricing
+              </h3>
+              <ul>
+                <li>
+  B2B Users special price
+                </li>
+                <li>
+  Date range dependent special prices
+                </li>
+                <li>
+  Dynamic tax rate retrieval
+                </li>
+                <li>
+  Product, Payment, Order or Delivery prices confiurable
+                </li>
+                <li>
+  Weather-dependent barbeque sausage price*
+                </li>
+                <li>
+  Order total weight dependent charges, dynamically calculated by UPS*
+                </li>
+                <li>
+  Prices that depend on Languages, countries, users, order quantities, ...*
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-Warehousing
-            </h3>
-            <ul>
-              <li>
-ERP as Inventory Management*
-              </li>
-              <li>
-Manage Inventory in Google Docs
-              </li>
-              <li>
-Fire Just-in-time Production of any goods*
-              </li>
-              <li>
-Real-time quantities (see an event get sold out live)*
-              </li>
-            </ul>
-          </div>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/06- shopping-bag-money.svg" alt="" />
+              <h3>
+  Discounts
+              </h3>
+              <ul>
+                <li>
+  Christmas & Black Friday Discounts
+                </li>
+                <li>
+  Percentage reducing discount codes
+                </li>
+                <li>
+  Absolute amount reducing discount codes
+                </li>
+                <li>
+  Swear word dependent daily discounts based on Donald Trump Twitter feed*
+                </li>
+                <li>
+  Lottery or random prices: Every 1000th buyer gets the stuff free of charge*
+                </li>
+              </ul>
+            </div>
 
-          <div className="feature-set">
-            <h3>
-And so much more
-            </h3>
-            <ul>
-              <li>
-One shop for one world (Multi-country support)
-              </li>
-              <li>
-Price your products in any currency or crypto-currency you like. $XLM maybe?
-              </li>
-              <li>
-Multi-language support
-              </li>
-              <li>
-Dynamic catalogs
-              </li>
-            </ul>
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+              <h3>
+  Warehousing
+              </h3>
+              <ul>
+                <li>
+  ERP as Inventory Management*
+                </li>
+                <li>
+  Manage Inventory in Google Docs
+                </li>
+                <li>
+  Fire Just-in-time Production of any goods*
+                </li>
+                <li>
+  Real-time quantities (see an event get sold out live)*
+                </li>
+              </ul>
+            </div>
+
+            <div className="feature-set">
+              <img className="feature-set__icon" src="../static/img/08- java-script-developer.svg" alt="" />
+              <h3>
+  And so much more
+              </h3>
+              <ul>
+                <li>
+  One shop for one world (Multi-country support)
+                </li>
+                <li>
+  Price your products in any currency or crypto-currency you like. $XLM maybe?
+                </li>
+                <li>
+  Multi-language support
+                </li>
+                <li>
+  Dynamic catalogs
+                </li>
+              </ul>
+            </div>
           </div>
 
           <small className="mt3 db">
