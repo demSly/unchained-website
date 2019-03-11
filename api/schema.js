@@ -24,6 +24,14 @@ module.exports = gql`
     links: [MemberLink]!
     avatar: Picture
   }
+  type Partner {
+    _id: ID!
+    name: String
+    text: String
+    website: String
+    type: String
+    logo: Picture
+  }
   type Job {
     _id: ID!
     slug: String!
@@ -47,9 +55,10 @@ module.exports = gql`
     answer: String
   }
   type Query {
-    members: [Member]!
-    jobs: [Job]!
-    questions: [Question]!
+    members: [Member!]!
+    jobs: [Job!]!
+    partners: [Partner!]!
+    questions: [Question!]!
     region(regionId: String!): JSON
     job(slug: String!): Job!
   }
