@@ -15,7 +15,7 @@ const Platform = ({ platform }) => (
           Unchained Managed Hosting
         </h1>
         <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_cloud_hosting_aodd.svg" alt="cloud hosting" />
+          <img className="undraw" src="../static/img/undraw_maintenance_cn7j.svg" alt="maintenance" />
           <p>
           Let us host the Unchained Engine for you so you can concentrate on
           your business. We use Docker Swarm and a bunch of modern Software to setup
