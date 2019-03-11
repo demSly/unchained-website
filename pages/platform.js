@@ -19,6 +19,15 @@ const Platform = ({ platform }) => (
           </h1>
         </div>
 
+        <div className="c-bg-dark">
+          <h2>Unchained for SME</h2>
+          <p>
+            If you need a new online shop and web presence for you small or medium enterprise business,
+            check out our Unchained Boutique Offering: "Unchained for SME":
+            <a href="https://getunchained.ch">Unchained Boutique</a>
+          </p>
+        </div>
+
         <div className="flex-between">
           <div className="platform-feature">
             <h2>
@@ -44,13 +53,13 @@ const Platform = ({ platform }) => (
           </div>
           <div className="platform-feature">
             <h2>
-              Professional Services
+              Developer Support
             </h2>
             <p>
-              Support, Training, Events, Partnerships
+              Project Support, Consulting, Training, Events, Partnerships
             </p>
-            <Link href="/professional-services">
-              <span className="link">More infos about our Services</span>
+            <Link href="/support">
+              <span className="link">More infos about Developer Support</span>
             </Link>
           </div>
           <div className="platform-feature">
@@ -61,7 +70,7 @@ const Platform = ({ platform }) => (
               Containerized Managed Hosting through Docker Swarm, bring your own datacenter
             </p>
             <Link href="/managed-hosting">
-              <span className="link">More infos about the Managed Hosting</span>
+              <span className="link">More infos about Managed Hosting</span>
             </Link>
           </div>
         </div>

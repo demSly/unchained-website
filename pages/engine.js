@@ -470,7 +470,7 @@ Features by module
               </div>
               <ul>
                 <li>
-                  Automatically build individual offers in response to RFP's
+                  Automatically build individual offers in response to RFPs
                 </li>
                 <li>
                   Quotation workflow to confirm and reject offers
