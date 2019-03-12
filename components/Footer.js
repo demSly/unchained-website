@@ -195,13 +195,17 @@ fundraiser
             </small>
           </a>
         </Link>
-        <Link href="/terms">
-          <a className="footer-bottom-link">
-            <small>
-              {intl.formatMessage({ id: 'terms' })}
-            </small>
-          </a>
-        </Link>
+        {
+          /*
+          <Link href="/terms">
+            <a className="footer-bottom-link">
+              <small>
+                {intl.formatMessage({ id: 'terms' })}
+              </small>
+            </a>
+          </Link>
+          */
+        }
         <Link href="/privacy">
           <a className="footer-bottom-link">
             <small>
@@ -213,7 +217,7 @@ fundraiser
 
       <div className="copyright">
         <small>
-© Unchained Commerce 2018.
+          © Unchained Commerce 2019.
         </small>
       </div>
 
