@@ -10,16 +10,23 @@ import JobList from '../components/JobList';
 const About = ({ about }) => (
   <PageLayout title={about.meta_title} metaDescription={about.meta_description}>
     <div className="wrap mt7">
-      <section className="section">
-        <h2>
-          {about.title}
-        </h2>
-        <div className="c-bg-secondary">
-          <h3>We are looking for you! Vedi please make this look a little nicer :D</h3>
-          <JobList />
-        </div>
-        <MemberList />
-      </section>
+      <h1>
+        {about.title}
+      </h1>
+    </div>
+    <section className="c-bg-dark c-white mb3 pv3">
+      <div className="wrap">
+        <h3>Interested in joining the team?</h3>
+        <p>
+          We are a Zurich based software company and are looking for talents to join us.
+          <br />
+          At the moment we are looking for the following positions:
+        </p>
+        <JobList />
+      </div>
+    </section>
+    <div className="wrap">
+      <MemberList />
     </div>
   </PageLayout>
 );

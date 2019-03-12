@@ -13,13 +13,15 @@ const About = ({
   } = {},
 } = {}) => (
   <PageLayout title={title} metaDescription={`${workload} @ ${location}`}>
-    <div className="wrap mt7">
+    <div className="wrap wrap--narrow mt7">
       <section className="section">
-        <h2>
+        <h1>
           {title}
+        </h1>
+        <h2>
+          {workload}
         </h2>
-        <div>{workload}</div>
-        <div>{location}</div>
+        <h3>{location}</h3>
         <div>
           <Markdown source={content} />
         </div>

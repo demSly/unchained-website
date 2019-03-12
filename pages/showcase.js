@@ -33,9 +33,9 @@ const Showcase = ({ showcase }) => (
           </li>
         </ul>
         <div className="wrap wrap--narrow mb3">
-          <p>
+          <h2>
     Publicare Digital Experience
-          </p>
+          </h2>
           <ul>
             <li>
     Supports both B2C & B2B clients. Context-aware prices.
@@ -59,7 +59,7 @@ const Showcase = ({ showcase }) => (
     Partners: evux & Silbury
             </li>
           </ul>
-          <div className="mt3">
+          <div className="mv4">
             <p>
     See the shop in action
               {' '}
@@ -237,9 +237,9 @@ const Showcase = ({ showcase }) => (
       </section>
     </div>
     <div className="wrap wrap--narrow mb3">
-      <p>
+      <h2>
 Freezyboy
-      </p>
+      </h2>
       <ul>
         <li>
 Supports both B2C & B2B clients. Context-aware prices.
@@ -260,7 +260,7 @@ Delivery estimation through Google Spreadsheets
 Document generation through smallinvoice
         </li>
       </ul>
-      <div className="mt3">
+      <div className="mv4">
         <p>
 See the shop in action
           {' '}

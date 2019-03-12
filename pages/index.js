@@ -103,7 +103,7 @@ const Home = ({ home }) => (
           <div className="button-group mt3">
             <Link href="/showcase">
               <a className="button">
-                  See a simple showcase
+                  See our showcase
               </a>
             </Link>
           </div>
@@ -259,7 +259,7 @@ Nov 2017
               GoLive with first customer &quot;Freezyboy&quot;
             </p>
             <a className="button" href="https://freezyboy.com">
-See Freezyboy.com
+See freezyboy.com
             </a>
           </div>
         </div>
@@ -321,6 +321,21 @@ Q2-Q4 2018
             <p>
 Roadshow for Zürich based agencies
             </p>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-img" />
+          <div className="timeline-content">
+            <div className="date">
+Feb 2019
+            </div>
+            <p>
+              GoLive with customer &quot;Publicare&quot;
+            </p>
+            <a className="button" href="https://publicare.ch">
+See pubicare.ch
+            </a>
           </div>
         </div>
 

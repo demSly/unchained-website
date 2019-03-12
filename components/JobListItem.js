@@ -6,10 +6,9 @@ const JobListItem = ({
 }) => (
   <Link href={`/job/${slug}`}>
     <a className="job">
-      <div className="title">
+      <div className="title-and-workload">
         {title}
-      </div>
-      <div className="workload">
+        {' '}
         {workload}
       </div>
       <div className="location">
@@ -17,29 +16,13 @@ const JobListItem = ({
       </div>
       <style jsx>
         {`
-          .link {
-            margin-bottom: .5em
+          .job:hover {
+            text-decoration: underline;
           }
-          .title,
-          .workload {
+          .title-and-workload {
             font-weight: bold;
-          }
-          .title {
             font-size: 1.25em;
             margin-top: .5em;
-          }
-          .job {
-            display: block;
-          }
-          @media (max-width: 767px) {
-            .job {
-              margin-top: 1.5em;
-            }
-          }
-          @media (min-width: 768px) {
-            .job {
-              width: 100%;
-            }
           }
         `}
       </style>

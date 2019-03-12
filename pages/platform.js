@@ -10,31 +10,53 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow wrap--vertical-padding">
-      <section className="section">
+    <div className="wrap wrap--narrow mt7">
+      <div className="section">
         <div className="flex-between nowrap">
           <img className="undraw" src="../static/img/undraw_product_tour_foyt.svg" alt="product tour" />
-          <h1>
-            Platform overview
-          </h1>
+          <div>
+            <h1>
+              Platform overview
+            </h1>
+            {
+              /*
+            <p>Giving organizations of any size the ultimate flexibility</p>
+              */
+            }
+          </div>
         </div>
-
-        <div className="c-bg-dark">
-          <h2>Unchained for SME</h2>
+      </div>
+    </div>
+    {
+      /*
+      <section className="c-bg-dark c-white mb1 pb3">
+        <div className="wrap">
+          <h2>Unchained for  </h2>
           <p>
-            If you need a new online shop and web presence for you small or medium enterprise business,
-            check out our Unchained Boutique Offering: "Unchained for SME":
-            <a href="https://getunchained.ch">Unchained Boutique</a>
+            If you need a new online shop and web presence for you small or
+            medium enterprise business, check out our Unchained Boutique Offering:
           </p>
+          <a className="button button--primary" href="https://getunchained.ch">Unchained Boutique</a>
         </div>
+      </section>
+      */
+    }
 
+
+    <div className="wrap mb7">
+      <section>
+        {
+        /*
+        <h2>Unchained for implementation partners</h2>
+        */
+      }
         <div className="flex-between">
           <div className="platform-feature">
             <h2>
               Unchained Engine
             </h2>
             <p>
-              Open-source digital commerce engine
+              The open-source digital commerce engine is our core product
             </p>
             <Link href="/engine">
               <span className="link">More infos about the Engine</span>
