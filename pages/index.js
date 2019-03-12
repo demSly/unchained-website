@@ -188,16 +188,9 @@ const Home = ({ home }) => (
         open-source, available on
         {' '}
         <a className="link" href="https://github.com/unchainedshop">
-          Github*
+          Github
         </a>
       </h2>
-      <p className="text-center">
-        * The Unchained Engine OSS Release
-        {' '}
-        <a className="link" href="https://github.com/unchainedshop/unchained-evolution">
-          follows end of Q1 2019
-        </a>
-      </p>
       <div className="wrap tech-stack-wrap">
         <small className="text-center db">
           Built on:
@@ -216,7 +209,7 @@ Fits well with:
           <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
           <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
         </div>
-        <small className="text-center db">
+        <small className="text-center db ph1">
           Works with PHP, Ruby on Rails, Java, Python, Swift,
           Go, Haskell & any other programming language. Your choice.
         </small>
@@ -597,6 +590,7 @@ Token Generation Event
 
       .c-bg-dark .link {
         color: white;
+        text-decoration: underline;
       }
 
       .primary-section {

@@ -25,7 +25,7 @@ const About = ({ about }) => (
         <JobList />
       </div>
     </section>
-    <div className="wrap">
+    <div className="wrap mb3">
       <MemberList />
     </div>
   </PageLayout>

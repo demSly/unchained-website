@@ -18,7 +18,7 @@ const Partners = ({ partners }) => (
       </section>
     </div>
     <div className="c-bg-primary">
-      <div className="wrap wrap--narrow wrap--vertical-padding">
+      <div className="wrap wrap--narrow pv3">
         <p className="c-white">
           Just drop us a line if you want to become an
           official partner of Unchained or you are in need of professional services

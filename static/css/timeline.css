@@ -13,8 +13,8 @@
 
 .timeline-item {
   width: 100%;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   font-size: 14px;
 }
 .timeline-item:nth-child(even) .timeline-content {
@@ -151,6 +151,8 @@
 
 @media screen and (max-width: 768px) {
   .timeline-item {
+    margin-top: 32px;
+    margin-bottom: 32px;
     font-size: 14px;
   }
 

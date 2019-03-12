@@ -267,23 +267,17 @@ Want to get reminded when we have news to share? Follow our twitter account
       </p>
     </div>
 
-    <div className="c-bg-dark c-white pa1 mt7">
+    <div className="c-bg-dark c-white pv3 mt7">
       <h2 className="text-center">
 open-source, available on
-        <a className="link" href="https://github.com/unchainedshop">
-Github*
+        <a className="link dib ml1" href="https://github.com/unchainedshop">
+Github
         </a>
       </h2>
-      <p className="text-center">
-* The Unchained Engine OSS release
-        <a className="link" href="https://github.com/unchainedshop/unchained-evolution">
-follows Q1 2019
-        </a>
-      </p>
     </div>
 
     <div className="c-bg-secondary">
-      <div className="wrap wrap--narrow wrap--vertical-padding">
+      <div className="wrap wrap--narrow pv3">
         <div className="text-center">
           <p className="">
 Just drop us a line if you want to become an
@@ -300,6 +294,9 @@ Just drop us a line if you want to become an
 
     <style jsx>
       {`
+      .link {
+        text-decoration: underline;
+      }
 
       .sausage-pricing-icons {
         display: flex;
