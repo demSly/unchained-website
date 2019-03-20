@@ -80,7 +80,7 @@ Features
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/05- sneakers.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/31- programming-search-for-setting.svg" alt="" />
                 <h3>
                 Faceted Search Filters
                 </h3>
@@ -116,12 +116,12 @@ Features
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/32- work-laptop-male-african-american-1.svg" alt="" />
                 <h3>
                   Quotation Management
                 </h3>
               </div>
-              <p>Manage Quotations / RFP</p>
+              <p>Manage Quotations / Requests for Proposals</p>
               <ul>
                 <li>
                   See open RFP and generated offer documents
@@ -137,7 +137,7 @@ Features
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/107- graph-webpage-landing-page.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/48- office-working-desk-female-asian-2.svg" alt="" />
                 <h3>
                   Order Management
                 </h3>
@@ -195,7 +195,7 @@ Features
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/13 navigator-business-compass-map.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/05- engineer-setting-maintenance.svg" alt="" />
                 <h3>
                   Settings
                 </h3>

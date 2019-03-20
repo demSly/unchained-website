@@ -440,7 +440,7 @@ Features by module
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/05- warehouse-shelf-lift-truck.svg" alt="" />
                 <h3>
                   Warehousing
                 </h3>
@@ -463,7 +463,7 @@ Features by module
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/32- work-laptop-male-african-american-1.svg" alt="" />
                 <h3>
                   Quotations
                 </h3>
@@ -483,7 +483,7 @@ Features by module
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/02- hand-thumbs-up-like.svg" alt="" />
                 <h3>
                   Product Reviews
                 </h3>
@@ -507,7 +507,7 @@ Features by module
 
             <div className="feature-set">
               <div className="flex">
-                <img className="feature-set__icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
+                <img className="feature-set__icon" src="../static/img/31- programming-search-for-setting.svg" alt="" />
                 <h3>
                   Faceted Search
                 </h3>
