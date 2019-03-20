@@ -42,6 +42,12 @@ const Layout = ({
       <meta name="msapplication-TileImage" content="/static/img/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
 
+      <meta property="og:site_name" content="Unchained Commerce" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://unchained.shop" />
+      <meta property="og:title" content="Use headless commerce technology today | Unchained Commerce" />
+      <meta property="og:image" content="https://unchained.shop/static/img/we-are-open.jpg" />
+
       <link href="/static/css/all.css" rel="stylesheet" key="css" />
       {title && (
       <title key="title">
