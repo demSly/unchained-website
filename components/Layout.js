@@ -195,9 +195,11 @@ const Layout = ({
       margin-bottom: 3em;
     }
     .stage {
-      margin: 1em auto;
       padding: 1em;
-      box-shadow: 0 2px 8px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.1);
+      border-top: 1em solid ${variables.grayColor};
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      box-shadow: 0 3px 6px 1px rgba(0,0,0,0.08), 0 7px 14px 1px rgba(50,50,93,0.1);
     }
     `}
     </style>

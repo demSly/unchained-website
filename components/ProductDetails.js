@@ -43,12 +43,12 @@ const ProductDetails = ({
       </Slider>
     </div>
     <div className="product__item">
-      <h1>
+      <h2>
         {product.texts && product.texts.title}
-      </h1>
-      <p>
+      </h2>
+      <small>
         {product.texts && product.texts.subtitle}
-      </p>
+      </small>
       <p className="price">
         <Price {...(priceConfiguration && priceConfiguration.price)} />
       </p>
@@ -126,7 +126,8 @@ const ProductDetails = ({
       {`
       .product__description {
         margin-top: 3.2em;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1;
       }
       .loader {
         width: 100%;
@@ -134,10 +135,11 @@ const ProductDetails = ({
       }
       .price-details {
         display: block;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
       }
       .price {
         font-size: 36px;
+        margin-top: 0;
         margin-bottom: 0;
       }
       .button {
@@ -146,11 +148,11 @@ const ProductDetails = ({
         padding: .75em 1em;
         width: 100%;
         font-size: .875em;
-        background-color: ${variables.primaryColor};
+        color: #454545;
+        background-color: ${variables.secondaryColor};
       }
 
       .product {
-        font-family: HelveticaNeue, Helvetica;
       }
 
       @media ${variables.mq.medium} {

@@ -390,28 +390,28 @@ Unchained Conference 2019
 
 
     <div>
-      <div className="wrap wrap--vertical-padding">
+      <div className="wrap wrap--narrow wrap--vertical-padding">
         <div className="text-center">
           <h3 className="mt0 mb">
             Get more information
           </h3>
-          <div className="button-group">
+          <div className="flex flex-around flex-wrap">
             <Link href="/developers">
-              <a className="button button--role">
-                  Developers
-                <img className="w72px" src="../static/img/07- developer-macbook-stickerbomb.svg" alt="" />
+              <a className="link">
+                <img className="w112px" src="../static/img/07- developer-macbook-stickerbomb.svg" alt="link" />
+                Developers
               </a>
             </Link>
             <Link href="/showcase">
-              <a className="button button--role">
-                  Merchants
-                <img className="w72px" src="../static/img/06- business-team.svg" alt="" />
+              <a className="link">
+                <img className="w112px" src="../static/img/06- business-team.svg" alt="link" />
+                Merchants
               </a>
             </Link>
             <Link href="/partners">
-              <a className="button button--role">
-                  Partners
-                <img className="w72px" src="../static/img/59- office-supervisor-desk-male-asian.svg" alt="" />
+              <a className="link">
+                <img className="w112px" src="../static/img/59- office-supervisor-desk-male-asian.svg" alt="" />
+                Partners
               </a>
             </Link>
           </div>
@@ -446,11 +446,12 @@ Token Generation Event
       .button--role {
         min-height: 126px;
         margin-bottom: 1em;
+        background: white;
         margin-right: 3rem;
       }
 
-      .w72px {
-        width: 96px;
+      .w112px {
+        width: 112px;
         display: block;
         margin: 0 auto;
       }

@@ -36,7 +36,6 @@ const UpdateCartDeliveryForm = ({
   >
     <div className="fieldset">
       <TextField
-        inlineLabel
         autoComplete="home email"
         id="cart-emailAddress-field"
         name="emailAddress"
@@ -49,7 +48,6 @@ const UpdateCartDeliveryForm = ({
     <div className="fieldset">
       <TextField
         half
-        inlineLabel
         id="cart-country-field"
         name="countryName"
         disabled
@@ -62,40 +60,34 @@ const UpdateCartDeliveryForm = ({
       />
       <TextField
         half
-        inlineLabel
         autoComplete="shipping given-name"
         id="cart-delivery-firstName-field"
         name="delivery.firstName"
       />
       <TextField
         half
-        inlineLabel
         autoComplete="shipping family-name"
         id="cart-delivery-lastName-field"
         name="delivery.lastName"
       />
       <TextField
-        inlineLabel
         autoComplete="shipping organization"
         id="cart-delivery-company-field"
         name="delivery.company"
       />
       <TextField
-        inlineLabel
         autoComplete="shipping address-line1"
         id="cart-delivery-addressLine-field"
         name="delivery.addressLine"
       />
       <TextField
         half
-        inlineLabel
         autoComplete="shipping postal-code"
         id="cart-delivery-postalCode-field"
         name="delivery.postalCode"
       />
       <TextField
         half
-        inlineLabel
         autoComplete="shipping address-level2"
         id="cart-delivery-city-field"
         name="delivery.city"
@@ -122,7 +114,7 @@ const UpdateCartDeliveryForm = ({
       <div className="fieldset">
         <TextField
           half
-          inlineLabel
+
           autoComplete="billing given-name"
           id="cart-billing-firstName-field"
           name="billing.firstName"
@@ -130,21 +122,21 @@ const UpdateCartDeliveryForm = ({
         />
         <TextField
           half
-          inlineLabel
+
           autoComplete="billing family-name"
           id="cart-billing-lastName-field"
           name="billing.lastName"
 
         />
         <TextField
-          inlineLabel
+
           autoComplete="billing organization"
           id="cart-billing-company-field"
           name="billing.company"
 
         />
         <TextField
-          inlineLabel
+
           autoComplete="billing address-line1"
           id="cart-billing-addressLine-field"
           name="billing.addressLine"
@@ -152,7 +144,7 @@ const UpdateCartDeliveryForm = ({
         />
         <TextField
           half
-          inlineLabel
+
           autoComplete="billing postal-code"
           id="cart-billing-postalCode-field"
           name="billing.postalCode"
@@ -160,7 +152,7 @@ const UpdateCartDeliveryForm = ({
         />
         <TextField
           half
-          inlineLabel
+
           autoComplete="billing address-level2"
           id="cart-billing-city-field"
           name="billing.city"
@@ -175,7 +167,7 @@ const UpdateCartDeliveryForm = ({
         {inProgress && (
           <Loading color="#31302E" />
         )}
-        <SubmitField className="button button--primary button--blocked" value={intl.formatMessage({ id: 'continue_to_payment_methods' })} />
+        <SubmitField className="button button--secondary button--blocked" value={intl.formatMessage({ id: 'continue_to_payment_methods' })} />
       </div>
     </div>
     <style jsx>

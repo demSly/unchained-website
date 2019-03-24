@@ -18,6 +18,14 @@
   flex-wrap: wrap;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
 @media (min-width: 680px) {
   .nowrap {
     flex-wrap: nowrap;

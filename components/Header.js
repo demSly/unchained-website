@@ -54,6 +54,8 @@ unchained
         display: flex;
         align-items: center;
         font-size: 20px;
+        z-index: 100;
+        position: relative;
       }
       .unchained-logo {
         max-width: 20px;

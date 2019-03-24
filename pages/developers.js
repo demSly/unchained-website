@@ -232,9 +232,13 @@ Because Unchained Commerce is headless, you can build any UI
         How awesome is that? Let&apos;s just use a small widget to display some product details
         on our page right here:
       </p>
+    </div>
+    <div className="wrap section">
       <div className="stage">
         <ProductDetails slug="🌭" />
       </div>
+    </div>
+    <div className="wrap wrap--narrow section">
       <p>
 Checkout our very own
         {' '}
@@ -274,7 +278,7 @@ Want to get reminded when we have news to share? Follow our twitter account
           {' '}
           <a className="link" href="https://github.com/unchainedshop/unchained/issues">Issues List</a>
           {' '}
-        and see what you can do.
+        and let's see what we can do together.
         </p>
         <h2>
           Open Source

@@ -18,12 +18,13 @@ const Partners = ({ partners }) => (
       </section>
     </div>
     <div className="c-bg-primary">
-      <div className="wrap wrap--narrow pv3">
-        <p className="c-white">
-          Drop us a line if you want to become an
-          official partner of Unchained or you are in need of professional services
-        </p>
-        <div className="text-center">
+      <div className="wrap wrap--narrow pv3 text-center">
+        <small className="c-white">
+          Do you need a Partner in E-Commerce?
+          <br />
+          Drop us a line iy you want to be member of our network.
+        </small>
+        <div className="text-center mt1">
           <Link href="/contact">
             <a className="button">
                 Become a Partner

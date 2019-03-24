@@ -39,6 +39,9 @@ Call us +41 43 505 18 46
     </div>
     <style jsx global>
       {`
+      .menu-items {
+        height: 100vh;
+      }
 
       .menu__link--phone {
         opacity: .7;
@@ -86,25 +89,32 @@ Call us +41 43 505 18 46
           top: 0;
           left: 0;
           right: 0;
+          bottom: 0;
           width: 100%;
           background-color: #FFF;
           box-shadow: 0 2px 9px 5px rgba(0,0,0,.21);
           transform: translateY(0);
           opacity: 1;
           transition: .3s ease-in-out all;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
         }
         .menu__items {
           padding: 1.75em 1em 2em;
           font-size: 21px;
+          max-height: 500px;
+          overflow: auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
         }
         .menu__link {
           display: block;
-        }
-        .menu__link + .menu__link {
-          margin-top: 1em;
+          margin: 1.25em;
         }
       }
-
 
       @media (min-width: 1024px) {
         .menu__link--phone {
