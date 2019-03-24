@@ -116,6 +116,7 @@ const Layout = ({
 
     html {
       font-family: ${variables.primaryFont};
+      overflow-x: hidden;
     }
 
     body {

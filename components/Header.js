@@ -72,6 +72,7 @@ unchained
         padding-bottom: 1em;
         padding-left: 1em;
         z-index: 10;
+        border-top: 2px solid #f3d299;
         transition: all .3s ease-in-out;
         background-color: rgba(255,255,255,.9);
       }
@@ -105,6 +106,7 @@ unchained
           top: 12px;
           left: 12px;
           right: 12px;
+          border-top: 0;
         }
         .header--sticky {
           padding-top: 20px;

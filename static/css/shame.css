@@ -262,9 +262,9 @@
 
 @media (min-width: 680px) {
   .undraw {
-    width: 39%;
+    width: 90%;
     margin-left: initial;
-    margin-right: 1.5em;
+    min-width: 66%;
   }
   .platform-feature {
     align-self: flex-start;

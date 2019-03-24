@@ -437,12 +437,6 @@ Token Generation Event
 
     <style jsx>
       {`
-      @media (min-width: 680px) {
-        .undraw {
-          width: 90%;
-        }
-      }
-
       .button--role {
         min-height: 126px;
         margin-bottom: 1em;
