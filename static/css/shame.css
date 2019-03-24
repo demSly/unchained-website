@@ -181,14 +181,15 @@
 
 @media (min-width:768px) {
   .bg-image {
-    background: url('../../static/img/programmer-male.svg') no-repeat center center fixed;
-    background-size: contain;
+    background: url('../../static/img/undraw_before_dawn_bqrj.svg') no-repeat center center fixed;
+    background-size: 800px;
   }
 }
 
 .section-title {
   font-weight: 600;
   letter-spacing: 1.5px;
+  margin-bottom: 1.25em;
   text-transform: uppercase;
   max-width: 500px;
   margin-left: auto;

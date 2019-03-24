@@ -11,7 +11,7 @@ const About = ({ about }) => (
   <PageLayout title={about.meta_title} metaDescription={about.meta_description}>
     <div className="wrap mt7">
       <h1>
-        {about.title}
+        About Us
       </h1>
     </div>
     <section className="c-bg-dark c-white mb3 pv3">

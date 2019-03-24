@@ -268,28 +268,26 @@ Want to get reminded when we have news to share? Follow our twitter account
     </div>
 
     <div className="c-bg-dark c-white pv3 mt7">
-      <h2 className="text-center">
-open-source, available on
-        <a className="link dib ml1" href="https://github.com/unchainedshop">
-Github
-        </a>
-      </h2>
-    </div>
-
-    <div className="c-bg-secondary">
-      <div className="wrap wrap--narrow pv3">
-        <div className="text-center">
-          <p className="">
-Drop us a line if you want to become an official partner of Unchained or you are in need of professional services.
-          </p>
-          <Link href="/contact">
-            <a className="button">
-                Get in Touch Now
-            </a>
-          </Link>
-        </div>
+      <div className="text-center">
+        <p>
+        Want to help? Get over to our
+          {' '}
+          <a className="link" href="https://github.com/unchainedshop/unchained/issues">Issues List</a>
+          {' '}
+        and see what you can do.
+        </p>
+        <h2>
+          Open Source
+          <br />
+          available on
+          {' '}
+          <a className="link dib" href="https://github.com/unchainedshop">
+          Github
+          </a>
+        </h2>
       </div>
     </div>
+
 
     <style jsx>
       {`

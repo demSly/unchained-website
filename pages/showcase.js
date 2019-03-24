@@ -12,26 +12,13 @@ const Showcase = ({ showcase }) => (
         <h1 className="text-center mb3">
           Showcase
         </h1>
-        <ul className="mdc-image-list mdc-image-list--masonry masonry-image-list">
-          <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_(iPhone 6_7_8 Plus).png" alt="Text label" />
-          </li>
-          <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_prod_desderman-pure-gel-500ml(iPhone 6_7_8 Plus).png" alt="Text label" />
-          </li>
-          <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_prod_mediset-katheter-set-fr-frauen(iPad).png" alt="Text label" />
-          </li>
-          <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_produkte_ergnzende-produkte-web.png" alt="Text label" />
-          </li>
-          <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_produkte_wund-web_desinfektion(iPad).png" alt="Text label" />
-          </li>
-          <li className="mdc-image-list__item">
-            <img className="mdc-image-list__image" src="../static/img/publicare/publicare.ch_de_signup(iPhone 6_7_8).png" alt="Text label" />
-          </li>
-        </ul>
+        <div className="showcase-images">
+          <img className="showcase-image X" src="../static/img/publicare/publicare.ch_de_prod_mediset-katheter-set-fr-frauen(iPad).png" alt="Text label" />
+          <img className="showcase-image R" src="../static/img/publicare/publicare.ch_de_produkte_wund-web_desinfektion(iPad).png" alt="Text label" />
+          <img className="showcase-image V" src="../static/img/publicare/publicare.ch_de_signup(iPhone 6_7_8).png" alt="Text label" />
+          <img className="showcase-image M" src="../static/img/publicare/publicare.ch_de_prod_desderman-pure-gel-500ml(iPhone 6_7_8 Plus).png" alt="Text label" />
+          <img className="showcase-image S" src="../static/img/publicare/publicare.ch_de_produkte_ergnzende-produkte-web.png" alt="Text label" />
+        </div>
         <div className="wrap wrap--narrow mb3">
           <h2>
     Publicare Digital Experience
@@ -105,6 +92,31 @@ const Showcase = ({ showcase }) => (
 
         <style jsx>
           {`
+          .X {
+            grid-area: a;
+          }
+          .R {
+            grid-area: b;
+          }
+          .V {
+            grid-area: c;
+          }
+          .M {
+            grid-area: d;
+          }
+          .S {
+            grid-area: s;
+          }
+          .showcase-images {
+            display: grid;
+            grid-template-columns: repeat(6, 2fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+              "b b s s s d"
+              "b b a a a c";
+            grid-gap: 12px;
+          }
+
           /* Material */
           .mdc-image-list {
             display: -ms-flexbox;

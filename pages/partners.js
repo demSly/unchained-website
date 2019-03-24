@@ -32,6 +32,17 @@ const Partners = ({ partners }) => (
         </div>
       </div>
     </div>
+    <div className="color-bg-secondary mb3">
+      <section className="wrap">
+        <div className="container text-center mt3">
+          <h4>Get an overview of our platform</h4>
+          <Link href="/platform">
+            <a className="button button--secondary mb3">Platform overview</a>
+          </Link>
+        </div>
+      </section>
+
+    </div>
   </PageLayout>
 );
 

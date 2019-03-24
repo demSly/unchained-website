@@ -45,6 +45,10 @@
   text-align: center;
 }
 
+.unit__copy small {
+  font-size: 14px;
+}
+
 .unit__header {
   margin-top: 1.5em;
   margin-bottom: 0;

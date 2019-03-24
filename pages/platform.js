@@ -18,30 +18,10 @@ const Platform = ({ platform }) => (
             <h1>
               Platform overview
             </h1>
-            {
-              /*
-            <p>Giving organizations of any size the ultimate flexibility</p>
-              */
-            }
           </div>
         </div>
       </div>
     </div>
-    {
-      /*
-      <section className="c-bg-dark c-white mb1 pb3">
-        <div className="wrap">
-          <h2>Unchained for  </h2>
-          <p>
-            If you need a new online shop and web presence for you small or
-            medium enterprise business, check out our Unchained Boutique Offering:
-          </p>
-          <a className="button button--primary" href="https://getunchained.ch">Unchained Boutique</a>
-        </div>
-      </section>
-      */
-    }
-
 
     <div className="wrap mb7">
       <section>
@@ -94,6 +74,19 @@ const Platform = ({ platform }) => (
 
       </section>
     </div>
+
+    {/*
+    <section className="c-bg-dark c-white mb1 pb3">
+      <div className="wrap">
+        <h2>Unchained for SME in CH</h2>
+        <p>
+          If you need a new online shop and web presence for you small or
+          medium enterprise business:
+        </p>
+        <a className="button button--primary" href="https://getunchained.ch">Unchained Express</a>
+      </div>
+    </section>
+    */}
 
     <style jsx>
       {`

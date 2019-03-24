@@ -14,7 +14,7 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            Build the best possible Online Shop and sell your Products on any Device.
+            Build the best possible Online Shop & sell your Products on any Device.
           </h1>
           <h3 className="hero__subtitle">
             Digital Commerce Platform made for Enterprises.
@@ -55,24 +55,7 @@ const Home = ({ home }) => (
             </p>
           </h1>
         </div>
-        <div className="text-center">
-          <img className="undraw" src="../static/img/undraw_online_shopping_ga73.svg" alt="online shopping" />
-        </div>
-
-        {/* <div className="icons">
-          <img className="icon" src="../static/img/08- java-script-developer.svg" alt="" />
-          <img className="icon" src="../static/img/06- desktop-imac-pen-tablet-notebook.svg" alt="" />
-          <img className="icon" src="../static/img/15- web-programming-design-construction-3.svg" alt="" />
-          <img className="icon" src="../static/img/01- cloud-network-device.svg" alt="" />
-          <img className="icon" src="../static/img/39- bitcoin-cloud-computing.svg" alt="" />
-          <img className="icon" src="../static/img/08- shopping-cart-full.svg" alt="" />
-          <img className="icon" src="../static/img/11- digital-cash-payment.svg" alt="" />
-          <img className="icon" src="../static/img/47- warehouse-worker-female-asian-2.svg" alt="" />
-          <img className="icon" src="../static/img/01- convenience-store.svg" alt="convenience store" />
-          <img className="icon" src="../static/img/09- package-logistic-airplane.svg" alt="" />
-          <img className="icon" src="../static/img/01- house-for-sale.svg" alt="house for sale" />
-          <img className="icon" src="../static/img/27- html-achievement.svg" alt="" />
-        </div> */}
+        <img className="undraw" src="../static/img/undraw_online_shopping_ga73.svg" alt="online shopping" />
       </div>
 
 
@@ -94,7 +77,7 @@ const Home = ({ home }) => (
 
           <p>
             {`
-              By using open-source technologies & popular programming languages,
+              By using open source technologies & popular programming languages,
               it is very easy for developers to extend and adapt the platform for
               the company specific needs. This enables product
               owners to design creative business processes like never before.
@@ -120,14 +103,29 @@ const Home = ({ home }) => (
           </h2>
         </div>
         <p>
-          Unchained Engine is headless by default, so there is no UI. Just
-          build your own interface on top of the GraphQL API.
+          There is
+          {' '}
+          <b>no UI</b>
+          {' '}
+          ...
+          <br />
+          Just build your own interface on top of the GraphQL API.
+        </p>
+        <p>
           If you want to connect your existing backends or add a cryptocurrency as a way
           of payment, just write a small plugin, build your own module, add a micro-service,
           fork the whole thing or just extend the GraphQL API
-          with with your own queries & types. All you need
-          is some Javascript (Node.js) knowhow. This is the last shop system you
-          will ever need to satisfy your software&apos;s e-commerce requirements.
+          with with your own queries & types.
+        </p>
+        <p>
+          {' '}
+All you need
+          is some
+          {' '}
+          <b>Javascript</b>
+          {' '}
+(Node.js) knowhow. The multi-channel enterprise shop system you
+          need to satisfy your software&apos;s e-commerce requirements.
         </p>
         <div className="button-group mt3">
           <Link href="/developers">
@@ -150,9 +148,11 @@ const Home = ({ home }) => (
               </h3>
               <p className="unit__subheader">
                 Integrate with your iOS App, Android Watch, Website, Car. Connect the Unchained
-                GraphQL API with your frontend of choice & build the perfect experience.
-                This page is built with Next.js & Apollo Client.
+                GraphQL API
+                with your frontend of choice & build the perfect experience.
               </p>
+              <small>This page is built with Next.js & Apollo Client.</small>
+
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -166,14 +166,17 @@ const Home = ({ home }) => (
                 Your Backend
               </h3>
               <p className="unit__subheader">
-                Add your CRM, ERP, PIM, etc.
-                <br />
+                Add your CRM, ERP, PIM in the most simple way.
+              </p>
+              <small>
                 We already successfully connected Unchained to various
                 core systems like MS Navision & Crossbase as
                 well as Smallinvoice & Google Spreadsheets.
-                <br />
+              </small>
+              <p>
                 API available? Go!
               </p>
+
             </div>
             <div className="unit__image-wrap">
               <figure className="unit__image" />
@@ -185,7 +188,7 @@ const Home = ({ home }) => (
 
     <div className="c-bg-dark c-white pa1">
       <h2 className="text-center">
-        open-source, available on
+        Open Source - available on
         {' '}
         <a className="link" href="https://github.com/unchainedshop">
           Github
@@ -564,7 +567,7 @@ Token Generation Event
       .hero-text {
         font-size: 18px;
         line-height: 1.5;
-        color: rgba(0,0,0,.4);
+        opacity: .8;
       }
       @media (max-width: 767px) {
         .hero-text {
