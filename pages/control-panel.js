@@ -11,6 +11,20 @@ const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
     <div className="wrap wrap--narrow wrap--vertical-padding">
+      <div className="button-group mt0 mb3">
+        <Link href="/engine">
+          <a className="button">Engine</a>
+        </Link>
+        <Link href="/control-panel">
+          <a className="button">Control Panel</a>
+        </Link>
+        <Link href="/consulting">
+          <a className="button">Consulting</a>
+        </Link>
+        <Link href="/managed-hosting">
+          <a className="button">Managed Hosting</a>
+        </Link>
+      </div>
       <section className="section">
         <h1>
           Unchained Control Panel

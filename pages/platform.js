@@ -45,11 +45,6 @@ const Platform = ({ platform }) => (
 
     <div className="wrap mb7">
       <section>
-        {
-        /*
-        <h2>Unchained for implementation partners</h2>
-        */
-      }
         <div className="flex-between">
           <div className="platform-feature">
             <h2>
@@ -75,10 +70,10 @@ const Platform = ({ platform }) => (
           </div>
           <div className="platform-feature">
             <h2>
-              Consulting
+              Support & Consulting
             </h2>
             <p>
-              Developer Support, UX & E-Commerce Consuling, Training, Events, Partnerships
+              Developer Support, UX & E-Commerce Consulting, Training, Events, Partnerships
             </p>
             <Link href="/consulting">
               <span className="link">More infos about Consulting</span>

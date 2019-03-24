@@ -10,266 +10,289 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow wrap--vertical-padding">
+    <div className="wrap wrap--vertical-padding">
+      <div className="button-group mt0 mb3">
+        <Link href="/engine">
+          <a className="button">Engine</a>
+        </Link>
+        <Link href="/control-panel">
+          <a className="button">Control Panel</a>
+        </Link>
+        <Link href="/consulting">
+          <a className="button">Consulting</a>
+        </Link>
+        <Link href="/managed-hosting">
+          <a className="button">Managed Hosting</a>
+        </Link>
+      </div>
       <section className="section">
-        <h1>
-          Unchained Engine
-        </h1>
-        <div className="flex-between nowrap">
+        <div className="text-center">
           <img className="undraw" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
-          <div>
-            <p>
+          <h1>
+          Unchained Engine
+          </h1>
+        </div>
+        <div>
+          <p>
               The Unchained Engine is our core product and is written in Node.js ES6.
               It exposes all data exclusively through a GraphQL API (headless). The web
               application is served stateless and therefore container friendly.
-            </p>
+          </p>
+        </div>
+        <h2 className="text-center">
+          Core Values
+        </h2>
+        <div className="flex-between">
+          <div className="w-lg-50 card">
+            <h3>
+            Open Source
+            </h3>
             <p>
-              Contact us now if you want to use the engine and our control panel
-              before the open source release of unchained engine.
+            Usage of OSS prevents vendor lock-in. Using software that is open to
+            the public leads to communities that help each other, the software is
+            resilient to economic issues like bankruptcy of the software owner.
+            </p>
+          </div>
+          <div className="w-lg-50 card">
+            <h3>
+              Headless & Hackable
+            </h3>
+            <p>
+              Non-hackable software (like SaaS) use the technique of &quot;customizing&quot;,
+              meaning they provide a massive control panel where every aspect of the
+              software can be configured, themed or disabled.
+              Sadly there is always something that needs some extra development work
+              and people need to hire somebody to create a plugin.
+              In Unchained Engine, the software flow is changed through code and not through UI.
+              This means a software developer is always required to configure the platform.
+               It&apos;s called &quot;hackable&quot; software and allows to configure even parts of
+               the software that were not intended to get configured by the core developers.
             </p>
           </div>
         </div>
-        <h2>
-          Core Values
-        </h2>
-        <h3>
-          Open Source
-        </h3>
-        <p>
-          Usage of OSS prevents vendor lock-in. Using software that is open to
-          the public leads to communities that help each other, the software is
-          resilient to economic issues like bankruptcy of the software owner.
-        </p>
-        <h3>
-          Headless & Hackable
-        </h3>
-        <p>
-          Non-hackable software (like SaaS) use the technique of &quot;customizing&quot;,
-          meaning they provide a massive control panel where every aspect of the
-          software can be configured, themed or disabled.
-          Sadly there is always something that needs some extra development work
-          and people need to hire somebody to create a plugin.
-          In Unchained Engine, the software flow is changed through code and not through UI.
-          This means a software developer is always required to configure the platform.
-           It&apos;s called &quot;hackable&quot; software and allows to configure even parts of
-           the software that were not intended to get configured by the core developers.
-        </p>
-        <h2>
+        <div>
+          <h2>
           Stack in detail
-        </h2>
-        <h3>
-          Node.js ES6
-        </h3>
-        <p>
-          We use the most popular programming language in the web because we think
-          it&quot;s key for a hackable software. If you have a hackable software but no coder,
-          what&quot;s the point then? As the project manager
-          you&quot;ll propably always find somebody that can program in Javascript, while
-          finding people that code in GoLang are rare. To increase the stability
-          and longevity of our stack we further have selected Meteor.js as the build tool.
-        </p>
-        <h3>
-          MongoDB
-        </h3>
-        <p>
-          We&quot;ve chosen MongoDB because it is the most popular NoSQL DBMS out there.
-          With a schema-less database, development of plugins and extensions
-          that need to extend the existing data structure are much easier to develop.
-          <a href="/faq">
-            More infos about why Meteor.js or MongoDB you can find in our FAQ
-          </a>
-        </p>
-        <h3>
-          Apollo GraphQL Server
-        </h3>
-        <p>
-          GraphQL is the new REST. Having a schema on the API helps with connecting systems
-          in a micro-service architecture and makes it extremely easy to implement in client apps
-          for all kind of operating systems and programming languages.
-        </p>
-        <h3>
+          </h2>
+          <div className="flex-between">
+            <h3>
+            Node.js ES6
+            </h3>
+            <p>
+            We use the most popular programming language in the web because we think
+            it&quot;s key for a hackable software. If you have a hackable software but no coder,
+            what&quot;s the point then? As the project manager
+            you&quot;ll propably always find somebody that can program in Javascript, while
+            finding people that code in GoLang are rare. To increase the stability
+            and longevity of our stack we further have selected Meteor.js as the build tool.
+            </p>
+
+            <h3>
+            MongoDB
+            </h3>
+            <p>
+            We&quot;ve chosen MongoDB because it is the most popular NoSQL DBMS out there.
+            With a schema-less database, development of plugins and extensions
+            that need to extend the existing data structure are much easier to develop.
+              <a href="/faq">
+              More infos about why Meteor.js or MongoDB you can find in our FAQ
+              </a>
+            </p>
+
+            <h3>
+            Apollo GraphQL Server
+            </h3>
+            <p>
+            GraphQL is the new REST. Having a schema on the API helps with connecting systems
+            in a micro-service architecture and makes it extremely easy to implement in client apps
+            for all kind of operating systems and programming languages.
+            </p>
+
+            <h3>
           Software Modules
-        </h3>
-        <svg width="783px" height="630px" viewBox="0 0 783 630" version="1.1">
-          <defs />
-          <g id="Modules" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-            <g id="Unchained-Keynote-Canvas" transform="translate(-112.000000, -37.000000)">
-              <g id="Group" transform="translate(112.000000, 37.000000)">
-                <rect id="Rectangle-2" stroke="#C9C9C9" fillOpacity="0.257869112" fill="#4A90E2" x="0.5" y="132.5" width="782" height="497" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="202.5" width="150" height="93" />
-                <text id="Products" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="54" y="254">
+            </h3>
+            <svg width="783px" height="630px" viewBox="0 0 783 630" version="1.1">
+              <defs />
+              <g id="Modules" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="Unchained-Keynote-Canvas" transform="translate(-112.000000, -37.000000)">
+                  <g id="Group" transform="translate(112.000000, 37.000000)">
+                    <rect id="Rectangle-2" stroke="#C9C9C9" fillOpacity="0.257869112" fill="#535fd7" x="0.5" y="132.5" width="782" height="497" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="202.5" width="150" height="93" />
+                    <text id="Products" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="54" y="254">
                     Products
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="202.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="295.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#FFFFFF" x="16.5" y="154.5" width="750" height="47" />
-                <text id="Products" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="54" y="254">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="202.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="295.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#FFFFFF" x="16.5" y="154.5" width="750" height="47" />
+                    <text id="Products" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="54" y="254">
                     Products
-                  </tspan>
-                </text>
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="295.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="207.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="238.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="174.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle-Copy" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="202.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="356.5" y="266.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="323.5" y="266.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="387.5" y="266.5" width="23" height="23" />
-                <rect id="Rectangle-Copy-2" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="295.5" width="150" height="93" />
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="295.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="474.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="202.5" width="150" height="93" />
-                <text id="Core-SDK-+-API" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="321" y="183">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="295.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="207.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="238.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="174.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle-Copy" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="202.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="356.5" y="266.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="323.5" y="266.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="387.5" y="266.5" width="23" height="23" />
+                    <rect id="Rectangle-Copy-2" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="295.5" width="150" height="93" />
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="295.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="474.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="202.5" width="150" height="93" />
+                    <text id="Core-SDK-+-API" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="321" y="183">
                     Core SDK + API
-                  </tspan>
-                </text>
-                <text id="Core" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="53" y="51">
+                      </tspan>
+                    </text>
+                    <text id="Core" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="53" y="51">
                     Core
-                  </tspan>
-                </text>
-                <text id="Payment" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="356" y="256">
+                      </tspan>
+                    </text>
+                    <text id="Payment" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="356" y="256">
                     Payment
-                  </tspan>
-                </text>
-                <text id="Orders" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="210" y="256">
+                      </tspan>
+                    </text>
+                    <text id="Orders" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="210" y="256">
                     Orders
-                  </tspan>
-                </text>
-                <text id="Delivery" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="56" y="349">
+                      </tspan>
+                    </text>
+                    <text id="Delivery" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="56" y="349">
                     Delivery
-                  </tspan>
-                </text>
-                <text id="Pricing" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="213" y="349">
+                      </tspan>
+                    </text>
+                    <text id="Pricing" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="213" y="349">
 Pricing
-                  </tspan>
-                </text>
-                <text id="Discounts" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="349" y="349">
+                      </tspan>
+                    </text>
+                    <text id="Discounts" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="349" y="349">
 Discounts
-                  </tspan>
-                </text>
-                <text id="Documents" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="492" y="349">
+                      </tspan>
+                    </text>
+                    <text id="Documents" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="492" y="349">
 Documents
-                  </tspan>
-                </text>
-                <text id="Messaging" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="499" y="256">
+                      </tspan>
+                    </text>
+                    <text id="Messaging" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="499" y="256">
 Messaging
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="32.5" width="23" height="23" />
-                <text id="Plugins" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="53" y="85">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="32.5" width="23" height="23" />
+                    <text id="Plugins" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="53" y="85">
 Plugins
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="16.5" y="66.5" width="23" height="23" />
-                <text id="Extensions" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="53" y="119">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="16.5" y="66.5" width="23" height="23" />
+                    <text id="Extensions" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="53" y="119">
 Extensions
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#1E7CFB" x="16.5" y="100.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="22.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="54.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="323.5" y="266.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="207.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="324.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="174.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="474.5" y="266.5" width="23" height="23" />
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="616.5" y="295.5" width="150" height="93" />
-                <text id="Warehousing" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="635" y="349">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#1E7CFB" x="16.5" y="100.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="22.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="54.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="323.5" y="266.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="207.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="324.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="174.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="474.5" y="266.5" width="23" height="23" />
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="616.5" y="295.5" width="150" height="93" />
+                    <text id="Warehousing" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="635" y="349">
 Warehousing
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="623.5" y="360.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="388.5" width="150" height="93" />
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="388.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="207.5" y="453.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="238.5" y="453.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="174.5" y="453.5" width="23" height="23" />
-                <rect id="Rectangle-Copy-2" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="388.5" width="150" height="93" />
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="388.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="474.5" y="453.5" width="23" height="23" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="506.5" y="453.5" width="23" height="23" />
-                <text id="Currencies" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="46" y="442">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="623.5" y="360.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#E9F4FA" x="16.5" y="388.5" width="150" height="93" />
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="316.5" y="388.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="207.5" y="453.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="238.5" y="453.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#98A244" x="174.5" y="453.5" width="23" height="23" />
+                    <rect id="Rectangle-Copy-2" stroke="#C9C9C9" fill="#E9F4FA" x="166.5" y="388.5" width="150" height="93" />
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="466.5" y="388.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="474.5" y="453.5" width="23" height="23" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="506.5" y="453.5" width="23" height="23" />
+                    <text id="Currencies" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="46" y="442">
 Currencies
-                  </tspan>
-                </text>
-                <text id="Countries" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="200" y="440">
+                      </tspan>
+                    </text>
+                    <text id="Countries" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="200" y="440">
 Countries
-                  </tspan>
-                </text>
-                <text id="Languages" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="349" y="442">
+                      </tspan>
+                    </text>
+                    <text id="Languages" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="349" y="442">
 Languages
-                  </tspan>
-                </text>
-                <text id="Users" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="518" y="442">
+                      </tspan>
+                    </text>
+                    <text id="Users" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="518" y="442">
 Users
-                  </tspan>
-                </text>
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="616.5" y="388.5" width="150" height="93" />
-                <text id="Roles" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="665" y="442">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="616.5" y="388.5" width="150" height="93" />
+                    <text id="Roles" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="665" y="442">
 Roles
-                  </tspan>
-                </text>
-                <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="616.5" y="202.5" width="150" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#29F4BD" x="625.5" y="266.5" width="23" height="23" />
-                <text id="Assortments" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="637" y="256">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle-Copy-3" stroke="#C9C9C9" fill="#E9F4FA" x="616.5" y="202.5" width="150" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#f3d299" x="625.5" y="266.5" width="23" height="23" />
+                    <text id="Assortments" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="637" y="256">
 Assortments
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#1E7CFB" x="16.5" y="520.5" width="169" height="93" />
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#1E7CFB" x="198.5" y="520.5" width="158" height="93" />
-                <text id="Example:-Car-Configu" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#FFFFFF">
-                  <tspan x="63.0910645" y="562">
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#1E7CFB" x="16.5" y="520.5" width="169" height="93" />
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#1E7CFB" x="198.5" y="520.5" width="158" height="93" />
+                    <text id="Example:-Car-Configu" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#FFFFFF">
+                      <tspan x="63.0910645" y="562">
 Example:
-                    {' '}
-                  </tspan>
-                  <tspan x="25.4643555" y="586">
+                        {' '}
+                      </tspan>
+                      <tspan x="25.4643555" y="586">
 Car Configurator
-                  </tspan>
-                </text>
-                <text id="Example:-Risk-Calcul" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#FFFFFF">
-                  <tspan x="236.040039" y="562">
+                      </tspan>
+                    </text>
+                    <text id="Example:-Risk-Calcul" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#FFFFFF">
+                      <tspan x="236.040039" y="562">
 Example:
-                  </tspan>
-                  <tspan x="209.072266" y="586">
+                      </tspan>
+                      <tspan x="209.072266" y="586">
 Risk Calculator
-                  </tspan>
-                </text>
-                <text id="Your-application-bas" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="380" y="609">
+                      </tspan>
+                    </text>
+                    <text id="Your-application-bas" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="380" y="609">
 Your application based on Unchained Engine
-                  </tspan>
-                </text>
-                <text id="Kernel" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
-                  <tspan x="53" y="19">
+                      </tspan>
+                    </text>
+                    <text id="Kernel" fontFamily="GillSans, Gill Sans" fontSize="21" fontWeight="normal" fill="#181616">
+                      <tspan x="53" y="19">
 Kernel
-                  </tspan>
-                </text>
-                <rect id="Rectangle" stroke="#C9C9C9" fill="#FFFFFF" x="16.5" y="0.5" width="23" height="23" />
+                      </tspan>
+                    </text>
+                    <rect id="Rectangle" stroke="#C9C9C9" fill="#FFFFFF" x="16.5" y="0.5" width="23" height="23" />
+                  </g>
+                </g>
               </g>
-            </g>
-          </g>
-        </svg>
+            </svg>
+          </div>
+        </div>
       </section>
 
       <section className="section">
@@ -560,14 +583,14 @@ Features by module
 built during projects. The plugins usually take only hours to develop.
           </small>
         </div>
-        <Link href="/platform">
-          <div className="text-center">
-            <a className="button mt3">
-                Back to Platform overview
-            </a>
-          </div>
-        </Link>
       </section>
+      <Link href="/platform">
+        <div className="text-center">
+          <a className="button mt3">
+              Back to Platform overview
+          </a>
+        </div>
+      </Link>
     </div>
 
     <style jsx>

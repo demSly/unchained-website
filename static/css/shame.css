@@ -222,6 +222,17 @@
   margin-top: 0 !important;
 }
 
+.platform-feature p,
+.platform-feature .link {
+  font-size: 14px;
+}
+
+.platform-feature .link {
+  font-size: 14px;
+  line-height: 1;
+}
+
+
 @media (min-width: 680px) {
   .undraw {
     width: 39%;
@@ -231,5 +242,11 @@
   .platform-feature {
     align-self: flex-start;
     width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform-feature {
+    width: 23%;
   }
 }
