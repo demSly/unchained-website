@@ -33,7 +33,7 @@ const Partners = ({ partners }) => (
         </div>
       </div>
     </div>
-    <div className="color-bg-secondary mb3">
+    <div className="color-bg-secondary">
       <section className="wrap">
         <div className="container text-center mt3">
           <h4>Get an overview of our platform</h4>
@@ -44,6 +44,13 @@ const Partners = ({ partners }) => (
       </section>
 
     </div>
+    <style jsx>
+      {`
+        .color-bg-secondary {
+          border-bottom: 0;
+        }
+        `}
+    </style>
   </PageLayout>
 );
 

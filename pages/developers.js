@@ -297,6 +297,9 @@ Want to get reminded when we have news to share? Follow our twitter account
 
     <style jsx>
       {`
+      .c-bg-dark {
+        border-bottom: 0;
+      }
       .link {
         text-decoration: underline;
       }
