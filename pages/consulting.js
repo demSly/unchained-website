@@ -28,14 +28,16 @@ const Platform = ({ platform }) => (
         <div className="flex-between nowrap">
           <div className="flex-between nowrap">
             <img className="undraw mr3 w40" src="../static/img/undraw_upload_87y9.svg" alt="" />
-            <h1>
-              Unchained Consulting
-            </h1>
-          </div>
-          <small>
+            <div>
+              <h1>
+            Unchained Consulting
+              </h1>
+              <small>
             Sometimes you need a little help with your projects and of course we don&apos;t
             let you stay in the rain.
-          </small>
+              </small>
+            </div>
+          </div>
         </div>
 
         <ul>

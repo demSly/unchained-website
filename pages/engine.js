@@ -421,12 +421,6 @@ built during projects. The plugins usually take only hours to develop.
 
     <style jsx>
       {`
-        @media (min-width: 1024px) {
-          .w-lg-48 {
-            width: 48%;
-          }
-        }
-
       .advantages {
         padding-bottom: 2em;
       }

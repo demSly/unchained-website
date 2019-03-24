@@ -9,7 +9,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow wrap--vertical-padding">
+    <div className="wrap wrap--narrow mt7">
       <div className="button-group mt0 mb3">
         <Link href="/engine">
           <a className="button">Engine</a>
@@ -37,30 +37,37 @@ const Platform = ({ platform }) => (
         a scalable Unchained infrastructure for you. It doesn&apos;t matter to us
         where the datacenter is.
         </p>
+      </section>
+    </div>
+    <div className="wrap mb7">
+      <section>
 
-        <ul>
-          <li>Bring your own Datacenter or go with us (We use Exoscale.ch)</li>
-          <li>Traefik as Reverse Proxy https://traefik.io</li>
-          <li>Auto issuance and renewal of SSL certificates</li>
-          <li>MongoDB in a Replicaset Configuration</li>
-          <li>On-Premise Setup of the Unchained Control Panel</li>
-          <li>Multi Instance Setup of the Unchained Engine</li>
-          <li>
+        <div className="d-flex flex-wrap">
+          <ul className="w-lg-48">
+            <li>Bring your own Datacenter or go with us (We use Exoscale.ch)</li>
+            <li>Traefik as Reverse Proxy https://traefik.io</li>
+            <li>Auto issuance and renewal of SSL certificates</li>
+            <li>MongoDB in a Replicaset Configuration</li>
+            <li>On-Premise Setup of the Unchained Control Panel</li>
+            <li>Multi Instance Setup of the Unchained Engine</li>
+            <li>
             Automatical daily Database Backups to a Cloud of your
             choice (like Amazon, Microsoft)
-          </li>
-          <li>Desaster recovery process and health status widget for your website</li>
-          <li>Setup and Configuration of: Domains, DNS</li>
-          <li>Maintenance of the Infrastructure parts (Docker + Ubuntu)</li>
-          <li>Monitoring and Incident Management with open-source tools</li>
-        </ul>
-
-        <h4>Most important:</h4>
-        <p>
+            </li>
+            <li>Desaster recovery process and health status widget for your website</li>
+            <li>Setup and Configuration of: Domains, DNS</li>
+            <li>Maintenance of the Infrastructure parts (Docker + Ubuntu)</li>
+            <li>Monitoring and Incident Management with open-source tools</li>
+          </ul>
+          <div className="w-lg-48">
+            <h4>Most important:</h4>
+            <p>
           We setup the whole infrastructure in a way that a seamless handover is possible
           in a planned way, so you could basically let us setup the whole stack and then take
           over for maintenance and monitoring.
-        </p>
+            </p>
+          </div>
+        </div>
       </section>
       <Link href="/platform">
         <div className="text-center">
