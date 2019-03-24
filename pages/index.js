@@ -67,7 +67,7 @@ const Home = ({ home }) => (
               The most flexible platform for digital commerce
             </h2>
           </div>
-          <div className="d-flex">
+          <div className="d-flex flex-wrap">
             <p className="w-lg-48">
             The
               {' '}
@@ -129,7 +129,7 @@ like never before.
             </p>
           </div>
         </div>
-        <div className="d-flex">
+        <div className="d-flex flex-wrap">
           <p className="w-lg-48">
           If you want to connect your existing backends or add a cryptocurrency as a way
           of payment, just write a small plugin, build your own module, add a micro-service,
@@ -285,7 +285,7 @@ Signed first customer contract
 Nov 2017
             </div>
             <p>
-              GoLive with first customer &quot;Freezyboy&quot;
+              GoLive of first customer online store
             </p>
             <a className="button" href="https://freezyboy.com">
 See freezyboy.com
@@ -348,7 +348,7 @@ Roadshow for Zürich based agencies
 Feb 2019
             </div>
             <p>
-              GoLive with customer &quot;Publicare&quot;
+              GoLive of a b2b & b2c shop & portal in the Health Care Industry
             </p>
             <a className="button" href="https://publicare.ch">
 See pubicare.ch
@@ -366,7 +366,7 @@ Mar 2019
             Release of Unchained Engine as OSS
             </p>
             <a className="button" href="https://github.com/unchainedshop/unchained">
-See on Github
+            See on Github
             </a>
           </div>
         </div>
@@ -655,7 +655,7 @@ Token Generation Event
         position: absolute;
         left: 0px;
         top: 100px;
-        border-top: 12px solid ${variables.primaryColor};
+        border-top: 12px solid ${variables.tertiaryColor};
         border-bottom: 12px solid white;
       }
 

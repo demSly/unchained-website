@@ -159,7 +159,11 @@
 .timeline .date {
   background: #f0f2ff;
   display: inline-block;
-  color: #333333;
+  box-shadow:
+    rgba(9, 30, 66, 0.16) 0px 0px 1px,
+    rgba(9, 30, 66, 0.1) 0px 7px 12px -3px;
+  color: #535fd7;
+  font-weight: bold;
   padding: 10px;
   position: absolute;
   top: 0;
