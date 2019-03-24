@@ -51,7 +51,7 @@
 .button--secondary {
   border-color: #4D57BB;
   background-color: #535fd7;
-  color: white;  
+  color: white;
 }
 
 
@@ -85,13 +85,17 @@
 
 
 .button:disabled,
-.button[disabled]{
+.button[disabled] {
   transform: translateY(0);
   box-shadow: none;
   cursor: not-allowed;
   opacity: .65;
 }
 
+.button.disabled {
+  opacity: .65;
+  box-shadow: none;
+}
 
 
 /* Button Group */
@@ -106,6 +110,7 @@
 .button-group [class^='button'],
 .button-group [class*=' button'] {
   margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .no-button {

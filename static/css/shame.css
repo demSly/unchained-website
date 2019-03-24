@@ -256,25 +256,9 @@
 }
 
 
-@media (min-width: 680px) {
-  .undraw {
-    width: 90%;
-    margin-left: initial;
-    min-width: 66%;
-  }
-  .platform-feature {
-    align-self: flex-start;
-    width: 48%;
-  }
-}
 
 @media (min-width: 1024px) {
   .platform-feature {
     width: 23%;
   }
-}
-
-.undraw--mini {
-  max-width: 200px;
-  min-width: 150px;
 }

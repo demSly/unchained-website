@@ -13,7 +13,7 @@ const Platform = ({ platform }) => (
     <div className="wrap wrap--vertical-padding">
       <div className="button-group mt0 mb3">
         <Link href="/engine">
-          <a className="button">Engine</a>
+          <a className="button disabled">Engine</a>
         </Link>
         <Link href="/control-panel">
           <a className="button">Control Panel</a>
@@ -27,7 +27,7 @@ const Platform = ({ platform }) => (
       </div>
       <section className="section">
         <div className="text-center">
-          <img className="undraw" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
+          <img className="undraw w-40" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
           <h1>
           Unchained Engine
           </h1>

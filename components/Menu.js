@@ -82,7 +82,10 @@ Call us +41 43 505 18 46
         }
         .menu.hidden {
           opacity: 0;
-          transform: translateY(-600px);
+          transform: translateY(-16px);
+          z-index: -1;
+          position: absolute;
+          pointer-events: none;
         }
         .menu {
           position: fixed;

@@ -16,7 +16,7 @@ const Platform = ({ platform }) => (
           <a className="button">Engine</a>
         </Link>
         <Link href="/control-panel">
-          <a className="button">Control Panel</a>
+          <a className="button disabled">Control Panel</a>
         </Link>
         <Link href="/consulting">
           <a className="button">Consulting</a>
@@ -30,7 +30,7 @@ const Platform = ({ platform }) => (
           Unchained Control Panel
         </h1>
         <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_control_panel1_20gm.svg" alt="control panel" />
+          <img className="undraw w40 mr3" src="../static/img/undraw_control_panel1_20gm.svg" alt="control panel" />
           <div>
             <p>
               The Unchained Control Panel is our Web UI to all data management API&apos;s

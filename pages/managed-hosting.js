@@ -21,22 +21,22 @@ const Platform = ({ platform }) => (
           <a className="button">Consulting</a>
         </Link>
         <Link href="/managed-hosting">
-          <a className="button">Managed Hosting</a>
+          <a className="button disabled">Managed Hosting</a>
         </Link>
       </div>
       <section className="section">
-        <h1>
-          Unchained Managed Hosting
-        </h1>
         <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_maintenance_cn7j.svg" alt="maintenance" />
-          <p>
-          Let us host the Unchained Engine for you so you can concentrate on
-          your business. We use Docker Swarm and a bunch of modern Software to setup
-          a scalable Unchained infrastructure for you. It doesn&apos;t matter to us
-          where the datacenter is.
-          </p>
+          <h1>
+          Unchained Managed Hosting
+          </h1>
+          <img className="undraw w25 mr3" src="../static/img/undraw_maintenance_cn7j.svg" alt="maintenance" />
         </div>
+        <p>
+        Let us host the Unchained Engine for you so you can concentrate on
+        your business. We use Docker Swarm and a bunch of modern Software to setup
+        a scalable Unchained infrastructure for you. It doesn&apos;t matter to us
+        where the datacenter is.
+        </p>
 
         <ul>
           <li>Bring your own Datacenter or go with us (We use Exoscale.ch)</li>

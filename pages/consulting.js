@@ -18,7 +18,7 @@ const Platform = ({ platform }) => (
           <a className="button">Control Panel</a>
         </Link>
         <Link href="/consulting">
-          <a className="button">Consulting</a>
+          <a className="button disabled">Consulting</a>
         </Link>
         <Link href="/managed-hosting">
           <a className="button">Managed Hosting</a>
@@ -26,16 +26,16 @@ const Platform = ({ platform }) => (
       </div>
       <section className="section">
         <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_upload_87y9.svg" alt="" />
-          <div>
+          <div className="flex-between nowrap">
+            <img className="undraw mr3 w40" src="../static/img/undraw_upload_87y9.svg" alt="" />
             <h1>
               Unchained Consulting
             </h1>
-            <p>
-              Sometimes you need a little help with your projects and of course we don&apos;t
-              let you stay in the rain.
-            </p>
           </div>
+          <small>
+            Sometimes you need a little help with your projects and of course we don&apos;t
+            let you stay in the rain.
+          </small>
         </div>
 
         <ul>
