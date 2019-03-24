@@ -12,11 +12,24 @@
 .color-bg-secondary {
   background-color: rgba(247,233,182,.5);
   color: #444;
+  border-bottom: 12px solid #f3d299;
 }
 
 .link {
   color: #535fd7;
   text-decoration: underline;
+}
+
+.link.animate {
+  padding-bottom: 16px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  transition: all .2s ease;
+}
+
+.link:hover.animate {
+  border-color: #17fac5;
+  transform: translateY(-8px);
 }
 
 .link:hover,
@@ -202,9 +215,6 @@
   letter-spacing: 1.5px;
   margin-bottom: 1.25em;
   text-transform: uppercase;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .lowlight {

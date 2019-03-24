@@ -13,6 +13,12 @@ const About = ({ about }) => (
       <h1>
         About Us
       </h1>
+      <p>
+      E-Commerce Architects, Engineers, Designers, Consultants
+        <br />
+Bahnhofplatz 2 Zürich,
+       Switzerland 🇨🇭
+      </p>
     </div>
     <section className="c-bg-dark c-white mb3 pv3">
       <div className="wrap">

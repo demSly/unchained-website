@@ -68,6 +68,8 @@ const Layout = ({
 
     .c-bg-primary {
       background-color: ${variables.primaryColor} !important;
+      border-top: 12px solid ${variables.secondaryColor};
+      border-bottom: 12px solid ${variables.secondaryColor};
     }
 
     .c-bg-secondary {
@@ -76,6 +78,8 @@ const Layout = ({
     }
 
     .c-bg-dark {
+      border-top: 12px solid ${variables.secondaryColor};
+      border-bottom: 12px solid ${variables.secondaryColor};
       background-color: #182538 !important;
       background-image: linear-gradient(to bottom right, #182538, #1f263b);
     }
@@ -86,6 +90,10 @@ const Layout = ({
 
     .c-bg-dark .wrap .field__input {
       color: #333333;
+    }
+
+    .footer {
+      border-top: 12px solid ${variables.secondaryColor};
     }
 
     .c-bg-dark .footer * {

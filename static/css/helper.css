@@ -33,6 +33,12 @@
   min-width: 40%;
 }
 
+@media (min-width: 1024px) {
+  .w-lg-48 {
+    width: 48%;
+  }
+}
+
 .hide {
   display: none !important;
 }
@@ -45,6 +51,12 @@
   display: flex;
   align-items: center;
 }
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .flex-between {
   display: flex;

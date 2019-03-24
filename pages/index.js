@@ -67,22 +67,38 @@ const Home = ({ home }) => (
               The most flexible platform for digital commerce
             </h2>
           </div>
-          <p>
-            The headless approach allows you to build e-commerce apps which run natively
+          <div className="d-flex">
+            <p className="w-lg-48">
+            The
+              {' '}
+              <b>headless</b>
+              {' '}
+approach allows you to build e-commerce apps which
+              {' '}
+              <b>run natively</b>
+              {' '}
             on mobile phones, watches, TVs, wearables and your own hardware.
             It empowers developers to integrate proprietary &
             decentralized systems, bridging digital commerce with the internet of
             things & distributed ledgers.
-          </p>
+            </p>
 
-          <p>
-            {`
-              By using open source technologies & popular programming languages,
+            <p className="w-lg-48">
+
+              By using
+              {' '}
+              <b>open source</b>
+              {' '}
+            technologies & popular programming languages,
               it is very easy for developers to extend and adapt the platform for
               the company specific needs. This enables product
-              owners to design creative business processes like never before.
-            `}
-          </p>
+              owners to design
+              {' '}
+              <b>creative business processes</b>
+              {' '}
+like never before.
+            </p>
+          </div>
           <div className="button-group mt3">
             <Link href="/showcase">
               <a className="button">
@@ -96,42 +112,45 @@ const Home = ({ home }) => (
 
     <div className="c-bg-dark">
       <section className="wrap wrap--narrow developers-section">
-        <div className="text-center">
+        <div className="flex-between">
           <img className="undraw undraw--mini" src="../static/img/undraw_programming_2svr-2.svg" alt="" />
-          <h2 className="section-title">
+          <div>
+            <h2 className="section-title">
             Built for developers
-          </h2>
+            </h2>
+            <p>
+            There is
+              {' '}
+              <b>no UI</b>
+              {' '}
+            ...
+              <br />
+            Just build your own interface on top of the GraphQL API.
+            </p>
+          </div>
         </div>
-        <p>
-          There is
-          {' '}
-          <b>no UI</b>
-          {' '}
-          ...
-          <br />
-          Just build your own interface on top of the GraphQL API.
-        </p>
-        <p>
+        <div className="d-flex">
+          <p className="w-lg-48">
           If you want to connect your existing backends or add a cryptocurrency as a way
           of payment, just write a small plugin, build your own module, add a micro-service,
           fork the whole thing or just extend the GraphQL API
           with with your own queries & types.
-        </p>
-        <p>
-          {' '}
-All you need
-          is some
-          {' '}
-          <b>Javascript</b>
-          {' '}
-(Node.js) knowhow, and our multi-channel enterprise shop system.
-        </p>
-        <div className="button-group mt3">
-          <Link href="/developers">
-            <a className="button button--primary">
-                Show me some code
-            </a>
-          </Link>
+          </p>
+
+          <div className="w-lg-48">
+            <p>
+          All you need is some
+              {' '}
+              <b>Javascript</b>
+              {' '}
+          (Node.js) knowhow, and our multi-channel enterprise shop system.
+            </p>
+            <Link href="/developers">
+              <a className="button button--primary">
+                  Show me some code
+              </a>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -146,7 +165,7 @@ All you need
                 Your Frontend
               </h3>
               <p className="unit__subheader">
-                Integrate with your iOS App, Android Watch, Website, Car. Connect the Unchained
+                Integrate your iOS App, Android Watch, Website, Car. Connect the Unchained
                 GraphQL API
                 with your frontend of choice & build the perfect experience.
               </p>
@@ -165,7 +184,7 @@ All you need
                 Your Backend
               </h3>
               <p className="unit__subheader">
-                Add your CRM, ERP, PIM in the simplest way.
+                Simply add your CRM, ERP, PIM.
               </p>
               <small>
                 We already successfully connected Unchained to various
@@ -173,7 +192,9 @@ All you need
                 well as Smallinvoice & Google Spreadsheets.
               </small>
               <p>
-                API available? Go!
+                API available?
+                <br />
+                Go!
               </p>
 
             </div>
@@ -219,9 +240,10 @@ preferred programming language
     <div className="color-bg-secondary mb3">
       <section className="wrap">
         <div className="container text-center mt3">
-          <h4>Get an overview of our platform</h4>
+          <h4 className="mb0">Get an overview of our platform</h4>
+          <p>Learn about the Unchained Engine, our support, consulting, managed hosting & more</p>
           <Link href="/platform">
-            <a className="button button--secondary mb3">Platform overview</a>
+            <a className="button button--secondary mb3 mt1">Platform overview</a>
           </Link>
         </div>
       </section>
@@ -258,7 +280,7 @@ Signed first customer contract
 
         <div className="timeline-item">
           <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-content timeline-special">
             <div className="date">
 Nov 2017
             </div>
@@ -321,7 +343,7 @@ Roadshow for Zürich based agencies
 
         <div className="timeline-item">
           <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-content timeline-special">
             <div className="date">
 Feb 2019
             </div>
@@ -336,7 +358,7 @@ See pubicare.ch
 
         <div className="timeline-item">
           <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-content timeline-special">
             <div className="date">
 Mar 2019
             </div>
@@ -351,7 +373,7 @@ See on Github
 
         <div className="timeline-item">
           <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-content timeline-next">
             <div className="date">
 Q2 2019
             </div>
@@ -408,19 +430,19 @@ Unchained Conference 2019
           </h3>
           <div className="flex flex-around flex-wrap">
             <Link href="/developers">
-              <a className="link">
+              <a className="link animate">
                 <img className="w112px" src="../static/img/07- developer-macbook-stickerbomb.svg" alt="link" />
                 Developers
               </a>
             </Link>
             <Link href="/showcase">
-              <a className="link">
+              <a className="link animate">
                 <img className="w112px" src="../static/img/06- business-team.svg" alt="link" />
                 Merchants
               </a>
             </Link>
             <Link href="/partners">
-              <a className="link">
+              <a className="link animate">
                 <img className="w112px" src="../static/img/59- office-supervisor-desk-male-asian.svg" alt="" />
                 Partners
               </a>
