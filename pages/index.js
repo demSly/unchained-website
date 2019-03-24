@@ -124,8 +124,7 @@ All you need
           {' '}
           <b>Javascript</b>
           {' '}
-(Node.js) knowhow. The multi-channel enterprise shop system you
-          need to satisfy your software&apos;s e-commerce requirements.
+(Node.js) knowhow, and our multi-channel enterprise shop system .
         </p>
         <div className="button-group mt3">
           <Link href="/developers">
@@ -166,7 +165,7 @@ All you need
                 Your Backend
               </h3>
               <p className="unit__subheader">
-                Add your CRM, ERP, PIM in the most simple way.
+                Add your CRM, ERP, PIM in the simplest way.
               </p>
               <small>
                 We already successfully connected Unchained to various
@@ -196,25 +195,19 @@ All you need
       </h2>
       <div className="wrap tech-stack-wrap">
         <small className="text-center db">
-          Built on:
+          built on
         </small>
         <div className="tech-stack-flex">
-          <img className="tech-stack" src="../static/img/tech/GraphQL_Logo.svg" alt="GraphQL Logo" />
-          <img className="tech-stack" src="../static/img/tech/JavaScript-logo.png" alt="Javascript Logo" />
-          <img className="tech-stack" src="../static/img/tech/nodejs.png" alt="Node JS Logo" />
           <img className="tech-stack" src="../static/img/tech/apollo-logo.png" alt="Apollo Logo" />
-        </div>
-        <small className="text-center db">
-Fits well with:
-        </small>
-        <div className="tech-stack-flex">
-          <img className="tech-stack" src="../static/img/tech/react-logo.svg" alt="React JS Logo" />
-          <img className="tech-stack" src="../static/img/tech/angular.svg" alt="Angular JS Logo" />
-          <img className="tech-stack" src="../static/img/tech/vue.png" alt="Vue JS Logo" />
+          <img className="tech-stack" src="../static/img/tech/GraphQL_Logo.svg" alt="GraphQL Logo" />
+          <img className="tech-stack" src="../static/img/tech/nodejs.png" alt="Node JS Logo" />
         </div>
         <small className="text-center db ph1">
-          Works with PHP, Ruby on Rails, Java, Python, Swift,
-          Go, Haskell & any other programming language. Your choice.
+          Use
+          {' '}
+          <b>your</b>
+          {' '}
+preferred programming language
         </small>
       </div>
     </div>
