@@ -1,3 +1,8 @@
+.color-bg-secondary {
+  background-color: rgba(247,233,182,.5);
+  color: #444;
+}
+
 .link {
   color: #535fd7;
 }

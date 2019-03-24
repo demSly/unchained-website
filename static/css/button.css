@@ -48,6 +48,13 @@
   color: #232323 !important;
 }
 
+.button--secondary {
+  border-color: #4D57BB;
+  background-color: #535fd7;
+  color: white;  
+}
+
+
 .button--blocked {
   display: block;
   min-width: 120px;
