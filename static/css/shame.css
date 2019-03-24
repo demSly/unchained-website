@@ -1,3 +1,7 @@
+.software-modules {
+  max-width: 700px;
+}
+
 .position-relative {
   position: relative;
 }

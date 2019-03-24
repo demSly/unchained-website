@@ -9,7 +9,13 @@
 
 .product-portfolio__item {
   width: 100%;
+  background-color: white;
   border-bottom: 10px solid #fff;
+  transition: transform .3s ease;
+}
+
+.frontend:hover {
+  transform: translateX(10px);
 }
 
 @media (min-width: 768px) {
@@ -22,9 +28,16 @@
 
 .backend {
   background-color: #FAFAFA;
+  position: relative;
+}
+
+.backend:hover {
+  transform: translateX(-10px) !important;
 }
 
 .frontend {
+  position: relative;
+  z-index: 1;
 }
 
 .unit {

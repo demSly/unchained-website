@@ -12,7 +12,11 @@ const Partners = ({ partners }) => (
     <div className="wrap wrap--narrow mt7">
       <section id="partners" className="section">
         <h1>
-          Successfully working together with our partners
+          Our preferred
+          {' '}
+          <b>partners</b>
+          {' '}
+for digital commerce services & projects
         </h1>
         <PartnerList />
       </section>

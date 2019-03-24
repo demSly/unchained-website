@@ -14,7 +14,7 @@ const Support = ({ faq, questions }) => (
     <div className="wrap mv7">
       <section id="faq" className="section">
         <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_questions_75e0.svg" alt="question" />
+          <img className="undraw w40 mr3" src="../static/img/undraw_questions_75e0.svg" alt="question" />
           <div>
             <h2>
               {faq.faq_title}

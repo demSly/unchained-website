@@ -100,9 +100,14 @@ like never before.
             </p>
           </div>
           <div className="button-group mt3">
+            <Link href="/platform">
+              <a className="button">
+                Go to platform overview
+              </a>
+            </Link>
             <Link href="/showcase">
               <a className="button">
-                  See our showcase
+                  See showcase
               </a>
             </Link>
           </div>
