@@ -19,7 +19,7 @@ const Home = ({ home }) => (
           <h3 className="hero__subtitle">
             Digital Commerce Platform made for Enterprises.
           </h3>
-          <h1 className="hero-text">
+          <h1 className="hero-text animated fadeIn">
             <div className="tags">
               <Link href="/why-headless">
                 <a className="tag">
@@ -46,7 +46,7 @@ const Home = ({ home }) => (
                 </a>
               </Link>
             </div>
-            <p className="explainer">
+            <p className="explainer animated fadeIn">
               First of its kind software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach. Start selling
@@ -55,7 +55,7 @@ const Home = ({ home }) => (
             </p>
           </h1>
         </div>
-        <img className="undraw" src="../static/img/undraw_online_shopping_ga73.svg" alt="online shopping" />
+        <img className="undraw animated fadeIn" src="../static/img/undraw_online_shopping_ga73.svg" alt="online shopping" />
       </div>
 
 
@@ -124,7 +124,7 @@ All you need
           {' '}
           <b>Javascript</b>
           {' '}
-(Node.js) knowhow, and our multi-channel enterprise shop system .
+(Node.js) knowhow, and our multi-channel enterprise shop system.
         </p>
         <div className="button-group mt3">
           <Link href="/developers">

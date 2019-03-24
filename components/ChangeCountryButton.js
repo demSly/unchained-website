@@ -30,7 +30,7 @@ const ToggleButton = ({
         border: 0;
         outline: 0;
         text-align: left;
-        margin-top: 1.25em;
+        margin-top: 1.375em;
       }
     `}
     </style>

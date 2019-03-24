@@ -224,10 +224,6 @@
   margin-bottom: 1em;
 }
 
-.undraw--mini {
-  max-width: 200px;
-}
-
 .platform-feature {
   height: 100%;
   padding: 1.5rem 2rem;
@@ -276,4 +272,9 @@
   .platform-feature {
     width: 23%;
   }
+}
+
+.undraw--mini {
+  max-width: 200px;
+  min-width: 150px;
 }
