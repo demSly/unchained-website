@@ -10,66 +10,63 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow mt7">
-      <div className="section">
-        <div className="flex-between nowrap">
-          <img className="undraw" src="../static/img/undraw_product_tour_foyt.svg" alt="product tour" />
-          <div>
-            <h1>
-              Platform overview
-            </h1>
-          </div>
-        </div>
+    <div className="wrap hero">
+      <div className="text-center">
+        <h1>
+            Platform overview
+        </h1>
+        <img className="hero-absolute" src="../static/img/undraw_product_tour_foyt.svg" alt="product tour" />
       </div>
     </div>
 
     <div className="wrap mb7">
       <section>
         <div className="flex-between">
-          <div className="platform-feature">
-            <h2>
-              Unchained Engine
-            </h2>
-            <p>
-              The open-source digital commerce engine is our core product
-            </p>
-            <Link href="/engine">
+          <Link href="/engine">
+            <a className="platform-feature">
+              <h2>
+                Unchained Engine
+              </h2>
+              <p>
+                The open-source digital commerce engine is our core product
+              </p>
               <span className="link">More infos about the Engine</span>
-            </Link>
-          </div>
-          <div className="platform-feature">
-            <h2>
+            </a>
+          </Link>
+          <Link href="/control-panel">
+            <a className="platform-feature">
+              <h2>
               Control Panel
-            </h2>
-            <p>
+              </h2>
+              <p>
               Our cloud-based admin ui to view, edit and analyze data on the unchained engine
-            </p>
-            <Link href="/control-panel">
+              </p>
               <span className="link">More infos about the Control Panel</span>
-            </Link>
-          </div>
-          <div className="platform-feature">
-            <h2>
+            </a>
+          </Link>
+          <Link href="/consulting">
+            <a className="platform-feature">
+              <h2>
               Support & Consulting
-            </h2>
-            <p>
+              </h2>
+              <p>
               Developer Support, UX & E-Commerce Consulting, Training, Events, Partnerships
-            </p>
-            <Link href="/consulting">
+              </p>
               <span className="link">More infos about Consulting</span>
-            </Link>
-          </div>
-          <div className="platform-feature">
-            <h2>
+            </a>
+          </Link>
+          <Link href="/managed-hosting">
+            <a className="platform-feature">
+              <h2>
               Managed Hosting
-            </h2>
-            <p>
+              </h2>
+              <p>
               Containerized Managed Hosting through Docker Swarm, bring your own datacenter
-            </p>
-            <Link href="/managed-hosting">
+              </p>
+
               <span className="link">More infos about Managed Hosting</span>
-            </Link>
-          </div>
+            </a>
+          </Link>
         </div>
 
       </section>

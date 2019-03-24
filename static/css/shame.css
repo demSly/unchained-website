@@ -1,3 +1,14 @@
+.position-relative {
+  position: relative;
+}
+
+.hero-absolute {
+  position: absolute;
+  z-index: -1;
+  left: 3rem;
+}
+
+
 .color-bg-secondary {
   background-color: rgba(247,233,182,.5);
   color: #444;
@@ -5,11 +16,11 @@
 
 .link {
   color: #535fd7;
+  text-decoration: underline;
 }
 
 .link:hover,
 .link:focus {
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -221,11 +232,21 @@
   height: 100%;
   padding: 1.5rem 2rem;
   margin-bottom: 2rem;
+  background: white;
+  box-shadow: 0 1px 6px rgba(0,0,0,.05), 0 3px 10px rgba(0,0,0,.1);
+  border: 3px solid transparent;
+  transition: all .2s ease;
+}
+
+.platform-feature:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.1);
+  border: 3px solid #f3d299;
+  margin-top: -8px;
 }
 
 .platform-feature h2 {
   margin-top: 0 !important;
+  font-size: 1.5rem;
 }
 
 .platform-feature p,
