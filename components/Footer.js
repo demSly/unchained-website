@@ -242,6 +242,10 @@ fundraiser
         display: block;
       }
 
+      .footer__link:hover {
+        text-decoration: underline;
+      }
+
       .footer__bottom > div {
         margin-bottom: 2.5em;
       }
@@ -254,10 +258,11 @@ fundraiser
           margin-bottom: 2em;
         }
       }
-      @media (min-width: 800px) {
+      @media (min-width: 360px) {
         .footer__bottom {
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
           max-width: 700px;
         }
       }

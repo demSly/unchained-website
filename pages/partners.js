@@ -20,7 +20,7 @@ const Partners = ({ partners }) => (
     <div className="c-bg-primary">
       <div className="wrap wrap--narrow pv3">
         <p className="c-white">
-          Just drop us a line if you want to become an
+          Drop us a line if you want to become an
           official partner of Unchained or you are in need of professional services
         </p>
         <div className="text-center">

@@ -21,11 +21,10 @@
 }
 
 .backend {
-  background-color: #1178FF;
+  background-color: #FAFAFA;
 }
 
 .frontend {
-  background-color: #FAFAFA;
 }
 
 .unit {
@@ -58,6 +57,7 @@
 .unit__subheader {
   margin-top: .25em;
   flex-shrink: 1;
+  opacity: .8;
 }
 
 .unit__image-wrap {
@@ -80,9 +80,9 @@
 }
 
 .frontend .unit__image {
-  background-image: url('../../static/img/03- desktop-graphic-designer-pen-tablet-3.svg');
+  background-image: url('../../static/img/undraw_content_vbqo.svg');
 }
 
 .backend .unit__image {
-  background-image: url('../../static/img/15- web-programming-design-construction-3.svg');
+  background-image: url('../../static/img/undraw_building_blocks_n0nc.svg');
 }

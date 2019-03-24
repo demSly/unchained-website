@@ -41,7 +41,7 @@ const MenuSwitch = ({ isMenuToggled, toggleMenu }) => (
         position: absolute;
         height: 1px;
         width: 100%;
-        background: #1178FF;
+        background: #535fd7;
         opacity: 1;
         left: 0;
         -webkit-transform: rotate(0deg);

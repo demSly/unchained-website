@@ -149,6 +149,10 @@ const ProductDetails = ({
         background-color: ${variables.primaryColor};
       }
 
+      .product {
+        font-family: HelveticaNeue, Helvetica;
+      }
+
       @media ${variables.mq.medium} {
         .product {
           display: flex;

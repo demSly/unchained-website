@@ -280,12 +280,11 @@ Github
       <div className="wrap wrap--narrow pv3">
         <div className="text-center">
           <p className="">
-Just drop us a line if you want to become an
-            official partner of Unchained or you are in need of professional services
+Drop us a line if you want to become an official partner of Unchained or you are in need of professional services.
           </p>
           <Link href="/contact">
             <a className="button">
-                Get in Touch now
+                Get in Touch Now
             </a>
           </Link>
         </div>

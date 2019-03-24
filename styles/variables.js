@@ -1,20 +1,20 @@
 export default {
-  primaryColor: '#1178FF',
+  primaryColor: '#535fd7',
   secondaryColor: '#00F5BC',
-  fontColor: '#676767',
-  nightColor: '#1f263b',
-  darkColor: '#31302E',
+  fontColor: '#6B7A90',
+  nightColor: '#182538',
+  darkColor: '#353531',
   darkGrayColor: '#A3A3A3',
   lineGrayColor: '#E0E0E0',
-  grayColor: '#F9F8F8',
+  grayColor: '#E9EDF3',
 
   primaryFont: '"Roboto Mono", -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif',
 
   bodyLineHeight: '1.5',
 
   fontWeight: {
-    light: '300',
-    bold: '400',
+    light: '400',
+    bold: '500',
   },
 
   mq: {

@@ -23,9 +23,10 @@ const CartDropdown = ({
           </div>
           <div className="item__info">
             {texts && texts.title}
-            <div className="item__qty">
+            {' '}
+            <span className="item__qty">
               {quantity}
-            </div>
+            </span>
           </div>
         </div>
       ))}
@@ -51,7 +52,7 @@ const CartDropdown = ({
 
       .item__img {
         max-width: 70px;
-        margin-right: 5px;
+        margin-right: 16px;
       }
 
       .item__info {

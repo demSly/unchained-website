@@ -161,7 +161,7 @@ const Home = ({ home }) => (
         </div>
         <div className="product-portfolio__item backend">
           <a className="unit">
-            <div className="unit__copy c-white">
+            <div className="unit__copy">
               <h3 className="unit__header">
                 Your Backend
               </h3>
@@ -284,22 +284,10 @@ Release of Roadmap 1.0
           <div className="timeline-img" />
           <div className="timeline-content">
             <div className="date">
-Apr 2018
-            </div>
-            <p>
-Init Partner Program for Agencies
-            </p>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
-            <div className="date">
 Jun 2018
             </div>
             <p>
-Signed second customer contract & added first partner
+Signed second customer contract with two implementation partners
             </p>
           </div>
         </div>
@@ -336,14 +324,29 @@ See pubicare.ch
           <div className="timeline-img" />
           <div className="timeline-content">
             <div className="date">
-Q1-Q2 2019
+Mar 2019
+            </div>
+            <p>
+            Release of Unchained Engine as OSS
+            </p>
+            <a className="button" href="https://github.com/unchainedshop/unchained">
+See on Github
+            </a>
+          </div>
+        </div>
+
+        <div className="timeline-item">
+          <div className="timeline-img" />
+          <div className="timeline-content">
+            <div className="date">
+Q2 2019
             </div>
             <ul>
               <li>
-Release of Unchained Managed Hosting
+Release of Unchained Express
               </li>
               <li>
-Release of Plaform 1.0 as OSS
+Release of Unchained Managed Hosting
               </li>
               <li>
 Release of Roadmap 2.0
@@ -389,7 +392,7 @@ Unchained Conference 2019
             <Link href="/developers">
               <a className="button button--role">
                   Developers
-                <img className="w72px" src="../static/img/58- programmer-male-african-american.svg" alt="" />
+                <img className="w72px" src="../static/img/07- developer-macbook-stickerbomb.svg" alt="" />
               </a>
             </Link>
             <Link href="/showcase">
@@ -401,7 +404,7 @@ Unchained Conference 2019
             <Link href="/partners">
               <a className="button button--role">
                   Partners
-                <img className="w72px" src="../static/img/86- business-income-female-asian.svg" alt="" />
+                <img className="w72px" src="../static/img/59- office-supervisor-desk-male-asian.svg" alt="" />
               </a>
             </Link>
           </div>
@@ -436,10 +439,11 @@ Token Generation Event
       .button--role {
         min-height: 126px;
         margin-bottom: 1em;
+        margin-right: 3rem;
       }
 
       .w72px {
-        width: 72px;
+        width: 96px;
         display: block;
         margin: 0 auto;
       }
@@ -481,16 +485,13 @@ Token Generation Event
 
       .tech-stack-wrap {
         padding: 0;
-
       }
 
       .tech-stack-flex {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 4px 14px rgba(0,0,0,.4);
         padding: 1em;
-        border: 2px solid rgba(255,255,255,.4);
         max-width: 480px;
         margin: 0 auto 3em;
       }

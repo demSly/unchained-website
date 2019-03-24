@@ -15,7 +15,7 @@ const Layout = ({
       <meta content="telephone=no" name="format-detection" key="format-detection" />
       <meta content="width=device-width, initial-scale=1.0" name="viewport" key="viewport" />
       <meta name="google-site-verification" content="Z9rrptXszSZyyIclbbA3_0ED9bte4dn3dz5QsivMUEU" key="google site verification" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,600" rel="stylesheet" key="mono font" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" key="mono font" />
 
       <link rel="apple-touch-icon" sizes="57x57" href="/static/img/apple-icon-57x57.png" />
       <link rel="apple-touch-icon" sizes="60x60" href="/static/img/apple-icon-60x60.png" />
@@ -72,11 +72,12 @@ const Layout = ({
 
     .c-bg-secondary {
       background-color: ${variables.secondaryColor} !important;
+      color: #555555;
     }
 
     .c-bg-dark {
-      background-color: #141e30 !important;
-      background-image: linear-gradient(to bottom right, #141e30, #243b55);
+      background-color: #182538 !important;
+      background-image: linear-gradient(to bottom right, #182538, #1f263b);
     }
 
     .c-bg-dark .wrap * {
