@@ -227,6 +227,9 @@ preferred programming language
       </section>
     </div>
 
+    <div className="text-center-md">
+      <img className="icon timeline-idea" src="../static/img/31- idea-document-design.svg" alt="" />
+    </div>
     <section className="timeline wrap">
       <div className="container">
         <div className="timeline-item">
@@ -389,12 +392,16 @@ Unchained Conference 2019
           </div>
         </div>
 
+        <div className="text-center-md">
+          <img className="icon timeline-cloud" src="../static/img/06- cloud-download.svg" alt="" />
+        </div>
+
       </div>
     </section>
 
 
     <div>
-      <div className="wrap wrap--narrow wrap--vertical-padding">
+      <div className="wrap wrap--narrow mb7">
         <div className="text-center">
           <h3 className="mt0 mb">
             Get more information

@@ -83,6 +83,11 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .text-center-md {
+    text-align: center;
+  }
+}
 .text-right {
   text-align: right;
 }
