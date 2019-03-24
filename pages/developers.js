@@ -281,10 +281,12 @@ Want to get reminded when we have news to share? Follow our twitter account
         and let's see what we can do together.
         </p>
         <h2>
-          Open Source
+        Open Source
           <br />
-          available on
-          {' '}
+          <span className="dim">
+            available on
+            {' '}
+          </span>
           <a className="link dib" href="https://github.com/unchainedshop">
           Github
           </a>

@@ -185,12 +185,16 @@ All you need
       </div>
     </div>
 
-    <div className="c-bg-dark c-white pa1">
-      <h2 className="text-center">
-        Open Source - available on
-        {' '}
-        <a className="link" href="https://github.com/unchainedshop">
-          Github
+    <div className="c-bg-dark c-white pa1 text-center">
+      <h2>
+      Open Source
+        <br />
+        <span className="dim">
+          available on
+          {' '}
+        </span>
+        <a className="link dib" href="https://github.com/unchainedshop">
+        Github
         </a>
       </h2>
       <div className="wrap tech-stack-wrap">

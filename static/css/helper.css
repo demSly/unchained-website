@@ -1,3 +1,7 @@
+.dim {
+  opacity: .4;
+}
+
 @media (min-width: 680px) {
   .undraw {
     width: 90%;
