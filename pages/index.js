@@ -24,7 +24,7 @@ const Home = ({ home }) => (
               <Link href="/why-headless">
                 <a className="tag">
                   <div className="tag__flex">
-                    <span className="tag__pill">
+                    <span className="tag__pill tag__pill--headless">
                       #headless
                     </span>
                     <span className="tag__text">
@@ -382,11 +382,11 @@ Unchained Conference 2019
     </section>
 
 
-    <div className="c-bg-secondary">
+    <div>
       <div className="wrap wrap--vertical-padding">
         <div className="text-center">
           <h3 className="mt0 mb">
-            Get more information for
+            Get more information
           </h3>
           <div className="button-group">
             <Link href="/developers">
@@ -478,6 +478,10 @@ Token Generation Event
         margin-right: .75em;
         font-size: 12px;
         padding: 0px 6px;
+      }
+      .tag__pill--headless {
+        background-color: ${variables.tertiaryColor};
+        color: #555555;
       }
       .tag__text {
         font-size: 14px;

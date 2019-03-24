@@ -1,6 +1,7 @@
 export default {
   primaryColor: '#535fd7',
   secondaryColor: '#f3d299',
+  tertiaryColor: '#17fac5',
   fontColor: '#6B7A90',
   nightColor: '#182538',
   darkColor: '#353531',
