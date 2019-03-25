@@ -47,7 +47,7 @@ const Platform = ({ platform }) => (
           <Link href="/consulting">
             <a className="platform-feature">
               <h2>
-              Support & Consulting
+              Commerce Consulting
               </h2>
               <p>
               Developer Support, UX & E-Commerce Consulting, Training, Events, Partnerships

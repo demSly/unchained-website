@@ -9,7 +9,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow mt7">
+    <div className="wrap wrap--narrow mt7 mb7">
       <div className="button-group mt0 mb3">
         <Link href="/engine">
           <a className="button">Engine</a>

@@ -14,17 +14,13 @@
   transition: transform .3s ease;
 }
 
-@media (min-width: 1025px) {
-  .frontend:hover {
-    transform: translateX(10px);
-  }
-}
-
 @media (min-width: 768px) {
   .product-portfolio__item {
     width: 50%;
     border: 5px solid #fff;
-    box-shadow: 0 8px 21px rgba(0,0,0,.2);
+    box-shadow:
+      rgba(9, 30, 66, 0.16) 0px 0px 1px,
+      rgba(9, 30, 66, 0.1) 0px 10px 15px -3px;
   }
 }
 
@@ -33,12 +29,6 @@
   position: relative;
 }
 
-
-@media (min-width: 1025px) {
-  .backend:hover {
-    transform: translateX(-10px) !important;
-  }
-}
 
 .frontend {
   position: relative;

@@ -64,19 +64,18 @@ const Home = ({ home }) => (
           <div className="text-center">
             <img className="undraw undraw--mini" src="../static/img/undraw_create_f05x.svg" alt="" />
             <h2 className="section-title">
-              The most flexible platform for digital commerce
+              The most flexible digital commerce platform
             </h2>
           </div>
           <div className="d-flex flex-wrap">
             <p className="w-lg-48">
             The
               {' '}
-              <b>headless</b>
+              <Link href="/headless">
+                <a className="link">headless</a>
+              </Link>
               {' '}
-approach allows you to build e-commerce apps which
-              {' '}
-              <b>run natively</b>
-              {' '}
+              approach allows you to build e-commerce apps which run natively
             on mobile phones, watches, TVs, wearables and your own hardware.
             It empowers developers to integrate proprietary &
             decentralized systems, bridging digital commerce with the internet of
@@ -87,16 +86,13 @@ approach allows you to build e-commerce apps which
 
               By using
               {' '}
-              <b>open source</b>
+              <a href="https://github.com/unchainedshop" className="link">open-source</a>
               {' '}
             technologies & popular programming languages,
               it is very easy for developers to extend and adapt the platform for
               the company specific needs. This enables product
               owners to design
-              {' '}
-              <b>creative business processes</b>
-              {' '}
-like never before.
+              like never before.
             </p>
           </div>
           <div className="button-group mt3">
@@ -151,7 +147,7 @@ like never before.
           (Node.js) knowhow, and our multi-channel enterprise shop system.
             </p>
             <Link href="/developers">
-              <a className="button button--primary">
+              <a className="button button--code">
                   Show me some code
               </a>
             </Link>
@@ -398,7 +394,7 @@ Release of Roadmap 2.0
 
         <div className="timeline-item">
           <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-content timeline-next">
             <div className="date">
 Q3-Q4 2019
             </div>
@@ -569,6 +565,7 @@ Token Generation Event
         line-height: 1.45;
         font-size: 16px;
         max-width: 468px;
+        color: #909bac;
       }
 
       .milestone {
@@ -642,6 +639,10 @@ Token Generation Event
         padding: 200px 0 100px;
         transform: skew(0deg, -10deg);
         margin-top: -160px;
+        margin-left: -12px;
+        width: calc(100% + 24px);
+        padding-left: 12px;
+        padding-right: 12px;
       }
       .primary-section .wrap {
         transform: skew(0deg, 10deg);
