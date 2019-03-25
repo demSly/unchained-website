@@ -39,7 +39,7 @@ const Platform = ({ platform }) => (
         </p>
       </section>
     </div>
-    <div className="wrap mb7">
+    <div className="wrap mt0 mb7">
       <section>
 
         <div className="d-flex flex-wrap">

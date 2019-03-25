@@ -14,8 +14,10 @@
   transition: transform .3s ease;
 }
 
-.frontend:hover {
-  transform: translateX(10px);
+@media (min-width: 1025px) {
+  .frontend:hover {
+    transform: translateX(10px);
+  }
 }
 
 @media (min-width: 768px) {
@@ -31,8 +33,11 @@
   position: relative;
 }
 
-.backend:hover {
-  transform: translateX(-10px) !important;
+
+@media (min-width: 1025px) {
+  .backend:hover {
+    transform: translateX(-10px) !important;
+  }
 }
 
 .frontend {

@@ -10,7 +10,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--vertical-padding">
+    <div className="wrap mt7 mb7">
       <div className="button-group mt0 mb3">
         <Link href="/engine">
           <a className="button disabled">Engine</a>
@@ -27,9 +27,9 @@ const Platform = ({ platform }) => (
       </div>
       <section className="section">
 
-        <div className="flex-between flex-wrap">
-          <img className="undraw w40" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
-          <div className="w40">
+        <div className="flex-between nowrap">
+          <img className="undraw w40 mr3" src="../static/img/undraw_server_status_5pbv.svg" alt="server status" />
+          <div>
             <h1>
           Unchained Engine
             </h1>

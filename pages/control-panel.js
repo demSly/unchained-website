@@ -10,7 +10,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow mt7">
+    <div className="wrap mt7">
       <div className="button-group mt0 mb3">
         <Link href="/engine">
           <a className="button">Engine</a>
@@ -26,12 +26,12 @@ const Platform = ({ platform }) => (
         </Link>
       </div>
       <section className="section">
-        <h1>
-          Unchained Control Panel
-        </h1>
         <div className="flex-between nowrap">
           <img className="undraw w40 mr3" src="../static/img/undraw_control_panel1_20gm.svg" alt="control panel" />
           <div>
+            <h1>
+            Unchained Control Panel
+            </h1>
             <p>
               The Unchained Control Panel is our Web UI to all data management API&apos;s
               that the unchained engine provides out of the box.
@@ -235,8 +235,8 @@ Features
         </div>
       </section>
       <Link href="/platform">
-        <div className="text-center mt3">
-          <a className="button mt3">
+        <div className="text-center mb3">
+          <a className="button mb3">
               Back to Platform overview
           </a>
         </div>

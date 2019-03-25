@@ -13,12 +13,6 @@
   margin-top: 0;
 }
 
-@media (min-width: 1220px) {
-  .wrap--vertical-padding {
-    padding-top: 8em;
-    padding-bottom: 8em;
-  }
-}
 
 .wrap--top-padding {
   padding-top: 3.5em;
