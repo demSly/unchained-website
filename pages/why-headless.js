@@ -1,5 +1,6 @@
 import React from 'react';
 import { compose } from 'recompose';
+import { Link } from '../routes';
 import variables from '../styles/variables';
 import connectApollo from '../lib/connectApollo';
 import withRegion from '../lib/withRegion';
@@ -10,9 +11,9 @@ const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
     <div className="wrap wrap--vertical-padding">
-      <h2>
+      <h1 className="text-center h2">
 Why is headless technology so important?
-      </h2>
+      </h1>
 
       <div className="advantage">
         <img alt="digital-cash-payment" className="advantage-img" src="../static/img/11- digital-cash-payment.svg" />
@@ -126,6 +127,18 @@ Since the content is typically provided through
            the risk of distributed denial-of-service attacks (DDOS) is reduced.
           </p>
         </div>
+      </div>
+      <div className="button-group mt7">
+        <Link href="/platform">
+          <a className="button">
+            Go to platform overview
+          </a>
+        </Link>
+        <Link href="/showcase">
+          <a className="button">
+              See showcase
+          </a>
+        </Link>
       </div>
     </div>
 

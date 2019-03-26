@@ -12,7 +12,7 @@ const PartnerList = ({ partners }) => (
       }) => (
         <div className="partner" key={_id}>
           <a href={website} target="_blank" rel="noopener noreferrer">
-            <img src={logo.url} alt={`${name} logo`} />
+            <img className="animated fadeIn" src={logo.url} alt={`${name} logo`} />
             {text}
           </a>
         </div>

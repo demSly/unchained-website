@@ -21,7 +21,7 @@ for digital commerce services & projects
         <PartnerList />
       </section>
     </div>
-    <div className="c-bg-primary">
+    <div className="c-bg-dark">
       <div className="wrap wrap--narrow pv3 text-center">
         <small className="c-white">
           Do you need a Partner in E-Commerce?
@@ -30,14 +30,14 @@ for digital commerce services & projects
         </small>
         <div className="text-center mt1">
           <Link href="/contact">
-            <a className="button">
+            <a className="button button--code">
                 Become a Partner
             </a>
           </Link>
         </div>
       </div>
     </div>
-    <div className="color-bg-secondary">
+    <div className="">
       <section className="wrap">
         <div className="container text-center mt3">
           <h4>Get an overview of our platform</h4>

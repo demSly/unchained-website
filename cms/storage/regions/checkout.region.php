@@ -3,9 +3,9 @@
   'name' => 'checkout',
   'label' => 'Checkout Page',
   '_id' => 'checkout59e61550ef259',
-  'fields' => 
+  'fields' =>
   array (
-    0 => 
+    0 =>
     array (
       'name' => 'title',
       'label' => '',
@@ -14,16 +14,16 @@
       'info' => '',
       'group' => '',
       'localize' => true,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
-    1 => 
+    1 =>
     array (
       'name' => 'subtitle',
       'label' => '',
@@ -32,28 +32,28 @@
       'info' => '',
       'group' => '',
       'localize' => true,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
   ),
   'template' => '',
-  'data' => 
+  'data' =>
   array (
-    'title' => 'Kaufe deinen FreezyBoy',
-    'subtitle' => 'Kostenloser Versand. Zugestellt innerhalb von 3 Werktagen.',
+    'title' => 'Kaufe dein Unchained Swag.',
+    'subtitle' => 'Kostenloser Versand.',
   ),
   '_created' => 1508250960,
   '_modified' => 1510229042,
   'description' => '',
-  'acl' => 
+  'acl' =>
   array (
-    'author' => 
+    'author' =>
     array (
       'form' => true,
     ),

@@ -13,11 +13,11 @@ const Showcase = ({ showcase }) => (
           Showcase
         </h1>
         <div className="showcase-images">
-          <img className="showcase-image X" src="../static/img/publicare/publicare.ch_de_prod_mediset-katheter-set-fr-frauen(iPad).png" alt="Text label" />
-          <img className="showcase-image R" src="../static/img/publicare/publicare.ch_de_produkte_wund-web_desinfektion(iPad).png" alt="Text label" />
-          <img className="showcase-image V" src="../static/img/publicare/publicare.ch_de_signup(iPhone 6_7_8).png" alt="Text label" />
-          <img className="showcase-image M" src="../static/img/publicare/publicare.ch_de_prod_desderman-pure-gel-500ml(iPhone 6_7_8 Plus).png" alt="Text label" />
-          <img className="showcase-image S" src="../static/img/publicare/publicare.ch_de_produkte_ergnzende-produkte-web.png" alt="Text label" />
+          <img className="showcase-image animated fadeIn X" src="../static/img/publicare/publicare.ch_de_prod_mediset-katheter-set-fr-frauen(iPad).png" alt="Text label" />
+          <img className="showcase-image animated fadeIn R" src="../static/img/publicare/publicare.ch_de_produkte_wund-web_desinfektion(iPad).png" alt="Text label" />
+          <img className="showcase-image animated fadeIn V" src="../static/img/publicare/publicare.ch_de_signup(iPhone 6_7_8).png" alt="Text label" />
+          <img className="showcase-image animated fadeIn M" src="../static/img/publicare/publicare.ch_de_prod_desderman-pure-gel-500ml(iPhone 6_7_8 Plus).png" alt="Text label" />
+          <img className="showcase-image animated fadeIn S" src="../static/img/publicare/publicare.ch_de_produkte_ergnzende-produkte-web.png" alt="Text label" />
         </div>
         <div className="wrap wrap--narrow mb3">
           <h2>

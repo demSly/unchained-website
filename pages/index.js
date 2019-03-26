@@ -120,13 +120,12 @@ const Home = ({ home }) => (
             Built for developers
             </h2>
             <p>
-            There is
+              There is
               {' '}
               <b>no UI</b>
-              {' '}
-            ...
+              ...
               <br />
-            Just build your own interface on top of the GraphQL API.
+              Just build your own interface on top of the GraphQL API.
             </p>
           </div>
         </div>
@@ -242,7 +241,7 @@ preferred programming language
       <section className="wrap">
         <div className="container text-center mt3">
           <h4 className="mb0">Get an overview of our platform</h4>
-          <p>Learn about the Unchained Engine, our support, consulting, managed hosting & more</p>
+          <p>Learn about the Unchained Engine, Consulting, Managed Hosting & more</p>
           <Link href="/platform">
             <a className="button button--secondary mb3 mt1">Platform overview</a>
           </Link>

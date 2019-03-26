@@ -3,9 +3,9 @@
   'name' => 'forgotpassword',
   'label' => 'Forgot Password Page',
   '_id' => 'forgotpassword59e60b4c2faa8',
-  'fields' => 
+  'fields' =>
   array (
-    0 => 
+    0 =>
     array (
       'name' => 'title',
       'label' => '',
@@ -14,16 +14,16 @@
       'info' => '',
       'group' => '',
       'localize' => true,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
-    1 => 
+    1 =>
     array (
       'name' => 'text',
       'label' => '',
@@ -32,28 +32,28 @@
       'info' => '',
       'group' => '',
       'localize' => true,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
   ),
   'template' => '',
-  'data' => 
+  'data' =>
   array (
     'title' => 'Forgot password?',
-    'text' => 'E-Mail Adresse eingeben und neues Passwort erstellen.',
+    'text' => 'Type in your eMail address and set new password.',
   ),
   '_created' => 1508248396,
   '_modified' => 1510229035,
   'description' => '',
-  'acl' => 
+  'acl' =>
   array (
-    'author' => 
+    'author' =>
     array (
       'form' => true,
     ),
