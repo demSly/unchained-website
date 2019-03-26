@@ -17,7 +17,7 @@ const Header = ({ isMenuToggled }) => (
             <Link href="/">
               <a>
                 <div className="unchained-brand">
-                  <img className="unchained-logo" src="../static/img/unchained-logo-black.png" alt="Unchained logo" />
+                  <img className="unchained-logo" src="../static/img/diamond-snake-one-color.svg" alt="Unchained logo" />
                   <span>
 unchained
                   </span>

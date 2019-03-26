@@ -34,7 +34,10 @@ const Menu = ({ intl, hidden, ...props }) => (
         </a>
       </ActiveLink>
       <a className="menu__link menu__link--phone" href="tel:+41435051846">
-Call us +41 43 505 18 46
+Call us
+        <br />
+        {' '}
++41 43 505 18 46
       </a>
     </div>
     <style jsx global>
@@ -45,7 +48,9 @@ Call us +41 43 505 18 46
 
       .menu__link--phone {
         opacity: .7;
-        font-size: 14px;
+        font-size: 12px;
+        text-align: right;
+        line-height: 1.1;
       }
       .menu__link--phone:hover {
         opacity: .9;
@@ -122,6 +127,7 @@ Call us +41 43 505 18 46
       @media (min-width: 1024px) {
         .menu__link--phone {
           margin-left: 8em !important;
+          margin-right: .25em;
         }
 
         .menu-switch {

@@ -12,7 +12,7 @@ const Checkout = ({ checkout }) => (
       <div className="free-shipping-on-top">
         <img src="../static/img/icon/delivery-package-2.svg" alt="delivery package" />
         <small>
-          {checkout.subtitle}
+          Free delivery
         </small>
       </div>
       <CheckoutContent />

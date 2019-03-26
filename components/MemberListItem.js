@@ -38,10 +38,15 @@ const MemberListItem = ({
         }
         .description {
           margin-top: 1em;
-          margin-bottom: 1em;
+          margin-bottom: 1.5em;
         }
         .member {
           display: block;
+          margin-bottom: 2rem;
+        }
+        .member img {
+          width: 61%;
+          border-bottom: 8px solid #17fac5;
         }
         @media (max-width: 767px) {
           .member {

@@ -85,37 +85,44 @@ const Developers = ({ developers }) => (
 
 
     <div className="wrap wrap--narrow">
-      <h2>
-Weather-dependent barbeque sausage pricing
-      </h2>
-      <p>
-Usually when summer kicks in in Switzerland and people start to invite friends to the
-        first barbeque party of the year, demand for sausages surges instantly.
-        Our dear friend, butcher Bruno wants to sell his homemade sausages directly
-        to the customer with
-        his online shop and had this crazy idea of a special product pricing he calls
-        weather-dependent barbeque sausage pricing.
-      </p>
-      <div className="text-center">
-        <img className="undraw" src="../static/img/undraw_artificial_intelligence_upfn.svg" alt="ai" />
+      <div className="flex-between nowrap">
+        <img className="undraw w40 mr3" src="../static/img/undraw_artificial_intelligence_upfn.svg" alt="ai" />
+        <div>
+          <h1 className="h2">Unchained is hackable</h1>
+          <p>
+          With hackable we mean to provide you with only very basic
+          customization out of the box but on the other hand allow the developer to
+          completely customize the business logic through code. This is achieved
+          through a staged approach ranging from plugins to a full
+          hard fork.
+          </p>
+        </div>
       </div>
-      <p>
-See how easy it is to implement an extremely custom
+
+      <div>
+        <p>
+        See how easy it is to implement an extremely custom
         pricing module with Unchained Engine below.
-      </p>
+        </p>
+      </div>
+
     </div>
 
     <div className="wrap wrap--narrow">
       <h2>
-Add a pricing module
+      Weather-dependent barbeque sausage pricing
       </h2>
       <p>
-Unchained is hackable. With hackable we mean to provide you with only very basic
-        customization out of the box but on the other hand allow the developer to
-        completely customize the business logic through code. This is achieved
-        through a staged approach ranging from plugins to a full
-        hard fork.
+      Usually when summer kicks in in Switzerland and people start to invite friends to the
+      first barbeque party of the year, demand for sausages surges instantly.
+      Our dear friend, butcher Bruno wants to sell his homemade sausages directly
+      to the customer with
+      his online shop and had this crazy idea of a special product pricing he calls
+      weather-dependent barbeque sausage pricing.
       </p>
+      <h2>
+Add a pricing module
+      </h2>
 
       <p>
         To demonstrate, we will implement an ingenious pricing that increases

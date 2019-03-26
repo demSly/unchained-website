@@ -61,8 +61,7 @@ const ProductDetails = ({
         )}
         {isBuyable && (
           <span>
-            <img className="v-mid mr05" src="../static/img/icon/delivery-package-2.svg" alt="delivery package icon" />
-            {intl.formatMessage({ id: 'free_shipping_and_delivery_time' })}
+            <img className="v-mid mr05 w16px" src="../static/img/unchained-logo-black.png" alt="" />
           </span>
         )}
       </small>

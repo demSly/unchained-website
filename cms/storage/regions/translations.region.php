@@ -2082,7 +2082,7 @@
     'subscribe_to_newsletter_de' => 'Abonniere unseren Newsletter',
     'free_shipping_and_delivery_time' => 'Free delivery.',
     'free_shipping_and_delivery_time_fr' => '',
-    'free_shipping_and_delivery_time_de' => 'Kostenloser Versand. Zugestellt innerhalb von 3 Werktagen.',
+    'free_shipping_and_delivery_time_de' => 'Free delivery.',
     'checkout_items_in_cart' => 'Items in your shopping cart',
     'coupon_code_error' => 'Coupon code is not valid',
     'coupon_code_success' => 'Coupon code successfully accepted',

@@ -16,7 +16,6 @@ import withFormSchema from '../../lib/withFormSchema';
 import withFormModel from '../../lib/withFormModel';
 import TextField from './TextField';
 import ErrorsField from './ErrorsField';
-import ChangeCountryButton from '../ChangeCountryButton';
 import Loading from '../Loading';
 
 const UpdateCartDeliveryForm = ({
@@ -34,7 +33,7 @@ const UpdateCartDeliveryForm = ({
     onSubmitSuccess={onSubmitSuccess}
     onChange={onChange}
   >
-    <div className="fieldset">
+    <div className="fieldset mb3">
       <TextField
         autoComplete="home email"
         id="cart-emailAddress-field"
@@ -42,22 +41,10 @@ const UpdateCartDeliveryForm = ({
       />
     </div>
 
-    <h5>
+    <h4>
       {intl.formatMessage({ id: 'delivery_address' })}
-    </h5>
+    </h4>
     <div className="fieldset">
-      <TextField
-        half
-        id="cart-country-field"
-        name="countryName"
-        disabled
-      />
-      <ChangeCountryButton // we explicitly set the tabindex on this button to fix flow
-        tabIndex="100" // eslint-disable-line
-        className="field field--half"
-        icon="../static/img/icon/location-refresh-1.svg"
-        label={intl.formatMessage({ id: 'change_shipping_country' })}
-      />
       <TextField
         half
         autoComplete="shipping given-name"

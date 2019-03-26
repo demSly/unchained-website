@@ -5,7 +5,6 @@ import withCheckoutCartItems from '../lib/withCheckoutCartItems';
 import withLoadingComponent from '../lib/withLoadingComponent';
 import CheckoutCartItem from './CheckoutCartItem';
 import CheckoutCartDiscountItem from './CheckoutCartDiscountItem';
-import AddCartDiscountForm from './forms/AddCartDiscountForm';
 import Price from './Price';
 import variables from '../styles/variables';
 
@@ -53,9 +52,6 @@ const CheckoutCart = ({
     ))
       }
 
-    {(!discounts || discounts.length === 0) && (
-      <AddCartDiscountForm />
-    )}
 
     <div className="total-lines">
       <div className="flex-between total-line">

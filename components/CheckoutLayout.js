@@ -11,12 +11,13 @@ const CheckoutLayout = ({ intl, children, ...props }) => (
     <div className="wrap wrap--checkout">
       <Link href="/developers">
         <a className="back-button">
-          <img className="mr05" src="/static/img/icon/left-arrow-hexagon.svg" alt="left arrow icon" />
+          <img className="mr05 v-mid" src="/static/img/icon/left-arrow-hexagon.svg" alt="left arrow icon" />
           <img
-            className="logo"
+            className="w16px v-mid"
             src="/static/img/unchained-logo-black.png"
             alt="unchained logo"
           />
+          <span className="v-mid"> unchained commerce</span>
         </a>
       </Link>
     </div>

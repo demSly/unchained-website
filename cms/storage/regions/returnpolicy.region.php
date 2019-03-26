@@ -3,9 +3,9 @@
   'name' => 'returnpolicy',
   'label' => 'Return Policy Page',
   '_id' => 'returnpolicy59e60f2cb2f01',
-  'fields' => 
+  'fields' =>
   array (
-    0 => 
+    0 =>
     array (
       'name' => 'title',
       'label' => '',
@@ -14,16 +14,16 @@
       'info' => '',
       'group' => '',
       'localize' => true,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
-    1 => 
+    1 =>
     array (
       'name' => 'text',
       'label' => '',
@@ -32,29 +32,29 @@
       'info' => '',
       'group' => '',
       'localize' => true,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
   ),
   'template' => '',
-  'data' => 
+  'data' =>
   array (
-    'title' => 'return policy',
-    'text' => '<p>return policy text</p>',
+    'title' => 'Return Policy',
+    'text' => '<p>no returns. no refunds.</p>',
     'title_de' => 'Widerrufsbelehrung',
   ),
   '_created' => 1508249388,
   '_modified' => 1510228922,
   'description' => '',
-  'acl' => 
+  'acl' =>
   array (
-    'author' => 
+    'author' =>
     array (
       'form' => true,
     ),

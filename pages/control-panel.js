@@ -243,62 +243,6 @@ Features
       </Link>
     </div>
 
-    <style jsx>
-      {`
-      .advantages {
-        padding-bottom: 2em;
-      }
-      @media (min-width: 768px) {
-        .advantages {
-          display: flex;
-        }
-        .advantage {
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-
-
-      .advantage {
-        margin-top: 2.5em;
-        padding: 2em 1.5em;
-        background-image: linear-gradient(to top left, ${variables.grayColor}, white);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 90%;
-        box-shadow: 0 2px 8px rgba(0,0,0,.05), 0 4px 14px rgba(0,0,0,.1);
-      }
-
-      .advantage h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .advantage h3 {
-        margin-top: 0;
-      }
-
-
-      .advantage p {
-        margin-top: .25em;
-        margin-bottom: 0;
-      }
-
-      .advantage-img {
-        width: 120px;
-        height: 120px;
-        margin-right: .5em;
-      }
-
-      @media (min-width: 768px) {
-        .advantage p {
-          max-width: 80%;
-        }
-      }
-    `}
-    </style>
-
   </PageLayout>
 );
 

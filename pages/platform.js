@@ -33,15 +33,16 @@ const Platform = ({ platform }) => (
               <span className="link">More infos about the Engine</span>
             </a>
           </Link>
-          <Link href="/control-panel">
+          <Link href="/managed-hosting">
             <a className="platform-feature">
               <h2>
-              Control Panel
+              Commerce Cloud
               </h2>
               <p>
-              Our cloud-based admin ui to view, edit and analyze data on the unchained engine
+              Containerized Managed Hosting through Docker Swarm, bring your own datacenter
               </p>
-              <span className="link">More infos about the Control Panel</span>
+
+              <span className="link">More infos about Managed Hosting</span>
             </a>
           </Link>
           <Link href="/consulting">
@@ -55,16 +56,15 @@ const Platform = ({ platform }) => (
               <span className="link">More infos about Consulting</span>
             </a>
           </Link>
-          <Link href="/managed-hosting">
+          <Link href="/control-panel">
             <a className="platform-feature">
               <h2>
-              Managed Hosting
+              Control Panel
               </h2>
               <p>
-              Containerized Managed Hosting through Docker Swarm, bring your own datacenter
+              Our cloud-based admin ui to view, edit and analyze data on the unchained engine
               </p>
-
-              <span className="link">More infos about Managed Hosting</span>
+              <span className="link">More infos about the Control Panel</span>
             </a>
           </Link>
         </div>
