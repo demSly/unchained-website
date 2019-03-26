@@ -62,15 +62,28 @@ const Layout = ({
       {`
     /* Colors */
 
+    main {
+      overflow-x: hidden;
+    }
     .c-primary {
       color: ${variables.primaryColor} !important;
     }
 
     .c-bg-primary {
       background-color: ${variables.primaryColor} !important;
-      border: 12px solid ${variables.tertiaryColor};
-      margin-left: -12px;
-      width: calc(100% + 24px);
+      border-top: 12px solid ${variables.tertiaryColor};
+      border-bottom: 12px solid ${variables.tertiaryColor};
+    }
+
+    @media (min-width: 1220px) {
+      main {
+        overflow-x: visible;
+      }
+      .c-bg-primary {
+        border: 12px solid ${variables.tertiaryColor};
+        margin-left: -12px;
+        width: calc(100% + 24px);
+      }
     }
 
     .c-bg-secondary {
@@ -79,11 +92,18 @@ const Layout = ({
     }
 
     .c-bg-dark {
-      border: 12px solid ${variables.tertiaryColor};
+      border-top: 12px solid ${variables.tertiaryColor};
+      border-bottom: 12px solid ${variables.tertiaryColor};
       background-color: #182538 !important;
       background-image: linear-gradient(to bottom right, #182538, #1f263b);
-      margin-left: -12px;
-      width: calc(100% + 24px);
+    }
+
+    @media (min-width: 1024px) {
+      .c-bg-dark {
+        border: 12px solid ${variables.tertiaryColor};
+        margin-left: -12px;
+        width: calc(100% + 24px);
+      }
     }
 
     .c-bg-dark .wrap * {
@@ -94,23 +114,15 @@ const Layout = ({
       color: #333333;
     }
 
-    .footer {
-      position: relative;
-      border-top: 12px solid ${variables.tertiaryColor};
-      margin-left: -12px;
-      padding-left: 1em;
-      padding-right: 1em;
-      width: calc(100% + 24px);
-    }
-    .footer:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: -12px;
-      width: 12px;
-      background-color: ${variables.tertiaryColor};
-      z-index: 100000;
+    @media (min-width: 1024px) {
+      .footer {
+        position: relative;
+        margin-left: -12px;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: calc(100% + 24px);
+        border: 12px solid ${variables.tertiaryColor};
+      }
     }
 
     .c-bg-dark .footer * {

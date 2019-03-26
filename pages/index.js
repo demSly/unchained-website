@@ -471,6 +471,9 @@ Token Generation Event
 
     <style jsx>
       {`
+      .snake-attack {
+        overflow: hidden;
+      }
       .button--role {
         min-height: 126px;
         margin-bottom: 1em;
@@ -565,7 +568,7 @@ Token Generation Event
         line-height: 1.45;
         font-size: 16px;
         max-width: 468px;
-        color: #909bac;
+        color: #97a5af;
       }
 
       .milestone {
@@ -639,10 +642,14 @@ Token Generation Event
         padding: 200px 0 100px;
         transform: skew(0deg, -10deg);
         margin-top: -160px;
-        margin-left: -12px;
-        width: calc(100% + 24px);
-        padding-left: 12px;
-        padding-right: 12px;
+      }
+      @media (min-width: 1024px) {
+        .primary-section {
+          margin-left: -12px;
+          width: calc(100% + 24px);
+          padding-left: 12px;
+          padding-right: 12px;
+        }
       }
       .primary-section .wrap {
         transform: skew(0deg, 10deg);
