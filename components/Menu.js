@@ -84,6 +84,8 @@ Call us
       @media (max-width: 1023px) {
         .menu__link--phone {
           margin-top: 3em !important;
+          text-align: center;
+          line-height: 1.5;
         }
         .menu.hidden {
           opacity: 0;

@@ -287,9 +287,10 @@ Want to get reminded when we have news to share? Follow our twitter account
           {' '}
         and let's see what we can do together.
         </p>
-        <h2>
+        <h2 className="mb0">
         Open Source
-          <br />
+        </h2>
+        <p className="mt0">
           <span className="dim">
             available on
             {' '}
@@ -297,7 +298,7 @@ Want to get reminded when we have news to share? Follow our twitter account
           <a className="link dib" href="https://github.com/unchainedshop">
           Github
           </a>
-        </h2>
+        </p>
       </div>
     </div>
 

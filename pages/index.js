@@ -71,7 +71,7 @@ const Home = ({ home }) => (
             <p className="w-lg-48">
             The
               {' '}
-              <Link href="/headless">
+              <Link href="/why-headless">
                 <a className="link">headless</a>
               </Link>
               {' '}
@@ -207,9 +207,10 @@ const Home = ({ home }) => (
     </div>
 
     <div className="c-bg-dark c-white pa1 text-center">
-      <h2>
-      Open Source
-        <br />
+      <h2 className="mb0">
+        Open Source
+      </h2>
+      <p className="mt0">
         <span className="dim">
           available on
           {' '}
@@ -217,7 +218,7 @@ const Home = ({ home }) => (
         <a className="link dib" href="https://github.com/unchainedshop">
         Github
         </a>
-      </h2>
+      </p>
       <div className="wrap tech-stack-wrap">
         <small className="text-center db">
           built on
@@ -241,7 +242,7 @@ preferred programming language
       <section className="wrap">
         <div className="container text-center mt3">
           <h4 className="mb0">Get an overview of our platform</h4>
-          <p>Learn about the Unchained Engine, Consulting, Managed Hosting & more</p>
+          <p>Learn about the Unchained Engine, Cloud Commerce & Consulting & more</p>
           <Link href="/platform">
             <a className="button button--secondary mb3 mt1">Platform overview</a>
           </Link>
