@@ -32,7 +32,7 @@ const CartDropdown = ({
       ))}
       {(items && items.length > 0) && (
         <Link href="/checkout">
-          <input type="submit" value={intl.formatMessage({ id: 'checkout' })} className="button button--full-width mt1" />
+          <input type="submit" value={intl.formatMessage({ id: 'checkout' })} className="button button--secondary button--full-width mt1" />
         </Link>
       )}
     </div>

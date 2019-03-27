@@ -1,6 +1,11 @@
+.hero-absolute-height {
+  height: 48vh;
+}
+
 .w16px {
   width: 16px;
 }
+
 .w24px {
   width: 24px;
 }

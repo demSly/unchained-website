@@ -98,7 +98,7 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/31- programming-search-for-setting.svg" alt="" />
                 <h3>
-                Faceted Search Filters
+                Faceted Filters
                 </h3>
               </div>
               <p>Manage Filters</p>

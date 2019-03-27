@@ -61,7 +61,7 @@ const ProductDetails = ({
         )}
         {isBuyable && (
           <span>
-            <img className="v-mid mr05 w16px" src="../static/img/unchained-logo-black.png" alt="" />
+            <img className="v-mid mr05 w16px" src="../static/img/diamond-snake-one-color.svg" alt="" />
           </span>
         )}
       </small>

@@ -1,3 +1,7 @@
+.timeline-icon {
+  width: 80px;
+}
+
 @media (min-width: 1024px) {
   .w-lg-48 {
     width: 48%;

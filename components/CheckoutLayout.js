@@ -14,7 +14,7 @@ const CheckoutLayout = ({ intl, children, ...props }) => (
           <img className="mr05 v-mid" src="/static/img/icon/left-arrow-hexagon.svg" alt="left arrow icon" />
           <img
             className="w16px v-mid"
-            src="/static/img/unchained-logo-black.png"
+            src="/static/img/diamond-snake-one-color.svg"
             alt="unchained logo"
           />
           <span className="v-mid"> unchained commerce</span>

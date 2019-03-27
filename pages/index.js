@@ -250,179 +250,6 @@ preferred programming language
       </section>
     </div>
 
-    <div className="text-center-md">
-      <img className="icon timeline-idea" src="../static/img/31- idea-document-design.svg" alt="" />
-    </div>
-    <section className="timeline wrap">
-      <div className="container">
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
-            <div className="date">
-Apr 2017
-            </div>
-            <p>
-Sketch out the architecture of a headless digital commerce platform
-            </p>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
-            <div className="date">
-Jun 2017
-            </div>
-            <p>
-Signed first customer contract
-            </p>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-special">
-            <div className="date">
-Nov 2017
-            </div>
-            <p>
-              GoLive of first customer online store
-            </p>
-            <a className="button" href="https://freezyboy.com">
-See freezyboy.com
-            </a>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-content">
-            <div className="date">
-Jan 2018
-            </div>
-            <p>
-Release of Unchained Website
-            </p>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
-            <div className="date">
-Mar 2018
-            </div>
-            <p>
-Release of Roadmap 1.0
-            </p>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
-            <div className="date">
-Jun 2018
-            </div>
-            <p>
-Signed second customer contract with two implementation partners
-            </p>
-          </div>
-        </div>
-
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
-            <div className="date">
-Q2-Q4 2018
-            </div>
-            <p>
-Roadshow for Zürich based agencies
-            </p>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-special">
-            <div className="date">
-Feb 2019
-            </div>
-            <p>
-              GoLive of a b2b & b2c shop & portal in the Health Care Industry
-            </p>
-            <a className="button" href="https://publicare.ch">
-See pubicare.ch
-            </a>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-special">
-            <div className="date">
-Mar 2019
-            </div>
-            <p>
-            Release of Unchained Engine as OSS
-            </p>
-            <a className="button" href="https://github.com/unchainedshop/unchained">
-            See on Github
-            </a>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-next">
-            <div className="date">
-Q2 2019
-            </div>
-            <ul>
-              <li>
-Release of Unchained Express
-              </li>
-              <li>
-Release of Unchained Managed Hosting
-              </li>
-              <li>
-Release of Roadmap 2.0
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-next">
-            <div className="date">
-Q3-Q4 2019
-            </div>
-            <ul>
-              <li>
-Release of Plugin Marketplace 1.0 Beta as SaaS
-              </li>
-              <li>
-Release of Unchained Control Panel 1.0 Beta as SaaS
-              </li>
-              <li>
-Global Roadshow
-              </li>
-              <li>
-Unchained Conference 2019
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="text-center-md">
-          <img className="icon timeline-cloud" src="../static/img/06- cloud-download.svg" alt="" />
-        </div>
-
-      </div>
-    </section>
-
-
     <div>
       <div className="wrap wrap--narrow mb7">
         <div className="text-center">
@@ -487,11 +314,6 @@ Token Generation Event
         margin: 0 auto;
       }
 
-      .icon-investment {
-        display: block;
-        margin: 0 auto;
-        width: 240px;
-      }
       .tags {
         display: flex;
         flex-wrap: wrap;
@@ -620,16 +442,6 @@ Token Generation Event
 
       .hero-text {
         margin-bottom: 3em;
-      }
-
-      .icons {
-        text-align: center;
-        margin-top: 2em;
-        margin-bottom: 2em;
-      }
-
-      .icon {
-        width: 80px;
       }
 
       .c-bg-dark .link {
