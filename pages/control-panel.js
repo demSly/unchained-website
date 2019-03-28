@@ -34,13 +34,9 @@ const Platform = ({ platform }) => (
             </h1>
             <p>
               The Unchained Control Panel is our Web UI to all data management API&apos;s
-              that the unchained engine provides out of the box.
+              that the unchained engine provides out of the box. Managed Products, Collections, Users & Orders.
             </p>
-            <ul>
-              <li>Products, Users & Assortment management</li>
-              <li>Analytics, logs & reporting on orders</li>
-              <li>Compatibility and feature parity with the unchained engine</li>
-            </ul>
+            <p>Compatibility and feature parity with the unchained engine.</p>
           </div>
         </div>
       </section>
@@ -51,7 +47,7 @@ const Platform = ({ platform }) => (
 
         <div>
           <h2>
-Features
+Control Panel Features
           </h2>
           <div className="features">
             <div className="feature-set">
@@ -61,7 +57,6 @@ Features
                   Users
                 </h3>
               </div>
-              <p>Manage Users</p>
               <ul>
                 <li>
   Delete & edit users
@@ -85,7 +80,6 @@ Features
                 Products & Variants
                 </h3>
               </div>
-              <p>Manage Products</p>
               <ul>
                 <li>Add simple, multi-variant and bundle products</li>
                 <li>Edit base prices by country/currency</li>
@@ -101,7 +95,6 @@ Features
                 Faceted Filters
                 </h3>
               </div>
-              <p>Manage Filters</p>
               <ul>
                 <li>Add indexable filters for faceted search</li>
                 <li>Edit texts and images for multiple languages</li>
@@ -116,7 +109,6 @@ Features
                 Assortments
                 </h3>
               </div>
-              <p>Manage Assortments</p>
               <ul>
                 <li>
                   Structure your products into deep assortments
@@ -137,7 +129,6 @@ Features
                   Quotation Management
                 </h3>
               </div>
-              <p>Manage Quotations / Requests for Proposals</p>
               <ul>
                 <li>
                   See open RFP and generated offer documents
@@ -158,7 +149,6 @@ Features
                   Order Management
                 </h3>
               </div>
-              <p>Manage Orders</p>
               <ul>
                 <li>
                 See order data and generated documents
@@ -179,10 +169,10 @@ Features
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/63- graph-area.svg" alt="" />
                 <h3>
-                  Logs
+                  Analytics & Logs
                 </h3>
               </div>
-              <p>See rich application logs, allowing you to drill down by</p>
+              <p>Observe key indices and see rich application logs, allowing you to drill down by</p>
               <ul>
                 <li>
                 User
@@ -197,16 +187,6 @@ Features
                 Quotation
                 </li>
               </ul>
-            </div>
-
-            <div className="feature-set">
-              <div className="flex">
-                <img className="feature-set__icon" src="../static/img/50- business-graph-2.svg" alt="" />
-                <h3>
-                  Analytics
-                </h3>
-              </div>
-              <p>Observe key indices</p>
             </div>
 
             <div className="feature-set">

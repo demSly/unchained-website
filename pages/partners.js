@@ -11,24 +11,23 @@ const Partners = ({ partners }) => (
   <PageLayout title={partners.meta_title} metaDescription={partners.meta_description}>
     <div className="wrap wrap--narrow mt7">
       <section id="partners" className="section">
-        <h1>
-          Our preferred
-          {' '}
-          <b>partners</b>
-          {' '}
-for digital commerce services & projects
+        <h1 className="text-center">
+          Join the Unchained partner program
         </h1>
         <PartnerList />
       </section>
     </div>
     <div className="c-bg-dark">
       <div className="wrap wrap--narrow pv3 text-center">
-        <small className="c-white">
-          Do you need a Partner in E-Commerce?
+        <h2 className="c-white">
+          Are you a digital commerce
           <br />
-          Drop us a line iy you want to be member of our network.
-        </small>
-        <div className="text-center mt1">
+          engineer or agency?
+        </h2>
+        <p className="c-white mb3">
+          Drop us a line if you want to be member of our network.
+        </p>
+        <div className="text-center">
           <Link href="/contact">
             <a className="button button--code">
                 Become a Partner

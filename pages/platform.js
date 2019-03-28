@@ -36,7 +36,7 @@ const Platform = ({ platform }) => (
           <Link href="/managed-hosting">
             <a className="platform-feature">
               <h2>
-              Commerce Cloud
+              Managed Hosting
               </h2>
               <p>
               Containerized Managed Hosting through Docker Swarm, bring your own datacenter

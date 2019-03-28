@@ -9,7 +9,7 @@ import PageLayout from '../components/PageLayout';
 const Platform = ({ platform }) => (
   <PageLayout title={platform.meta_title} metaDescription={platform.meta_description}>
 
-    <div className="wrap wrap--narrow mt7 mb7">
+    <div className="wrap wrap--narrow mt7">
       <div className="button-group mt0 mb3">
         <Link href="/engine">
           <a className="button">Engine</a>
@@ -40,17 +40,46 @@ const Platform = ({ platform }) => (
           </div>
         </div>
 
-        <ul>
-          <li>
-            Architectural Workshop: Let us help you define the software architecture
-            on the base of unchained
-          </li>
-          <li>Project Support: Let one of our engineers work on your project.</li>
-          <li>Support: We answer tickets through e-mail or our system</li>
-          <li>Training: Training offerings you will find here.</li>
-        </ul>
 
       </section>
+    </div>
+    <div className="wrap mb7">
+      <div className="flex-between">
+        <div className="platform-feature">
+          <h3>
+                Architectural Workshop
+          </h3>
+          <p>
+              Let us help you define the software architecture
+              on the base of unchained
+          </p>
+        </div>
+        <div className="platform-feature">
+          <h3>
+              Project Support
+          </h3>
+          <p>
+              Let one of our engineers work on your project.
+          </p>
+        </div>
+        <div className="platform-feature">
+          <h3>
+              Training
+          </h3>
+          <p>
+              We are organizing training sessions inhouse or somewhere else.
+          </p>
+        </div>
+        <div className="platform-feature">
+          <h3>
+              Support
+          </h3>
+          <p>
+              We answer support tickets through e-mail, slack or our system
+          </p>
+        </div>
+      </div>
+
       <Link href="/platform">
         <div className="text-center">
           <a className="button mt3">

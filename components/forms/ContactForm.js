@@ -24,9 +24,6 @@ Thanks! We will reach out to you
   </h3>
 ) : (
   <React.Fragment>
-    <h2>
-Contact us
-    </h2>
     <AutoForm
       disabled={inProgress}
       schema={schema}

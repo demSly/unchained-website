@@ -42,7 +42,7 @@ const Platform = ({ platform }) => (
     <div className="wrap mt0 mb7">
       <section>
 
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap features">
           <ul className="w-lg-48">
             <li>Bring your own Datacenter or go with us (We use Exoscale.ch)</li>
             <li>Traefik as Reverse Proxy https://traefik.io</li>

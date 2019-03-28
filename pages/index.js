@@ -263,7 +263,7 @@ preferred programming language
                 Developers
               </a>
             </Link>
-            <Link href="/showcase">
+            <Link href="/platform">
               <a className="link animate">
                 <img className="w112px" src="../static/img/06- business-team.svg" alt="link" />
                 Merchants

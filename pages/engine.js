@@ -182,7 +182,7 @@ Features by module
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/14- iphone-message-notification.svg" alt="" />
                 <h3>
-  Messaging
+  Messaging & Notifications
                 </h3>
               </div>
               <ul>
@@ -395,7 +395,7 @@ Features by module
                   Price your products in any currency you like. $XLM maybe?
                 </li>
                 <li>
-                  Multi-language support
+                  Internationalization with multi-language support
                 </li>
                 <li>
                   Metadata extension on any entity easily possible

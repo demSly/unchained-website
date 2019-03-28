@@ -1,3 +1,4 @@
+
 .field__input-password-wrap {
   position: relative;
 }
@@ -203,4 +204,8 @@ input[type="radio"]:checked::after {
   margin-left: -.5em;
   margin-bottom: 0;
   font-size: 18px;
+}
+
+textarea.field__input {
+  min-height: 140px;
 }
