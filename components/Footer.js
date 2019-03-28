@@ -165,18 +165,11 @@ showcase
               </small>
             </a>
           </Link>
-          <a href="https://medium.com/unchained-commerce" target="_blank" rel="noopener noreferrer" className="footer__link">
+          <a href="https://twitter.com/unchained_shop" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>
               announcements
             </small>
           </a>
-          {/* <Link href="/fundraiser">
-            <a className="footer__link">
-              <small>
-fundraiser
-              </small>
-            </a>
-          </Link> */}
           <Link href="/chat">
             <a className="footer__link">
               <small>

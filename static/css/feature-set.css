@@ -18,6 +18,31 @@
   font-size: .875em;
 }
 
+.features ul {
+  margin-left: -2.25rem;
+}
+
+.features li {
+  display: block;
+  padding: 0 0 0 1.75rem;
+  list-style: none;
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+.features li::before {
+  content: '';
+  background-image: url('../../static/img/circle_ok.svg');
+  background-repeat: no-repeat;
+  width: 1rem;
+  background-size: 1rem;
+  height: 1rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+}
+
 @media (min-width: 640px) {
 .features .feature-set {
   width: 48%;
