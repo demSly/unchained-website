@@ -70,26 +70,26 @@ hello@unchained.shop
       <div className="footer__bottom">
         <div>
           <div className="footer-label">
-Resources
+          Engaging Resources
           </div>
           <Link href="/developers">
             <a className="footer__link">
               <small>
-quick-start
+Quick-start
               </small>
             </a>
           </Link>
           <Link href="/faq">
             <a className="footer__link">
               <small>
-faq
+FAQ
               </small>
             </a>
           </Link>
           <Link href="/why-headless">
             <a className="footer__link">
               <small>
-why headless
+Headless
               </small>
             </a>
           </Link>
@@ -98,57 +98,63 @@ why headless
 API (GraphiQL)
             </small>
           </a>
+          <a href="https://github.com/unchainedshop/" target="_blank" rel="noopener noreferrer" className="footer__link">
+            <small>
+Github
+            </small>
+          </a>
+          <Link href="/partners">
+            <a className="footer__link">
+              <small>
+Partners
+              </small>
+            </a>
+          </Link>
         </div>
 
         <div>
           <div className="footer-label">
-Platform
+Explore Platform
           </div>
           <Link href="/platform">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'overview' })}
+                Platform overview
               </small>
             </a>
           </Link>
           <Link href="/engine">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'engine' })}
+                Unchained engine
               </small>
             </a>
           </Link>
           <Link href="/managed-hosting">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'hosting' })}
+                Managed hosting
               </small>
             </a>
           </Link>
           <Link href="/control-panel">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'control-panel' })}
+                Control panel
               </small>
             </a>
           </Link>
-        </div>
-
-        <div>
-          <div className="footer-label">
-Partners
-          </div>
-          <Link href="/partners">
+          <Link href="/consulting">
             <a className="footer__link">
               <small>
-our partners
+                Commerce consulting
               </small>
             </a>
           </Link>
           <Link href="/showcase">
             <a className="footer__link">
               <small>
-showcase
+              Showcase
               </small>
             </a>
           </Link>
@@ -161,26 +167,26 @@ showcase
           <Link href="/about">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'about' })}
+                About
               </small>
             </a>
           </Link>
           <a href="https://twitter.com/unchained_shop" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>
-              announcements
+              Announcements
             </small>
           </a>
           <Link href="/chat">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'chat' })}
+                Chat
               </small>
             </a>
           </Link>
           <Link href="/contact">
             <a className="footer__link">
               <small>
-                {intl.formatMessage({ id: 'contact' })}
+                Contact
               </small>
             </a>
           </Link>
@@ -242,6 +248,10 @@ showcase
         display: block;
       }
 
+      .footer__link small {
+        font-size: 14px;
+      }
+
       .footer__link:hover {
         text-decoration: underline;
       }
@@ -250,10 +260,10 @@ showcase
         margin-bottom: 2.5em;
       }
 
+      .footer__link + .footer__link {
+        margin-top: .5em;
+      }
       @media (max-width: 799px) {
-        .footer__link + .footer__link {
-          margin-top: .5em;
-        }
         .footer__contact {
           margin-bottom: 2em;
         }
@@ -263,7 +273,10 @@ showcase
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap;
-          max-width: 700px;
+          max-width: 640px;
+        }
+        .footer__bottom > div {
+          min-width: 180px;
         }
       }
 
@@ -317,6 +330,7 @@ showcase
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: flex-start;
+          margin-bottom: 3em;
         }
 
         .social-links {

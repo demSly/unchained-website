@@ -51,7 +51,7 @@ const Platform = ({ platform }) => (
           </h3>
           <p>
               Let us help you define the software architecture
-              on the base of unchained
+              on the base of unchained.
           </p>
         </div>
         <div className="platform-feature">
@@ -67,7 +67,7 @@ const Platform = ({ platform }) => (
               Training
           </h3>
           <p>
-              We are organizing training sessions inhouse or somewhere else.
+              We are organizing training sessions inhouse.
           </p>
         </div>
         <div className="platform-feature">
@@ -75,7 +75,7 @@ const Platform = ({ platform }) => (
               Support
           </h3>
           <p>
-              We answer support tickets through e-mail, slack or our system
+              We answer support tickets through e-mail or our system.
           </p>
         </div>
       </div>

@@ -18,8 +18,7 @@ const Platform = ({ platform }) => (
       </div>
     </div>
 
-    <div className="wrap mb7 position-relative hero-absolute-height">
-      <img className="hero-absolute" src="../static/img/undraw_product_tour_foyt.svg" alt="product tour" />
+    <div className="wrap mb7 position-relative">
       <section>
         <div className="flex-between">
           <Link href="/engine">
@@ -84,6 +83,7 @@ const Platform = ({ platform }) => (
       </div>
     </section>
     */}
+    <img className="hero-absolute hero-absolute-height" src="../static/img/undraw_product_tour_foyt.svg" alt="product tour" />
 
     <style jsx>
       {`
