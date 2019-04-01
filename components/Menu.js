@@ -158,9 +158,9 @@ Call us
           z-index: -1;
           left: 50%;
           right: 50%;
-          bottom: 0;
+          bottom: 2px;
           background: #00F5BC;
-          height: 2px;
+          height: 4px;
           -webkit-transition-property: left, right;
           transition-property: left, right;
           -webkit-transition-duration: 0.3s;

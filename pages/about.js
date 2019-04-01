@@ -22,13 +22,13 @@ const About = ({ about }) => (
     </div>
     <div className="text-center-md">
       <h2 className="text-center mb1">Story & Roadmap</h2>
-      <img className="timeline-icon timeline-idea" src="../static/img/31- idea-document-design.svg" alt="" />
+      <img className="timeline-icon timeline-idea animated zoomIn" src="../static/img/31- idea-document-design.svg" alt="" />
     </div>
-    <section className="timeline wrap">
+    <section className="timeline wrap animated fadeIn">
       <div className="container">
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp">
             <div className="date">
 Apr 2017
             </div>
@@ -39,8 +39,8 @@ Sketch out the architecture of a headless digital commerce platform
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp">
             <div className="date">
 Jun 2017
             </div>
@@ -51,8 +51,8 @@ Signed first customer contract
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-special">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp timeline-special">
             <div className="date">
 Nov 2017
             </div>
@@ -66,7 +66,7 @@ See freezyboy.com
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-content">
+          <div className="timeline-content animated zoomInUp">
             <div className="date">
 Jan 2018
             </div>
@@ -77,8 +77,8 @@ Release of Unchained Website
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp">
             <div className="date">
 Mar 2018
             </div>
@@ -89,8 +89,8 @@ Release of Roadmap 1.0
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp">
             <div className="date">
 Jun 2018
             </div>
@@ -102,8 +102,8 @@ Signed second customer contract with two implementation partners
 
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp">
             <div className="date">
 Q2-Q4 2018
             </div>
@@ -114,8 +114,8 @@ Roadshow for Zürich based agencies
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-special">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp timeline-special">
             <div className="date">
 Feb 2019
             </div>
@@ -129,8 +129,8 @@ See pubicare.ch
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-special">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp timeline-special">
             <div className="date">
 Mar 2019
             </div>
@@ -144,8 +144,8 @@ Mar 2019
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-next">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp timeline-next">
             <div className="date">
 Q2 2019
             </div>
@@ -164,8 +164,8 @@ Release of Roadmap 2.0
         </div>
 
         <div className="timeline-item">
-          <div className="timeline-img" />
-          <div className="timeline-content timeline-next">
+          <div className="timeline-img animated zoomInUp" />
+          <div className="timeline-content animated zoomInUp timeline-next">
             <div className="date">
 Q3-Q4 2019
             </div>

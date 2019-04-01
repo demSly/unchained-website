@@ -182,7 +182,7 @@ Features by module
               <div className="flex">
                 <img className="feature-set__icon" src="../static/img/14- iphone-message-notification.svg" alt="" />
                 <h3>
-  Messaging & Notifications
+  Messaging
                 </h3>
               </div>
               <ul>

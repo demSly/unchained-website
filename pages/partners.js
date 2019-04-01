@@ -36,10 +36,11 @@ const Partners = ({ partners }) => (
         </div>
       </div>
     </div>
-    <div className="">
+    <div className="color-bg-secondary">
       <section className="wrap">
         <div className="container text-center mt3">
-          <h4>Get an overview of our platform</h4>
+          <h3 className="mb0">Get an overview of our platform</h3>
+          <p>Learn about the Unchained Engine, Managed Hosting, our Control Panel & more</p>
           <Link href="/platform">
             <a className="button button--secondary mb3">Platform overview</a>
           </Link>

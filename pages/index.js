@@ -14,10 +14,10 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            Build the best possible Online Shop & sell your Products on any Device.
+            A seamless digital Commerce Experience for your Products & Services
           </h1>
           <h3 className="hero__subtitle">
-            Digital Commerce Platform made for Enterprises.
+            First of its kind software platform for multi-channel enterprice commerce
           </h3>
           <h1 className="hero-text animated fadeIn">
             <div className="tags">
@@ -47,7 +47,6 @@ const Home = ({ home }) => (
               </Link>
             </div>
             <p className="explainer animated fadeIn">
-              First of its kind software platform for multi-channel e-commerce.
               Implement all the crazy pricing, discount & loyalty
               ideas through the unique developers-first approach. Start selling
               goods, services & subscriptions
@@ -241,8 +240,8 @@ preferred programming language
     <div className="color-bg-secondary mb3">
       <section className="wrap">
         <div className="container text-center mt3">
-          <h4 className="mb0">Get an overview of our platform</h4>
-          <p>Learn about the Unchained Engine, Cloud Commerce & Consulting & more</p>
+          <h3 className="mb0">Get an overview of our platform</h3>
+          <p>Learn about the Unchained Engine, Managed Hosting, our Control Panel & more</p>
           <Link href="/platform">
             <a className="button button--secondary mb3 mt1">Platform overview</a>
           </Link>
@@ -322,7 +321,7 @@ Token Generation Event
 
       .tag {
         display: inline-block;
-        padding: 4px 15px 4px 10px;
+        padding: 4px 20px 4px 10px;
         border-radius: 20px;
         background-color: #F5F5F5;
         margin-bottom: .5em;
@@ -336,12 +335,12 @@ Token Generation Event
         border-radius: 8px;
         background-color: ${variables.primaryColor};
         color: #FFFFFF;
-        margin-right: .75em;
+        margin-right: 1em;
         font-size: 12px;
-        padding: 0px 6px;
+        padding: 2px 10px;
       }
       .tag__pill--headless {
-        background-color: ${variables.tertiaryColor};
+        background-color: ${variables.secondaryColor};
         color: #555555;
       }
       .tag__text {
@@ -377,19 +376,19 @@ Token Generation Event
 
       .hero__title {
         font-size: 1.75em;
-        max-width: 488px;
+        max-width: 828px;
       }
 
       .hero__subtitle {
         margin-bottom: 2em;
-        opacity: .75;
-        max-width: 340px;
+        color: #97a5af;
+        max-width: 560px;
       }
 
       .explainer {
         line-height: 1.45;
         font-size: 16px;
-        max-width: 468px;
+        max-width: 600px;
         color: #97a5af;
       }
 
@@ -426,7 +425,7 @@ Token Generation Event
         }
       }
       .hero__one {
-        min-width: 60%;
+        min-width: 70%;
       }
       @media (min-width: 1025px) {
         .hero__title {

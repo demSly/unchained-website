@@ -86,7 +86,7 @@ const Developers = ({ developers }) => (
 
     <div className="wrap wrap--narrow">
       <div className="flex-between nowrap">
-        <img className="undraw w40 mr3" src="../static/img/undraw_artificial_intelligence_upfn.svg" alt="ai" />
+        <img className="undraw w40 mr3 animated flash" src="../static/img/undraw_artificial_intelligence_upfn.svg" alt="ai" />
         <div>
           <h1 className="h2">Unchained is hackable</h1>
           <p>

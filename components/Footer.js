@@ -79,13 +79,6 @@ Quick-start
               </small>
             </a>
           </Link>
-          <Link href="/faq">
-            <a className="footer__link">
-              <small>
-FAQ
-              </small>
-            </a>
-          </Link>
           <Link href="/why-headless">
             <a className="footer__link">
               <small>
@@ -93,14 +86,21 @@ Headless
               </small>
             </a>
           </Link>
-          <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
-            <small>
-API (GraphiQL)
-            </small>
-          </a>
+          <Link href="/faq">
+            <a className="footer__link">
+              <small>
+FAQ
+              </small>
+            </a>
+          </Link>
           <a href="https://github.com/unchainedshop/" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>
 Github
+            </small>
+          </a>
+          <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
+            <small>
+API (GraphiQL)
             </small>
           </a>
           <Link href="/partners">
@@ -236,10 +236,10 @@ Explore Platform
         margin-right: 1em;
       }
       .footer-label {
-        margin-bottom: .5em;
+        margin-bottom: 1em;
         font-size: 15px;
         text-transform: uppercase;
-        color: ${variables.darkGrayColor};;
+        color: #97a5af;
       }
       .icon-footer {
         width: 96px;
@@ -261,7 +261,7 @@ Explore Platform
       }
 
       .footer__link + .footer__link {
-        margin-top: .5em;
+        margin-top: .375em;
       }
       @media (max-width: 799px) {
         .footer__contact {
