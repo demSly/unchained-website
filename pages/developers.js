@@ -77,9 +77,11 @@ const Developers = ({ developers }) => (
               FAQ
           </a>
         </Link>
-        <a className="button" href="/graphql">
-          API
-        </a>
+        <Link href="/graphiql">
+          <a className="button">
+              API
+          </a>
+        </Link>
       </div>
     </div>
 

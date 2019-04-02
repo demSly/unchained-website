@@ -4,7 +4,7 @@ import { injectIntl } from 'react-intl';
 import variables from '../styles/variables';
 
 const Footer = ({ intl }) => (
-  <footer className="footer c-bg-gray">
+  <footer className="footer">
     <div className="wrap footer__content">
       <div className="footer__top">
         <div className="footer__contact">
@@ -19,7 +19,7 @@ hello@unchained.shop
         </div>
 
         <div className="social-links">
-          <a className="social-link" href="https://github.com/unchainedshop/">
+          <a className="social-link" href="https://github.com/unchainedshop/unchained">
             <svg width="24px" height="24px" viewBox="0 0 33 33">
               <title>
                 GitHub
@@ -197,7 +197,7 @@ Explore Platform
         <Link href="/imprint">
           <a className="footer-bottom-link">
             <small>
-              {intl.formatMessage({ id: 'imprint' })}
+              Imprint
             </small>
           </a>
         </Link>
@@ -215,7 +215,7 @@ Explore Platform
         <Link href="/privacy">
           <a className="footer-bottom-link">
             <small>
-              {intl.formatMessage({ id: 'privacy' })}
+              Privacy
             </small>
           </a>
         </Link>
@@ -231,6 +231,9 @@ Explore Platform
 
     <style jsx>
       {`
+      .footer {
+        background-image: linear-gradient(to bottom, ${variables.grayColor}, white);
+      }
       .footer-bottom-link {
         display: inline-block;
         margin-right: 1em;
@@ -345,7 +348,7 @@ Explore Platform
         display: block;
         margin-top: 3.6em;
         font-size: 14px;
-        color: ${variables.darkGrayColor};;
+        color: #97a5af;
       }
 
     `}

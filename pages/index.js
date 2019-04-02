@@ -14,7 +14,7 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            A seamless digital Commerce Experience for your Products & Services
+            A seamless digital commerce experience for your poroducts & services
           </h1>
           <h3 className="hero__subtitle">
             First of its kind software platform for multi-channel enterprice commerce
@@ -33,18 +33,16 @@ const Home = ({ home }) => (
                   </div>
                 </a>
               </Link>
-              <Link href="/platform">
-                <a className="tag">
-                  <div className="tag__flex">
-                    <span className="tag__pill">
-                      #open-source
-                    </span>
-                    <span className="tag__text">
-                      No vendor lock-in
-                    </span>
-                  </div>
-                </a>
-              </Link>
+              <a href="https://github.com/unchainedshop/unchained" className="tag">
+                <div className="tag__flex">
+                  <span className="tag__pill">
+                    #open-source
+                  </span>
+                  <span className="tag__text">
+                    No vendor lock-in
+                  </span>
+                </div>
+              </a>
             </div>
             <p className="explainer animated fadeIn">
               Implement all the crazy pricing, discount & loyalty
@@ -386,7 +384,7 @@ Token Generation Event
       }
 
       .explainer {
-        line-height: 1.45;
+        line-height: 1.5;
         font-size: 16px;
         max-width: 600px;
         color: #97a5af;
@@ -451,7 +449,7 @@ Token Generation Event
       .primary-section {
         position: relative;
         padding: 200px 0 100px;
-        transform: skew(0deg, -10deg);
+        transform: skew(0deg, -6deg);
         margin-top: -160px;
       }
       @media (min-width: 1024px) {
@@ -463,7 +461,7 @@ Token Generation Event
         }
       }
       .primary-section .wrap {
-        transform: skew(0deg, 10deg);
+        transform: skew(0deg, 6deg);
       }
 
       .primary-section::before {
@@ -479,7 +477,7 @@ Token Generation Event
         position: absolute;
         left: 0px;
         top: 100px;
-        border-top: 12px solid ${variables.tertiaryColor};
+        border-top: 12px solid white;
         border-bottom: 12px solid white;
       }
 
