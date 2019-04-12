@@ -190,6 +190,11 @@ Explore Platform
               </small>
             </a>
           </Link>
+          <a href="https://checkout.events" className="footer__link">
+            <small>
+                Events
+            </small>
+          </a>
         </div>
       </div>
 

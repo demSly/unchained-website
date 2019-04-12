@@ -14,7 +14,7 @@ const Home = ({ home }) => (
       <div className="wrap hero">
         <div className="hero__one">
           <h1 className="hero__title">
-            A seamless digital commerce experience for your poroducts & services
+            A seamless digital commerce experience for your products & services
           </h1>
           <h3 className="hero__subtitle">
             First of its kind software platform for multi-channel enterprice commerce
