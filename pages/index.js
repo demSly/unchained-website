@@ -17,7 +17,7 @@ const Home = ({ home }) => (
             A seamless digital commerce experience for your products & services
           </h1>
           <h3 className="hero__subtitle">
-            First of its kind software platform for multi-channel enterprice commerce
+            First of its kind software platform for multi-channel enterprise commerce
           </h3>
           <h1 className="hero-text animated fadeIn">
             <div className="tags">
