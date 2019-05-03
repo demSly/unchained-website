@@ -15,24 +15,6 @@ const Imprint = ({ imprint }) => (
         __html: imprint.address,
       }}
       />
-      <br />
-      <small>
-Development
-      </small>
-      <p>
-This is a Joint-venture of
-        {' '}
-        <a className="link underline" href="http://www.fliptation.ch">
-Fliptation GmbH
-        </a>
-        {' '}
-&
-        {' '}
-        <a className="link underline" href="http://www.reactive.one">
-Reactive Code GmbH
-        </a>
-.
-      </p>
     </div>
   </PageLayout>
 );
