@@ -77,11 +77,9 @@ const Developers = ({ developers }) => (
               FAQ
           </a>
         </Link>
-        <Link href="/graphql">
-          <a className="button">
+        <a className="button" href="https://engine.unchained.shop/graphql" target="_blank" rel="noopener noreferrer">
               API
-          </a>
-        </Link>
+        </a>
       </div>
     </div>
 
