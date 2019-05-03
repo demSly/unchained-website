@@ -98,7 +98,7 @@ FAQ
 Github
             </small>
           </a>
-          <a href="/graphiql" target="_blank" rel="noopener noreferrer" className="footer__link">
+          <a href="/graphql" target="_blank" rel="noopener noreferrer" className="footer__link">
             <small>
 API (GraphiQL)
             </small>

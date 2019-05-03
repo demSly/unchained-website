@@ -77,7 +77,7 @@ const Developers = ({ developers }) => (
               FAQ
           </a>
         </Link>
-        <Link href="/graphiql">
+        <Link href="/graphql">
           <a className="button">
               API
           </a>

@@ -26,7 +26,7 @@ const server = micro(async (req, res) => {
   }
   const parsedUrl = parse(req.url, true);
   const { pathname } = parsedUrl;
-  if (pathname === '/graphql' || pathname === '/graphiql') {
+  if (pathname === '/graphql') {
     return api(req, res);
   }
   return handle(req, res, parsedUrl);
