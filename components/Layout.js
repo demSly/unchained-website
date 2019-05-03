@@ -1,4 +1,4 @@
-import 'core-js/es6';
+import 'core-js';
 import React from 'react';
 import Head from 'next/head';
 import { compose } from 'recompose';
