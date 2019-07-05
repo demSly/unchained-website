@@ -5955,7 +5955,7 @@
                   "description": "",
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "HashedPassword",
+                    "name": "HashedPasswordInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -6008,7 +6008,7 @@
                   "description": "",
                   "type": {
                     "kind": "INPUT_OBJECT",
-                    "name": "HashedPassword",
+                    "name": "HashedPasswordInput",
                     "ofType": null
                   },
                   "defaultValue": null
@@ -6054,7 +6054,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "HashedPassword",
+                      "name": "HashedPasswordInput",
                       "ofType": null
                     }
                   },
@@ -6068,7 +6068,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "HashedPassword",
+                      "name": "HashedPasswordInput",
                       "ofType": null
                     }
                   },
@@ -6122,7 +6122,7 @@
                     "name": null,
                     "ofType": {
                       "kind": "INPUT_OBJECT",
-                      "name": "HashedPassword",
+                      "name": "HashedPasswordInput",
                       "ofType": null
                     }
                   },
@@ -9456,7 +9456,7 @@
         },
         {
           "kind": "INPUT_OBJECT",
-          "name": "HashedPassword",
+          "name": "HashedPasswordInput",
           "description": "A hashed password",
           "fields": null,
           "inputFields": [
